@@ -62,7 +62,8 @@ def refresh():
         open(os.path.join(DATA, dst), 'w', encoding='utf-8').write(md.strip_comments(show(src)))
     # the in-game FORMAT texts and the countries' names, with the mod's own tools (exported, never run in the repo)
     with tempfile.TemporaryDirectory() as tmp:
-        arch = subprocess.run(['git', '-C', mod, 'archive', ref, 'tools', 'packs'], check=True,
+        tref = os.environ.get('FMT_TOOLS_REF', ref)    # e.g. a fix branch of tools/fmtgame.py not merged yet
+        arch = subprocess.run(['git', '-C', mod, 'archive', tref, 'tools', 'packs'], check=True,
                               capture_output=True).stdout
         subprocess.run(['tar', '-x', '-C', tmp], input=arch, check=True)
         code = ('import sys, os, json\nsys.path.insert(0, sys.argv[1])\nimport fmtgame\nd = sys.argv[2]\nout = {}\n'
@@ -79,7 +80,7 @@ def refresh():
                        cwd=tmp)
     ver = open(os.path.join(packs, 'VERSION.txt')).read().split('\n')[0] if os.path.exists(
         os.path.join(packs, 'VERSION.txt')) else ''
-    json.dump({'ref': ref, 'sha': sha, 'packs': os.path.basename(packs), 'packs_date': ver},
+    json.dump({'ref': ref, 'tools': os.environ.get('FMT_TOOLS_REF', ref), 'sha': sha, 'packs': os.path.basename(packs), 'packs_date': ver},
               open(os.path.join(DATA, 'source.json'), 'w'), indent=1)
     print(f'data/: {ref} {sha}, FORMAT texts from {os.path.basename(packs)}')
 
