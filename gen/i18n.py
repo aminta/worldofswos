@@ -31,7 +31,7 @@ CONTINENT = {
 
 T = {
  'en': dict(
-    soon='Coming soon', soon_dl='The 4.0 patcher: October 2026',
+    soon='Coming soon', soon_dl='The 4.0 patcher: by the end of October 2026',
     soon_install='Version 4.0, with the World 2026-27, is coming soon: the patcher will be on this page on release day. These are the steps you will follow.',
     visits='Visits',
     frames=['CLASSIC CAREERS: the historic worlds', 'WORLD 2026-27: the countries of Europe',
@@ -142,7 +142,7 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
-    soon='Coming soon', soon_dl='Il patcher della 4.0: ottobre 2026',
+    soon='Coming soon', soon_dl='Il patcher della 4.0: entro fine ottobre 2026',
     soon_install='La versione 4.0, con il Mondo 2026-27, arriva a breve: il giorno del rilascio il patcher sarà su questa pagina. Questi sono i passi che seguirai.',
     visits='Visite',
     frames=['CARR. STORICHE: i mondi storici', 'MONDO 2026-27: le nazioni d\'Europa',
@@ -251,7 +251,7 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
-    soon='Coming soon', soon_dl='Le patcher de la 4.0 : octobre 2026',
+    soon='Coming soon', soon_dl='Le patcher de la 4.0 : d\'ici fin octobre 2026',
     soon_install='La version 4.0, avec le Monde 2026-27, arrive bientôt : le jour de la sortie, le patcher sera sur cette page. Voici les étapes que vous suivrez.',
     visits='Visites',
     frames=["CARR. D'ANTAN : les mondes historiques", "MONDE 2026-27 : les pays d'Europe",
@@ -362,7 +362,7 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
-    soon='Coming soon', soon_dl='Der Patcher der 4.0: Oktober 2026',
+    soon='Coming soon', soon_dl='Der Patcher der 4.0: bis Ende Oktober 2026',
     soon_install='Version 4.0 mit der Welt 2026-27 kommt bald: Am Tag der Veröffentlichung ist der Patcher auf dieser Seite. Das sind die Schritte, die du dann gehst.',
     visits='Besuche',
     frames=['KLASS. KARRIERE: die historischen Welten', 'WELT 2026-27: die Länder Europas',
