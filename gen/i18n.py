@@ -117,7 +117,7 @@ T = {
     unofficial='Unofficial, free fan mod. Not affiliated with or endorsed by Sensible Software, its successors or '
                'the owners of the game, nor by any league, federation or UEFA. All names of clubs and competitions '
                'are used only to describe real football.',
-    by='A mod by Davide Lorigliola and the SWOS community.',
+    by='A mod by Davide Lorigliola, member of the association 12 Bit Retrogaming Trieste, and the SWOS community.',
     source='Source code and releases on GitHub',
     # countries
     h_countries='Every country, every competition',
@@ -228,7 +228,7 @@ T = {
     unofficial='Mod amatoriale gratuita e non ufficiale. Non è affiliata né approvata da Sensible Software, dai suoi '
                'successori o dai proprietari del gioco, né da leghe, federazioni o dalla UEFA. I nomi di squadre e '
                'competizioni servono solo a descrivere il calcio vero.',
-    by='Una mod di Davide Lorigliola e della comunità di SWOS.',
+    by='Una mod di Davide Lorigliola, membro dell\'associazione 12 Bit Retrogaming Trieste, e della comunità di SWOS.',
     source='Codice sorgente e release su GitHub',
     h_countries='Ogni nazione, ogni competizione',
     countries_lead='{n} nazioni e ogni competizione giocabile, con la sua formula, come la gioca il Mondo 2026-27. '
@@ -338,7 +338,7 @@ T = {
     unofficial="Mod de fan gratuit et non officiel. Il n'est ni affilié ni approuvé par Sensible Software, ses "
                "successeurs ou les propriétaires du jeu, ni par aucune ligue, fédération ou l'UEFA. Les noms des "
                "clubs et des compétitions ne servent qu'à décrire le vrai football.",
-    by='Un mod de Davide Lorigliola et de la communauté SWOS.',
+    by='Un mod de Davide Lorigliola, membre de l\'association 12 Bit Retrogaming Trieste, et de la communauté SWOS.',
     source='Code source et versions sur GitHub',
     h_countries='Chaque pays, chaque compétition',
     countries_lead="{n} pays et chaque compétition jouable, avec sa formule, telle que la joue le Monde 2026-27. "
@@ -447,7 +447,7 @@ T = {
     unofficial='Inoffizielle, kostenlose Fan-Mod. Weder verbunden mit noch unterstützt von Sensible Software, deren '
                'Nachfolgern oder den Rechteinhabern des Spiels, noch von Ligen, Verbänden oder der UEFA. Die Namen '
                'von Vereinen und Wettbewerben dienen nur dazu, den echten Fußball zu beschreiben.',
-    by='Eine Mod von Davide Lorigliola und der SWOS-Community.',
+    by='Eine Mod von Davide Lorigliola, Mitglied des Vereins 12 Bit Retrogaming Trieste, und der SWOS-Community.',
     source='Quellcode und Releases auf GitHub',
     h_countries='Jedes Land, jeder Wettbewerb',
     countries_lead='{n} Länder und jeder spielbare Wettbewerb mit seinem Modus, wie ihn die Welt 2026-27 spielt. '

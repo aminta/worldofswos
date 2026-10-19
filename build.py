@@ -34,6 +34,9 @@ REPO = 'https://github.com/aminta/swos-9697-mod'
 PATCHER = REPO + '/releases/latest/download/swos-9697-mod-patcher.html'
 RELEASES = REPO + '/releases'
 RELEASED = False        # False until 4.0 is on GitHub: download buttons and the install section say "Coming soon"
+TWELVE_BIT_URL = ''      # the 12 Bit Retrogaming site (to confirm with the 12 Bit sessions)
+_tb = '<img class="assoc-logo" src="/static/img/12bit.png" width="64" height="80" alt="12 Bit Retrogaming Trieste">'
+TWELVE_BIT = f'<a href="{TWELVE_BIT_URL}">{_tb}</a>' if TWELVE_BIT_URL else _tb
 GOATCOUNTER = 'worldofswos'  # GoatCounter code (https://<code>.goatcounter.com): cookieless visit counter; '' = none
 DATA = os.path.join(ROOT, 'data')
 OUT = os.path.join(ROOT, 'site')
@@ -184,8 +187,8 @@ def counter(lang):
     if not GOATCOUNTER:
         return ''
     g = f'https://{GOATCOUNTER}.goatcounter.com'
-    return (f'<p class="counter" data-gc="{g}" hidden><span class="px">{esc(T[lang]["visits"])}</span> <b class="px">------</b></p>'
-            f'<script data-goatcounter="{g}/count" async src="https://gc.zgo.at/count.js"></script>')
+    # counting only: the numbers are on Davide's GoatCounter dashboard, not shown on the site
+    return f'<script data-goatcounter="{g}/count" async src="https://gc.zgo.at/count.js"></script>'
 
 
 def page(lang, path, title, body, desc='', active=None, langs=None):
@@ -237,7 +240,7 @@ def page(lang, path, title, body, desc='', active=None, langs=None):
 </main>
 <footer class="foot"><div class="wrap">
 <p><strong>{esc(t['unofficial'])}</strong></p>
-<p>{esc(t['by'])} <a href="{REPO}">{esc(t['source'])}</a>.</p>{counter(lang)}
+<div class="assoc">{TWELVE_BIT}<p>{esc(t['by'])} <a href="{REPO}">{esc(t['source'])}</a>.</p></div>{counter(lang)}
 </div></footer>
 </body>
 </html>
