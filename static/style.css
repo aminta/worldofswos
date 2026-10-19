@@ -179,6 +179,7 @@ summary { cursor: pointer; font-family: var(--pixel); font-weight: 700; text-tra
 details[open] summary { margin-bottom: 12px; }
 
 .shot { margin: 0; background: #000; border: 3px solid var(--line); }
+.shot img { display: block; width: 100%; height: auto; image-rendering: pixelated; }
 .shot figcaption { padding: 8px 12px; font-size: 14px; color: var(--dim); background: var(--panel); }
 
 .foot { border-top: 3px solid var(--line); background: #020826; padding: 26px 0 40px; color: var(--dim); font-size: 14px; margin-top: 40px; }

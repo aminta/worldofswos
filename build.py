@@ -27,8 +27,9 @@ from i18n import CONTINENT, GAME, LANG_NAME, LANGS, LOCALE, T   # noqa: E402
 
 SITE_URL = 'https://worldofswos.com'
 REPO = 'https://github.com/aminta/swos-9697-mod'
-PATCHER = REPO + '/releases/latest/download/swos-9697-mod-patcher.html'
-RELEASES = REPO + '/releases/latest'
+# 4.0 is not released yet: both point to the releases page (at release: /releases/latest/download/swos-9697-mod-patcher.html)
+PATCHER = REPO + '/releases'
+RELEASES = REPO + '/releases'
 DATA = os.path.join(ROOT, 'data')
 OUT = os.path.join(ROOT, 'site')
 CONTS = ['europe', 'north_america', 'south_america', 'asia', 'oceania', 'africa']
@@ -41,7 +42,13 @@ CONT_MD = {'Europe': 'europe', 'North and Central America': 'north_america', 'So
 def refresh():
     mod = os.path.expanduser(os.environ.get('SWOS_MOD', '~/swos-mod'))
     ref = os.environ.get('SWOS_REF', 'world-2025-26')
-    packs = os.path.expanduser(os.environ.get('FMT_PACKS', '~/swos-mod/internal/world2526/world5tm-rel40rc1'))
+    packs = os.environ.get('FMT_PACKS')
+    if not packs:                                   # the newest release-candidate world packs
+        base = os.path.join(mod, 'internal', 'world2526')
+        cands = [os.path.join(base, x) for x in os.listdir(base) if x.startswith('world5tm-rel40')
+                 and os.path.isdir(os.path.join(base, x))]
+        packs = max(cands, key=os.path.getmtime)
+    packs = os.path.expanduser(packs)
     os.makedirs(DATA, exist_ok=True)
 
     def show(path):
@@ -241,6 +248,8 @@ def home(d, lang):
     steps = ''.join('<li>' + st.format(careers=f'<strong>{GAME["careers"][lang]}</strong>',
                                          world=f'<strong>{GAME["world"][lang]}</strong>') + '</li>'
                     for st in t['steps'])
+    shots = ''.join(f'<figure class="shot"><img src="/static/img/{f}.png" width="1600" height="1200" loading="lazy" '
+                    f'alt="{esc(c)}"><figcaption>{esc(c)}</figcaption></figure>' for f, c in t['shots'])
     body = f'''<section class="hero"><div class="wrap">
 {logo_svg(240, t['site']).replace('<svg ', '<svg class="logo" ', 1)}
 <p class="px" style="color:var(--dim);margin:0 0 14px">{esc(t['kicker'])}</p>
@@ -261,6 +270,8 @@ def home(d, lang):
 <div class="cards">{cards}</div>
 <h2>{esc(t['h_classic'])}</h2>
 <p>{t['classic']}</p>
+<h2>{esc(t['h_shots'])}</h2>
+<div class="cards">{shots}</div>
 <h2 id="install">{esc(t['h_install'])}</h2>
 <ol class="steps">{steps}</ol>
 <p class="note" style="margin-top:14px">{esc(t['install_note'])}</p>
@@ -399,6 +410,7 @@ def credits(d, lang):
     wip = f'<p class="panel">{esc(t["lang_wip"])}</p>' if t['lang_wip'] else ''
     body = f'''<div class="wrap page-head"><h1>{esc(t['h_credits'])}</h1><p>{esc(t['credits_lead'])}</p></div>
 <div class="wrap doc" lang="{'it' if lang == 'it' else 'en'}">{wip}{md.render(cred[1:], _notes_link(lang))}
+<h2>{esc(t['testers'])}</h2><p>{t['testers_p']}</p>
 <p>{t['thanks_dani']}</p></div>'''
     return page(lang, 'credits/', t['h_credits'], body, active='credits')
 

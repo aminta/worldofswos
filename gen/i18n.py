@@ -29,6 +29,10 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    h_shots='Screens from the game',
+    shots=[('fmt_zones_premier_p1', 'The FORMAT page of the Premier League, with the colours of its table'),
+           ('fmt_cl_p1', 'The FORMAT page of the UEFA Champions League: the league phase of 36')],
+    testers_p='<strong>Marco</strong> (purple kits, menu music with SWOS++), <strong>Daniele</strong> (the season-end crash with a weak club). Thank you!',
     site='World of SWOS', sub='SWOS 96/97 Mod',
     skip='Skip to content', menu='Menu', lang_label='Language',
     nav_home='Home', nav_world='World 2026-27', nav_countries='Countries', nav_classic='Classic careers',
@@ -118,6 +122,10 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    h_shots='Schermate dal gioco',
+    shots=[('fmt_zones_premier_p1', 'La pagina FORMULA della Premier League, con i colori della classifica'),
+           ('fmt_cl_p1', 'La pagina FORMULA della UEFA Champions League: la fase campionato a 36')],
+    testers_p='<strong>Marco</strong> (le maglie viola, la musica dei menu con SWOS++), <strong>Daniele</strong> (il blocco di fine stagione con una squadra debole). Grazie!',
     site='World of SWOS', sub='SWOS 96/97 Mod',
     skip='Vai al contenuto', menu='Menu', lang_label='Lingua',
     nav_home='Home', nav_world='Mondo 2026-27', nav_countries='Nazioni', nav_classic='Carriere storiche',
@@ -205,6 +213,10 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    h_shots='Écrans du jeu',
+    shots=[('fmt_zones_premier_p1', 'La page FORMULE de la Premier League, avec les couleurs de son classement'),
+           ('fmt_cl_p1', 'La page FORMULE de la Ligue des champions de l\'UEFA : la phase de ligue à 36')],
+    testers_p='<strong>Marco</strong> (les maillots violets, la musique des menus avec SWOS++), <strong>Daniele</strong> (le blocage de fin de saison avec un club faible). Merci !',
     site='World of SWOS', sub='SWOS 96/97 Mod',
     skip='Aller au contenu', menu='Menu', lang_label='Langue',
     nav_home='Accueil', nav_world='Monde 2026-27', nav_countries='Pays', nav_classic="Carrières d'antan",
@@ -294,6 +306,10 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    h_shots='Bilder aus dem Spiel',
+    shots=[('fmt_zones_premier_p1', 'Die MODUS-Seite der Premier League mit den Farben ihrer Tabelle'),
+           ('fmt_cl_p1', 'Die MODUS-Seite der UEFA Champions League: die Ligaphase mit 36 Vereinen')],
+    testers_p='<strong>Marco</strong> (lila Trikots, Menümusik mit SWOS++), <strong>Daniele</strong> (der Absturz am Saisonende mit einem schwachen Verein). Danke!',
     site='World of SWOS', sub='SWOS 96/97 Mod',
     skip='Zum Inhalt', menu='Menü', lang_label='Sprache',
     nav_home='Start', nav_world='Welt 2026-27', nav_countries='Länder', nav_classic='Klassische Karrieren',
