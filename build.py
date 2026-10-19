@@ -25,6 +25,7 @@ sys.path.insert(0, os.path.join(ROOT, 'gen'))
 import md                                                   # noqa: E402
 import tr                                                   # noqa: E402
 import classic                                              # noqa: E402
+import ogimage                                              # noqa: E402
 from i18n import CONTINENT, GAME, LANG_NAME, LANGS, LOCALE, T   # noqa: E402
 
 SITE_URL = 'https://worldofswos.com'
@@ -214,6 +215,9 @@ def page(lang, path, title, body, desc='', active=None, langs=None):
 <meta property="og:description" content="{esc(desc or t['meta_home'])}">
 <meta property="og:type" content="website"><meta property="og:url" content="{SITE_URL}{url}">
 <meta property="og:locale" content="{LOCALE[lang]}">
+<meta property="og:image" content="{SITE_URL}/static/og-{lang}.png"><meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(t['tagline'])}">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0a1a6e">
 <link rel="icon" href="/static/logo.svg" type="image/svg+xml">
 <link rel="preload" href="/static/fonts/silkscreen-700-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -541,6 +545,10 @@ def build():
         shutil.rmtree(OUT)
     shutil.copytree(os.path.join(ROOT, 'static'), os.path.join(OUT, 'static'))
     write('static/logo.svg', logo_svg(64, 'World of SWOS'))
+    for lang in LANGS:                              # the social preview cards
+        t = T[lang]
+        ogimage.card(os.path.join(OUT, 'static', f'og-{lang}.png'), t['tagline'], t['concept'],
+                     '' if RELEASED else t['soon'], t['soon_dl'])
     urls = []
     for lang in LANGS:
         pages = {'': home(d, lang), 'countries/': countries_index(d, lang), 'world/': world(d, lang),
