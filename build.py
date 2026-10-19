@@ -398,6 +398,20 @@ def notes_part(d, lang):
     return main, cred, 0
 
 
+# the harness frames per language; until a language's frame is right, the Italian one stands in
+FRAMES = ['careers-menu', 'europe-countries', 'table-colours', 'cl-league-phase']
+FRAME_FALLBACK = {'table-colours': {'en', 'fr', 'de'}}   # rc1: zone colours only in the Italian exe (recapture coming)
+
+
+def frames(lang):
+    out = []
+    for f, cap in zip(FRAMES, T[lang]['frames']):
+        fl = 'it' if lang in FRAME_FALLBACK.get(f, ()) else lang
+        out.append(f'<figure class="shot"><img src="/static/img/{f}-{fl}.png" width="1600" height="1200" '
+                   f'loading="lazy" alt="{esc(cap)}"><figcaption>{esc(cap)}</figcaption></figure>')
+    return f'<div class="cards" style="margin:18px 0 26px;grid-template-columns:repeat(auto-fill,minmax(min(100%,440px),1fr))">{"".join(out)}</div>'
+
+
 def world(d, lang):
     t = T[lang]
     main, _, miss = notes_part(d, lang)
@@ -407,6 +421,7 @@ def world(d, lang):
     l2 = lang
     body = f'''<div class="wrap page-head"><h1>{esc(t['h_world'])}</h1><p class="tagline px" style="color:var(--gold)">
 {esc(t['world_lead'])}</p></div>
+<div class="wrap">{frames(lang)}</div>
 <div class="wrap doc" lang="{l2}">{wip}<nav class="panel" aria-label="{esc(t['toc'])}"><strong>{esc(t['toc'])}</strong>
 <ul class="toc">{toc}</ul></nav>
 {md.render(main, _notes_link(lang), shift=-1, ids=md.slug)}</div>'''

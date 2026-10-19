@@ -31,6 +31,8 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    frames=['CLASSIC CAREERS: the historic worlds', 'WORLD 2026-27: the countries of Europe',
+            'Serie A mid-season, with its zones', 'The Champions League table of 36 after 4 matchdays'],
     h_shots='Screens from the game',
     shots=[('zones_final_premier', 'The Premier League 2026-27 table with its zones: Champions League, Europa League, Conference League, relegation'),
            ('fmt_zones_premier_p1', 'The FORMAT page of the Premier League'),
@@ -126,6 +128,8 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    frames=['CARR. STORICHE: i mondi storici', 'MONDO 2026-27: le nazioni d\'Europa',
+            'La Serie A a metà stagione, con le sue zone', 'La classifica a 36 della Champions League dopo 4 giornate'],
     h_shots='Schermate dal gioco',
     shots=[('zones_final_premier', 'La classifica della Premier League 2026-27 con le sue zone: Champions League, Europa League, Conference League, retrocessione'),
            ('fmt_zones_premier_p1', 'La pagina FORMULA della Premier League'),
@@ -219,6 +223,8 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    frames=["CARR. D'ANTAN : les mondes historiques", "MONDE 2026-27 : les pays d'Europe",
+            'La Serie A à mi-saison, avec ses zones', 'Le classement à 36 de la Ligue des champions après 4 journées'],
     h_shots='Écrans du jeu',
     shots=[('zones_final_premier', 'Le classement de la Premier League 2026-27 avec ses zones : Champions League, Europa League, Conference League, relégation'),
            ('fmt_zones_premier_p1', 'La page FORMULE de la Premier League'),
@@ -314,6 +320,8 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    frames=['KLASS. KARRIERE: die historischen Welten', 'WELT 2026-27: die Länder Europas',
+            'Die Serie A zur Saisonmitte, mit ihren Zonen', 'Die Tabelle der Champions League mit 36 Vereinen nach 4 Spieltagen'],
     h_shots='Bilder aus dem Spiel',
     shots=[('zones_final_premier', 'Die Tabelle der Premier League 2026-27 mit ihren Zonen: Champions League, Europa League, Conference League, Abstieg'),
            ('fmt_zones_premier_p1', 'Die MODUS-Seite der Premier League'),
