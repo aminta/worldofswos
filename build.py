@@ -35,7 +35,7 @@ PATCHER = REPO + '/releases/latest/download/swos-9697-mod-patcher.html'
 RELEASES = REPO + '/releases'
 RELEASED = False        # False until 4.0 is on GitHub: download buttons and the install section say "Coming soon"
 TWELVE_BIT_URL = 'https://www.facebook.com/retrogaming12bit'   # https://12bit.it when the new site is out
-_tb = '<img class="assoc-logo" src="/static/img/12bit.png" width="64" height="80" alt="12 Bit Retrogaming Trieste">'
+_tb = '<img class="assoc-logo" src="/static/img/12bit.png" width="64" height="80" alt="12 Bit Retrogaming, associazione culturale (Trieste)">'
 TWELVE_BIT = f'<a href="{TWELVE_BIT_URL}">{_tb}</a>' if TWELVE_BIT_URL else _tb
 GOATCOUNTER = 'worldofswos'  # GoatCounter code (https://<code>.goatcounter.com): cookieless visit counter; '' = none
 DATA = os.path.join(ROOT, 'data')
