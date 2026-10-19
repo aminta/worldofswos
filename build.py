@@ -502,6 +502,10 @@ def root_index():
 <title>World of SWOS · SWOS 96/97 Mod</title>
 <meta name="description" content="{esc(T['en']['meta_home'])}">
 <link rel="canonical" href="{SITE_URL}/en/">{alt}<link rel="alternate" hreflang="x-default" href="{SITE_URL}/">
+<meta property="og:title" content="World of SWOS · SWOS 96/97 Mod"><meta property="og:type" content="website">
+<meta property="og:description" content="{esc(T['en']['meta_home'])}"><meta property="og:url" content="{SITE_URL}/">
+<meta property="og:image" content="{SITE_URL}/static/og-en.png"><meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/static/logo.svg" type="image/svg+xml"><link rel="stylesheet" href="/static/style.css">
 <script>
 (function () {{
