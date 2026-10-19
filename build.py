@@ -310,6 +310,9 @@ def home(d, lang):
 <div class="cards">{cards}</div>
 <h2>{esc(t['h_classic'])}</h2>
 <p>{t['classic']}</p>
+<h2 id="next">{esc(t['h_next'])}</h2>
+<div class="panel next"><p><span class="next-tag px">4.2</span> {esc(t['next_text'])}</p>
+<p class="note" style="margin:0">{esc(t['next_note'])}</p></div>
 <h2>{esc(t['h_shots'])}</h2>
 {shots}
 <h2 id="install">{esc(t['h_install'])}</h2>

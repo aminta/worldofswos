@@ -31,6 +31,9 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    h_next='Coming next',
+    next_text='In 4.2: the national teams of the World 2026-27, complete and exact. Real squads, call-ups from the clubs of the world and job offers as national team coach; the 2030 World Cup with 48 teams and Euro 2028 with 24; the real qualifiers of every confederation; the Nations League.',
+    next_note='A plan, not a date.',
     soon='Coming soon', soon_dl='The 4.0 patcher: by the end of October 2026',
     soon_install='Version 4.0, with the World 2026-27, is coming soon: the patcher will be on this page on release day. These are the steps you will follow.',
     visits='Visits',
@@ -141,6 +144,9 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    h_next='In arrivo',
+    next_text='Nella 4.2: le nazionali del Mondo 2026-27, complete ed esatte. Rose vere, convocazioni dai club del mondo e offerte di lavoro da commissario tecnico; il Mondiale 2030 a 48 squadre e l\'Europeo 2028 a 24; le qualificazioni vere di ogni confederazione; la Nations League.',
+    next_note='Un programma, non una data.',
     soon='Coming soon', soon_dl='Il patcher della 4.0: entro fine ottobre 2026',
     soon_install='La versione 4.0, con il Mondo 2026-27, arriva a breve: il giorno del rilascio il patcher sarà su questa pagina. Questi sono i passi che seguirai.',
     visits='Visite',
@@ -249,6 +255,9 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    h_next='Prochainement',
+    next_text="Dans la 4.2 : les sélections nationales du Monde 2026-27, complètes et exactes. De vrais effectifs, des convocations depuis les clubs du monde et des offres d'emploi de sélectionneur ; la Coupe du monde 2030 à 48 équipes et l'Euro 2028 à 24 ; les vraies qualifications de chaque confédération ; la Ligue des nations.",
+    next_note='Un programme, pas une date.',
     soon='Coming soon', soon_dl='Le patcher de la 4.0 : d\'ici fin octobre 2026',
     soon_install='La version 4.0, avec le Monde 2026-27, arrive bientôt : le jour de la sortie, le patcher sera sur cette page. Voici les étapes que vous suivrez.',
     visits='Visites',
@@ -359,6 +368,9 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    h_next='Als Nächstes',
+    next_text='In 4.2: die Nationalmannschaften der Welt 2026-27, vollständig und genau. Echte Kader, Nominierungen aus den Vereinen der Welt und Jobangebote als Nationaltrainer; die WM 2030 mit 48 Teams und die EM 2028 mit 24; die echten Qualifikationen jeder Konföderation; die Nations League.',
+    next_note='Ein Plan, kein Termin.',
     soon='Coming soon', soon_dl='Der Patcher der 4.0: bis Ende Oktober 2026',
     soon_install='Version 4.0 mit der Welt 2026-27 kommt bald: Am Tag der Veröffentlichung ist der Patcher auf dieser Seite. Das sind die Schritte, die du dann gehst.',
     visits='Besuche',
