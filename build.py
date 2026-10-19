@@ -289,7 +289,7 @@ def home(d, lang):
         dl_btn = dl_btn2 = ''                       # the red "coming soon" sticker at the top of the page instead
         soon_inst = f'<p class="panel"><strong class="px" style="color:var(--gold)">{esc(t["soon"])}</strong> {esc(t["soon_install"])}</p>'
     sticker = '' if RELEASED else (f'<p class="soon-sticker" role="note"><b>{esc(t["soon"])}</b>'
-                                   f'<span>{esc(t["soon_dl"])}</span></p>')
+                                   f'<span>{esc(t["soon_dl"])}</span><i>{esc(t["soon_test"])}</i></p>')
     body = f'''<section class="hero"><div class="wrap">{sticker}
 {logo_svg(240, t['site']).replace('<svg ', '<svg class="logo" ', 1)}
 <p class="px" style="color:var(--dim);margin:0 0 14px">{esc(t['kicker'])}</p>

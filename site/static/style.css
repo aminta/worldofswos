@@ -227,3 +227,6 @@ details[open] summary { margin-bottom: 12px; }
 .next { border-color: var(--orange); }
 .next-tag { display: inline-block; background: var(--orange); color: #fff; padding: 2px 10px; margin-right: 6px; font-size: 16px;
   border: 2px solid; border-color: var(--orange-hi) #6e2c06 #6e2c06 var(--orange-hi); }
+
+.soon-sticker i { display: block; margin-top: 8px; padding-top: 6px; border-top: 2px solid rgba(255,255,255,.45); font-style: normal;
+  font-family: var(--pixel); font-size: 12px; text-transform: uppercase; color: #ffe6a0; text-shadow: 2px 2px 0 #4a0206; }
