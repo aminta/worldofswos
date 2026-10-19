@@ -1,4 +1,8 @@
-# DNS per worldofswos.com e worldofswos.it (da applicare a mano da Davide, solo dopo il suo ok)
+# DNS per worldofswos.com e worldofswos.it (da applicare a mano da Davide su Register.it)
+
+Stato al 2026-10-19: repo `aminta/worldofswos` pubblico, GitHub Pages attivo con dominio `worldofswos.com`.
+Oggi entrambi i domini puntano al parcheggio di Register.it (A 195.110.124.133, `www` CNAME al dominio).
+Register.it: Pannello > worldofswos.com > DOMINIO & DNS > **Configurazione DNS** (per il .it: **Redirect e sottodomini**).
 
 Il sito è servito da GitHub Pages (repo `aminta/worldofswos`, cartella `site/`, file `CNAME` = `worldofswos.com`).
 Valori ufficiali GitHub: https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site
