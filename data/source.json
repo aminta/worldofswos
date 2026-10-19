@@ -1,6 +1,7 @@
 {
  "ref": "world-2025-26",
- "sha": "089c696",
+ "tools": "fmt-fix",
+ "sha": "1d0f9cb",
  "packs": "world5tm-rel40rc1c",
  "packs_date": ""
 }

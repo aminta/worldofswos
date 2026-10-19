@@ -2,7 +2,7 @@
 
 ## English
 
-**SWOS 96/97 Mod 4.0: the World 2026-27 career and the 1996-97 game as it really was** (DRAFT)
+**SWOS 96/97 Mod 4.0: the World 2026-27 career, today's football as it really is** (DRAFT)
 
 
 A historic career world of the **2026-27 season**: 91 countries, 2,378 clubs (Italy down to the real Serie D: 156 clubs in 9 groups), plus 97 clubs waiting outside
@@ -60,7 +60,24 @@ Not one fixed formula for everybody: each league plays the season the way its ow
     and Conference Finals, single matches at the higher seed; the MLS Cup at the club with the better record. Extra
     time and penalties from the Conference Semifinals. Playable by your club, with the real round names.
   Declared: the tables are the two conferences; the Supporters' Shield is not shown as a separate table.
-
+- **Title play-offs where the champion is decided after the table**:
+  - **Canada** (CPL): the top 4, semi-finals 1st v 4th and 2nd v 3rd over two legs (the better placed hosts the
+    return), a single final at the better placed's ground.
+  - **Australia** (A-League Men finals series): the top 6, single elimination finals 3rd v 6th and 4th v 5th,
+    two-legged semi-finals re-seeded (the 1st meets the lowest survivor), a single Grand Final at the better
+    placed's ground.
+  - **Costa Rica**: semi-finals 1st v 4th and 2nd v 3rd and a final, two legs each, then the two-legged Gran Final
+    between the table's leader and the play-off winner, not played when they are the same club.
+  - **Malta**: the champion comes from the Opening and Closing Rounds: one club winning both is champion with no
+    match; otherwise a Finalissima between the two round winners, or, with three or four clubs in the top two of the
+    rounds, a decider or a Final Four seeded by aggregate points.
+  Extra time and penalties where the tie is level. Declared for Malta: single matches at a neutral ground (the
+  rules give no format); equal season points in the Final Four seeding are split by the Closing Round place; no
+  third-place match.
+  The play-offs' winner is the champion and takes the champion's continental place (e.g. Malta's Final Four winner
+  goes to the Champions League).
+  Your club keeps its real table place in the season record and, when it wins the title play-off, gets an extra
+  line with the league's name and WINNERS.
 - **Leagues with an odd number of clubs play real rounds**: one club rests each matchday, as in the real
   competitions (El Salvador's Tercera, Gibraltar, New Zealand, India, Taiwan ...); the original game's tables for odd
   sizes were not rounds.
@@ -71,6 +88,8 @@ Not one fixed formula for everybody: each league plays the season the way its ow
   its real round of 16 (the winner into the Serie C play-off), the Taca da Liga in its real 8-club format, the
   Scottish League Cup, the J.League Cup, and the league cups of Northern Ireland, Egypt, Qatar, the UAE, South Africa,
   Wales, Iceland, Finland, Chile and Peru.
+
+
 
 *At least everything the original game had*
 - **Never fewer leagues or divisions than SWOS 96/97**: England's four divisions, with League Two and its 4th-7th
@@ -84,6 +103,8 @@ Not one fixed formula for everybody: each league plays the season the way its ow
 
 *European cups (UEFA 2026-27)*
 - **The current official names**: UEFA Champions League, UEFA Europa League, UEFA Conference League, on every screen.
+- **The league phase's competition info** (STAT > INFO): one table of 36, top 8 to the round of 16, 9th-24th to the
+  play-offs.
 - **No away goals in 2026-27** (UEFA abolished them in 2021-22; every federation's two-legged rounds followed): a
   level aggregate goes to extra time and penalties, or straight to penalties where the regulation says so (Copa do
   Brasil rounds 5-8, EFL Cup semi-finals, the Chilean Copa de la Liga semi-finals), in played and simulated ties
@@ -420,9 +441,11 @@ Not one fixed formula for everybody: each league plays the season the way its ow
 - The game files hold derived data only: the squads, skills and prices are computed from these sources (the game's
   own price scale); no market values, ratings or source pages are shipped.
 
+
+
 ## Italiano
 
-**SWOS 96/97 Mod 4.0: la carriera Mondo 2026-27 e il gioco 1996-97 com'era davvero** (BOZZA)
+**SWOS 96/97 Mod 4.0: la carriera Mondo 2026-27, il calcio di oggi com'è davvero** (BOZZA)
 
 
 Un mondo di carriera storica della **stagione 2026-27**: 91 nazioni, 2.378 club (l'Italia fino alla Serie D vera: 156 club in 9 gironi), più 97 club in attesa fuori dal
@@ -472,7 +495,34 @@ Non una formula uguale per tutti: ogni campionato gioca la stagione come l'ha sc
 - **Argentina 2026**: la Liga Profesional a 30 in due zone da 15, Apertura e Clausura (16 giornate ciascuno: girone di
   zona, il clasico nel giorno di riposo, una giornata interzonale sorteggiata), la classifica annuale, retrocessione
   per promedio (3 stagioni) e per classifica annuale.
-
+- **Major League Soccer 2026**: 30 club nelle Conference Est e Ovest (15 + 15), il calendario vero di 34 partite
+  (28 nella propria conference e 6 contro l'altra) nelle giornate e date vere, pausa per i Mondiali compresa. A
+  parità di punti contano le vittorie, poi la differenza reti, poi i gol fatti; il club col miglior record assoluto
+  (il Supporters' Shield) ospita la MLS Cup.
+  - **Play-off della MLS Cup**: le prime 9 di ogni conference. Wild Card 8ª contro 9ª (gara secca in casa
+    dell'8ª, in caso di pareggio subito i rigori); primo turno al meglio delle tre, 1ª contro la vincente della Wild
+    Card, 2ª-7ª, 3ª-6ª, 4ª-5ª (la meglio piazzata gioca in casa gara 1 e gara 3, una gara pari va ai rigori, gara 3
+    solo se serve); semifinali e finali di conference in gara secca in casa della meglio piazzata; la MLS Cup in
+    casa del club col record migliore. Supplementari e rigori dalle semifinali di conference. Giocabili dal tuo
+    club, coi nomi veri dei turni.
+  Dichiarato: le classifiche sono le due conference; il Supporters' Shield non ha una classifica a parte.
+- **Play-off per il titolo dove il campione si decide dopo la classifica**:
+  - **Canada** (CPL): le prime 4, semifinali 1ª-4ª e 2ª-3ª andata e ritorno (ritorno in casa della meglio
+    piazzata), finale secca in casa della meglio piazzata.
+  - **Australia** (A-League Men): le prime 6, eliminatorie secche 3ª-6ª e 4ª-5ª, semifinali andata e ritorno con
+    nuovi accoppiamenti (la 1ª contro la peggio piazzata rimasta), Grand Final secca in casa della meglio piazzata.
+  - **Costa Rica**: semifinali 1ª-4ª e 2ª-3ª e finale, andata e ritorno, poi la Gran Final andata e ritorno tra la
+    prima in classifica e la vincitrice dei play-off, non giocata se sono lo stesso club.
+  - **Malta**: il campione esce dall'Opening e dal Closing Round: chi li vince entrambi è campione senza giocare;
+    altrimenti la Finalissima tra le due vincitrici o, con tre o quattro club nei primi due posti dei due round, uno
+    spareggio o una Final Four ordinata per punti complessivi.
+  Supplementari e rigori in caso di parità. Dichiarato per Malta: partite secche in campo neutro (il regolamento
+  non dice il formato); a parità di punti nella stagione, l'ordine della Final Four segue il posto nel Closing Round;
+  niente finale per il terzo posto.
+  La vincente dei play-off è il campione e prende il posto continentale del campione (per esempio la vincente della
+  Final Four maltese va in Champions League).
+  La tua squadra tiene nella storia della stagione il suo posto vero in classifica e, se vince i play-off per il
+  titolo, ha una riga in più col nome del campionato e VINCITORE.
 - **I campionati con un numero dispari di squadre giocano giornate vere**: a ogni turno una squadra riposa, come nelle
   competizioni reali (la Tercera di El Salvador, Gibilterra, Nuova Zelanda, India, Taiwan ...); le tabelle originali
   del gioco per le dimensioni dispari non erano giornate.
@@ -483,6 +533,8 @@ Non una formula uguale per tutti: ogni campionato gioca la stagione come l'ha sc
   dell'Inghilterra), la Coppa Italia Serie C dai suoi veri ottavi (la vincente ai play-off di Serie C), la Taça da
   Liga nel suo vero formato a 8 squadre, la Scottish League Cup, la J.League Cup e le coppe di lega di Irlanda del
   Nord, Egitto, Qatar, Emirati, Sudafrica, Galles, Islanda, Finlandia, Cile e Perù.
+
+
 
 *Almeno tutto quello che aveva il gioco originale*
 - **Mai meno campionati o divisioni di SWOS 96/97**: le quattro divisioni inglesi, con la League Two e i suoi play-off
@@ -496,6 +548,8 @@ Non una formula uguale per tutti: ogni campionato gioca la stagione come l'ha sc
 
 *Coppe europee (UEFA 2026-27)*
 - **I nomi ufficiali di oggi**: UEFA Champions League, UEFA Europa League, UEFA Conference League, su ogni schermata.
+- **Info competizione della fase campionato** (STAT > INFO): una classifica da 36, prime 8 agli ottavi, 9ª-24ª agli
+  spareggi.
 - **Niente gol in trasferta nel 2026-27** (aboliti dalla UEFA nel 2021-22, e le federazioni hanno seguito): a parità
   nel totale si va ai supplementari e ai rigori, o direttamente ai rigori dove il regolamento lo prevede (Copa do
   Brasil turni 5-8, semifinali di EFL Cup e della Copa de la Liga cilena), sia nelle sfide giocate sia in quelle
@@ -856,4 +910,6 @@ Non una formula uguale per tutti: ogni campionato gioca la stagione come l'ha sc
 91 countries, 136 league divisions, 87 national cups, 14 league cups: every playable competition and its format, generated from the release build: [world-2026-27-competitions.md](world-2026-27-competitions.md).
 
 91 nazioni, 136 divisioni, 87 coppe nazionali, 14 coppe di lega: ogni competizione giocabile e la sua formula, generate dalla build della release: [world-2026-27-competitions.md](world-2026-27-competitions.md).
+
+
 
