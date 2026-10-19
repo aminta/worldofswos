@@ -36,7 +36,7 @@ def wrap(text, f, width, d):
     return lines + [cur] if cur else lines
 
 
-def card(path, tagline, concept, soon, soon_sub):
+def card(path, tagline, concept, soon, soon_sub, soon_test=''):
     im = Image.new('RGB', (W, H), (3, 10, 51))
     px = im.load()
     for y in range(H):                                   # radial blue, as the site's background
@@ -77,7 +77,7 @@ def card(path, tagline, concept, soon, soon_sub):
     shadow_text(d, (W - 40, H - 34), 'WORLDOFSWOS.COM', font(26), (255, 255, 255), off=3, anchor='rs')
     # the red diagonal sticker, under the ball (the left column)
     if soon:
-        sw, sh = 300, 150
+        sw, sh = 300, 204
         st = Image.new('RGBA', (sw + 10, sh + 10), (0, 0, 0, 0))
         sd = ImageDraw.Draw(st)
         sd.rectangle([10, 10, sw + 9, sh + 9], fill=(0, 3, 24, 255))
@@ -94,6 +94,12 @@ def card(path, tagline, concept, soon, soon_sub):
         for line in wrap(soon_sub.upper(), f3, sw - 24, sd)[:2]:
             shadow_text(sd, (sw // 2, yy), line, f3, (255, 255, 255), shadow=(74, 2, 6), off=2, anchor='mm')
             yy += 20
+        if soon_test:
+            sd.line([(20, yy - 2), (sw - 20, yy - 2)], fill=(255, 220, 210, 160), width=2)
+            f4 = font(13, False)
+            for line in wrap(soon_test.upper(), f4, sw - 20, sd)[:2]:
+                shadow_text(sd, (sw // 2, yy + 14), line, f4, (255, 230, 160), shadow=(74, 2, 6), off=2, anchor='mm')
+                yy += 20
         st = st.rotate(6, expand=True, resample=Image.BICUBIC)
-        im.paste(st, (30, 360), st)
+        im.paste(st, (30, 335), st)
     im.save(path, optimize=True)

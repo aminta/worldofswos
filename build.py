@@ -557,7 +557,7 @@ def build():
     for lang in LANGS:                              # the social preview cards
         t = T[lang]
         ogimage.card(os.path.join(OUT, 'static', f'og-{lang}.png'), t['tagline'], t['concept'],
-                     '' if RELEASED else t['soon'], t['soon_dl'])
+                     '' if RELEASED else t['soon'], t['soon_dl'], t['soon_test'])
     urls = []
     for lang in LANGS:
         pages = {'': home(d, lang), 'countries/': countries_index(d, lang), 'world/': world(d, lang),
