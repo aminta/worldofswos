@@ -13,7 +13,7 @@ GAME = {
     'careers': {'en': 'CLASSIC CAREERS', 'it': 'CARR. STORICHE', 'fr': "CARR. D'ANTAN", 'de': 'KLASS. KARRIERE'},
     'seasons': {'en': 'CLASSIC SEASONS', 'it': 'STAG. STORICHE', 'fr': "SAISONS D'ANTAN", 'de': 'SAISONKLASSIKER'},
     'tourneys': {'en': 'CLASSIC TOURNEYS', 'it': 'TORNEI STORICI', 'fr': 'TOURNOIS ANCIENS', 'de': 'TURNIERKLASSIKER'},
-    # [CHECK] the FR/DE names of the world entry: regia to confirm from the exe strings
+    # confirmed from the REL40rc1 exes (session 4.0, 2026-10-19)
     'world': {'en': 'WORLD 2026-27', 'it': 'MONDO 2026-27', 'fr': 'MONDE 2026-27', 'de': 'WELT 2026-27'},
 }
 
