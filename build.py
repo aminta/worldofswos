@@ -258,13 +258,19 @@ def home(d, lang):
                                          world=f'<strong>{GAME["world"][lang]}</strong>') + '</li>'
                     for st in t['steps'])
     shots = ''                                      # groups of frames; a frame not captured yet is left out
+    def have(f):
+        return os.path.exists(os.path.join(ROOT, 'static', 'img', f + '.png'))
+
     for g, items in t['shots']:
-        figs = ''.join(f'<figure class="shot"><img src="/static/img/{f}.png" width="1600" height="1200" loading="lazy" '
-                       f'alt="{esc(c)}"><figcaption>{esc(c)}</figcaption></figure>' for f, c in items
-                       if os.path.exists(os.path.join(ROOT, 'static', 'img', f + '.png')))
-        figs += ''.join(f'<figure class="shot soon"><div class="soon-box"><span>{esc(t["soon"])}</span></div>'
-                        f'<figcaption>{esc(c)}</figcaption></figure>' for f, c in items
-                        if not os.path.exists(os.path.join(ROOT, 'static', 'img', f + '.png')))
+        figs = ''
+        for f, c in items:                          # name-it: this language's capture when there is one
+            fl = f[:-3] + '-' + lang if f.endswith('-it') and have(f[:-3] + '-' + lang) else f
+            if have(fl):
+                figs += (f'<figure class="shot"><img src="/static/img/{fl}.png" width="1600" height="1200" '
+                         f'loading="lazy" alt="{esc(c)}"><figcaption>{esc(c)}</figcaption></figure>')
+            else:
+                figs += (f'<figure class="shot soon"><div class="soon-box"><span>{esc(t["soon"])}</span></div>'
+                         f'<figcaption>{esc(c)}</figcaption></figure>')
         if figs:
             shots += (f'<h3>{esc(g)}</h3><div class="cards" style="grid-template-columns:repeat(auto-fill,'
                       f'minmax(min(100%,440px),1fr))">{figs}</div>')
