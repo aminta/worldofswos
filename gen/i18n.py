@@ -14,6 +14,8 @@ GAME = {
     'seasons': {'en': 'CLASSIC SEASONS', 'it': 'STAG. STORICHE', 'fr': "SAISONS D'ANTAN", 'de': 'SAISONKLASSIKER'},
     'tourneys': {'en': 'CLASSIC TOURNEYS', 'it': 'TORNEI STORICI', 'fr': 'TOURNOIS ANCIENS', 'de': 'TURNIERKLASSIKER'},
     # confirmed from the REL40rc1 exes (session 4.0, 2026-10-19)
+    'e84': {'en': 'EUROPE 1984-85: First Division', 'it': 'EUROPA 1984-85: First Division',
+            'fr': 'EUROPE 1984-85 : First Division', 'de': 'EUROPA 1984-85: First Division'},
     'world': {'en': 'WORLD 2026-27', 'it': 'MONDO 2026-27', 'fr': 'MONDE 2026-27', 'de': 'WELT 2026-27'},
 }
 

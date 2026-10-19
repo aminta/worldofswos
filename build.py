@@ -24,6 +24,7 @@ VER = hashlib.md5(b''.join(open(os.path.join(ROOT, 'static', f), 'rb').read() fo
 sys.path.insert(0, os.path.join(ROOT, 'gen'))
 import md                                                   # noqa: E402
 import tr                                                   # noqa: E402
+import classic                                              # noqa: E402
 from i18n import CONTINENT, GAME, LANG_NAME, LANGS, LOCALE, T   # noqa: E402
 
 SITE_URL = 'https://worldofswos.com'
@@ -176,7 +177,7 @@ def logo_svg(size=44, title=None):
             '<rect x="20" y="5" width="2" height="2" fill="#ff9a3c"/></svg>')
 
 
-NAV = [('home', ''), ('world', 'world/'), ('countries', 'countries/'), ('install', '#install'),
+NAV = [('home', ''), ('world', 'world/'), ('countries', 'countries/'), ('classic', 'classic/'), ('install', '#install'),
        ('credits', 'credits/')]
 
 
@@ -423,6 +424,18 @@ def credits(d, lang):
     return page(lang, 'credits/', t['h_credits'], body, active='credits')
 
 
+def classic_page(d, lang):
+    t, c = T[lang], classic.C[lang]
+    names = {k: f'<strong>{esc(GAME[k][lang])}</strong>' for k in ('careers', 'seasons', 'tourneys')}
+    secs = ''.join(f'<h2>{esc(h)}</h2><p>{intro.format(**names)}</p><ul>' + ''.join(f'<li>{b}</li>' for b in bl) + '</ul>'
+                   for h, intro, bl in c['secs'])
+    body = (f'<div class="wrap page-head"><h1>{esc(t["h_classic_page"])}</h1><p>{esc(c["lead"])}</p></div>'
+            f'<div class="wrap doc">{secs}<figure class="shot" style="max-width:640px;margin-top:24px"><img '
+            f'src="/static/img/zones_final_first84.png" width="1600" height="1200" loading="lazy" alt=""><figcaption>'
+            f'{esc(GAME["e84"][lang])}</figcaption></figure></div>')
+    return page(lang, 'classic/', t['h_classic_page'], body, active='classic')
+
+
 def not_found():
     t = T['en']
     body = (f'<div class="wrap page-head" style="text-align:center"><h1>{esc(t["notfound"])}</h1>'
@@ -472,7 +485,7 @@ def build():
     urls = []
     for lang in LANGS:
         pages = {'': home(d, lang), 'countries/': countries_index(d, lang), 'world/': world(d, lang),
-                 'credits/': credits(d, lang)}
+                 'credits/': credits(d, lang), 'classic/': classic_page(d, lang)}
         for code in d['order']:
             pages[f'countries/{code}/'] = country(d, code, lang)
         for p, text in pages.items():
