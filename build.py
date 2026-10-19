@@ -436,15 +436,13 @@ def notes_part(d, lang):
 
 
 # the harness frames per language; until a language's frame is right, the Italian one stands in
-FRAMES = ['careers-menu', 'europe-countries', 'table-colours', 'cl-league-phase']
-FRAME_FALLBACK = {'table-colours': {'en', 'fr', 'de'}, 'cl-league-phase': {'en', 'fr', 'de'}}   # the populated tables
-# exist only from the Italian exe (final, 2026-10-19): the other languages show those
+FRAMES = ['careers-menu', 'europe-countries', 'serie-a-table', 'cl-league-phase']   # (name-<lang>.png, Italian fallback)
 
 
 def frames(lang):
     out = []
     for f, cap in zip(FRAMES, T[lang]['frames']):
-        fl = 'it' if lang in FRAME_FALLBACK.get(f, ()) else lang
+        fl = lang if os.path.exists(os.path.join(ROOT, 'static', 'img', f'{f}-{lang}.png')) else 'it'
         out.append(f'<figure class="shot"><img src="/static/img/{f}-{fl}.png" width="1600" height="1200" '
                    f'loading="lazy" alt="{esc(cap)}"><figcaption>{esc(cap)}</figcaption></figure>')
     return f'<div class="cards" style="margin:18px 0 26px;grid-template-columns:repeat(auto-fill,minmax(min(100%,440px),1fr))">{"".join(out)}</div>'
