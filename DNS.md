@@ -1,7 +1,9 @@
 # DNS per worldofswos.com e worldofswos.it (da applicare a mano da Davide su Register.it)
 
-Stato al 2026-10-19: repo `aminta/worldofswos` pubblico, GitHub Pages attivo con dominio `worldofswos.com`.
-Oggi entrambi i domini puntano al parcheggio di Register.it (A 195.110.124.133, `www` CNAME al dominio).
+Stato al 2026-10-19 sera: FATTO. worldofswos.com: 4 A + 4 AAAA GitHub Pages, www CNAME aminta.github.io.,
+certificato approvato, HTTPS obbligatorio. worldofswos.it: redirect di Register.it (pagina JS) verso
+http://worldofswos.com/it/ (che passa poi a https). https://worldofswos.it non risponde (Register.it non ha
+certificato per il redirect): per averlo, opzione B sotto. Record della posta (MX/TXT/SRV) lasciati intatti.
 Register.it: Pannello > worldofswos.com > DOMINIO & DNS > **Configurazione DNS** (per il .it: **Redirect e sottodomini**).
 
 Il sito è servito da GitHub Pages (repo `aminta/worldofswos`, cartella `site/`, file `CNAME` = `worldofswos.com`).
