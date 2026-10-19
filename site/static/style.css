@@ -1,0 +1,186 @@
+/* World of SWOS: the SWOS 96/97 menu look (dark blue screens, bright button bars, pixel type), modern and responsive. */
+@font-face { font-family: "Silkscreen"; font-weight: 400; font-display: swap;
+  src: url(fonts/silkscreen-400-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215; }
+@font-face { font-family: "Silkscreen"; font-weight: 400; font-display: swap;
+  src: url(fonts/silkscreen-400-latin-ext.woff2) format("woff2"); unicode-range: U+0100-024F, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Silkscreen"; font-weight: 700; font-display: swap;
+  src: url(fonts/silkscreen-700-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215; }
+@font-face { font-family: "Silkscreen"; font-weight: 700; font-display: swap;
+  src: url(fonts/silkscreen-700-latin-ext.woff2) format("woff2"); unicode-range: U+0100-024F, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+:root {
+  --deep: #030a33;
+  --navy: #0a1a6e;
+  --blue: #1430b8;
+  --panel: rgba(4, 12, 64, .78);
+  --line: #3150d8;
+  --text: #f4f4f8;
+  --dim: #b4bce6;
+  --gold: #ffd84a;
+  --green: #12a02a;
+  --green-hi: #4fd85a;
+  --orange: #d8661a;
+  --orange-hi: #ff9a3c;
+  --rose: #c8a2aa;
+  --rose-hi: #ecd0d4;
+  --shadow: #000318;
+  --pixel: "Silkscreen", ui-monospace, monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --w: 1120px;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition: none !important; } }
+body {
+  margin: 0; min-height: 100vh; color: var(--text); font: 17px/1.6 var(--sans);
+  background: var(--deep) radial-gradient(ellipse 90% 70% at 50% 18%, #1a3ad0 0%, var(--navy) 42%, var(--deep) 100%) fixed;
+}
+/* the faint meridians and parallels of the game's world map, drawn, not copied */
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: .16;
+  background:
+    repeating-radial-gradient(ellipse 140% 60% at 50% 30%, transparent 0 46px, #6f8cff 47px 48px),
+    repeating-linear-gradient(90deg, transparent 0 95px, #6f8cff 96px 97px);
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, #000 30%, transparent 85%);
+}
+a { color: var(--gold); text-underline-offset: 3px; }
+a:hover { color: #fff; }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+img { max-width: 100%; height: auto; }
+.wrap { width: min(var(--w), 100% - 32px); margin-inline: auto; }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--gold); color: #000; padding: 8px 12px; z-index: 9; }
+.skip:focus { left: 8px; }
+
+/* pixel type with the game's hard drop shadow */
+.px, h1, h2, h3, .btn, .nav a, .lang a, .stat b, .bar {
+  font-family: var(--pixel); font-weight: 700; letter-spacing: .02em; text-transform: uppercase;
+  text-shadow: 2px 2px 0 var(--shadow);
+}
+h1 { font-size: clamp(21px, 3.8vw, 40px); line-height: 1.15; margin: 0 0 .4em; overflow-wrap: break-word; hyphens: auto; }
+h2, h3, .bar, .comp .name { overflow-wrap: break-word; hyphens: auto; }
+h2 { font-size: clamp(20px, 3vw, 28px); line-height: 1.2; margin: 1.6em 0 .6em; color: var(--gold); }
+h3 { font-size: 18px; line-height: 1.3; margin: 1.4em 0 .4em; color: #fff; }
+p { margin: 0 0 1em; }
+
+/* header: the title bar of every SWOS screen */
+.top { position: sticky; top: 0; z-index: 5; background: linear-gradient(#0b1f8a, #061260); border-bottom: 3px solid var(--line);
+  box-shadow: 0 4px 0 var(--shadow); }
+.top .wrap { display: flex; align-items: center; gap: 16px; min-height: 64px; flex-wrap: wrap; padding: 6px 0; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #fff; margin-right: auto; }
+.brand img { width: 44px; height: 44px; flex: none; image-rendering: pixelated; }
+.brand span { font-family: var(--pixel); font-weight: 700; font-size: 20px; line-height: 1; text-shadow: 2px 2px 0 var(--shadow); }
+.brand small { display: block; font-size: 11px; color: var(--dim); letter-spacing: .08em; margin-top: 4px; }
+.nav { display: flex; flex-wrap: wrap; gap: 6px; order: 2; }
+.lang { order: 3; }
+.nav a, .lang a { display: inline-block; padding: 7px 10px; font-size: 13px; color: #fff; text-decoration: none;
+  background: #1b36c4; border: 2px solid #4a68f0; border-right-color: #091a80; border-bottom-color: #091a80; }
+.nav a:hover, .lang a:hover { background: #2a48dc; color: #fff; }
+.nav a[aria-current="page"] { background: var(--green); border-color: var(--green-hi) #075a14 #075a14 var(--green-hi); }
+.lang { display: flex; gap: 4px; }
+.lang a { padding: 7px 8px; background: #0c1f8f; }
+.lang a[aria-current="true"] { background: var(--orange); border-color: var(--orange-hi) #7a3208 #7a3208 var(--orange-hi); }
+.top .menu-btn { display: none; }
+@media (max-width: 860px) {
+  .top .wrap { gap: 8px; }
+  .top .menu-btn { display: inline-block; order: 2; }
+  .lang { order: 3; }
+  .nav { order: 4; width: 100%; display: none; padding-bottom: 8px; }
+  .nav a { flex: 1 1 40%; text-align: center; }
+  .top.open .nav { display: flex; }
+  .brand span { font-size: 16px; }
+}
+
+/* buttons: the bright bars of the game's menus */
+.btn { display: inline-block; padding: 14px 22px; font-size: 16px; color: #fff; text-decoration: none; cursor: pointer;
+  border: 3px solid; text-align: center; line-height: 1.2; }
+.btn.green { background: var(--green); border-color: var(--green-hi) #064d10 #064d10 var(--green-hi); }
+.btn.orange { background: var(--orange); border-color: var(--orange-hi) #6e2c06 #6e2c06 var(--orange-hi); }
+.btn.blue { background: #1b36c4; border-color: #5a78ff #091a80 #091a80 #5a78ff; }
+.btn:hover { filter: brightness(1.12); color: #fff; }
+.btn:active { transform: translate(2px, 2px); }
+.btn small { display: block; font-size: 11px; opacity: .9; margin-top: 4px; letter-spacing: .04em; }
+.menu-btn { padding: 8px 10px; font-size: 13px; }
+
+/* the rose title bar of SWOS screens */
+.bar { display: block; background: linear-gradient(var(--rose-hi), var(--rose)); color: #fff; padding: 8px 14px; font-size: 15px;
+  border: 3px solid #f4e2e5; border-right-color: #7c5a60; border-bottom-color: #7c5a60; margin: 0 0 14px; }
+
+/* hero */
+.hero { padding: 56px 0 30px; text-align: center; }
+.hero .logo { width: min(240px, 42vw); height: auto; margin: 0 auto 10px; display: block; }
+.hero h1 { color: #fff; max-width: 980px; margin-inline: auto; }
+.hero .tagline { font-family: var(--pixel); font-size: clamp(15px, 2.2vw, 21px); line-height: 1.5; color: var(--gold);
+  max-width: 900px; margin: 0 auto 18px; text-shadow: 2px 2px 0 var(--shadow); }
+.hero .lead { color: var(--dim); max-width: 760px; margin: 0 auto 26px; font-size: 18px; }
+.cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.note { color: var(--dim); font-size: 14px; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 34px 0 10px; }
+.stat { background: var(--panel); border: 2px solid var(--line); padding: 14px 10px; text-align: center; }
+.stat b { display: block; font-size: 28px; color: var(--gold); }
+.stat span { color: var(--dim); font-size: 14px; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.card { background: var(--panel); border: 2px solid var(--line); padding: 18px 20px 8px; }
+.card h3 { margin-top: 0; color: var(--gold); font-size: 16px; }
+.card p, .card li { color: #e4e7f7; font-size: 16px; }
+.card ul { padding-left: 1.1em; margin: 0 0 1em; }
+
+.panel { background: var(--panel); border: 2px solid var(--line); padding: 20px 22px; margin: 0 0 18px; }
+.steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.steps li { counter-increment: s; position: relative; padding: 14px 16px 14px 64px; background: var(--panel); border: 2px solid var(--line); }
+.steps li::before { content: counter(s); position: absolute; left: 12px; top: 12px; width: 38px; height: 38px; display: grid; place-items: center;
+  font-family: var(--pixel); font-weight: 700; font-size: 20px; background: var(--green); border: 3px solid; border-color: var(--green-hi) #064d10 #064d10 var(--green-hi); }
+
+main { padding-bottom: 40px; }
+.page-head { padding: 34px 0 6px; }
+.crumbs { font-size: 14px; color: var(--dim); margin-bottom: 8px; }
+.crumbs a { color: var(--dim); }
+
+/* long documents (release notes) */
+.doc { max-width: 900px; }
+.doc ul { padding-left: 1.2em; }
+.doc li { margin: .25em 0; }
+.doc li > ul { margin-top: .2em; }
+.doc strong { color: #fff; }
+.doc em.sub { display: block; font-style: normal; font-family: var(--pixel); font-weight: 700; text-transform: uppercase; color: var(--gold);
+  margin: 1.6em 0 .4em; text-shadow: 2px 2px 0 var(--shadow); }
+.toc { columns: 2 260px; padding-left: 1.2em; }
+
+/* countries index */
+.cont h2 { margin-top: 1.4em; }
+.grid-countries { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 8px; list-style: none; padding: 0; margin: 0; }
+.grid-countries a { display: block; padding: 10px 12px; text-decoration: none; color: #fff; font-family: var(--pixel); font-weight: 700; font-size: 14px;
+  background: #1b36c4; border: 2px solid; border-color: #5a78ff #091a80 #091a80 #5a78ff; text-shadow: 2px 2px 0 var(--shadow); }
+.grid-countries a:hover { background: var(--green); border-color: var(--green-hi) #064d10 #064d10 var(--green-hi); }
+.grid-countries small { display: block; font-family: var(--sans); font-weight: 400; text-transform: none; font-size: 12px; color: var(--dim); text-shadow: none; }
+
+/* competitions of a country */
+.comps { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 480px), 1fr)); align-items: start; }
+.comp .facts { margin: .4em 0 0; color: #e4e7f7; }
+.comp { background: var(--panel); border: 2px solid var(--line); padding: 14px 18px; }
+.comp .name { font-family: var(--pixel); font-weight: 700; color: var(--gold); text-transform: uppercase; text-shadow: 2px 2px 0 var(--shadow); font-size: 16px; }
+.comp .kind { display: inline-block; font-size: 12px; color: #fff; background: var(--orange); padding: 1px 7px; margin-left: 6px; vertical-align: 2px; font-family: var(--sans); }
+.comp ul { margin: .5em 0 0; padding-left: 1.1em; }
+.comp li { margin: .3em 0; color: #e4e7f7; }
+.comp.approx { border-style: dashed; }
+
+/* the game's FORMAT page: upper case, pixel type, black-blue screen */
+.screens { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; }
+.screen { background: #000a4a; border: 3px solid #5a78ff; border-right-color: #091a80; border-bottom-color: #091a80; padding: 0 0 12px;
+  font-family: var(--pixel); font-size: 13px; line-height: 1.55; text-shadow: 2px 2px 0 var(--shadow); }
+.screen .bar { font-size: 13px; margin: 0 0 10px; }
+.screen pre { margin: 0; padding: 0 14px; font: inherit; white-space: pre-wrap; word-break: break-word; color: #e9ecff; }
+details { margin: 14px 0; }
+summary { cursor: pointer; font-family: var(--pixel); font-weight: 700; text-transform: uppercase; color: #fff; padding: 10px 14px;
+  background: #1b36c4; border: 2px solid; border-color: #5a78ff #091a80 #091a80 #5a78ff; text-shadow: 2px 2px 0 var(--shadow); }
+details[open] summary { margin-bottom: 12px; }
+
+.shot { margin: 0; background: #000; border: 3px solid var(--line); }
+.shot figcaption { padding: 8px 12px; font-size: 14px; color: var(--dim); background: var(--panel); }
+
+.foot { border-top: 3px solid var(--line); background: #020826; padding: 26px 0 40px; color: var(--dim); font-size: 14px; margin-top: 40px; }
+.foot p { max-width: 900px; }
+.foot .lang { margin-top: 12px; flex-wrap: wrap; }
