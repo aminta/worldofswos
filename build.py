@@ -51,7 +51,7 @@ def refresh():
     mod = os.path.expanduser(os.environ.get('SWOS_MOD', '~/swos-mod'))
     ref = os.environ.get('SWOS_REF', 'world-2025-26')
     # the world data dir of the FINAL release build c/REL40 (Regia, 2026-10-19 evening)
-    packs = os.environ.get('FMT_PACKS') or os.path.join(mod, 'internal', 'world2526', 'world5tm-rel40-names-2200')
+    packs = os.environ.get('FMT_PACKS') or os.path.join(mod, 'internal', 'world2526', 'world5tm-rel40-names-2214')
     packs = os.path.expanduser(packs)
     os.makedirs(DATA, exist_ok=True)
 
