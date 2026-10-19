@@ -23,6 +23,7 @@ import hashlib  # noqa: E402
 VER = hashlib.md5(b''.join(open(os.path.join(ROOT, 'static', f), 'rb').read() for f in ('style.css', 'site.js'))).hexdigest()[:8]
 sys.path.insert(0, os.path.join(ROOT, 'gen'))
 import md                                                   # noqa: E402
+import tr                                                   # noqa: E402
 from i18n import CONTINENT, GAME, LANG_NAME, LANGS, LOCALE, T   # noqa: E402
 
 SITE_URL = 'https://worldofswos.com'
@@ -380,23 +381,29 @@ def _notes_link(lang):
 
 def notes_part(d, lang):
     """The notes in this language (EN for FR / DE until translated), without the title line and credits."""
-    src = d['notes']['it' if lang == 'it' else 'en']
+    src = d['notes']['it' if lang == 'it' else 'en']   # FR / DE: the English, translated block by block (gen/tr.py)
     bl = md.blocks(src)
     if bl and bl[0][0] == 'p' and bl[0][1].startswith('**'):
         bl = bl[1:]                                   # the release title line
+    main, cred = bl, []
     for i, b in enumerate(bl):
         if b[0] == 'h' and b[1] == 4 and b[2] in ('Data and credits', 'Dati e crediti'):
-            return bl[:i], bl[i:]
-    return bl, []
+            main, cred = bl[:i], bl[i:]
+            break
+    if lang in ('fr', 'de'):
+        main, m1 = tr.translate(main, lang)
+        cred, m2 = tr.translate(cred, lang)
+        return main, cred, m1 + m2
+    return main, cred, 0
 
 
 def world(d, lang):
     t = T[lang]
-    main, _ = notes_part(d, lang)
+    main, _, miss = notes_part(d, lang)
     heads = [(md.slug(b[2]), b[2]) for b in main if b[0] == 'h' and b[1] in (3, 4)]
     toc = ''.join(f'<li><a href="#{s}">{md.inline(h)}</a></li>' for s, h in heads)
-    wip = f'<p class="panel">{esc(t["lang_wip"])}</p>' if t['lang_wip'] else ''
-    l2 = 'it' if lang == 'it' else 'en'
+    wip = f'<p class="panel">{esc(t["lang_wip"])}</p>' if miss else ''
+    l2 = lang
     body = f'''<div class="wrap page-head"><h1>{esc(t['h_world'])}</h1><p class="tagline px" style="color:var(--gold)">
 {esc(t['world_lead'])}</p></div>
 <div class="wrap doc" lang="{l2}">{wip}<nav class="panel" aria-label="{esc(t['toc'])}"><strong>{esc(t['toc'])}</strong>
@@ -407,10 +414,10 @@ def world(d, lang):
 
 def credits(d, lang):
     t = T[lang]
-    _, cred = notes_part(d, lang)
-    wip = f'<p class="panel">{esc(t["lang_wip"])}</p>' if t['lang_wip'] else ''
+    _, cred, miss = notes_part(d, lang)
+    wip = f'<p class="panel">{esc(t["lang_wip"])}</p>' if miss else ''
     body = f'''<div class="wrap page-head"><h1>{esc(t['h_credits'])}</h1><p>{esc(t['credits_lead'])}</p></div>
-<div class="wrap doc" lang="{'it' if lang == 'it' else 'en'}">{wip}{md.render(cred[1:], _notes_link(lang))}
+<div class="wrap doc">{wip}{md.render(cred[1:], _notes_link(lang))}
 <h2>{esc(t['testers'])}</h2><p>{t['testers_p']}</p>
 <p>{t['thanks_dani']}</p></div>'''
     return page(lang, 'credits/', t['h_credits'], body, active='credits')

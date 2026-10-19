@@ -308,7 +308,7 @@ T = {
     h_credits='Crédits et sources des données', credits_lead="D'où viennent les données, et ceux qui ont aidé.",
     testers='Testeurs et retours', thanks_dani='La base de données Europe 1984-85 : <strong>DaniSwos</strong>.',
     h_classic_page="Carrières, saisons et tournois d'antan", classic_lead='Les mondes historiques du mod.',
-    lang_wip='Traduction française en cours : le texte ci-dessous est en anglais.',
+    lang_wip='Certaines parties ne sont pas encore traduites : elles apparaissent en anglais.',
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
@@ -402,7 +402,7 @@ T = {
     h_credits='Credits und Datenquellen', credits_lead='Woher die Daten kommen und wer geholfen hat.',
     testers='Tester und Rückmeldungen', thanks_dani='Die Datenbank Europa 1984-85: <strong>DaniSwos</strong>.',
     h_classic_page='Klassische Karrieren, Saisons und Turniere', classic_lead='Die historischen Welten der Mod.',
-    lang_wip='Deutsche Übersetzung in Arbeit: Der folgende Text ist auf Englisch.',
+    lang_wip='Einige Teile sind noch nicht übersetzt: Sie erscheinen auf Englisch.',
     notfound='Seite nicht gefunden', notfound_p='Diese Seite ist im Aus.', back_home='Zurück zur Startseite',
  ),
 }

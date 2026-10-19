@@ -68,7 +68,7 @@ if __name__ == '__main__':
     import build
     cmd, lang = sys.argv[1], sys.argv[2]
     d = build.load()
-    main, cred = build.notes_part(d, 'en')
+    main, cred, _ = build.notes_part(d, "en")
     tr = load(lang)
     todo = [(k, kind, m) for k, kind, m in units(main + cred) if k not in tr]
     if cmd == 'todo':
