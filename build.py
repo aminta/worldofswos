@@ -33,7 +33,7 @@ REPO = 'https://github.com/aminta/swos-9697-mod'
 PATCHER = REPO + '/releases/latest/download/swos-9697-mod-patcher.html'
 RELEASES = REPO + '/releases'
 RELEASED = False        # False until 4.0 is on GitHub: download buttons and the install section say "Coming soon"
-GOATCOUNTER = ''        # GoatCounter code (https://<code>.goatcounter.com): cookieless visit counter; '' = none
+GOATCOUNTER = 'worldofswos'  # GoatCounter code (https://<code>.goatcounter.com): cookieless visit counter; '' = none
 DATA = os.path.join(ROOT, 'data')
 OUT = os.path.join(ROOT, 'site')
 CONTS = ['europe', 'north_america', 'south_america', 'asia', 'oceania', 'africa']
