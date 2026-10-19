@@ -494,7 +494,20 @@ def write(path, text):
     open(p, 'w', encoding='utf-8').write(text)
 
 
+def frames_in():
+    """incoming/*.png (raw 320x200 harness frames) -> static/img, pixel-crisp 5x / 6x (the game's 4:3), when newer."""
+    inc = os.path.join(ROOT, 'incoming')
+    for f in sorted(os.listdir(inc)) if os.path.isdir(inc) else []:
+        src, dst = os.path.join(inc, f), os.path.join(ROOT, 'static', 'img', f)
+        if f.endswith('.png') and (not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src)):
+            from PIL import Image
+            im = Image.open(src)
+            im.resize((im.width * 5, im.height * 6), Image.NEAREST).save(dst, optimize=True)
+            print(f'frame: {f}')
+
+
 def build():
+    frames_in()
     d = load()
     if os.path.exists(OUT):
         shutil.rmtree(OUT)
