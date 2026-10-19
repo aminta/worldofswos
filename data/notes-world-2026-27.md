@@ -89,7 +89,51 @@ Not one fixed formula for everybody: each league plays the season the way its ow
   Scottish League Cup, the J.League Cup, and the league cups of Northern Ireland, Egypt, Qatar, the UAE, South Africa,
   Wales, Iceland, Finland, Chile and Peru.
 
-
+*Brazil's state championships 2026*
+All 13 of them, each a real contest of your career, played alongside the national league in the first months of
+the season as in Brazil: Paulista, Carioca, Mineiro, Gaucho, Paranaense, Catarinense, Goiano, Paraense, Baiano,
+Cearense, Pernambucano, Alagoano and Mato-Grossense.
+- **Every Brazilian club plays its real state**: the clubs of the Serie A-D play both their state and their national
+  division, the real 2026 state-only clubs play only their state.
+- **Each state's real 2026 format**: club list, first stage (one table, groups, or blocks where each club meets only
+  the clubs of the other blocks, on the real fixtures), knockout pairings, byes and legs:
+  - **Paulista** (16): league phase drawn from 4 pots of 4 (the 3 of its own pot + 5 drawn, once), one table, the
+    64 real pairings with their real home sides; quarter-finals 1st v 8th, 4th v 5th, 2nd v 7th, 3rd v 6th, single
+    semi-finals, two-legged final; the bottom 2 down.
+  - **Carioca** (12): Taca Guanabara in two groups of 6, each club against the other group once; quarter-finals
+    inside the group (A1 v A4, A2 v A3 ...), two-legged semi-finals, single final; the Grupo X of the bottom 2 of
+    each group from zero: the last goes down, the 3rd plays a two-legged play-off against Resende, the real 2026
+    Serie A2 runner-up.
+  - **Mineiro** (12): three groups of 4, each club against the other groups once; the 3 group winners and the best
+    runner-up in two-legged semi-finals, best campaign v 4th and 2nd v 3rd; single final; 11th and 12th down.
+  - **Gaucho** (12): two groups of 6 against each other; quarter-finals inside the group, crossed two-legged
+    semi-finals, two-legged final; a relegation quadrangular of the bottom 2 of each group from zero, the last 2 down.
+  - **Paranaense**: two groups of 6 against each other; quarter-finals and semi-finals inside the group, final, all
+    two legs; relegation play-offs 5A v 6B and 6A v 5B.
+  - **Catarinense**: two groups of 6 against each other; quarter-finals inside the group, crossed semi-finals and
+    final, all two legs; the Quadrangular do Descenso of the bottom 2 of each group, only its winner stays up.
+  - **Goiano**: three blocks of 4, each club against the other 8, one table; quarter-finals 1v8, 4v5, 2v7, 3v6,
+    semi-finals and final over two legs; 11th and 12th down, 10th v 11th play-off when within 6 points.
+  - **Paraense**: two blocks of 6 against each other, one table; single quarter- and semi-finals, two-legged final.
+  - **Baiano** (10) and **Alagoano** (8): single round robin, semi-finals 1v4 and 2v3, final.
+  - **Cearense**: two groups of 5, the top 3 of each to a second phase, crossed two-legged semi-finals and final; the
+    Quadrangular da Permanencia of the bottom 2 of each group.
+  - **Pernambucano** (8) and **Mato-Grossense** (10): single round robin, 1st and 2nd straight into the semi-finals,
+    quarter-finals 3v6 and 4v5, then semi-finals and final.
+- **Hosts and ties as in the regulations**: every knockout tie at the better placed club of the first stage (single
+  matches at its ground, two-legged ties with the second leg there); level ties go straight to penalties, no extra
+  time, no away goals.
+- **Real relegations**: each state relegates its real number of clubs through its real phase (bottom places,
+  play-offs, quadrangulars); the relegated state-only clubs are replaced by real clubs of the state's second division
+  (Serie A2) with their squads; a national-league club relegated from its state leaves the state contest.
+- **The states you don't play are simulated at the season end with their real format**: first stage, knockout to a
+  champion and relegation phase, the results by the clubs' strength.
+- Declared: the Paulista's round order is rebuilt (real pairings and home sides, the dates aren't published); the
+  Carioca and Mineiro finals are at the first finalist's ground (real: a neutral ground); in the state you play,
+  equal points are split by goal difference (real: wins first; the simulated states use the real order); the
+  Cearense's six qualifiers are drawn into two groups of three that play each other (real: each group's clubs play
+  the other group's); the Catarinense semi-final crossing is assumed; the Pernambucano's second division clubs are those of 2025; the side trophies (Taca Rio, Taca Farroupilha,
+  Trofeu Inconfidencia, Campeao do Interior) are not played.
 
 *At least everything the original game had*
 - **Never fewer leagues or divisions than SWOS 96/97**: England's four divisions, with League Two and its 4th-7th
@@ -234,6 +278,18 @@ Not one fixed formula for everybody: each league plays the season the way its ow
   In the World 2026-27 the European places in every season come from the engine's own UEFA ranking (the one a year
   old, as UEFA's access list uses) and the real 2026/27 access list; the European Performance Spots and the title
   holders' rebalancing are decided at the season end and are not coloured in advance.
+- **Continental places outside Europe**: the top flights of the other confederations colour their real club-cup
+  places: light blue for the first cup (Copa Libertadores, Concacaf Champions Cup, AFC Champions League Elite, CAF
+  Champions League, OFC Champions League), green for the second (Copa Sudamericana, AFC Champions League Two, CAF
+  Confederation Cup), following each association's real routes (Libertadores / Sudamericana 2026, ACL Elite / Two
+  2026-27, Concacaf Champions Cup 2027, CAF's allocation, New Zealand's 2 OFC places), with a legend and a line on the
+  FORMAT page that also names the national cup winner's place.
+  Declared: where the real places are not table positions (the Apertura / Clausura champions and the annual table in
+  Argentina, Colombia, Paraguay and Mexico; a final or play-offs in Uruguay, Venezuela, Australia, the USA, Canada and
+  New Zealand) the game colours its own season table and the FORMAT page states the real rule; Ghana, Iran and India
+  follow the general rule (no list of qualified clubs published); Central America and Suriname (qualified through
+  the Central American and Caribbean Cups) and Taiwan (AFC Challenge League) have no colours; the holders' extra
+  places and places passed down are decided by the cups and not coloured.
 
 *Leagues, calendars and clubs*
 - **Every league, national cup and league cup under its real 2026-27 name, without title sponsors**: COPPA ITALIA,
@@ -442,6 +498,9 @@ Not one fixed formula for everybody: each league plays the season the way its ow
   of these details.
 
 **Known limits**
+- A career saved with one language's executable and loaded with another keeps the first language's competition
+  titles, and its league tables show no zone colours and no FORMAT page: continue a career with the language you
+  started it in.
 - EA's public ratings still held FC 26-era rosters when this world was built (2026-10-16): attributes are matched by
   player (name and birth date), not by club, so they are a year old; they will be refreshed when EA publishes FC 27.
 - About a third of the players are in EA's ratings (most of the big leagues, few of the small ones).
@@ -559,7 +618,51 @@ Non una formula uguale per tutti: ogni campionato gioca la stagione come l'ha sc
   Liga nel suo vero formato a 8 squadre, la Scottish League Cup, la J.League Cup e le coppe di lega di Irlanda del
   Nord, Egitto, Qatar, Emirati, Sudafrica, Galles, Islanda, Finlandia, Cile e Perù.
 
-
+*Campionati statali brasiliani 2026*
+Tutti e 13, ognuno una competizione vera della tua carriera, giocati insieme al campionato nazionale nei primi mesi
+della stagione come in Brasile: Paulista, Carioca, Mineiro, Gaucho, Paranaense, Catarinense, Goiano, Paraense,
+Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
+- **Ogni club brasiliano gioca il suo statale vero**: i club di Serie A-D giocano sia lo statale sia la loro
+  divisione nazionale, i club veri 2026 che giocano solo lo statale giocano solo quello.
+- **La formula vera 2026 di ogni stato**: elenco dei club, prima fase (classifica unica, gironi, o blocchi in cui ogni
+  club affronta solo i club degli altri blocchi, col calendario vero), accoppiamenti, turni liberi e andata/ritorno:
+  - **Paulista** (16): prima fase sorteggiata da 4 fasce da 4 (le 3 della propria fascia + 5 sorteggiate, una volta
+    sola), classifica unica, le 64 partite vere col campo vero; quarti 1ª-8ª, 4ª-5ª, 2ª-7ª, 3ª-6ª, semifinali
+    secche, finale andata e ritorno; retrocedono le ultime 2.
+  - **Carioca** (12): Taca Guanabara in due gironi da 6, ogni club contro l'altro girone una volta; quarti nel girone
+    (A1-A4, A2-A3 ...), semifinali andata e ritorno, finale secca; il Grupo X delle ultime 2 di ogni girone da zero
+    punti: l'ultima retrocede, la 3ª gioca lo spareggio andata e ritorno col Resende, vera seconda della Serie A2 2026.
+  - **Mineiro** (12): tre gironi da 4, ogni club contro gli altri gironi una volta; le 3 vincitrici e la migliore
+    seconda in semifinali andata e ritorno, miglior cammino contro 4ª e 2ª contro 3ª; finale secca; retrocedono 11ª
+    e 12ª.
+  - **Gaucho** (12): due gironi da 6 incrociati; quarti nel girone, semifinali incrociate e finale andata e ritorno;
+    quadrangolare salvezza delle ultime 2 di ogni girone da zero punti, retrocedono le ultime 2.
+  - **Paranaense**: due gironi da 6 incrociati; quarti e semifinali nel girone, finale, tutto andata e ritorno;
+    spareggi salvezza 5A-6B e 6A-5B.
+  - **Catarinense**: due gironi da 6 incrociati; quarti nel girone, semifinali incrociate e finale, tutto andata e
+    ritorno; Quadrangular do Descenso delle ultime 2 di ogni girone, si salva solo la prima.
+  - **Goiano**: tre blocchi da 4, ogni club contro gli altri 8, classifica unica; quarti 1-8, 4-5, 2-7, 3-6,
+    semifinali e finale andata e ritorno; retrocedono 11ª e 12ª, spareggio 10ª-11ª se a 6 punti o meno.
+  - **Paraense**: due blocchi da 6 incrociati, classifica unica; quarti e semifinali secchi, finale andata e ritorno.
+  - **Baiano** (10) e **Alagoano** (8): girone unico di sola andata, semifinali 1-4 e 2-3, finale.
+  - **Cearense**: due gironi da 5, le prime 3 di ognuno alla seconda fase, semifinali incrociate e finale andata e
+    ritorno; Quadrangular da Permanencia delle ultime 2 di ogni girone.
+  - **Pernambucano** (8) e **Mato-Grossense** (10): girone unico di sola andata, 1ª e 2ª direttamente in semifinale,
+    quarti 3-6 e 4-5, poi semifinali e finale.
+- **Campi e parità come nei regolamenti**: ogni sfida a eliminazione in casa della meglio piazzata nella prima fase
+  (gara secca nel suo stadio, ritorno nel suo stadio); in parità subito i rigori, niente supplementari, niente gol in
+  trasferta.
+- **Retrocessioni vere**: ogni stato retrocede il suo numero vero di club con la sua fase vera (ultimi posti,
+  spareggi, quadrangolari); al posto dei club solo statali retrocessi salgono club veri della seconda serie statale
+  (Serie A2) con le loro rose; un club del campionato nazionale retrocesso dal suo statale esce dallo statale.
+- **Gli statali che non giochi vengono simulati a fine stagione con la loro formula vera**: prima fase, fase finale
+  fino al campione e fase salvezza, coi risultati secondo la forza dei club.
+- Dichiarato: l'ordine delle giornate del Paulista è ricostruito (partite e campi veri, le date non sono pubblicate);
+  le finali di Carioca e Mineiro si giocano in casa della prima finalista (vero: campo neutro); nello statale che
+  giochi, a pari punti decide la differenza reti (vero: prima le vittorie; gli statali simulati usano l'ordine vero);
+  le sei qualificate del Cearense sono sorteggiate in due gironi da tre che giocano tra loro (vero: ogni club gioca
+  contro quelli dell'altro girone); l'incrocio delle semifinali del Catarinense è presunto; i club della seconda serie del Pernambucano sono quelli del 2025; i trofei minori (Taca
+  Rio, Taca Farroupilha, Trofeu Inconfidencia, Campeao do Interior) non si giocano.
 
 *Almeno tutto quello che aveva il gioco originale*
 - **Mai meno campionati o divisioni di SWOS 96/97**: le quattro divisioni inglesi, con la League Two e i suoi play-off
@@ -706,6 +809,19 @@ Non una formula uguale per tutti: ogni campionato gioca la stagione come l'ha sc
   Nel Mondo 2026-27 i posti europei di ogni stagione vengono dal ranking UEFA del gioco (quello dell'anno prima,
   come nella access list UEFA) e dalla access list vera 2026/27; gli European Performance Spots e i ritocchi per i
   detentori dei titoli si decidono a fine stagione e non vengono colorati in anticipo.
+- **Posti continentali fuori dall'Europa**: le massime serie delle altre confederazioni colorano i loro posti veri
+  nelle coppe per club: azzurro per la prima coppa (Copa Libertadores, Concacaf Champions Cup, AFC Champions League
+  Elite, CAF Champions League, OFC Champions League), verde per la seconda (Copa Sudamericana, AFC Champions League
+  Two, CAF Confederation Cup), secondo le vie d'accesso vere di ogni federazione (Libertadores / Sudamericana 2026,
+  ACL Elite / Two 2026-27, Concacaf Champions Cup 2027, la ripartizione CAF, i 2 posti OFC della Nuova Zelanda), con
+  legenda e una riga nella pagina FORMULA che indica anche il posto della vincitrice della coppa nazionale.
+  Dichiarato: dove i posti veri non sono posizioni in classifica (i campioni di Apertura e Clausura e la classifica
+  annuale in Argentina, Colombia, Paraguay e Messico; una finale o i play-off in Uruguay, Venezuela, Australia, Stati
+  Uniti, Canada e Nuova Zelanda) il gioco colora la sua classifica della stagione e la pagina FORMULA spiega la regola
+  vera; Ghana, Iran e India seguono la regola generale (non c'è un elenco pubblicato dei qualificati); America
+  Centrale e Suriname (qualificati tramite le coppe centroamericana e caraibica) e Taiwan (AFC Challenge League) non
+  hanno colori; i posti in più dei detentori e quelli che passano alla squadra seguente li decidono le coppe e non
+  vengono colorati.
 
 *Campionati, calendari e club*
 - **Ogni campionato, coppa nazionale e coppa di lega col suo nome vero 2026-27, senza lo sponsor**: COPPA ITALIA,
@@ -929,6 +1045,9 @@ Non una formula uguale per tutti: ogni campionato gioca la stagione come l'ha sc
   regolamento pubblicato non dà questi dettagli.
 
 **Limiti noti**
+- Una carriera salvata con l'eseguibile di una lingua e caricata con quello di un'altra tiene i titoli delle
+  competizioni della prima lingua, e le sue classifiche non mostrano né i colori né la pagina FORMULA: continua una
+  carriera nella lingua in cui l'hai iniziata.
 - Quando questo mondo è stato costruito (16-10-2026) le valutazioni pubbliche EA avevano ancora le rose dell'era FC 26:
   gli attributi sono abbinati per giocatore (nome e data di nascita), non per club, quindi sono vecchi di un anno;
   verranno aggiornati quando EA pubblicherà FC 27.
