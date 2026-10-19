@@ -400,8 +400,8 @@ def notes_part(d, lang):
 
 # the harness frames per language; until a language's frame is right, the Italian one stands in
 FRAMES = ['careers-menu', 'europe-countries', 'table-colours', 'cl-league-phase']
-FRAME_FALLBACK = {'table-colours': {'en', 'fr', 'de'}, 'cl-league-phase': {'en', 'fr', 'de'}}   # EN/FR/DE captures: the
-# career club's row came out empty (an Italian save loaded in another exe): the Italian frames until a recapture
+FRAME_FALLBACK = {'table-colours': {'en', 'fr', 'de'}, 'cl-league-phase': {'en', 'fr', 'de'}}   # the populated tables
+# exist only from the Italian exe (final, 2026-10-19): the other languages show those
 
 
 def frames(lang):
