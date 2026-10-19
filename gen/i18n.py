@@ -31,6 +31,7 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    next41='In 4.1: the 2026 World Cup and Euro 2024 among the classic tourneys, with the real squads and the real formats (48 teams with the best third-placed; 24 teams).',
     h_next='Coming next',
     next_text='In 4.2: the national teams of the World 2026-27, complete and exact. Real squads, call-ups from the clubs of the world and job offers as national team coach; the 2030 World Cup with 48 teams and Euro 2028 with 24; the real qualifiers of every confederation; the Nations League.',
     next_note='A plan, not a date.',
@@ -144,6 +145,7 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    next41='Nella 4.1: il Mondiale 2026 e l\'Europeo 2024 tra i tornei storici, con le rose vere e le formule vere (48 squadre con le migliori terze; 24 squadre).',
     h_next='In arrivo',
     next_text='Nella 4.2: le nazionali del Mondo 2026-27, complete ed esatte. Rose vere, convocazioni dai club del mondo e offerte di lavoro da commissario tecnico; il Mondiale 2030 a 48 squadre e l\'Europeo 2028 a 24; le qualificazioni vere di ogni confederazione; la Nations League.',
     next_note='Un programma, non una data.',
@@ -255,6 +257,7 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    next41="Dans la 4.1 : la Coupe du monde 2026 et l'Euro 2024 parmi les tournois anciens, avec les vrais effectifs et les vraies formules (48 équipes avec les meilleurs troisièmes ; 24 équipes).",
     h_next='Prochainement',
     next_text="Dans la 4.2 : les sélections nationales du Monde 2026-27, complètes et exactes. De vrais effectifs, des convocations depuis les clubs du monde et des offres d'emploi de sélectionneur ; la Coupe du monde 2030 à 48 équipes et l'Euro 2028 à 24 ; les vraies qualifications de chaque confédération ; la Ligue des nations.",
     next_note='Un programme, pas une date.',
@@ -368,6 +371,7 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    next41='In 4.1: die WM 2026 und die EM 2024 bei den Turnierklassikern, mit den echten Kadern und den echten Modi (48 Teams mit den besten Gruppendritten; 24 Teams).',
     h_next='Als Nächstes',
     next_text='In 4.2: die Nationalmannschaften der Welt 2026-27, vollständig und genau. Echte Kader, Nominierungen aus den Vereinen der Welt und Jobangebote als Nationaltrainer; die WM 2030 mit 48 Teams und die EM 2028 mit 24; die echten Qualifikationen jeder Konföderation; die Nations League.',
     next_note='Ein Plan, kein Termin.',
