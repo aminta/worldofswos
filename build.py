@@ -44,12 +44,8 @@ CONT_MD = {'Europe': 'europe', 'North and Central America': 'north_america', 'So
 def refresh():
     mod = os.path.expanduser(os.environ.get('SWOS_MOD', '~/swos-mod'))
     ref = os.environ.get('SWOS_REF', 'world-2025-26')
-    packs = os.environ.get('FMT_PACKS')
-    if not packs:                                   # the newest release-candidate world packs
-        base = os.path.join(mod, 'internal', 'world2526')
-        cands = [os.path.join(base, x) for x in os.listdir(base) if x.startswith('world5tm-rel40')
-                 and os.path.isdir(os.path.join(base, x))]
-        packs = max(cands, key=os.path.getmtime)
+    # the world data dir of the release build c/REL40 (session 4.0, 2026-10-19: a stable snapshot)
+    packs = os.environ.get('FMT_PACKS') or os.path.join(mod, 'internal', 'world2526', 'world5tm-a6cf4e34')
     packs = os.path.expanduser(packs)
     os.makedirs(DATA, exist_ok=True)
 
@@ -64,7 +60,7 @@ def refresh():
         open(os.path.join(DATA, dst), 'w', encoding='utf-8').write(md.strip_comments(show(src)))
     # the in-game FORMAT texts and the countries' names, with the mod's own tools (exported, never run in the repo)
     with tempfile.TemporaryDirectory() as tmp:
-        tref = os.environ.get('FMT_TOOLS_REF', ref)    # e.g. a fix branch of tools/fmtgame.py not merged yet
+        tref = os.environ.get('FMT_TOOLS_REF', ref)    # (a fix branch of tools/fmtgame.py not merged yet)
         arch = subprocess.run(['git', '-C', mod, 'archive', tref, 'tools', 'packs'], check=True,
                               capture_output=True).stdout
         subprocess.run(['tar', '-x', '-C', tmp], input=arch, check=True)

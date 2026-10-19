@@ -1,7 +1,7 @@
 {
  "ref": "world-2025-26",
- "tools": "fmt-fix",
+ "tools": "world-2025-26",
  "sha": "dc0fbb0",
- "packs": "world5tm-rel40rc1c",
- "packs_date": ""
+ "packs": "world5tm-a6cf4e34",
+ "packs_date": "2026-10-19 14:53:22"
 }
