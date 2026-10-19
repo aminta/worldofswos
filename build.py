@@ -30,8 +30,10 @@ from i18n import CONTINENT, GAME, LANG_NAME, LANGS, LOCALE, T   # noqa: E402
 SITE_URL = 'https://worldofswos.com'
 REPO = 'https://github.com/aminta/swos-9697-mod'
 # 4.0 is not released yet: both point to the releases page (at release: /releases/latest/download/swos-9697-mod-patcher.html)
-PATCHER = REPO + '/releases'
+PATCHER = REPO + '/releases/latest/download/swos-9697-mod-patcher.html'
 RELEASES = REPO + '/releases'
+RELEASED = False        # False until 4.0 is on GitHub: download buttons and the install section say "Coming soon"
+GOATCOUNTER = ''        # GoatCounter code (https://<code>.goatcounter.com): cookieless visit counter; '' = none
 DATA = os.path.join(ROOT, 'data')
 OUT = os.path.join(ROOT, 'site')
 CONTS = ['europe', 'north_america', 'south_america', 'asia', 'oceania', 'africa']
@@ -177,6 +179,14 @@ NAV = [('home', ''), ('world', 'world/'), ('countries', 'countries/'), ('classic
        ('credits', 'credits/')]
 
 
+def counter(lang):
+    if not GOATCOUNTER:
+        return ''
+    g = f'https://{GOATCOUNTER}.goatcounter.com'
+    return (f'<p class="counter" data-gc="{g}" hidden><span class="px">{esc(T[lang]["visits"])}</span> <b class="px">------</b></p>'
+            f'<script data-goatcounter="{g}/count" async src="https://gc.zgo.at/count.js"></script>')
+
+
 def page(lang, path, title, body, desc='', active=None, langs=None):
     """path: the page's path after /<lang>/ ('' = home). langs: the languages this page exists in."""
     t = T[lang]
@@ -223,7 +233,7 @@ def page(lang, path, title, body, desc='', active=None, langs=None):
 </main>
 <footer class="foot"><div class="wrap">
 <p><strong>{esc(t['unofficial'])}</strong></p>
-<p>{esc(t['by'])} <a href="{REPO}">{esc(t['source'])}</a>.</p>
+<p>{esc(t['by'])} <a href="{REPO}">{esc(t['source'])}</a>.</p>{counter(lang)}
 </div></footer>
 </body>
 </html>
@@ -252,9 +262,21 @@ def home(d, lang):
         figs = ''.join(f'<figure class="shot"><img src="/static/img/{f}.png" width="1600" height="1200" loading="lazy" '
                        f'alt="{esc(c)}"><figcaption>{esc(c)}</figcaption></figure>' for f, c in items
                        if os.path.exists(os.path.join(ROOT, 'static', 'img', f + '.png')))
+        figs += ''.join(f'<figure class="shot soon"><div class="soon-box"><span>{esc(t["soon"])}</span></div>'
+                        f'<figcaption>{esc(c)}</figcaption></figure>' for f, c in items
+                        if not os.path.exists(os.path.join(ROOT, 'static', 'img', f + '.png')))
         if figs:
             shots += (f'<h3>{esc(g)}</h3><div class="cards" style="grid-template-columns:repeat(auto-fill,'
                       f'minmax(min(100%,440px),1fr))">{figs}</div>')
+    if RELEASED:
+        dl_btn = f'<a class="btn green" href="{PATCHER}">{esc(t["dl"])}<small>{esc(t["dl_small"])}</small></a>'
+        dl_btn2 = f'<a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a>'
+        soon_inst = ''
+    else:
+        dl_btn = (f'<span class="btn green soon-btn" aria-disabled="true">{esc(t["soon"])}'
+                  f'<small>{esc(t["soon_dl"])}</small></span>')
+        dl_btn2 = f'<span class="btn green soon-btn" aria-disabled="true">{esc(t["soon"])}</span>'
+        soon_inst = f'<p class="panel"><strong class="px" style="color:var(--gold)">{esc(t["soon"])}</strong> {esc(t["soon_install"])}</p>'
     body = f'''<section class="hero"><div class="wrap">
 {logo_svg(240, t['site']).replace('<svg ', '<svg class="logo" ', 1)}
 <p class="px" style="color:var(--dim);margin:0 0 14px">{esc(t['kicker'])}</p>
@@ -262,7 +284,7 @@ def home(d, lang):
 <p class="tagline">{esc(t['concept'])}</p>
 <p class="lead">{esc(t['lead'])}</p>
 <div class="cta">
-<a class="btn green" href="{PATCHER}">{esc(t['dl'])}<small>{esc(t['dl_small'])}</small></a>
+{dl_btn}
 <a class="btn orange" href="#install">{esc(t['how'])}</a>
 <a class="btn blue" href="/{lang}/countries/">{esc(t['see_world'])}</a>
 </div>
@@ -278,9 +300,9 @@ def home(d, lang):
 <h2>{esc(t['h_shots'])}</h2>
 {shots}
 <h2 id="install">{esc(t['h_install'])}</h2>
-<ol class="steps">{steps}</ol>
+{soon_inst}<ol class="steps">{steps}</ol>
 <p class="note" style="margin-top:14px">{esc(t['install_note'])}</p>
-<p class="cta" style="justify-content:flex-start"><a class="btn green" href="{PATCHER}">{esc(t['dl'])}</a>
+<p class="cta" style="justify-content:flex-start">{dl_btn2}
 <a class="btn blue" href="{RELEASES}">GitHub Releases</a></p>
 </section>'''
     return page(lang, '', t['site'], body, active='home')

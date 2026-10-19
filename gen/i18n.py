@@ -31,6 +31,9 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    soon='Coming soon', soon_dl='The 4.0 patcher: October 2026',
+    soon_install='Version 4.0, with the World 2026-27, is coming soon: the patcher will be on this page on release day. These are the steps you will follow.',
+    visits='Visits',
     frames=['CLASSIC CAREERS: the historic worlds', 'WORLD 2026-27: the countries of Europe',
             'Serie A mid-season, with its zones', 'The Champions League table of 36 after 4 matchdays'],
     h_shots='Screens from the game',
@@ -139,6 +142,9 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    soon='Coming soon', soon_dl='Il patcher della 4.0: ottobre 2026',
+    soon_install='La versione 4.0, con il Mondo 2026-27, arriva a breve: il giorno del rilascio il patcher sarà su questa pagina. Questi sono i passi che seguirai.',
+    visits='Visite',
     frames=['CARR. STORICHE: i mondi storici', 'MONDO 2026-27: le nazioni d\'Europa',
             'La Serie A a metà stagione, con le sue zone', 'La classifica a 36 della Champions League dopo 4 giornate'],
     h_shots='Schermate dal gioco',
@@ -245,6 +251,9 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    soon='Coming soon', soon_dl='Le patcher de la 4.0 : octobre 2026',
+    soon_install='La version 4.0, avec le Monde 2026-27, arrive bientôt : le jour de la sortie, le patcher sera sur cette page. Voici les étapes que vous suivrez.',
+    visits='Visites',
     frames=["CARR. D'ANTAN : les mondes historiques", "MONDE 2026-27 : les pays d'Europe",
             'La Serie A à mi-saison, avec ses zones', 'Le classement à 36 de la Ligue des champions après 4 journées'],
     h_shots='Écrans du jeu',
@@ -353,6 +362,9 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    soon='Coming soon', soon_dl='Der Patcher der 4.0: Oktober 2026',
+    soon_install='Version 4.0 mit der Welt 2026-27 kommt bald: Am Tag der Veröffentlichung ist der Patcher auf dieser Seite. Das sind die Schritte, die du dann gehst.',
+    visits='Besuche',
     frames=['KLASS. KARRIERE: die historischen Welten', 'WELT 2026-27: die Länder Europas',
             'Die Serie A zur Saisonmitte, mit ihren Zonen', 'Die Tabelle der Champions League mit 36 Vereinen nach 4 Spieltagen'],
     h_shots='Bilder aus dem Spiel',

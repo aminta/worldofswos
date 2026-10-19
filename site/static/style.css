@@ -186,3 +186,15 @@ details[open] summary { margin-bottom: 12px; }
 .foot { border-top: 3px solid var(--line); background: #020826; padding: 26px 0 40px; color: var(--dim); font-size: 14px; margin-top: 40px; }
 .foot p { max-width: 900px; }
 .foot .lang { margin-top: 12px; flex-wrap: wrap; }
+
+/* coming soon */
+.soon-btn { cursor: default; filter: saturate(.75); }
+.soon-btn:active { transform: none; }
+.shot.soon .soon-box { aspect-ratio: 4 / 3; display: grid; place-items: center;
+  background: repeating-linear-gradient(45deg, #04104e 0 14px, #071862 14px 28px); }
+.shot.soon .soon-box span { font-family: var(--pixel); font-weight: 700; text-transform: uppercase; color: #fff; font-size: 18px;
+  padding: 10px 16px; background: var(--orange); border: 3px solid; border-color: var(--orange-hi) #6e2c06 #6e2c06 var(--orange-hi);
+  text-shadow: 2px 2px 0 var(--shadow); }
+/* visit counter: an old-school odometer */
+.counter b { display: inline-block; background: #000; color: var(--gold); padding: 3px 8px; letter-spacing: .25em;
+  border: 2px solid var(--line); margin-left: 6px; }
