@@ -247,8 +247,14 @@ def home(d, lang):
     steps = ''.join('<li>' + st.format(careers=f'<strong>{GAME["careers"][lang]}</strong>',
                                          world=f'<strong>{GAME["world"][lang]}</strong>') + '</li>'
                     for st in t['steps'])
-    shots = ''.join(f'<figure class="shot"><img src="/static/img/{f}.png" width="1600" height="1200" loading="lazy" '
-                    f'alt="{esc(c)}"><figcaption>{esc(c)}</figcaption></figure>' for f, c in t['shots'])
+    shots = ''                                      # groups of frames; a frame not captured yet is left out
+    for g, items in t['shots']:
+        figs = ''.join(f'<figure class="shot"><img src="/static/img/{f}.png" width="1600" height="1200" loading="lazy" '
+                       f'alt="{esc(c)}"><figcaption>{esc(c)}</figcaption></figure>' for f, c in items
+                       if os.path.exists(os.path.join(ROOT, 'static', 'img', f + '.png')))
+        if figs:
+            shots += (f'<h3>{esc(g)}</h3><div class="cards" style="grid-template-columns:repeat(auto-fill,'
+                      f'minmax(min(100%,440px),1fr))">{figs}</div>')
     body = f'''<section class="hero"><div class="wrap">
 {logo_svg(240, t['site']).replace('<svg ', '<svg class="logo" ', 1)}
 <p class="px" style="color:var(--dim);margin:0 0 14px">{esc(t['kicker'])}</p>
@@ -270,7 +276,7 @@ def home(d, lang):
 <h2>{esc(t['h_classic'])}</h2>
 <p>{t['classic']}</p>
 <h2>{esc(t['h_shots'])}</h2>
-<div class="cards">{shots}</div>
+{shots}
 <h2 id="install">{esc(t['h_install'])}</h2>
 <ol class="steps">{steps}</ol>
 <p class="note" style="margin-top:14px">{esc(t['install_note'])}</p>
