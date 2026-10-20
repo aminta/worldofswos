@@ -330,6 +330,7 @@ def page(lang, path, title, body, desc='', active=None, langs=None):
 </main>
 <footer class="foot"><div class="wrap">
 <p><strong>{esc(t['unofficial'])}</strong></p>
+<p><a class="btn orange" href="/{lang}/bug/">{esc(t['bug_title'])}</a></p>
 <div class="assoc">{TWELVE_BIT}<p>{esc(t['by'])} <a href="{REPO}">{esc(t['source'])}</a>.</p></div>{counter(lang)}
 </div></footer>
 </body>
@@ -636,6 +637,19 @@ def install_page(d, lang):
     return page(lang, 'install/', g['title'], body, active='install')
 
 
+def bug_page(d, lang):
+    t = T[lang]
+    f = t['bug_form']
+    body = f'''<div class="wrap page-head"><h1>{esc(t['bug_title'])}</h1><p>{esc(t['bug_lead'])}</p>
+<p class="note">{esc(t['bug_privacy'])} <a href="{REPO}/issues">{esc(t['bug_github'])}</a>.</p></div>
+<div class="wrap"><div class="panel" style="background:#fff;padding:12px">
+<iframe data-tally-src="https://tally.so/embed/{f}?alignLeft=1&amp;hideTitle=1&amp;dynamicHeight=1" loading="lazy"
+ width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" title="{esc(t['bug_title'])}"></iframe>
+<noscript><a href="https://tally.so/r/{f}">{esc(t['bug_title'])}</a></noscript></div></div>
+<script src="https://tally.so/widgets/embed.js" async onload="Tally.loadEmbeds()"></script>'''
+    return page(lang, 'bug/', t['bug_title'], body)
+
+
 def not_found():
     t = T['en']
     body = (f'<div class="wrap page-head" style="text-align:center"><h1>{esc(t["notfound"])}</h1>'
@@ -706,7 +720,7 @@ def build():
     urls = []
     for lang in LANGS:
         pages = {'': home(d, lang), 'countries/': countries_index(d, lang), 'world/': world(d, lang),
-                 'credits/': credits(d, lang), 'classic/': classic_page(d, lang)}
+                 'credits/': credits(d, lang), 'classic/': classic_page(d, lang), 'bug/': bug_page(d, lang)}
         if INSTALL_PAGE:
             pages['install/'] = install_page(d, lang)
         for code in d['order']:

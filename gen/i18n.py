@@ -31,6 +31,10 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    bug_title='Report a bug', bug_form='jeao1x',
+    bug_lead='Found something wrong in the mod (3.3.6 too)? Tell us here. Attach your career save if you can: the .CAR file is in the game folder. On MiSTer, the saves are inside the VHD disk image.',
+    bug_privacy='Your report goes to the mod\'s maintainer through Tally and is used only to fix the bug.',
+    bug_github='Have a GitHub account? Open an issue',
     s_comps='competitions', s_conti='continental cups ({n} new in 4.0)', s_guests='guest clubs',
     stats_note='Counted from the release data. Clubs: every club with a team in the game: {league} in the league divisions, {states} playing only a Brazilian state championship, {pool} waiting outside the world and {guests} continental guests. Competitions: every league division, national cup, league cup and Brazilian state championship, the Coppa Italia Serie D and {conti} continental competitions (UEFA 3, CONMEBOL 3, CONCACAF 1, AFC 3, CAF 3, OFC 1 and the FIFA Intercontinental Cup). Guest clubs: the real entrants that play only their continental cup.',
     with40='Coming with 4.0, by the end of October 2026.',
@@ -157,6 +161,10 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    bug_title='Segnala un bug', bug_form='RWGop9',
+    bug_lead='Hai trovato qualcosa che non va nella mod (anche nella 3.3.6)? Raccontacelo qui. Se puoi, allega il salvataggio della carriera: il file .CAR è nella cartella del gioco. Su MiSTer i salvataggi sono dentro l\'immagine disco VHD.',
+    bug_privacy='La segnalazione arriva al curatore della mod tramite Tally e serve solo a correggere il bug.',
+    bug_github='Hai un account GitHub? Apri una issue',
     s_comps='competizioni', s_conti='coppe continentali ({n} nuove nella 4.0)', s_guests='squadre ospiti',
     stats_note='Contati dai dati della release. Squadre: ogni squadra presente nel gioco: {league} nelle divisioni dei campionati, {states} che giocano solo un campionato statale brasiliano, {pool} in attesa fuori dal mondo e {guests} ospiti delle coppe continentali. Competizioni: ogni divisione, coppa nazionale, coppa di lega e campionato statale brasiliano, la Coppa Italia Serie D e {conti} competizioni continentali (UEFA 3, CONMEBOL 3, CONCACAF 1, AFC 3, CAF 3, OFC 1 e la Coppa Intercontinentale FIFA). Squadre ospiti: le vere partecipanti che giocano solo la loro coppa continentale.',
     with40='In arrivo con la 4.0, entro fine ottobre 2026.',
@@ -281,6 +289,10 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    bug_title='Signaler un bug', bug_form='6D8KaP',
+    bug_lead="Vous avez trouvé un problème dans le mod (la 3.3.6 aussi) ? Dites-le-nous ici. Si possible, joignez la sauvegarde de votre carrière : le fichier .CAR se trouve dans le dossier du jeu. Sur MiSTer, les sauvegardes sont dans l'image disque VHD.",
+    bug_privacy='Votre signalement parvient au responsable du mod via Tally et sert uniquement à corriger le bug.',
+    bug_github='Vous avez un compte GitHub ? Ouvrez une issue',
     s_comps='compétitions', s_conti='coupes continentales ({n} nouvelles dans la 4.0)', s_guests='clubs invités',
     stats_note="Comptés à partir des données de la version. Clubs : chaque club présent dans le jeu : {league} dans les divisions des championnats, {states} qui ne jouent qu'un championnat d'État brésilien, {pool} qui attendent hors du monde et {guests} invités des coupes continentales. Compétitions : chaque division, coupe nationale, coupe de la ligue et championnat d'État brésilien, la Coppa Italia Serie D et {conti} compétitions continentales (UEFA 3, CONMEBOL 3, CONCACAF 1, AFC 3, CAF 3, OFC 1 et la Coupe intercontinentale de la FIFA). Clubs invités : les vrais participants qui ne jouent que leur coupe continentale.",
     with40="Arrive avec la 4.0, d'ici fin octobre 2026.",
@@ -409,6 +421,10 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    bug_title='Fehler melden', bug_form='X5xoZj',
+    bug_lead='Ist dir in der Mod etwas aufgefallen, das nicht stimmt (auch in 3.3.6)? Erzähl es uns hier. Häng wenn möglich deinen Karrierespielstand an: Die .CAR-Datei liegt im Spielordner. Auf dem MiSTer liegen die Spielstände im VHD-Disk-Image.',
+    bug_privacy='Deine Meldung geht über Tally an den Betreuer der Mod und dient nur dazu, den Fehler zu beheben.',
+    bug_github='Du hast ein GitHub-Konto? Eröffne ein Issue',
     s_comps='Wettbewerbe', s_conti='Kontinentalpokale ({n} neu in 4.0)', s_guests='Gastvereine',
     stats_note='Gezählt aus den Daten der Version. Vereine: jeder Verein, den es im Spiel gibt: {league} in den Spielklassen der Ligen, {states}, die nur eine brasilianische Staatsmeisterschaft spielen, {pool}, die außerhalb der Welt warten, und {guests} Gäste der Kontinentalpokale. Wettbewerbe: jede Spielklasse, jeder Landes- und Ligapokal und jede brasilianische Staatsmeisterschaft, die Coppa Italia Serie D und {conti} Kontinentalwettbewerbe (UEFA 3, CONMEBOL 3, CONCACAF 1, AFC 3, CAF 3, OFC 1 und der FIFA-Interkontinentalpokal). Gastvereine: die echten Teilnehmer, die nur ihren Kontinentalpokal spielen.',
     with40='Kommt mit 4.0, bis Ende Oktober 2026.',
