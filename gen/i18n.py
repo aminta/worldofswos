@@ -31,6 +31,7 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    soon_tile='Coming soon',
     h_cups='Continental club cups',
     cups=[('copa-libertadores', 'Copa Libertadores: the group stage'), ('concacaf-cc', 'Concacaf Champions Cup: the round of 16'),
           ('afc-cl-elite', 'AFC Champions League Elite'), ('caf-cl', 'CAF Champions League: the group stage'),
@@ -152,6 +153,7 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    soon_tile='In arrivo',
     h_cups='Le coppe continentali',
     cups=[('copa-libertadores', 'Copa Libertadores: la fase a gironi'), ('concacaf-cc', 'Concacaf Champions Cup: gli ottavi di finale'),
           ('afc-cl-elite', 'AFC Champions League Elite'), ('caf-cl', 'CAF Champions League: la fase a gironi'),
@@ -271,6 +273,7 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    soon_tile='Bientôt',
     h_cups='Les coupes continentales',
     cups=[('copa-libertadores', 'Copa Libertadores : la phase de groupes'), ('concacaf-cc', 'Coupe des champions de la Concacaf : les huitièmes de finale'),
           ('afc-cl-elite', 'Ligue des champions de l\'AFC Elite'), ('caf-cl', 'Ligue des champions de la CAF : la phase de groupes'),
@@ -394,6 +397,7 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    soon_tile='Demnächst',
     h_cups='Die Kontinentalpokale',
     cups=[('copa-libertadores', 'Copa Libertadores: die Gruppenphase'), ('concacaf-cc', 'Concacaf Champions Cup: das Achtelfinale'),
           ('afc-cl-elite', 'AFC Champions League Elite'), ('caf-cl', 'CAF Champions League: die Gruppenphase'),

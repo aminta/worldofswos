@@ -286,7 +286,7 @@ def home(d, lang):
                 figs += (f'<figure class="shot"><img src="/static/img/{fl}.png" width="1600" height="1200" '
                          f'loading="lazy" alt="{esc(c)}"><figcaption>{esc(c)}</figcaption></figure>')
             else:
-                figs += (f'<figure class="shot soon"><div class="soon-box"><span>{esc(t["soon"])}</span></div>'
+                figs += (f'<figure class="shot soon"><div class="soon-box"><span>{esc(t["soon_tile"])}</span></div>'
                          f'<figcaption>{esc(c)}</figcaption></figure>')
         if figs:
             shots += (f'<h3>{esc(g)}</h3><div class="cards" style="grid-template-columns:repeat(auto-fill,'
@@ -300,7 +300,7 @@ def home(d, lang):
                 tiles += (f'<figure class="shot"><img src="/static/img/{fl}.png" width="1600" height="1200" loading="lazy" '
                           f'alt="{esc(c)}"><figcaption>{esc(c)}</figcaption></figure>')
             else:
-                tiles += (f'<figure class="shot soon"><div class="soon-box"><span>{esc(t["soon"])}</span></div>'
+                tiles += (f'<figure class="shot soon"><div class="soon-box"><span>{esc(t["soon_tile"])}</span></div>'
                           f'<figcaption>{esc(c)}</figcaption></figure>')
         cups = f'<h2 id="cups">{esc(t["h_cups"])}</h2><div class="cards cups">{tiles}</div>'
     if RELEASED:

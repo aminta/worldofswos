@@ -232,3 +232,5 @@ details[open] summary { margin-bottom: 12px; }
   font-family: var(--pixel); font-size: 12px; text-transform: uppercase; color: #ffe6a0; text-shadow: 2px 2px 0 #4a0206; }
 .cards.cups { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 860px) { .cards.cups { grid-template-columns: 1fr; } }
+[id] { scroll-margin-top: 96px; }
+@media (max-width: 860px) { [id] { scroll-margin-top: 130px; } }
