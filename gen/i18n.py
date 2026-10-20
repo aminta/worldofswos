@@ -31,6 +31,8 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    bug_cta='Found a bug? Tell us: attach your .CAR save and we\'ll fix it.',
+    h_conti='Continental competitions', uefa_line='League phase of 36 with one table, knockout play-offs and the seeded bracket, the 2026-27 qualifying rounds, no away goals.',
     bug_title='Report a bug', bug_form='jeao1x',
     bug_lead='Found something wrong in the mod (3.3.6 too)? Tell us here. Attach your career save if you can: the .CAR file is in the game folder. On MiSTer, the saves are inside the VHD disk image.',
     bug_privacy='Your report goes to the mod\'s maintainer through Tally and is used only to fix the bug.',
@@ -161,6 +163,8 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    bug_cta='Hai trovato un bug? Segnalacelo: allega il salvataggio .CAR e lo correggiamo.',
+    h_conti='Competizioni continentali', uefa_line='Fase campionato a 36 con classifica unica, spareggi e tabellone con teste di serie, preliminari 2026-27, niente gol in trasferta.',
     bug_title='Segnala un bug', bug_form='RWGop9',
     bug_lead='Hai trovato qualcosa che non va nella mod (anche nella 3.3.6)? Raccontacelo qui. Se puoi, allega il salvataggio della carriera: il file .CAR è nella cartella del gioco. Su MiSTer i salvataggi sono dentro l\'immagine disco VHD.',
     bug_privacy='La segnalazione arriva al curatore della mod tramite Tally e serve solo a correggere il bug.',
@@ -289,6 +293,8 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    bug_cta="Vous avez trouvé un bug ? Dites-le-nous : joignez votre sauvegarde .CAR et nous le corrigerons.",
+    h_conti='Compétitions continentales', uefa_line="Phase de ligue à 36 avec un classement unique, barrages et tableau avec têtes de série, tours de qualification 2026-27, sans buts à l'extérieur.",
     bug_title='Signaler un bug', bug_form='6D8KaP',
     bug_lead="Vous avez trouvé un problème dans le mod (la 3.3.6 aussi) ? Dites-le-nous ici. Si possible, joignez la sauvegarde de votre carrière : le fichier .CAR se trouve dans le dossier du jeu. Sur MiSTer, les sauvegardes sont dans l'image disque VHD.",
     bug_privacy='Votre signalement parvient au responsable du mod via Tally et sert uniquement à corriger le bug.',
@@ -421,6 +427,8 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    bug_cta='Einen Fehler gefunden? Sag es uns: Häng deinen .CAR-Spielstand an, und wir beheben ihn.',
+    h_conti='Kontinentale Wettbewerbe', uefa_line='Ligaphase mit 36 Vereinen und einer Tabelle, K.-o.-Playoffs und gesetzter Turnierbaum, Qualifikationsrunden 2026-27, keine Auswärtstorregel.',
     bug_title='Fehler melden', bug_form='X5xoZj',
     bug_lead='Ist dir in der Mod etwas aufgefallen, das nicht stimmt (auch in 3.3.6)? Erzähl es uns hier. Häng wenn möglich deinen Karrierespielstand an: Die .CAR-Datei liegt im Spielordner. Auf dem MiSTer liegen die Spielstände im VHD-Disk-Image.',
     bug_privacy='Deine Meldung geht über Tally an den Betreuer der Mod und dient nur dazu, den Fehler zu beheben.',

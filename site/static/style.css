@@ -236,3 +236,10 @@ details[open] summary { margin-bottom: 12px; }
 @media (max-width: 860px) { [id] { scroll-margin-top: 130px; } }
 .btn.disabled { background: #4b5578; border-color: #6c7698 #2a3150 #2a3150 #6c7698; color: #cfd3e6; filter: none; cursor: not-allowed; }
 .btn.disabled:hover { filter: none; }
+
+/* home: report-a-bug call to action */
+.bug-cta { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin: 8px 0 0;
+  padding: 16px 20px; background: linear-gradient(90deg, #3a1060, #12206e); border: 3px solid var(--orange);
+  box-shadow: 4px 4px 0 var(--shadow); }
+.bug-cta p { margin: 0; font-size: 15px; line-height: 1.5; color: #fff; text-shadow: 2px 2px 0 var(--shadow); flex: 1 1 320px; }
+@media (max-width: 600px) { .bug-cta .btn { width: 100%; } }

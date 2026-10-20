@@ -410,6 +410,8 @@ def home(d, lang):
 <div class="stats">{stats}</div>
 <p class="note" style="max-width:820px;margin:8px auto 0">{esc(t['stats_note'].format(**{k: fmt_num(v, lang) for k, v in s.items()}))}</p>
 </div></section>
+<section class="wrap"><div class="bug-cta"><p class="px">{esc(t['bug_cta'])}</p>
+<a class="btn orange" href="/{lang}/bug/">{esc(t['bug_title'])}</a></div></section>
 <section class="wrap">
 <h2>{esc(t['h_what'])}</h2>
 {''.join(f'<p>{p}</p>' for p in t['what'])}
@@ -501,9 +503,26 @@ def country(d, code, lang):
                 active='countries')
 
 
+def conti_block(d, lang):
+    """The continental competitions by confederation, from the notes' continental cups item (data/next)."""
+    t = T[lang]
+    main, _, _ = notes_part(d, lang)
+    kids = next((k for b in main if b[0] == 'list' for _, k in b[1] if any(x[0].startswith('CONMEBOL') for x in k)), [])
+    rows = [('UEFA', [('**UEFA Champions League** · **UEFA Europa League** · **UEFA Conference League**', t['uefa_line'])], False)]
+    for txt, _ in kids:
+        conf, rest = txt.split(':', 1)
+        rows.append((conf.strip(), [(rest.strip(), '')], True))
+    new = '' if RELEASED else f' <span class="next-tag px" style="font-size:11px">4.0</span>'
+    li = ''.join(f'<li class="comp"><span class="name">{esc(conf)}</span>{new if is_new else ""}'
+                 + ''.join(f'<p class="facts">{md.inline(a)}' + (f'<br>{esc(b)}' if b else '') + '</p>' for a, b in items)
+                 + '</li>' for conf, items, is_new in rows)
+    note = '' if RELEASED else f'<p class="note"><span class="next-tag px" style="font-size:11px">4.0</span> {esc(t["with40"])}</p>'
+    return f'<section class="cont"><h2 id="continental">{esc(t["h_conti"])}</h2>{note}<ul class="comps">{li}</ul></section>'
+
+
 def countries_index(d, lang):
     t = T[lang]
-    secs = []
+    secs = [conti_block(d, lang)]
     for cont in CONTS:
         codes = [c for c in d['order'] if d['countries'][c]['cont'] == cont]
         if not codes:
