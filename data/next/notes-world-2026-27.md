@@ -5,8 +5,10 @@
 **SWOS 96/97 Mod 4.0: the World 2026-27 career, today's football as it really is** (DRAFT)
 
 
-A historic career world of the **2026-27 season**: 91 countries, 2,378 clubs (Italy down to the real Serie D: 156 clubs in 9 groups), plus 97 clubs waiting outside
-the world (the Eccellenza, Brazil's state second divisions, the clubs below the B teams' leagues), real squads at the
+A historic career world of the **2026-27 season**: 91 countries, 2,003 clubs in the league divisions (Italy down to the real Serie D: 156 clubs in 9 groups) and 119
+that play only Brazil's state championships, plus 104 clubs waiting outside the world (the Eccellenza, Brazil's
+state second divisions, the clubs below the B teams' leagues) and 159 guest clubs of the continental cups: 2,385
+clubs with a team record in all, real squads at the
 end of the summer 2026 transfer window. In CLASSIC CAREERS choose WORLD 2026-27, then the continent and the country (EUROPE lists the
 first 43 UEFA associations by ranking, the others are under OTHER NATIONS).
 
@@ -608,8 +610,10 @@ Cearense, Pernambucano, Alagoano and Mato-Grossense.
 **SWOS 96/97 Mod 4.0: la carriera Mondo 2026-27, il calcio di oggi com'è davvero** (BOZZA)
 
 
-Un mondo di carriera storica della **stagione 2026-27**: 91 nazioni, 2.378 club (l'Italia fino alla Serie D vera: 156 club in 9 gironi), più 97 club in attesa fuori dal
-mondo (l'Eccellenza, le seconde divisioni statali brasiliane, i club sotto i campionati delle squadre B), rose reali
+Un mondo di carriera storica della **stagione 2026-27**: 91 nazioni, 2.003 club nelle divisioni dei campionati (l'Italia fino alla Serie D vera: 156 club in 9 gironi) e 119
+che giocano solo i campionati statali brasiliani, più 104 club in attesa fuori dal mondo (l'Eccellenza, le seconde
+divisioni statali brasiliane, i club sotto i campionati delle squadre B) e 159 club ospiti delle coppe
+continentali: 2.385 club con una scheda squadra in tutto, rose reali
 alla fine del mercato estivo 2026. In CARR. STORICHE scegli MONDO 2026-27, poi il continente e la nazione (EUROPA elenca le prime 43
 federazioni UEFA per ranking, le altre sono in ALTRE NAZIONI).
 
@@ -1234,9 +1238,9 @@ Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
   di prezzi del gioco); non vengono distribuiti valori di mercato, valutazioni o pagine delle fonti.
 
 
-91 countries, 136 league divisions, 87 national cups, 14 league cups: every playable competition and its format, generated from the release build: [world-2026-27-competitions.md](world-2026-27-competitions.md).
+91 countries, 134 league divisions, 87 national cups, 14 league cups, 13 state championships, 15 continental competitions (UEFA 3 + 12 new): every playable competition and its format, generated from the release build: [world-2026-27-competitions.md](world-2026-27-competitions.md).
 
-91 nazioni, 136 divisioni, 87 coppe nazionali, 14 coppe di lega: ogni competizione giocabile e la sua formula, generate dalla build della release: [world-2026-27-competitions.md](world-2026-27-competitions.md).
+91 nazioni, 134 divisioni, 87 coppe nazionali, 14 coppe di lega, 13 campionati statali, 15 competizioni continentali (UEFA 3 + 12 nuove): ogni competizione giocabile e la sua formula, generate dalla build della release: [world-2026-27-competitions.md](world-2026-27-competitions.md).
 
 
 
