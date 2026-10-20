@@ -591,6 +591,9 @@ def countries_index(d, lang):
         li = ''.join(f'<li><a href="/{lang}/countries/{c}/">{esc(d["countries"][c]["names"][lang])}'
                      f'<small>{esc(t["comps_n"].format(n=d["countries"][c]["ncomps"]))}</small></a></li>'
                      for c in codes)
+        if cont == 'oceania' and 'aus' in d['countries'] and d['countries']['aus']['cont'] != 'oceania':
+            li += (f'<li><a href="/{lang}/countries/aus/">{esc(d["countries"]["aus"]["names"][lang])}'
+                   f'<small>{esc(t["aus_note"])}</small></a></li>')      # Australia: AFC since 2006, looked for here
         secs.append(f'<section class="cont"><h2>{esc(CONTINENT[cont][lang])}</h2><ul class="grid-countries">{li}</ul>'
                     '</section>')
     body = (f'<div class="wrap page-head"><h1>{esc(t["h_countries"])}</h1>'

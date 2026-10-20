@@ -31,6 +31,7 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    aus_note='plays in the AFC: listed under Asia',
     places_h='Continental places (season 1)', places_none='No direct continental place in season 1.',
     bug_cta='Found a bug? Tell us: attach your .CAR save and we\'ll fix it.',
     h_conti='Continental competitions', uefa_line='League phase of 36 with one table, knockout play-offs and the seeded bracket, the 2026-27 qualifying rounds, no away goals.',
@@ -164,6 +165,7 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    aus_note='gioca nella AFC: è sotto Asia',
     places_h='Posti nelle coppe continentali (stagione 1)', places_none='Nessun posto diretto nelle coppe continentali nella stagione 1.',
     bug_cta='Hai trovato un bug? Segnalacelo: allega il salvataggio .CAR e lo correggiamo.',
     h_conti='Competizioni continentali', uefa_line='Fase campionato a 36 con classifica unica, spareggi e tabellone con teste di serie, preliminari 2026-27, niente gol in trasferta.',
@@ -295,6 +297,7 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    aus_note="joue dans l'AFC : classée en Asie",
     places_h='Places en coupes continentales (saison 1)', places_none='Aucune place directe en coupe continentale lors de la saison 1.',
     bug_cta="Vous avez trouvé un bug ? Dites-le-nous : joignez votre sauvegarde .CAR et nous le corrigerons.",
     h_conti='Compétitions continentales', uefa_line="Phase de ligue à 36 avec un classement unique, barrages et tableau avec têtes de série, tours de qualification 2026-27, sans buts à l'extérieur.",
@@ -430,6 +433,7 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    aus_note='spielt in der AFC: unter Asien',
     places_h='Plätze in den Kontinentalpokalen (Saison 1)', places_none='Kein direkter Platz in einem Kontinentalpokal in Saison 1.',
     bug_cta='Einen Fehler gefunden? Sag es uns: Häng deinen .CAR-Spielstand an, und wir beheben ihn.',
     h_conti='Kontinentale Wettbewerbe', uefa_line='Ligaphase mit 36 Vereinen und einer Tabelle, K.-o.-Playoffs und gesetzter Turnierbaum, Qualifikationsrunden 2026-27, keine Auswärtstorregel.',
