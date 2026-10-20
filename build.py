@@ -47,6 +47,7 @@ OUT = os.environ.get('WOS_OUT') or os.path.join(ROOT, 'site')
 INSTALL_PAGE = os.environ.get('WOS_INSTALL', '1') == '1'   # live since 2026-10-20 (Davide's ok via the Regia)
 GUIDE_PATCHER = REPO + '/releases/download/v3.3.6/swos-9697-mod-patcher.html'   # the public one-click patcher (3.3.6)
 GUIDE_DONE_SHOTS = False    # the 'done' shots show 4.0 text (MOD_BACKUP\4.0): off until there are 3.3.6 ones
+SHOTS_HOLD = {'split-scotland', 'split-austria'}   # old 19/10 frames without the group headers: off until retaken
 CUPS = os.environ.get('WOS_CUPS') == '1'           # the continental cups section: preview only until the Regia's go
 CUPS_HOLD = {'afc-cl-elite', 'fifa-intercontinental'}   # frames to be retaken / not yet capturable: placeholders
 CONTS = ['europe', 'north_america', 'south_america', 'asia', 'oceania', 'africa']
@@ -281,6 +282,8 @@ def home(d, lang):
                     for st in t['steps'])
     shots = ''                                      # groups of frames; a frame not captured yet is left out
     for g, items in t['shots']:
+        if all(f[:-3] in SHOTS_HOLD for f, _ in items):
+            continue                                # a group taken off until its new frames arrive
         figs = ''
         for f, c in items:                          # name-it: this language's capture when there is one
             fl = f[:-3] + '-' + lang if f.endswith('-it') and have(f[:-3] + '-' + lang) else f
