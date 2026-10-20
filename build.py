@@ -213,6 +213,8 @@ def load():
         countries[code]['cont'] = c['cont']
     notes = split_langs(open(os.path.join(texts, 'notes-world-2026-27.md'), encoding='utf-8').read())
     src = json.load(open(os.path.join(DATA, 'source.json')))
+    pp = os.path.join(DATA, 'places.json')            # continental places by association (the data session)
+    places = json.load(open(pp))['countries'] if os.path.exists(pp) else {}
     # the numbers, counted from the release data (data/stats.json, written by --refresh)
     st = json.load(open(os.path.join(DATA, 'stats.json')))
     for code, c in countries.items():
@@ -229,7 +231,7 @@ def load():
     stats = dict(countries=len(countries), clubs=league + states + pool + st['guests'], guests=st['guests'],
                  comps=sum(c['ncomps'] for c in countries.values()) + conti, conti=conti, new_conti=new_conti,
                  league=league, states=states, pool=pool)
-    return dict(countries=countries, order=order, notes=notes, stats=stats, src=src)
+    return dict(countries=countries, order=order, notes=notes, stats=stats, src=src, places=places)
 
 
 # ------------------------------------------------------------------------------------------------ page shell
@@ -485,13 +487,72 @@ def screens(c, lang):
     return f'<div class="screens">{"".join(out)}</div>'
 
 
+HOW = {
+    'cup winner': {'en': 'cup winner', 'it': 'vincitrice della coppa', 'fr': 'vainqueur de la coupe', 'de': 'Pokalsieger'},
+    'Apertura champion': {'en': 'Apertura champion', 'it': 'campione dell\'Apertura', 'fr': "champion de l'Apertura",
+                          'de': 'Apertura-Meister'},
+    'Clausura champion': {'en': 'Clausura champion', 'it': 'campione della Clausura', 'fr': 'champion de la Clausura',
+                          'de': 'Clausura-Meister'},
+    'next by league place': {'en': 'next by league place', 'it': 'la successiva in classifica',
+                             'fr': 'le suivant au classement', 'de': 'der Nächste in der Tabelle'},
+    'best placed not yet qualified': {'en': 'best placed not yet qualified', 'it': 'la meglio piazzata non ancora qualificata',
+                                      'fr': 'le mieux classé pas encore qualifié', 'de': 'der Bestplatzierte, der noch nicht qualifiziert ist'},
+    'next {n} best placed not yet qualified': {'en': 'next {n} best placed not yet qualified',
+                                               'it': 'le {n} meglio piazzate non ancora qualificate',
+                                               'fr': 'les {n} mieux classés pas encore qualifiés',
+                                               'de': 'die {n} Bestplatzierten, die noch nicht qualifiziert sind'},
+    '{n} x {o}': {'en': '{n} × {o}', 'it': '{n} × {o}', 'fr': '{n} × {o}', 'de': '{n} × {o}'},
+}
+
+
+def _ord(n, lang):
+    n = int(n)
+    return {'en': f'{n}{complist_sfx(n)}', 'it': f'{n}º', 'fr': '1er' if n == 1 else f'{n}e', 'de': f'{n}.'}[lang]
+
+
+def complist_sfx(n):
+    return 'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')
+
+
+def how_text(how, lang):
+    out = []
+    for part in how.split(', '):
+        m = re.fullmatch(r'(\d+)(?:st|nd|rd|th)(?:-(\d+)(?:st|nd|rd|th))?', part)
+        if m:
+            out.append(_ord(m.group(1), lang) + (f'-{_ord(m.group(2), lang)}' if m.group(2) else ''))
+            continue
+        m = re.fullmatch(r'(\d+) x (\d+)(?:st|nd|rd|th)', part)
+        if m:
+            out.append(HOW['{n} x {o}'][lang].format(n=m.group(1), o=_ord(m.group(2), lang)))
+            continue
+        m = re.fullmatch(r'next (\d+) best placed not yet qualified', part)
+        if m:
+            out.append(HOW['next {n} best placed not yet qualified'][lang].format(n=m.group(1)))
+            continue
+        out.append(HOW.get(part, {}).get(lang, part))
+    return ', '.join(out)
+
+
+def places_html(d, code, lang):
+    t = T[lang]
+    pl = d['places'].get(code) if d.get('places') else None
+    if pl is None:
+        return ''
+    if not pl:
+        return f'<p class="note">{esc(t["places_none"])}</p>'
+    tag = '' if RELEASED else ' <span class="next-tag px" style="font-size:11px">4.0</span>'
+    li = ''.join(f'<li><strong>{esc(x["comp"])}</strong>: {x["places"]} ({esc(how_text(x["how"], lang))})'
+                 + (tag if not x['comp'].startswith('UEFA') else '') + '</li>' for x in pl)
+    return f'<div class="panel"><strong class="px" style="color:var(--gold)">{esc(t["places_h"])}</strong><ul style="margin:.5em 0 0">{li}</ul></div>'
+
+
 def country(d, code, lang):
     t, c = T[lang], d['countries'][code]
     name = c['names'][lang]
     head = f'''<div class="wrap page-head">
 <p class="crumbs"><a href="/{lang}/countries/">{esc(t['c_back'])}</a> › {esc(CONTINENT[c['cont']][lang])}</p>
 <h1>{esc(name)}</h1>
-<p>{esc(t['c_lead'].format(name=name))}</p></div>'''
+<p>{esc(t['c_lead'].format(name=name))}</p>{places_html(d, code, lang)}</div>'''
     game = f'<p class="note">{esc(t["c_game_note"])}</p>{screens(c, lang)}'
     if lang in ('en', 'it'):
         body = (f'<div class="wrap">{comp_cards(c["md"][lang], lang)}'

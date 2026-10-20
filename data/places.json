@@ -1,0 +1,839 @@
+{
+ "source": "data session 2026-10-21, world5tm-rel40-cupd-1955 + internal/conti (the game's access lists)",
+ "countries": {
+  "alb": [],
+  "alg": [
+   {
+    "comp": "CAF CHAMPIONS LEAGUE",
+    "places": 2,
+    "how": "1st-2nd"
+   },
+   {
+    "comp": "CAF CONFEDERATION CUP",
+    "places": 2,
+    "how": "3rd, cup winner"
+   }
+  ],
+  "and": [],
+  "arg": [
+   {
+    "comp": "COPA LIBERTADORES",
+    "places": 6,
+    "how": "1st-3rd, Apertura champion, Clausura champion, cup winner"
+   },
+   {
+    "comp": "COPA SUDAMERICANA",
+    "places": 6,
+    "how": "next 6 best placed not yet qualified"
+   }
+  ],
+  "arm": [
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "aus": [
+   {
+    "comp": "AFC CHAMPIONS LEAGUE ELITE",
+    "places": 2,
+    "how": "2 x 1st"
+   },
+   {
+    "comp": "AFC CHAMPIONS LEAGUE TWO",
+    "places": 1,
+    "how": "best placed not yet qualified"
+   }
+  ],
+  "aut": [
+   {
+    "comp": "UEFA Europa League",
+    "places": 1,
+    "how": "cup winner"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "aze": [
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "bel": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 2,
+    "how": "1st-2nd"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 2,
+    "how": "cup winner, 3rd"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "bih": [],
+  "blr": [],
+  "bol": [
+   {
+    "comp": "COPA LIBERTADORES",
+    "places": 4,
+    "how": "1st-3rd, cup winner"
+   },
+   {
+    "comp": "COPA SUDAMERICANA",
+    "places": 4,
+    "how": "next 4 best placed not yet qualified"
+   }
+  ],
+  "bra": [
+   {
+    "comp": "COPA LIBERTADORES",
+    "places": 7,
+    "how": "1st-6th, cup winner"
+   },
+   {
+    "comp": "COPA SUDAMERICANA",
+    "places": 6,
+    "how": "next 6 best placed not yet qualified"
+   }
+  ],
+  "bul": [
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "can": [
+   {
+    "comp": "CONCACAF CHAMPIONS CUP",
+    "places": 3,
+    "how": "2 x 1st, cup winner"
+   }
+  ],
+  "chi": [
+   {
+    "comp": "COPA LIBERTADORES",
+    "places": 4,
+    "how": "1st-3rd, cup winner"
+   },
+   {
+    "comp": "COPA SUDAMERICANA",
+    "places": 4,
+    "how": "next 4 best placed not yet qualified"
+   }
+  ],
+  "chn": [
+   {
+    "comp": "AFC CHAMPIONS LEAGUE ELITE",
+    "places": 2,
+    "how": "1st, cup winner"
+   },
+   {
+    "comp": "AFC CHAMPIONS LEAGUE TWO",
+    "places": 1,
+    "how": "best placed not yet qualified"
+   }
+  ],
+  "col": [
+   {
+    "comp": "COPA LIBERTADORES",
+    "places": 4,
+    "how": "1st-4th"
+   },
+   {
+    "comp": "COPA SUDAMERICANA",
+    "places": 4,
+    "how": "cup winner, next 3 best placed not yet qualified"
+   }
+  ],
+  "crc": [
+   {
+    "comp": "CONCACAF CHAMPIONS CUP",
+    "places": 2,
+    "how": "1st-2nd"
+   }
+  ],
+  "cro": [
+   {
+    "comp": "UEFA Europa League",
+    "places": 1,
+    "how": "cup winner"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "cyp": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 1,
+    "how": "1st"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 1,
+    "how": "cup winner"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "cze": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 1,
+    "how": "1st"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 2,
+    "how": "cup winner, 2nd"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "den": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 1,
+    "how": "1st"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 1,
+    "how": "cup winner"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "ecu": [
+   {
+    "comp": "COPA LIBERTADORES",
+    "places": 4,
+    "how": "1st-3rd, cup winner"
+   },
+   {
+    "comp": "COPA SUDAMERICANA",
+    "places": 4,
+    "how": "next 4 best placed not yet qualified"
+   }
+  ],
+  "egy": [
+   {
+    "comp": "CAF CHAMPIONS LEAGUE",
+    "places": 2,
+    "how": "1st-2nd"
+   },
+   {
+    "comp": "CAF CONFEDERATION CUP",
+    "places": 2,
+    "how": "3rd, cup winner"
+   }
+  ],
+  "eng": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 5,
+    "how": "1st-5th"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 2,
+    "how": "cup winner, 6th"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "esp": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 4,
+    "how": "1st-4th"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 2,
+    "how": "cup winner, 5th"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "est": [],
+  "fin": [
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "fra": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 3,
+    "how": "1st-3rd"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 2,
+    "how": "cup winner, 4th"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "fro": [],
+  "geo": [],
+  "ger": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 4,
+    "how": "1st-4th"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 2,
+    "how": "cup winner, 5th"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "gha": [
+   {
+    "comp": "CAF CHAMPIONS LEAGUE",
+    "places": 1,
+    "how": "1st"
+   },
+   {
+    "comp": "CAF CONFEDERATION CUP",
+    "places": 1,
+    "how": "cup winner"
+   }
+  ],
+  "gib": [],
+  "gre": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 1,
+    "how": "1st"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 2,
+    "how": "cup winner, 2nd"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "gua": [
+   {
+    "comp": "CONCACAF CHAMPIONS CUP",
+    "places": 1,
+    "how": "1st"
+   }
+  ],
+  "hon": [
+   {
+    "comp": "CONCACAF CHAMPIONS CUP",
+    "places": 1,
+    "how": "1st"
+   }
+  ],
+  "hun": [
+   {
+    "comp": "UEFA Europa League",
+    "places": 1,
+    "how": "cup winner"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "ind": [
+   {
+    "comp": "AFC CHAMPIONS LEAGUE TWO",
+    "places": 2,
+    "how": "1st, cup winner"
+   }
+  ],
+  "irl": [
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "irn": [
+   {
+    "comp": "AFC CHAMPIONS LEAGUE ELITE",
+    "places": 2,
+    "how": "1st, cup winner"
+   },
+   {
+    "comp": "AFC CHAMPIONS LEAGUE TWO",
+    "places": 1,
+    "how": "best placed not yet qualified"
+   }
+  ],
+  "isl": [
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "isr": [
+   {
+    "comp": "UEFA Europa League",
+    "places": 1,
+    "how": "cup winner"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "ita": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 5,
+    "how": "1st-5th"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 2,
+    "how": "cup winner, 6th"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "jpn": [
+   {
+    "comp": "AFC CHAMPIONS LEAGUE ELITE",
+    "places": 5,
+    "how": "1st-4th, cup winner"
+   },
+   {
+    "comp": "AFC CHAMPIONS LEAGUE TWO",
+    "places": 1,
+    "how": "best placed not yet qualified"
+   }
+  ],
+  "kaz": [
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "kor": [
+   {
+    "comp": "AFC CHAMPIONS LEAGUE ELITE",
+    "places": 4,
+    "how": "1st-3rd, cup winner"
+   },
+   {
+    "comp": "AFC CHAMPIONS LEAGUE TWO",
+    "places": 1,
+    "how": "best placed not yet qualified"
+   }
+  ],
+  "kos": [
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "ksa": [
+   {
+    "comp": "AFC CHAMPIONS LEAGUE ELITE",
+    "places": 5,
+    "how": "1st-4th, cup winner"
+   },
+   {
+    "comp": "AFC CHAMPIONS LEAGUE TWO",
+    "places": 1,
+    "how": "best placed not yet qualified"
+   }
+  ],
+  "lie": [],
+  "ltu": [],
+  "lux": [],
+  "lva": [],
+  "mar": [
+   {
+    "comp": "CAF CHAMPIONS LEAGUE",
+    "places": 2,
+    "how": "1st-2nd"
+   },
+   {
+    "comp": "CAF CONFEDERATION CUP",
+    "places": 2,
+    "how": "3rd, cup winner"
+   }
+  ],
+  "mda": [
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "mex": [
+   {
+    "comp": "CONCACAF CHAMPIONS CUP",
+    "places": 6,
+    "how": "1st-6th"
+   }
+  ],
+  "mkd": [],
+  "mlt": [],
+  "mne": [],
+  "ned": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 2,
+    "how": "1st-2nd"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 2,
+    "how": "cup winner, 3rd"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "nir": [],
+  "nor": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 1,
+    "how": "1st"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 1,
+    "how": "cup winner"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "nzl": [
+   {
+    "comp": "OFC CHAMPIONS LEAGUE",
+    "places": 1,
+    "how": "1st"
+   }
+  ],
+  "pan": [
+   {
+    "comp": "CONCACAF CHAMPIONS CUP",
+    "places": 1,
+    "how": "1st"
+   }
+  ],
+  "par": [
+   {
+    "comp": "COPA LIBERTADORES",
+    "places": 4,
+    "how": "1st-3rd, cup winner"
+   },
+   {
+    "comp": "COPA SUDAMERICANA",
+    "places": 4,
+    "how": "next 4 best placed not yet qualified"
+   }
+  ],
+  "per": [
+   {
+    "comp": "COPA LIBERTADORES",
+    "places": 4,
+    "how": "1st-4th"
+   },
+   {
+    "comp": "COPA SUDAMERICANA",
+    "places": 4,
+    "how": "next 4 best placed not yet qualified"
+   }
+  ],
+  "pol": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 1,
+    "how": "1st"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 2,
+    "how": "cup winner, 2nd"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "por": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 2,
+    "how": "1st-2nd"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 2,
+    "how": "cup winner, 3rd"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "qat": [
+   {
+    "comp": "AFC CHAMPIONS LEAGUE ELITE",
+    "places": 3,
+    "how": "1st-2nd, cup winner"
+   },
+   {
+    "comp": "AFC CHAMPIONS LEAGUE TWO",
+    "places": 1,
+    "how": "best placed not yet qualified"
+   }
+  ],
+  "rou": [
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "rsa": [
+   {
+    "comp": "CAF CHAMPIONS LEAGUE",
+    "places": 2,
+    "how": "1st-2nd"
+   },
+   {
+    "comp": "CAF CONFEDERATION CUP",
+    "places": 2,
+    "how": "3rd, cup winner"
+   }
+  ],
+  "rus": [],
+  "sco": [
+   {
+    "comp": "UEFA Europa League",
+    "places": 1,
+    "how": "cup winner"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "slv": [
+   {
+    "comp": "CONCACAF CHAMPIONS CUP",
+    "places": 1,
+    "how": "1st"
+   }
+  ],
+  "smr": [],
+  "srb": [
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "sui": [
+   {
+    "comp": "UEFA Europa League",
+    "places": 1,
+    "how": "cup winner"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "sur": [
+   {
+    "comp": "CONCACAF CHAMPIONS CUP",
+    "places": 1,
+    "how": "1st"
+   }
+  ],
+  "svk": [
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "svn": [
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "swe": [
+   {
+    "comp": "UEFA Europa League",
+    "places": 1,
+    "how": "cup winner"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "tpe": [
+   {
+    "comp": "AFC CHALLENGE LEAGUE",
+    "places": 2,
+    "how": "1st-2nd"
+   }
+  ],
+  "tun": [
+   {
+    "comp": "CAF CHAMPIONS LEAGUE",
+    "places": 2,
+    "how": "1st-2nd"
+   },
+   {
+    "comp": "CAF CONFEDERATION CUP",
+    "places": 2,
+    "how": "3rd, cup winner"
+   }
+  ],
+  "tur": [
+   {
+    "comp": "UEFA Champions League",
+    "places": 1,
+    "how": "1st"
+   },
+   {
+    "comp": "UEFA Europa League",
+    "places": 2,
+    "how": "cup winner, 2nd"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "uae": [
+   {
+    "comp": "AFC CHAMPIONS LEAGUE ELITE",
+    "places": 4,
+    "how": "1st-3rd, cup winner"
+   },
+   {
+    "comp": "AFC CHAMPIONS LEAGUE TWO",
+    "places": 1,
+    "how": "best placed not yet qualified"
+   }
+  ],
+  "ukr": [
+   {
+    "comp": "UEFA Europa League",
+    "places": 1,
+    "how": "cup winner"
+   },
+   {
+    "comp": "UEFA Conference League",
+    "places": 1,
+    "how": "next by league place"
+   }
+  ],
+  "uru": [
+   {
+    "comp": "COPA LIBERTADORES",
+    "places": 4,
+    "how": "1st-4th"
+   },
+   {
+    "comp": "COPA SUDAMERICANA",
+    "places": 4,
+    "how": "next 4 best placed not yet qualified"
+   }
+  ],
+  "usa": [
+   {
+    "comp": "CONCACAF CHAMPIONS CUP",
+    "places": 9,
+    "how": "1st, 1st-5th, next 2 best placed not yet qualified, cup winner"
+   }
+  ],
+  "ven": [
+   {
+    "comp": "COPA LIBERTADORES",
+    "places": 4,
+    "how": "1st-4th"
+   },
+   {
+    "comp": "COPA SUDAMERICANA",
+    "places": 4,
+    "how": "next 4 best placed not yet qualified"
+   }
+  ],
+  "wal": []
+ },
+ "note": "UEFA: the direct league-phase places by association in the world (no qualifying rounds; the 2026 ranking); associations without a direct place have none in season 1 (RUS banned). Other confederations: the access lists of internal/conti"
+}
