@@ -31,6 +31,7 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    dl_with40='Available with 4.0', cur336='Current version (3.3.6) on GitHub',
     soon_tile='Coming soon',
     h_cups='Continental club cups',
     cups=[('copa-libertadores', 'Copa Libertadores: the group stage'), ('concacaf-cc', 'Concacaf Champions Cup: the round of 16'),
@@ -153,6 +154,7 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    dl_with40='Disponibile con la 4.0', cur336='Versione attuale (3.3.6) su GitHub',
     soon_tile='In arrivo',
     h_cups='Le coppe continentali',
     cups=[('copa-libertadores', 'Copa Libertadores: la fase a gironi'), ('concacaf-cc', 'Concacaf Champions Cup: gli ottavi di finale'),
@@ -273,6 +275,7 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    dl_with40='Disponible avec la 4.0', cur336='Version actuelle (3.3.6) sur GitHub',
     soon_tile='Bientôt',
     h_cups='Les coupes continentales',
     cups=[('copa-libertadores', 'Copa Libertadores : la phase de groupes'), ('concacaf-cc', 'Coupe des champions de la Concacaf : les huitièmes de finale'),
@@ -397,6 +400,7 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    dl_with40='Verfügbar mit 4.0', cur336='Aktuelle Version (3.3.6) auf GitHub',
     soon_tile='Demnächst',
     h_cups='Die Kontinentalpokale',
     cups=[('copa-libertadores', 'Copa Libertadores: die Gruppenphase'), ('concacaf-cc', 'Concacaf Champions Cup: das Achtelfinale'),

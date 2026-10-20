@@ -530,9 +530,13 @@ def install_page(d, lang):
             out += shot(m.group(1)) if m else esc(part)
         return out
     common = [x if GUIDE_DONE_SHOTS else x.replace(' [SHOT patcher-done]', '') for x in g['common']]
-    steps = ''.join(f'<li>{text(x)}' + (f'<p style="margin:10px 0 0"><a class="btn green" href="{GUIDE_PATCHER}">'
-                                        f'{esc(t["dl"])}</a></p>' if i == 0 else '') + '</li>'
-                    for i, x in enumerate(common))
+    if RELEASED:                                    # with 4.0: the release's patcher
+        dl = f'<p style="margin:10px 0 0"><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>'
+    else:                                           # until then: disabled, and the current 3.3.6 on GitHub
+        dl = (f'<p style="margin:10px 0 0"><span class="btn green soon-btn disabled" aria-disabled="true">{esc(t["dl"])}'
+              f'<small>{esc(t["dl_with40"])}</small></span></p>'
+              f'<p class="note" style="margin:8px 0 0"><a href="{REPO}/releases/tag/v3.3.6">{esc(t["cur336"])}</a></p>')
+    steps = ''.join(f'<li>{text(x)}' + (dl if i == 0 else '') + '</li>' for i, x in enumerate(common))
     cases = ''.join(f'<h2>{esc(h)}</h2><ul>' + ''.join(f'<li>{text(x)}</li>' for x in items) + '</ul>'
                     for h, items in g['cases'] if 'MISTER_DRAFT' not in items)       # MiSTer: held
     body = f'''<div class="wrap page-head"><h1>{esc(g['title'])}</h1><p>{esc(g['lead'])}</p></div>

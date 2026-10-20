@@ -234,3 +234,5 @@ details[open] summary { margin-bottom: 12px; }
 @media (max-width: 860px) { .cards.cups { grid-template-columns: 1fr; } }
 [id] { scroll-margin-top: 96px; }
 @media (max-width: 860px) { [id] { scroll-margin-top: 130px; } }
+.btn.disabled { background: #4b5578; border-color: #6c7698 #2a3150 #2a3150 #6c7698; color: #cfd3e6; filter: none; cursor: not-allowed; }
+.btn.disabled:hover { filter: none; }
