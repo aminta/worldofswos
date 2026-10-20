@@ -44,7 +44,9 @@ DATA = os.path.join(ROOT, 'data')
 OUT = os.environ.get('WOS_OUT') or os.path.join(ROOT, 'site')
 # the 'How to install' page goes live with 4.0 (after Davide's Chrome test): preview only until then,
 # WOS_INSTALL=1 WOS_OUT=site-preview python3 build.py  (site-preview/ is git-ignored)
-INSTALL_PAGE = os.environ.get('WOS_INSTALL') == '1'
+INSTALL_PAGE = os.environ.get('WOS_INSTALL', '1') == '1'   # live since 2026-10-20 (Davide's ok via the Regia)
+GUIDE_PATCHER = REPO + '/releases/download/v3.3.6/swos-9697-mod-patcher.html'   # the public one-click patcher (3.3.6)
+GUIDE_DONE_SHOTS = False    # the 'done' shots show 4.0 text (MOD_BACKUP\4.0): off until there are 3.3.6 ones
 CUPS = os.environ.get('WOS_CUPS') == '1'           # the continental cups section: preview only until the Regia's go
 CUPS_HOLD = {'afc-cl-elite', 'fifa-intercontinental'}   # frames to be retaken / not yet capturable: placeholders
 CONTS = ['europe', 'north_america', 'south_america', 'asia', 'oceania', 'africa']
@@ -527,7 +529,10 @@ def install_page(d, lang):
             m = re.fullmatch(r'\[SHOT ([a-z-]+)\]', part)
             out += shot(m.group(1)) if m else esc(part)
         return out
-    steps = ''.join(f'<li>{text(x)}</li>' for x in g['common'])
+    common = [x if GUIDE_DONE_SHOTS else x.replace(' [SHOT patcher-done]', '') for x in g['common']]
+    steps = ''.join(f'<li>{text(x)}' + (f'<p style="margin:10px 0 0"><a class="btn green" href="{GUIDE_PATCHER}">'
+                                        f'{esc(t["dl"])}</a></p>' if i == 0 else '') + '</li>'
+                    for i, x in enumerate(common))
     cases = ''.join(f'<h2>{esc(h)}</h2><ul>' + ''.join(f'<li>{text(x)}</li>' for x in items) + '</ul>'
                     for h, items in g['cases'] if 'MISTER_DRAFT' not in items)       # MiSTer: held
     body = f'''<div class="wrap page-head"><h1>{esc(g['title'])}</h1><p>{esc(g['lead'])}</p></div>

@@ -2,8 +2,10 @@
 __pycache__/
 .claude/
 site-preview/
-static/img/patcher/
-site/static/img/patcher/
+static/img/patcher/*
+!static/img/patcher/patcher-button-it.jpg
+site/static/img/patcher/*
+!site/static/img/patcher/patcher-button-it.jpg
 static/img/copa-libertadores-*
 static/img/concacaf-cc-*
 static/img/afc-cl-elite-*
