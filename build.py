@@ -112,9 +112,12 @@ def refresh():
 
     sha = subprocess.run(['git', '-C', mod, 'rev-parse', '--short', ref], check=True, capture_output=True,
                          text=True).stdout.strip()
+    # the notes and the competitions list are 4.0 texts (world-2025-26 is local, unpushed): into data/next/, published
+    # only when RELEASED; data/*.md is the frozen version already public (Regia, 2026-10-20)
+    os.makedirs(os.path.join(DATA, 'next'), exist_ok=True)
     for src, dst in [('release/notes-world-2026-27.md', 'notes-world-2026-27.md'),
                      ('release/world-2026-27-competitions.md', 'competitions.md')]:
-        open(os.path.join(DATA, dst), 'w', encoding='utf-8').write(md.strip_comments(show(src)))
+        open(os.path.join(DATA, 'next', dst), 'w', encoding='utf-8').write(md.strip_comments(show(src)))
     # the in-game FORMAT texts and the countries' names, with the mod's own tools (exported, never run in the repo)
     with tempfile.TemporaryDirectory() as tmp:
         tref = os.environ.get('FMT_TOOLS_REF', ref)    # (a fix branch of tools/fmtgame.py not merged yet)
@@ -162,7 +165,8 @@ def split_langs(text):
 def load():
     countries = json.load(open(os.path.join(DATA, 'countries.json'), encoding='utf-8'))
     by_en = {v['names']['en'].upper(): k for k, v in countries.items()}
-    comp = open(os.path.join(DATA, 'competitions.md'), encoding='utf-8').read()
+    texts = os.path.join(DATA, 'next') if RELEASED else DATA
+    comp = open(os.path.join(texts, 'competitions.md'), encoding='utf-8').read()
     halves = re.split(r'^## ', comp, flags=re.M)
     lists = {}
     for h in halves[1:]:
@@ -185,7 +189,7 @@ def load():
         order.append(code)
         countries[code]['md'] = {'en': c['items'], 'it': lists['it'][i]['items']}
         countries[code]['cont'] = c['cont']
-    notes = split_langs(open(os.path.join(DATA, 'notes-world-2026-27.md'), encoding='utf-8').read())
+    notes = split_langs(open(os.path.join(texts, 'notes-world-2026-27.md'), encoding='utf-8').read())
     src = json.load(open(os.path.join(DATA, 'source.json')))
     stats = {}
     m = re.search(r'(\d+) countries, (\d+) league divisions, (\d+) national cups, (\d+) league cups', notes['en'] + notes['it'])

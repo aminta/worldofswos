@@ -67,6 +67,7 @@ if __name__ == '__main__':
     sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     import build
     cmd, lang = sys.argv[1], sys.argv[2]
+    build.RELEASED = True                    # translate the next notes (data/next/), the ones that go live with 4.0
     d = build.load()
     main, cred, _ = build.notes_part(d, "en")
     tr = load(lang)
