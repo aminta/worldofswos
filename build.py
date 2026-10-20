@@ -47,7 +47,14 @@ OUT = os.environ.get('WOS_OUT') or os.path.join(ROOT, 'site')
 INSTALL_PAGE = os.environ.get('WOS_INSTALL', '1') == '1'   # live since 2026-10-20 (Davide's ok via the Regia)
 GUIDE_PATCHER = REPO + '/releases/download/v3.3.6/swos-9697-mod-patcher.html'   # the public one-click patcher (3.3.6)
 GUIDE_DONE_SHOTS = False    # the 'done' shots show 4.0 text (MOD_BACKUP\4.0): off until there are 3.3.6 ones
-SHOTS_HOLD = {'split-scotland', 'split-austria'}   # old 19/10 frames without the group headers: off until retaken
+# frames off the site until retaken (Regia's audit 2026-10-20: old names / old frames / old FORMAT style):
+# 'name' = every language, 'name-xx' = that language only
+SHOTS_HOLD = {'split-scotland', 'split-austria', 'serie-a-table', 'serie-b-table', 'serie-d-table', 'premier-table-it',
+              'cl-league-phase', 'careers-menu', 'cl-format', 'premier-format', 'brazil-state-format'}
+
+
+def held(base, lang):
+    return base in SHOTS_HOLD or f'{base}-{lang}' in SHOTS_HOLD
 CUPS = os.environ.get('WOS_CUPS') == '1'           # the continental cups section: preview only until the Regia's go
 CUPS_HOLD = {'afc-cl-elite', 'fifa-intercontinental'}   # frames to be retaken / not yet capturable: placeholders
 CONTS = ['europe', 'north_america', 'south_america', 'asia', 'oceania', 'africa']
@@ -282,10 +289,10 @@ def home(d, lang):
                     for st in t['steps'])
     shots = ''                                      # groups of frames; a frame not captured yet is left out
     for g, items in t['shots']:
-        if all(f[:-3] in SHOTS_HOLD for f, _ in items):
-            continue                                # a group taken off until its new frames arrive
         figs = ''
-        for f, c in items:                          # name-it: this language's capture when there is one
+        for f, c in items:
+            if held(f[:-3], lang):
+                continue                            # taken off until retaken                          # name-it: this language's capture when there is one
             fl = f[:-3] + '-' + lang if f.endswith('-it') and have(f[:-3] + '-' + lang) else f
             if have(fl):
                 figs += (f'<figure class="shot"><img src="/static/img/{fl}.png" width="1600" height="1200" '
@@ -293,7 +300,7 @@ def home(d, lang):
             else:
                 figs += (f'<figure class="shot soon"><div class="soon-box"><span>{esc(t["soon_tile"])}</span></div>'
                          f'<figcaption>{esc(c)}</figcaption></figure>')
-        if figs:
+        if figs:                                    # (a group with every tile held disappears)
             shots += (f'<h3>{esc(g)}</h3><div class="cards" style="grid-template-columns:repeat(auto-fill,'
                       f'minmax(min(100%,440px),1fr))">{figs}</div>')
     cups = ''
@@ -473,6 +480,8 @@ FRAMES = ['careers-menu', 'europe-countries', 'serie-a-table', 'cl-league-phase'
 def frames(lang):
     out = []
     for f, cap in zip(FRAMES, T[lang]['frames']):
+        if held(f, lang):
+            continue
         fl = lang if os.path.exists(os.path.join(ROOT, 'static', 'img', f'{f}-{lang}.png')) else 'it'
         out.append(f'<figure class="shot"><img src="/static/img/{f}-{fl}.png" width="1600" height="1200" '
                    f'loading="lazy" alt="{esc(cap)}"><figcaption>{esc(cap)}</figcaption></figure>')
