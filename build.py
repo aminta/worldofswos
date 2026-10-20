@@ -26,6 +26,7 @@ import md                                                   # noqa: E402
 import tr                                                   # noqa: E402
 import classic                                              # noqa: E402
 import ogimage                                              # noqa: E402
+import already                                              # noqa: E402
 from i18n import CONTINENT, GAME, LANG_NAME, LANGS, LOCALE, T   # noqa: E402
 
 SITE_URL = 'https://worldofswos.com'
@@ -308,8 +309,8 @@ def home(d, lang):
 {''.join(f'<p>{p}</p>' for p in t['what'])}
 <h2>{esc(t['h_high'])}</h2>
 <div class="cards">{cards}</div>
-<h2>{esc(t['h_classic'])}</h2>
-<p>{t['classic']}</p>
+<h2 id="already">{esc(already.A[lang][0])}</h2>
+<div class="cards">{''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}</p></article>' for h, p in already.A[lang][1])}</div>
 <h2 id="next">{esc(t['h_next'])}</h2>
 <div class="panel next"><p><span class="next-tag px">4.1</span> {esc(t['next41'])}</p>
 <p><span class="next-tag px">4.2</span> {esc(t['next_text'])}</p>
