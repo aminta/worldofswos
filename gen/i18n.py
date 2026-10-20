@@ -31,8 +31,8 @@ CONTINENT = {
 
 T = {
  'en': dict(
-    s_comps='competitions', s_conti='continental cups', s_guests='guest clubs',
-    stats_note='Counted from the release data. Clubs: the clubs of the world\'s leagues and of Brazil\'s state championships (the clubs waiting outside the world not included). Competitions: every league division, national cup, league cup and Brazilian state championship, the Coppa Italia Serie D and the continental club cups. Guest clubs: the real entrants that play only their continental cup.',
+    s_comps='competitions', s_conti='continental cups ({n} new in 4.0)', s_guests='guest clubs',
+    stats_note='Counted from the release data. Clubs: every club with a team in the game: {league} in the league divisions, {states} playing only a Brazilian state championship, {pool} waiting outside the world and {guests} continental guests. Competitions: every league division, national cup, league cup and Brazilian state championship, the Coppa Italia Serie D and {conti} continental competitions (UEFA 3, CONMEBOL 3, CONCACAF 1, AFC 3, CAF 3, OFC 1 and the FIFA Intercontinental Cup). Guest clubs: the real entrants that play only their continental cup.',
     with40='Coming with 4.0, by the end of October 2026.',
     dl_with40='Available with 4.0', cur336='Current version (3.3.6) on GitHub',
     soon_tile='Coming soon',
@@ -157,8 +157,8 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
-    s_comps='competizioni', s_conti='coppe continentali', s_guests='squadre ospiti',
-    stats_note='Contati dai dati della release. Squadre: le squadre dei campionati del mondo e dei campionati statali brasiliani (escluse quelle che aspettano fuori dal mondo). Competizioni: ogni divisione, coppa nazionale, coppa di lega e campionato statale brasiliano, la Coppa Italia Serie D e le coppe continentali per club. Squadre ospiti: le vere partecipanti che giocano solo la loro coppa continentale.',
+    s_comps='competizioni', s_conti='coppe continentali ({n} nuove nella 4.0)', s_guests='squadre ospiti',
+    stats_note='Contati dai dati della release. Squadre: ogni squadra presente nel gioco: {league} nelle divisioni dei campionati, {states} che giocano solo un campionato statale brasiliano, {pool} in attesa fuori dal mondo e {guests} ospiti delle coppe continentali. Competizioni: ogni divisione, coppa nazionale, coppa di lega e campionato statale brasiliano, la Coppa Italia Serie D e {conti} competizioni continentali (UEFA 3, CONMEBOL 3, CONCACAF 1, AFC 3, CAF 3, OFC 1 e la Coppa Intercontinentale FIFA). Squadre ospiti: le vere partecipanti che giocano solo la loro coppa continentale.',
     with40='In arrivo con la 4.0, entro fine ottobre 2026.',
     dl_with40='Disponibile con la 4.0', cur336='Versione attuale (3.3.6) su GitHub',
     soon_tile='In arrivo',
@@ -281,8 +281,8 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
-    s_comps='compétitions', s_conti='coupes continentales', s_guests='clubs invités',
-    stats_note="Comptés à partir des données de la version. Clubs : les clubs des championnats du monde et des championnats des États brésiliens (sans ceux qui attendent hors du monde). Compétitions : chaque division, coupe nationale, coupe de la ligue et championnat d'État brésilien, la Coppa Italia Serie D et les coupes continentales de clubs. Clubs invités : les vrais participants qui ne jouent que leur coupe continentale.",
+    s_comps='compétitions', s_conti='coupes continentales ({n} nouvelles dans la 4.0)', s_guests='clubs invités',
+    stats_note="Comptés à partir des données de la version. Clubs : chaque club présent dans le jeu : {league} dans les divisions des championnats, {states} qui ne jouent qu'un championnat d'État brésilien, {pool} qui attendent hors du monde et {guests} invités des coupes continentales. Compétitions : chaque division, coupe nationale, coupe de la ligue et championnat d'État brésilien, la Coppa Italia Serie D et {conti} compétitions continentales (UEFA 3, CONMEBOL 3, CONCACAF 1, AFC 3, CAF 3, OFC 1 et la Coupe intercontinentale de la FIFA). Clubs invités : les vrais participants qui ne jouent que leur coupe continentale.",
     with40="Arrive avec la 4.0, d'ici fin octobre 2026.",
     dl_with40='Disponible avec la 4.0', cur336='Version actuelle (3.3.6) sur GitHub',
     soon_tile='Bientôt',
@@ -409,8 +409,8 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
-    s_comps='Wettbewerbe', s_conti='Kontinentalpokale', s_guests='Gastvereine',
-    stats_note='Gezählt aus den Daten der Version. Vereine: die Vereine der Ligen der Welt und der brasilianischen Staatsmeisterschaften (ohne die, die außerhalb der Welt warten). Wettbewerbe: jede Spielklasse, jeder Landes- und Ligapokal und jede brasilianische Staatsmeisterschaft, die Coppa Italia Serie D und die Kontinentalpokale. Gastvereine: die echten Teilnehmer, die nur ihren Kontinentalpokal spielen.',
+    s_comps='Wettbewerbe', s_conti='Kontinentalpokale ({n} neu in 4.0)', s_guests='Gastvereine',
+    stats_note='Gezählt aus den Daten der Version. Vereine: jeder Verein, den es im Spiel gibt: {league} in den Spielklassen der Ligen, {states}, die nur eine brasilianische Staatsmeisterschaft spielen, {pool}, die außerhalb der Welt warten, und {guests} Gäste der Kontinentalpokale. Wettbewerbe: jede Spielklasse, jeder Landes- und Ligapokal und jede brasilianische Staatsmeisterschaft, die Coppa Italia Serie D und {conti} Kontinentalwettbewerbe (UEFA 3, CONMEBOL 3, CONCACAF 1, AFC 3, CAF 3, OFC 1 und der FIFA-Interkontinentalpokal). Gastvereine: die echten Teilnehmer, die nur ihren Kontinentalpokal spielen.',
     with40='Kommt mit 4.0, bis Ende Oktober 2026.',
     dl_with40='Verfügbar mit 4.0', cur336='Aktuelle Version (3.3.6) auf GitHub',
     soon_tile='Demnächst',

@@ -222,10 +222,13 @@ def load():
         x = st['per'][code]
         c['ncomps'] = x['divisions'] + x['cups'] + extra
     m = re.search(r'\*\*(\d+) continental competitions', notes['en'])
-    conti = int(m.group(1)) if m else 0
-    per = st['per'].values()
-    stats = dict(countries=len(countries), clubs=sum(x['league_clubs'] + x['state_clubs'] for x in per),
-                 guests=st['guests'], comps=sum(c['ncomps'] for c in countries.values()) + conti, conti=conti)
+    new_conti = int(m.group(1)) if m else 0          # the non-UEFA continental competitions, new in 4.0
+    conti = 3 + new_conti                            # + the 3 UEFA cups
+    per = list(st['per'].values())
+    league, states, pool = (sum(x[k] for x in per) for k in ('league_clubs', 'state_clubs', 'pool'))
+    stats = dict(countries=len(countries), clubs=league + states + pool + st['guests'], guests=st['guests'],
+                 comps=sum(c['ncomps'] for c in countries.values()) + conti, conti=conti, new_conti=new_conti,
+                 league=league, states=states, pool=pool)
     return dict(countries=countries, order=order, notes=notes, stats=stats, src=src)
 
 
@@ -349,7 +352,7 @@ def have(f):
 
 def home(d, lang):
     t, s = T[lang], d['stats']
-    stats = ''.join(f'<div class="stat"><b>{fmt_num(s[k], lang)}</b><span>{esc(t["s_" + k])}</span></div>'
+    stats = ''.join(f'<div class="stat"><b>{fmt_num(s[k], lang)}</b><span>{esc(t["s_" + k].format(n=s["new_conti"]))}</span></div>'
                     for k in ['countries', 'clubs', 'comps', 'conti', 'guests'] if s.get(k))
     cards = ''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}</p></article>' for h, p in t['cards'])
     steps = ''.join('<li>' + st.format(careers=f'<strong>{GAME["careers"][lang]}</strong>',
@@ -404,7 +407,7 @@ def home(d, lang):
 <a class="btn blue" href="/{lang}/countries/">{esc(t['see_world'])}</a>
 </div>
 <div class="stats">{stats}</div>
-<p class="note" style="max-width:820px;margin:8px auto 0">{esc(t['stats_note'])}</p>
+<p class="note" style="max-width:820px;margin:8px auto 0">{esc(t['stats_note'].format(**{k: fmt_num(v, lang) for k, v in s.items()}))}</p>
 </div></section>
 <section class="wrap">
 <h2>{esc(t['h_what'])}</h2>
