@@ -2,3 +2,5 @@
 __pycache__/
 .claude/
 site-preview/
+static/img/patcher/
+site/static/img/patcher/
