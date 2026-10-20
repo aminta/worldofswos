@@ -1,0 +1,733 @@
+{
+"per": {
+"alb": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"alg": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"and": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"arg": {
+"divisions": 3,
+"cups": 1,
+"states": 0,
+"league_clubs": 66,
+"state_clubs": 0,
+"pool": 0
+},
+"arm": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"aus": {
+"divisions": 4,
+"cups": 1,
+"states": 0,
+"league_clubs": 54,
+"state_clubs": 0,
+"pool": 0
+},
+"aut": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"aze": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"bel": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 18,
+"state_clubs": 0,
+"pool": 0
+},
+"bih": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"blr": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"bol": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"bra": {
+"divisions": 2,
+"cups": 1,
+"states": 0,
+"league_clubs": 40,
+"state_clubs": 119,
+"pool": 43
+},
+"bul": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 14,
+"state_clubs": 0,
+"pool": 0
+},
+"can": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 8,
+"state_clubs": 0,
+"pool": 0
+},
+"chi": {
+"divisions": 1,
+"cups": 2,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"chn": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"col": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 20,
+"state_clubs": 0,
+"pool": 0
+},
+"crc": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"cro": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"cyp": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 14,
+"state_clubs": 0,
+"pool": 0
+},
+"cze": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"den": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"ecu": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"egy": {
+"divisions": 1,
+"cups": 2,
+"states": 0,
+"league_clubs": 20,
+"state_clubs": 0,
+"pool": 0
+},
+"eng": {
+"divisions": 4,
+"cups": 2,
+"states": 0,
+"league_clubs": 92,
+"state_clubs": 0,
+"pool": 0
+},
+"esp": {
+"divisions": 2,
+"cups": 1,
+"states": 0,
+"league_clubs": 42,
+"state_clubs": 0,
+"pool": 4
+},
+"est": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"fin": {
+"divisions": 1,
+"cups": 2,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"fra": {
+"divisions": 2,
+"cups": 1,
+"states": 0,
+"league_clubs": 36,
+"state_clubs": 0,
+"pool": 0
+},
+"fro": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"geo": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"ger": {
+"divisions": 3,
+"cups": 1,
+"states": 0,
+"league_clubs": 56,
+"state_clubs": 0,
+"pool": 4
+},
+"gha": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 18,
+"state_clubs": 0,
+"pool": 0
+},
+"gib": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 11,
+"state_clubs": 0,
+"pool": 0
+},
+"gre": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 14,
+"state_clubs": 0,
+"pool": 0
+},
+"gua": {
+"divisions": 1,
+"cups": 0,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"hon": {
+"divisions": 1,
+"cups": 0,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"hun": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"ind": {
+"divisions": 2,
+"cups": 1,
+"states": 0,
+"league_clubs": 24,
+"state_clubs": 0,
+"pool": 0
+},
+"irl": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"irn": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 18,
+"state_clubs": 0,
+"pool": 0
+},
+"isl": {
+"divisions": 1,
+"cups": 2,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"isr": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 14,
+"state_clubs": 0,
+"pool": 0
+},
+"ita": {
+"divisions": 14,
+"cups": 2,
+"states": 0,
+"league_clubs": 256,
+"state_clubs": 0,
+"pool": 42
+},
+"jpn": {
+"divisions": 2,
+"cups": 2,
+"states": 0,
+"league_clubs": 40,
+"state_clubs": 0,
+"pool": 0
+},
+"kaz": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"kor": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"kos": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"ksa": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 18,
+"state_clubs": 0,
+"pool": 0
+},
+"lie": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 6,
+"state_clubs": 0,
+"pool": 0
+},
+"ltu": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"lux": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"lva": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"mar": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"mda": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 8,
+"state_clubs": 0,
+"pool": 0
+},
+"mex": {
+"divisions": 2,
+"cups": 0,
+"states": 0,
+"league_clubs": 34,
+"state_clubs": 0,
+"pool": 0
+},
+"mkd": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"mlt": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"mne": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"ned": {
+"divisions": 2,
+"cups": 1,
+"states": 0,
+"league_clubs": 38,
+"state_clubs": 0,
+"pool": 6
+},
+"nir": {
+"divisions": 1,
+"cups": 2,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"nor": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"nzl": {
+"divisions": 3,
+"cups": 1,
+"states": 0,
+"league_clubs": 32,
+"state_clubs": 0,
+"pool": 0
+},
+"pan": {
+"divisions": 1,
+"cups": 0,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"par": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"per": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 18,
+"state_clubs": 0,
+"pool": 0
+},
+"pol": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 18,
+"state_clubs": 0,
+"pool": 0
+},
+"por": {
+"divisions": 2,
+"cups": 2,
+"states": 0,
+"league_clubs": 36,
+"state_clubs": 0,
+"pool": 5
+},
+"qat": {
+"divisions": 1,
+"cups": 2,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"rou": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"rsa": {
+"divisions": 1,
+"cups": 2,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"rus": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"sco": {
+"divisions": 4,
+"cups": 2,
+"states": 0,
+"league_clubs": 42,
+"state_clubs": 0,
+"pool": 0
+},
+"slv": {
+"divisions": 5,
+"cups": 1,
+"states": 0,
+"league_clubs": 55,
+"state_clubs": 0,
+"pool": 0
+},
+"smr": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"srb": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 14,
+"state_clubs": 0,
+"pool": 0
+},
+"sui": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"sur": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"svk": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 12,
+"state_clubs": 0,
+"pool": 0
+},
+"svn": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 10,
+"state_clubs": 0,
+"pool": 0
+},
+"swe": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"tpe": {
+"divisions": 2,
+"cups": 1,
+"states": 0,
+"league_clubs": 15,
+"state_clubs": 0,
+"pool": 0
+},
+"tun": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"tur": {
+"divisions": 2,
+"cups": 1,
+"states": 0,
+"league_clubs": 38,
+"state_clubs": 0,
+"pool": 0
+},
+"uae": {
+"divisions": 1,
+"cups": 2,
+"states": 0,
+"league_clubs": 14,
+"state_clubs": 0,
+"pool": 0
+},
+"ukr": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+},
+"uru": {
+"divisions": 2,
+"cups": 1,
+"states": 0,
+"league_clubs": 30,
+"state_clubs": 0,
+"pool": 0
+},
+"usa": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 30,
+"state_clubs": 0,
+"pool": 0
+},
+"ven": {
+"divisions": 1,
+"cups": 1,
+"states": 0,
+"league_clubs": 14,
+"state_clubs": 0,
+"pool": 0
+},
+"wal": {
+"divisions": 1,
+"cups": 2,
+"states": 0,
+"league_clubs": 16,
+"state_clubs": 0,
+"pool": 0
+}
+},
+"guests": 159
+}

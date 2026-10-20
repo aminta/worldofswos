@@ -69,6 +69,24 @@ CONT_MD = {'Europe': 'europe', 'North and Central America': 'north_america', 'So
 # ------------------------------------------------------------------------------------------------ refresh (import)
 # the in-game FORMAT page's text as fmtgame.write() builds it (4.0: paragraphs of prose, then the colours' lines);
 # old tools (a plain list of lines) still work
+STATS_CODE = """
+# the site's numbers, counted from the release data (what each one counts: see the stats texts in i18n.py)
+import csv, complist
+dirs = [os.path.join(d, x) for x in sorted(os.listdir(d)) if os.path.exists(os.path.join(d, x, 'pack.json'))]
+per = {}
+for dd in dirs:                                   # (one country at a time: the model is sorted by its own order)
+    comps = complist.from_packs([dd])[0]['comps']
+    divs = sum(len(lv) for comp in comps if comp['kind'] == 'league' for lv in comp['levels'])
+    cups = sum(1 for comp in comps if comp['kind'] in ('cup', 'league_cup'))
+    rows = list(csv.DictReader(open(os.path.join(dd, 'clubs.csv'), encoding='utf-8')))
+    per[os.path.basename(dd)] = dict(divisions=divs, cups=cups, states=len({r['division'] for r in rows if r['file'] == 'states'}) and 0,
+                                     league_clubs=sum(r['file'] == 'league' for r in rows),
+                                     state_clubs=sum(r['file'] == 'states' for r in rows),
+                                     pool=sum(r['file'] == 'pool' for r in rows))
+guests = sum(len(json.load(open(os.path.join(d, 'guests', f)))['clubs']) for f in os.listdir(os.path.join(d, 'guests'))) \\
+    if os.path.isdir(os.path.join(d, 'guests')) else 0
+json.dump(dict(per=per, guests=guests), open(os.path.join(os.path.dirname(sys.argv[3]), 'stats.json'), 'w'), indent=0)
+"""
 PAGE_CODE = """
 def page(world, titles, lines, lang):
     try:
@@ -105,7 +123,7 @@ def refresh():
     mod = os.path.expanduser(os.environ.get('SWOS_MOD', '~/swos-mod'))
     ref = os.environ.get('SWOS_REF', 'world-2025-26')
     # the world data dir of the FINAL release build c/REL40 (Regia, 2026-10-19 evening)
-    packs = os.environ.get('FMT_PACKS') or os.path.join(mod, 'internal', 'world2526', 'world5tm-rel40-names-2214')
+    packs = os.environ.get('FMT_PACKS') or os.path.join(mod, 'internal', 'world2526', 'world5tm-rel40-cupd-1955')
     packs = os.path.expanduser(packs)
     os.makedirs(DATA, exist_ok=True)
 
@@ -136,7 +154,8 @@ def refresh():
                 '    items = [{"title": t, "text": {l: page(w, t, tx[l], l) for l in fmtgame.LANGS}} '
                 'for w, cid, t, tx in fmtgame.from_pack(os.path.join(d, s))]\n'
                 '    out[s] = {"names": pk["button_names"], "continent": pk["continent"], "fmt": items}\n'
-                'json.dump(out, open(sys.argv[3], "w"), ensure_ascii=False, indent=0)\n')
+                'json.dump(out, open(sys.argv[3], "w"), ensure_ascii=False, indent=0)\n'
+                + STATS_CODE)
         dst = os.path.join(DATA, 'countries.json')
         subprocess.run([sys.executable, '-I', '-c', code, os.path.join(tmp, 'tools'), packs, dst], check=True,
                        cwd=tmp)
@@ -194,12 +213,19 @@ def load():
         countries[code]['cont'] = c['cont']
     notes = split_langs(open(os.path.join(texts, 'notes-world-2026-27.md'), encoding='utf-8').read())
     src = json.load(open(os.path.join(DATA, 'source.json')))
-    stats = {}
-    m = re.search(r'(\d+) countries, (\d+) league divisions, (\d+) national cups, (\d+) league cups', notes['en'] + notes['it'])
-    if m:
-        stats = dict(zip(['countries', 'divisions', 'cups', 'lcups'], m.groups()))
-    m = re.search(r'([\d,]+) clubs', notes['en'])
-    stats['clubs'] = m.group(1) if m else ''
+    # the numbers, counted from the release data (data/stats.json, written by --refresh)
+    st = json.load(open(os.path.join(DATA, 'stats.json')))
+    for code, c in countries.items():
+        it = c['names']['it']
+        extra = sum(1 for i in c['fmt'] if code == 'bra' and i['title']['it'].startswith(it + ' CAMPEONATO ')   # states
+                    or i['title']['it'] == it + ' COPPA ITALIA SERIE D')
+        x = st['per'][code]
+        c['ncomps'] = x['divisions'] + x['cups'] + extra
+    m = re.search(r'\*\*(\d+) continental competitions', notes['en'])
+    conti = int(m.group(1)) if m else 0
+    per = st['per'].values()
+    stats = dict(countries=len(countries), clubs=sum(x['league_clubs'] + x['state_clubs'] for x in per),
+                 guests=st['guests'], comps=sum(c['ncomps'] for c in countries.values()) + conti, conti=conti)
     return dict(countries=countries, order=order, notes=notes, stats=stats, src=src)
 
 
@@ -324,7 +350,7 @@ def have(f):
 def home(d, lang):
     t, s = T[lang], d['stats']
     stats = ''.join(f'<div class="stat"><b>{fmt_num(s[k], lang)}</b><span>{esc(t["s_" + k])}</span></div>'
-                    for k in ['countries', 'clubs', 'divisions', 'cups', 'lcups'] if s.get(k))
+                    for k in ['countries', 'clubs', 'comps', 'conti', 'guests'] if s.get(k))
     cards = ''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}</p></article>' for h, p in t['cards'])
     steps = ''.join('<li>' + st.format(careers=f'<strong>{GAME["careers"][lang]}</strong>',
                                          world=f'<strong>{GAME["world"][lang]}</strong>') + '</li>'
@@ -378,6 +404,7 @@ def home(d, lang):
 <a class="btn blue" href="/{lang}/countries/">{esc(t['see_world'])}</a>
 </div>
 <div class="stats">{stats}</div>
+<p class="note" style="max-width:820px;margin:8px auto 0">{esc(t['stats_note'])}</p>
 </div></section>
 <section class="wrap">
 <h2>{esc(t['h_what'])}</h2>
@@ -478,7 +505,7 @@ def countries_index(d, lang):
         if not codes:
             continue
         li = ''.join(f'<li><a href="/{lang}/countries/{c}/">{esc(d["countries"][c]["names"][lang])}'
-                     f'<small>{esc(t["comps_n"].format(n=len(d["countries"][c]["fmt"])))}</small></a></li>'
+                     f'<small>{esc(t["comps_n"].format(n=d["countries"][c]["ncomps"]))}</small></a></li>'
                      for c in codes)
         secs.append(f'<section class="cont"><h2>{esc(CONTINENT[cont][lang])}</h2><ul class="grid-countries">{li}</ul>'
                     '</section>')
