@@ -27,6 +27,7 @@ import tr                                                   # noqa: E402
 import classic                                              # noqa: E402
 import ogimage                                              # noqa: E402
 import already                                              # noqa: E402
+import install                                              # noqa: E402
 from i18n import CONTINENT, GAME, LANG_NAME, LANGS, LOCALE, T   # noqa: E402
 
 SITE_URL = 'https://worldofswos.com'
@@ -40,7 +41,10 @@ _tb = '<img class="assoc-logo" src="/static/img/12bit.png" width="64" height="80
 TWELVE_BIT = f'<a href="{TWELVE_BIT_URL}">{_tb}</a>' if TWELVE_BIT_URL else _tb
 GOATCOUNTER = 'worldofswos'  # GoatCounter code (https://<code>.goatcounter.com): cookieless visit counter; '' = none
 DATA = os.path.join(ROOT, 'data')
-OUT = os.path.join(ROOT, 'site')
+OUT = os.environ.get('WOS_OUT') or os.path.join(ROOT, 'site')
+# the 'How to install' page goes live with 4.0 (after Davide's Chrome test): preview only until then,
+# WOS_INSTALL=1 WOS_OUT=site-preview python3 build.py  (site-preview/ is git-ignored)
+INSTALL_PAGE = os.environ.get('WOS_INSTALL') == '1'
 CONTS = ['europe', 'north_america', 'south_america', 'asia', 'oceania', 'africa']
 CONT_MD = {'Europe': 'europe', 'North and Central America': 'north_america', 'South America': 'south_america',
            'Asia': 'asia', 'Oceania': 'oceania', 'Africa': 'africa', 'Europa': 'europe',
@@ -199,6 +203,8 @@ def page(lang, path, title, body, desc='', active=None, langs=None):
     url = f'/{lang}/{path}'
     nav = []
     for key, p in NAV:
+        if key == 'install' and INSTALL_PAGE:
+            p = 'install/'
         href = f'/{lang}/' + ('' if p.startswith('#') else p) + (p if p.startswith('#') else '')
         cur = ' aria-current="page"' if key == active else ''
         nav.append(f'<a href="{href}"{cur}>{esc(t["nav_" + key])}</a>')
@@ -492,6 +498,29 @@ def classic_page(d, lang):
     return page(lang, 'classic/', t['h_classic_page'], body, active='classic')
 
 
+def install_page(d, lang):
+    g, t = install.G[lang], T[lang]
+
+    def shot(name):
+        fl = lang if os.path.exists(os.path.join(ROOT, 'static', 'img', 'patcher', f'{name}-{lang}.jpg')) else 'it'
+        return (f'<figure class="shot" style="max-width:640px;margin:12px 0"><img src="/static/img/patcher/{name}-{fl}.jpg" '
+                f'width="640" height="480" loading="lazy" alt=""></figure>')
+
+    def text(x):
+        out = ''
+        for part in re.split(r'(\[SHOT [a-z-]+\])', x):
+            m = re.fullmatch(r'\[SHOT ([a-z-]+)\]', part)
+            out += shot(m.group(1)) if m else esc(part)
+        return out
+    steps = ''.join(f'<li>{text(x)}</li>' for x in g['common'])
+    cases = ''.join(f'<h2>{esc(h)}</h2><ul>' + ''.join(f'<li>{text(x)}</li>' for x in items) + '</ul>'
+                    for h, items in g['cases'] if 'MISTER_DRAFT' not in items)       # MiSTer: held
+    body = f'''<div class="wrap page-head"><h1>{esc(g['title'])}</h1><p>{esc(g['lead'])}</p></div>
+<div class="wrap doc"><h2>{esc(g['section'])}</h2><ol class="steps">{steps}</ol>
+<p class="panel" style="margin-top:16px">{esc(g['fallback'])}</p>{cases}</div>'''
+    return page(lang, 'install/', g['title'], body, active='install')
+
+
 def not_found():
     t = T['en']
     body = (f'<div class="wrap page-head" style="text-align:center"><h1>{esc(t["notfound"])}</h1>'
@@ -563,6 +592,8 @@ def build():
     for lang in LANGS:
         pages = {'': home(d, lang), 'countries/': countries_index(d, lang), 'world/': world(d, lang),
                  'credits/': credits(d, lang), 'classic/': classic_page(d, lang)}
+        if INSTALL_PAGE:
+            pages['install/'] = install_page(d, lang)
         for code in d['order']:
             pages[f'countries/{code}/'] = country(d, code, lang)
         for p, text in pages.items():
