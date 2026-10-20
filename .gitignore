@@ -4,3 +4,16 @@ __pycache__/
 site-preview/
 static/img/patcher/
 site/static/img/patcher/
+static/img/copa-libertadores-*
+static/img/concacaf-cc-*
+static/img/afc-cl-elite-*
+static/img/caf-cl-*
+static/img/ofc-cl-*
+static/img/fifa-intercontinental-*
+site/static/img/copa-libertadores-*
+site/static/img/concacaf-cc-*
+site/static/img/afc-cl-elite-*
+site/static/img/caf-cl-*
+site/static/img/ofc-cl-*
+site/static/img/fifa-intercontinental-*
+incoming/afc-cl-elite-*

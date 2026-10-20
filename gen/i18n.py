@@ -31,6 +31,10 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    h_cups='Continental club cups',
+    cups=[('copa-libertadores', 'Copa Libertadores: the group stage'), ('concacaf-cc', 'Concacaf Champions Cup: the round of 16'),
+          ('afc-cl-elite', 'AFC Champions League Elite'), ('caf-cl', 'CAF Champions League: the group stage'),
+          ('ofc-cl', 'OFC Champions League: the group stage'), ('fifa-intercontinental', 'FIFA Intercontinental Cup')],
     soon_test='Extensive internal testing under way',
     next41='In 4.1: the 2026 World Cup and Euro 2024 among the classic tourneys, with the real squads and the real formats (48 teams with the best third-placed; 24 teams).',
     h_next='Coming next',
@@ -148,6 +152,10 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    h_cups='Le coppe continentali',
+    cups=[('copa-libertadores', 'Copa Libertadores: la fase a gironi'), ('concacaf-cc', 'Concacaf Champions Cup: gli ottavi di finale'),
+          ('afc-cl-elite', 'AFC Champions League Elite'), ('caf-cl', 'CAF Champions League: la fase a gironi'),
+          ('ofc-cl', 'OFC Champions League: la fase a gironi'), ('fifa-intercontinental', 'Coppa Intercontinentale FIFA')],
     soon_test='Intensi test interni in corso',
     next41='Nella 4.1: il Mondiale 2026 e l\'Europeo 2024 tra i tornei storici, con le rose vere e le formule vere (48 squadre con le migliori terze; 24 squadre).',
     h_next='In arrivo',
@@ -263,6 +271,10 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    h_cups='Les coupes continentales',
+    cups=[('copa-libertadores', 'Copa Libertadores : la phase de groupes'), ('concacaf-cc', 'Coupe des champions de la Concacaf : les huitièmes de finale'),
+          ('afc-cl-elite', 'Ligue des champions de l\'AFC Elite'), ('caf-cl', 'Ligue des champions de la CAF : la phase de groupes'),
+          ('ofc-cl', 'Ligue des champions de l\'OFC : la phase de groupes'), ('fifa-intercontinental', 'Coupe intercontinentale de la FIFA')],
     soon_test='Tests internes intensifs en cours',
     next41="Dans la 4.1 : la Coupe du monde 2026 et l'Euro 2024 parmi les tournois anciens, avec les vrais effectifs et les vraies formules (48 équipes avec les meilleurs troisièmes ; 24 équipes).",
     h_next='Prochainement',
@@ -382,6 +394,10 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    h_cups='Die Kontinentalpokale',
+    cups=[('copa-libertadores', 'Copa Libertadores: die Gruppenphase'), ('concacaf-cc', 'Concacaf Champions Cup: das Achtelfinale'),
+          ('afc-cl-elite', 'AFC Champions League Elite'), ('caf-cl', 'CAF Champions League: die Gruppenphase'),
+          ('ofc-cl', 'OFC Champions League: die Gruppenphase'), ('fifa-intercontinental', 'FIFA-Interkontinentalpokal')],
     soon_test='Intensive interne Tests laufen',
     next41='In 4.1: die WM 2026 und die EM 2024 bei den Turnierklassikern, mit den echten Kadern und den echten Modi (48 Teams mit den besten Gruppendritten; 24 Teams).',
     h_next='Als Nächstes',

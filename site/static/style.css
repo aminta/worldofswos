@@ -230,3 +230,5 @@ details[open] summary { margin-bottom: 12px; }
 
 .soon-sticker i { display: block; margin-top: 8px; padding-top: 6px; border-top: 2px solid rgba(255,255,255,.45); font-style: normal;
   font-family: var(--pixel); font-size: 12px; text-transform: uppercase; color: #ffe6a0; text-shadow: 2px 2px 0 #4a0206; }
+.cards.cups { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 860px) { .cards.cups { grid-template-columns: 1fr; } }

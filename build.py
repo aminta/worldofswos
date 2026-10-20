@@ -45,6 +45,8 @@ OUT = os.environ.get('WOS_OUT') or os.path.join(ROOT, 'site')
 # the 'How to install' page goes live with 4.0 (after Davide's Chrome test): preview only until then,
 # WOS_INSTALL=1 WOS_OUT=site-preview python3 build.py  (site-preview/ is git-ignored)
 INSTALL_PAGE = os.environ.get('WOS_INSTALL') == '1'
+CUPS = os.environ.get('WOS_CUPS') == '1'           # the continental cups section: preview only until the Regia's go
+CUPS_HOLD = {'afc-cl-elite', 'fifa-intercontinental'}   # frames to be retaken / not yet capturable: placeholders
 CONTS = ['europe', 'north_america', 'south_america', 'asia', 'oceania', 'africa']
 CONT_MD = {'Europe': 'europe', 'North and Central America': 'north_america', 'South America': 'south_america',
            'Asia': 'asia', 'Oceania': 'oceania', 'Africa': 'africa', 'Europa': 'europe',
@@ -263,6 +265,10 @@ def fmt_num(n, lang):
     return f'{int(n):,}'.replace(',', sep)
 
 
+def have(f):
+    return os.path.exists(os.path.join(ROOT, 'static', 'img', f + '.png'))
+
+
 def home(d, lang):
     t, s = T[lang], d['stats']
     stats = ''.join(f'<div class="stat"><b>{fmt_num(s[k], lang)}</b><span>{esc(t["s_" + k])}</span></div>'
@@ -272,9 +278,6 @@ def home(d, lang):
                                          world=f'<strong>{GAME["world"][lang]}</strong>') + '</li>'
                     for st in t['steps'])
     shots = ''                                      # groups of frames; a frame not captured yet is left out
-    def have(f):
-        return os.path.exists(os.path.join(ROOT, 'static', 'img', f + '.png'))
-
     for g, items in t['shots']:
         figs = ''
         for f, c in items:                          # name-it: this language's capture when there is one
@@ -288,6 +291,18 @@ def home(d, lang):
         if figs:
             shots += (f'<h3>{esc(g)}</h3><div class="cards" style="grid-template-columns:repeat(auto-fill,'
                       f'minmax(min(100%,440px),1fr))">{figs}</div>')
+    cups = ''
+    if CUPS:
+        tiles = ''
+        for f, c in t['cups']:
+            fl = f'{f}-{lang}' if have(f'{f}-{lang}') else f'{f}-it'
+            if f not in CUPS_HOLD and have(fl):
+                tiles += (f'<figure class="shot"><img src="/static/img/{fl}.png" width="1600" height="1200" loading="lazy" '
+                          f'alt="{esc(c)}"><figcaption>{esc(c)}</figcaption></figure>')
+            else:
+                tiles += (f'<figure class="shot soon"><div class="soon-box"><span>{esc(t["soon"])}</span></div>'
+                          f'<figcaption>{esc(c)}</figcaption></figure>')
+        cups = f'<h2 id="cups">{esc(t["h_cups"])}</h2><div class="cards cups">{tiles}</div>'
     if RELEASED:
         dl_btn = f'<a class="btn green" href="{PATCHER}">{esc(t["dl"])}<small>{esc(t["dl_small"])}</small></a>'
         dl_btn2 = f'<a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a>'
@@ -315,7 +330,7 @@ def home(d, lang):
 {''.join(f'<p>{p}</p>' for p in t['what'])}
 <h2>{esc(t['h_high'])}</h2>
 <div class="cards">{cards}</div>
-<h2 id="already">{esc(already.A[lang][0])}</h2>
+{cups}<h2 id="already">{esc(already.A[lang][0])}</h2>
 <div class="cards">{''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}</p></article>' for h, p in already.A[lang][1])}</div>
 <h2 id="next">{esc(t['h_next'])}</h2>
 <div class="panel next"><p><span class="next-tag px">4.1</span> {esc(t['next41'])}</p>
