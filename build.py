@@ -55,6 +55,9 @@ SHOTS_HOLD = {'split-scotland', 'split-austria', 'serie-a-table', 'serie-b-table
 
 def held(base, lang):
     return base in SHOTS_HOLD or f'{base}-{lang}' in SHOTS_HOLD
+NEXT_TEXTS = True      # the World page and the competitions list from data/next/ (the 4.0 notes; Davide's ok 2026-10-20)
+CUPS_HEADS = ('Continental club cups 2026-27', 'Coppe continentali per club 2026-27',
+              'Les coupes continentales de clubs 2026-27', 'Die Kontinentalpokale der Vereine 2026-27')
 CUPS = os.environ.get('WOS_CUPS') == '1'           # the continental cups section: preview only until the Regia's go
 CUPS_HOLD = {'afc-cl-elite', 'fifa-intercontinental'}   # frames to be retaken / not yet capturable: placeholders
 CONTS = ['europe', 'north_america', 'south_america', 'asia', 'oceania', 'africa']
@@ -165,7 +168,7 @@ def split_langs(text):
 def load():
     countries = json.load(open(os.path.join(DATA, 'countries.json'), encoding='utf-8'))
     by_en = {v['names']['en'].upper(): k for k, v in countries.items()}
-    texts = os.path.join(DATA, 'next') if RELEASED else DATA
+    texts = os.path.join(DATA, 'next') if RELEASED or NEXT_TEXTS else DATA
     comp = open(os.path.join(texts, 'competitions.md'), encoding='utf-8').read()
     halves = re.split(r'^## ', comp, flags=re.M)
     lists = {}
@@ -530,6 +533,13 @@ def frames(lang):
 def world(d, lang):
     t = T[lang]
     main, _, miss = notes_part(d, lang)
+    if not RELEASED:                                # 'coming with 4.0' under the continental cups heading
+        out = []
+        for b in main:
+            out.append(b)
+            if b[0] in ('sub', 'h') and b[-1] in CUPS_HEADS:
+                out.append(('p', '**' + t['with40'] + '**'))
+        main = out
     heads = [(md.slug(b[2]), b[2]) for b in main if b[0] == 'h' and b[1] in (3, 4)]
     toc = ''.join(f'<li><a href="#{s}">{md.inline(h)}</a></li>' for s, h in heads)
     wip = f'<p class="panel">{esc(t["lang_wip"])}</p>' if miss else ''
@@ -537,7 +547,7 @@ def world(d, lang):
     body = f'''<div class="wrap page-head"><h1>{esc(t['h_world'])}</h1><p class="tagline px" style="color:var(--gold)">
 {esc(t['world_lead'])}</p></div>
 <div class="wrap">{frames(lang)}</div>
-<div class="wrap doc" lang="{l2}">{wip}<nav class="panel" aria-label="{esc(t['toc'])}"><strong>{esc(t['toc'])}</strong>
+<div class="wrap doc" lang="{l2}">{wip}{'' if RELEASED else f'<p class="panel next"><span class="next-tag px">4.0</span> {esc(t["with40"])}</p>'}<nav class="panel" aria-label="{esc(t['toc'])}"><strong>{esc(t['toc'])}</strong>
 <ul class="toc">{toc}</ul></nav>
 {md.render(main, _notes_link(lang), shift=-1, ids=md.slug)}</div>'''
     return page(lang, 'world/', t['h_world'], body, desc=t['meta_world'], active='world')
