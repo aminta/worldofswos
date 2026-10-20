@@ -59,7 +59,7 @@ NEXT_TEXTS = True      # the World page and the competitions list from data/next
 CUPS_HEADS = ('Continental club cups 2026-27', 'Coppe continentali per club 2026-27',
               'Les coupes continentales de clubs 2026-27', 'Die Kontinentalpokale der Vereine 2026-27')
 CUPS = os.environ.get('WOS_CUPS') == '1'           # the continental cups section: preview only until the Regia's go
-CUPS_HOLD = {'afc-cl-elite', 'fifa-intercontinental'}   # frames to be retaken / not yet capturable: placeholders
+CUPS_HOLD = set()   # (2026-10-21: the rc2 AFC and IC frames are in)
 CONTS = ['europe', 'north_america', 'south_america', 'asia', 'oceania', 'africa']
 CONT_MD = {'Europe': 'europe', 'North and Central America': 'north_america', 'South America': 'south_america',
            'Asia': 'asia', 'Oceania': 'oceania', 'Africa': 'africa', 'Europa': 'europe',
