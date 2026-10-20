@@ -64,6 +64,40 @@ CONT_MD = {'Europe': 'europe', 'North and Central America': 'north_america', 'So
 
 
 # ------------------------------------------------------------------------------------------------ refresh (import)
+# the in-game FORMAT page's text as fmtgame.write() builds it (4.0: paragraphs of prose, then the colours' lines);
+# old tools (a plain list of lines) still work
+PAGE_CODE = """
+def page(world, titles, lines, lang):
+    try:
+        import fmtprose
+    except ImportError:
+        return [x if isinstance(x, str) else ' '.join(x) for x in lines]
+    h = fmtgame.ZT[lang]['head']
+    if isinstance(lines, dict):
+        prose, tail = lines['prose'], lines['tail']
+    else:
+        tail = lines[lines.index(h):] if h in lines else []
+        prose = fmtprose.sentences(lines[:len(lines) - len(tail)])
+    hand = fmtprose.text(world, titles['it'], lang)
+    if hand and isinstance(lines, dict) and lines.get('real'):
+        hand = [lines['real']] + hand
+    if hand and not isinstance(lines, dict):
+        rc = [x for x in lines if x.startswith(fmtgame.TEXTS[lang]['real_cup'].split('{')[0]) or
+              x.startswith(fmtgame.TEXTS[lang]['real_in'])]
+        if rc:
+            hand = fmtprose.sentences(rc) + hand
+    prose = hand or prose
+    if hand:
+        tail = [x for x in tail if x not in fmtgame.CONFED_NOTES[lang].values()]
+    out = []
+    for para in prose:
+        out += [fmtgame.ascii_up(para, lang), '']
+    out += [fmtgame.ascii_up(t, lang) for t in tail]
+    while out and out[-1] == '':
+        out.pop()
+    return out
+"""
+
 def refresh():
     mod = os.path.expanduser(os.environ.get('SWOS_MOD', '~/swos-mod'))
     ref = os.environ.get('SWOS_REF', 'world-2025-26')
@@ -88,12 +122,13 @@ def refresh():
                               capture_output=True).stdout
         subprocess.run(['tar', '-x', '-C', tmp], input=arch, check=True)
         code = ('import sys, os, json\nsys.path.insert(0, sys.argv[1])\nimport fmtgame\nd = sys.argv[2]\nout = {}\n'
+                + PAGE_CODE +
                 'for s in sorted(os.listdir(d)):\n'
                 '    p = os.path.join(d, s, "pack.json")\n'
                 '    if not os.path.exists(p): continue\n'
                 '    pk = json.load(open(p))\n'
-                '    items = [{"title": t, "text": {l: [x if isinstance(x, str) else " ".join(x) for x in tx[l]] '
-                'for l in tx}} for w, cid, t, tx in fmtgame.from_pack(os.path.join(d, s))]\n'
+                '    items = [{"title": t, "text": {l: page(w, t, tx[l], l) for l in fmtgame.LANGS}} '
+                'for w, cid, t, tx in fmtgame.from_pack(os.path.join(d, s))]\n'
                 '    out[s] = {"names": pk["button_names"], "continent": pk["continent"], "fmt": items}\n'
                 'json.dump(out, open(sys.argv[3], "w"), ensure_ascii=False, indent=0)\n')
         dst = os.path.join(DATA, 'countries.json')
