@@ -49,8 +49,7 @@ GUIDE_PATCHER = REPO + '/releases/download/v3.3.6/swos-9697-mod-patcher.html'   
 GUIDE_DONE_SHOTS = False    # the 'done' shots show 4.0 text (MOD_BACKUP\4.0): off until there are 3.3.6 ones
 # frames off the site until retaken (Regia's audit 2026-10-20: old names / old frames / old FORMAT style):
 # 'name' = every language, 'name-xx' = that language only
-SHOTS_HOLD = {'split-scotland', 'split-austria', 'serie-a-table', 'serie-b-table', 'serie-d-table', 'premier-table-it',
-              'cl-league-phase', 'careers-menu', 'cl-format', 'premier-format', 'brazil-state-format'}
+SHOTS_HOLD = {'split-scotland', 'split-austria'}   # rc2 retakes passed 2026-10-21; splits wait for rc3
 
 
 def held(base, lang):
