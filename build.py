@@ -804,7 +804,7 @@ def news_page(d, lang):
             + (f'<p><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>' if RELEASED else
                f'<p class="panel next"><span class="next-tag px">4.0</span> {esc(t["with40"])}</p>'
                f'<p><span class="btn green soon-btn disabled" aria-disabled="true">{esc(t["dl"])}<small>{esc(t["dl_with40"])}</small></span></p>')
-            + f'{winners_block(lang)}{main_menu(lang).replace("<section class=\"wrap\">", "").replace("</section>", "")}'
+            + f'{main_menu(lang).replace("<section class=\"wrap\">", "").replace("</section>", "")}{winners_block(lang)}'
             f'{md.render(bl, _notes_link(lang), shift=-1)}</div>')
     return page(lang, 'news/', t['news_title'], body)
 
