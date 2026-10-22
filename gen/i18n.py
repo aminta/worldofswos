@@ -31,6 +31,7 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    og_title='SWOS 96/97 Mod 4.0 - World 2026-27',
     next401_cups='National cups follow promotions and relegations: each season\'s entrants come from the current divisions (e.g. a club promoted to Serie C plays the Coppa Italia Serie C).', next401_cal='The two-line calendar labels of the UEFA qualifying rounds fitted.',
     next401_rc12=['Serie D: the Poule Scudetto and the group play-off when your club rests on the last matchday.'],
     saves_h='Which saved careers work with 4.0', saves_cols=('Careers saved with', 'With 4.0'),
@@ -188,6 +189,7 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    og_title='SWOS 96/97 Mod 4.0 - Mondo 2026-27',
     next401_cups='Le coppe nazionali seguono promozioni e retrocessioni: le partecipanti di ogni stagione vengono dalle divisioni attuali (per esempio una squadra promossa in Serie C gioca la Coppa Italia Serie C).', next401_cal='Le etichette su due righe dei turni preliminari UEFA nel calendario sistemate.',
     next401_rc12=['Serie D: la Poule Scudetto e il play-off del girone quando la tua squadra riposa all\'ultima giornata.'],
     saves_h='Quali carriere salvate funzionano con la 4.0', saves_cols=('Carriere salvate con', 'Con la 4.0'),
@@ -343,6 +345,7 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    og_title='SWOS 96/97 Mod 4.0 - Monde 2026-27',
     next401_cups="Les coupes nationales suivent les montées et les relégations : les participants de chaque saison viennent des divisions actuelles (par exemple, un club promu en Serie C joue la Coppa Italia Serie C).", next401_cal='Les libellés sur deux lignes des tours de qualification UEFA dans le calendrier ajustés.',
     next401_rc12=["Serie D : la Poule Scudetto et le barrage du groupe quand votre club est au repos lors de la dernière journée."],
     saves_h='Quelles carrières sauvegardées fonctionnent avec la 4.0', saves_cols=('Carrières sauvegardées avec', 'Avec la 4.0'),
@@ -502,6 +505,7 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    og_title='SWOS 96/97 Mod 4.0 - Welt 2026-27',
     next401_cups='Landespokale folgen Auf- und Abstiegen: Die Teilnehmer jeder Saison kommen aus den aktuellen Spielklassen (zum Beispiel spielt ein in die Serie C aufgestiegener Verein die Coppa Italia Serie C).', next401_cal='Die zweizeiligen Kalenderbezeichnungen der UEFA-Qualifikationsrunden angepasst.',
     next401_rc12=['Serie D: die Poule Scudetto und das Staffel-Playoff, wenn dein Verein am letzten Spieltag spielfrei hat.'],
     saves_h='Welche gespeicherten Karrieren mit 4.0 funktionieren', saves_cols=('Karrieren gespeichert mit', 'Mit 4.0'),

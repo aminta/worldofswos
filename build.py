@@ -307,6 +307,8 @@ def page(lang, path, title, body, desc='', active=None, langs=None):
                  f'{" aria-current=\"true\"" if l == lang else ""}>{l.upper()}</a>' for l in langs)
     alt = ''.join(f'<link rel="alternate" hreflang="{l}" href="{SITE_URL}/{l}/{path}">' for l in langs)
     alt += f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}/en/{path}">'
+    og_title = t['og_title'] if path == '' else f'{title} · {t["site"]}'
+    og_desc = t['tagline']
     full = f'{title} · {t["site"]}' if title != t['site'] else f'{t["site"]} · {t["sub"]}'
     return f'''<!doctype html>
 <html lang="{lang}">
@@ -316,13 +318,14 @@ def page(lang, path, title, body, desc='', active=None, langs=None):
 <title>{esc(full)}</title>
 <meta name="description" content="{esc(desc or t['meta_home'])}">
 <link rel="canonical" href="{SITE_URL}{url}">{alt}
-<meta property="og:title" content="{esc(full)}">
-<meta property="og:description" content="{esc(desc or t['meta_home'])}">
+<meta property="og:title" content="{esc(og_title)}">
+<meta property="og:description" content="{esc(og_desc)}">
 <meta property="og:type" content="website"><meta property="og:url" content="{SITE_URL}{url}">
 <meta property="og:locale" content="{LOCALE[lang]}">
-<meta property="og:image" content="{SITE_URL}/static/og-{lang}.png"><meta property="og:image:width" content="1200">
+<meta property="og:image" content="{SITE_URL}/static/og-{lang}.png?v=40"><meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(t['tagline'])}">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(og_title)}">
+<meta name="twitter:description" content="{esc(og_desc)}"><meta name="twitter:image" content="{SITE_URL}/static/og-{lang}.png?v=40">
 <meta name="theme-color" content="#0a1a6e">
 <link rel="icon" href="/static/logo.svg" type="image/svg+xml">
 <link rel="preload" href="/static/fonts/silkscreen-700-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -839,8 +842,8 @@ def root_index():
 <link rel="canonical" href="{SITE_URL}/en/">{alt}<link rel="alternate" hreflang="x-default" href="{SITE_URL}/">
 <meta property="og:title" content="World of SWOS · SWOS 96/97 Mod"><meta property="og:type" content="website">
 <meta property="og:description" content="{esc(T['en']['meta_home'])}"><meta property="og:url" content="{SITE_URL}/">
-<meta property="og:image" content="{SITE_URL}/static/og-en.png"><meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="{SITE_URL}/static/og-en.png?v=40"><meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{SITE_URL}/static/og-en.png?v=40">
 <link rel="icon" href="/static/logo.svg" type="image/svg+xml"><link rel="stylesheet" href="/static/style.css">
 <script>
 (function () {{
