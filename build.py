@@ -35,7 +35,7 @@ REPO = 'https://github.com/aminta/swos-9697-mod'
 # 4.0 is not released yet: both point to the releases page (at release: /releases/latest/download/swos-9697-mod-patcher.html)
 PATCHER = REPO + '/releases/download/v4.0/swos-9697-mod-patcher.html'
 RELEASE_PAGE = REPO + '/releases/tag/v4.0'
-PATCHER_MD5 = 'd0947893c8f9b8da99a7bcd37c5c318f'        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
+PATCHER_MD5 = '923bf8ee35e4174cdb486c1f4e22b9cd'        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
 WINNERS = 'full'        # 'none': no page tonight (4.0.1 lists the page) · 'page': page without season-end titles (block on,
                         # 4.0.1 lists the titles) · 'full': page + titles (block on, nothing in 4.0.1)
 WINNERS_40 = WINNERS in ('page', 'full')
@@ -395,7 +395,7 @@ def main_menu(lang):
             f'alt="{esc(t["menu_cap"])}"><figcaption class="px">{esc(t["menu_cap"])}</figcaption></figure></section>')
 
 
-WARN_FOREIGN = True    # urgent notice: remove when the fixed 4.0 is out (Regia 2026-10-22)
+WARN_FOREIGN = False   # urgent notice: remove when the fixed 4.0 is out (Regia 2026-10-22)
 
 
 def warn_banner(lang):
