@@ -36,7 +36,9 @@ REPO = 'https://github.com/aminta/swos-9697-mod'
 PATCHER = REPO + '/releases/download/v4.0/swos-9697-mod-patcher.html'
 RELEASE_PAGE = REPO + '/releases/tag/v4.0'
 PATCHER_MD5 = ''
-WINNERS_40 = False      # the WINNERS page is in the released build (else it stays only in the 4.0.1 list)        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
+WINNERS = 'none'        # 'none': no page tonight (4.0.1 lists the page) · 'page': page without season-end titles (block on,
+                        # 4.0.1 lists the titles) · 'full': page + titles (block on, nothing in 4.0.1)
+WINNERS_40 = WINNERS in ('page', 'full')        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
 RELEASES = REPO + '/releases'
 CONTENT_40 = True   # the 4.0 content (cups, main menu, news page, 4.0.1 list): live since Davide's OK 2026-10-22
 RELEASED = os.environ.get('WOS_RELEASED') == '1' or False   # THE switch (env for the local preview only). False until 4.0 is on GitHub: download buttons and the install section say "Coming soon"
@@ -467,7 +469,7 @@ def home(d, lang):
 <div class="cards">{''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}</p></article>' for h, p in already.A[lang][1])}</div>
 <h2 id="next">{esc(t['h_next'])}</h2>
 <div class="panel next">{(f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["next401_h"])}</strong></p><ul>'
-  + ''.join(f'<li>{esc(x)}</li>' for x in t['next401'] + ([t['next401_winners']] if RELEASED and not WINNERS_40 else [])) + '</ul>') if CONTENT_40 else ''}<p><span class="next-tag px">4.1</span> {esc(t['next41'])}</p>
+  + ''.join(f'<li>{esc(x)}</li>' for x in t['next401'] + ([t['next401_winners_page' if WINNERS == 'none' else 'next401_winners']] if RELEASED and WINNERS != 'full' else [])) + '</ul>') if CONTENT_40 else ''}<p><span class="next-tag px">4.1</span> {esc(t['next41'])}</p>
 <p><span class="next-tag px">4.2</span> {esc(t['next_text'])}</p>
 <p class="note" style="margin:0">{esc(t['next_note'])}</p></div>
 <h2>{esc(t['h_shots'])}</h2>

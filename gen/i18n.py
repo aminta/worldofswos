@@ -31,6 +31,7 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    next401_winners_page='A new WINNERS page in the STAT menu: who won each competition of the season.',
     h_winners='Who won what: the WINNERS page',
     winners_text='A new page in the STAT menu lists who won each competition of the season: every Apertura and Clausura, every trophy and every play-off, at a glance.',
     next401_winners='Season-end titles on the WINNERS page.',
@@ -179,6 +180,7 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    next401_winners_page='Una nuova pagina VINCITORI nel menu STAT: chi ha vinto ogni competizione della stagione.',
     h_winners='Chi ha vinto cosa: la pagina VINCITORI',
     winners_text='Una nuova pagina nel menu STAT elenca chi ha vinto ogni competizione della stagione: ogni Apertura e Clausura, ogni trofeo e ogni play-off, a colpo d\'occhio.',
     next401_winners='I titoli di fine stagione nella pagina VINCITORI.',
@@ -325,6 +327,7 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    next401_winners_page='Une nouvelle page VAINQUEURS dans le menu STATS : les vainqueurs de chaque compétition de la saison.',
     h_winners='Qui a gagné quoi : la page des VAINQUEURS',
     winners_text="Une nouvelle page du menu STATS liste les vainqueurs de chaque compétition de la saison : chaque Apertura et Clausura, chaque trophée et chaque barrage, d'un seul coup d'œil.",
     next401_winners='Les titres de fin de saison sur la page des VAINQUEURS.',
@@ -475,6 +478,7 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    next401_winners_page='Eine neue SIEGER-Seite im Menü STATISTIK: wer jeden Wettbewerb der Saison gewonnen hat.',
     h_winners='Wer hat was gewonnen: die SIEGER-Seite',
     winners_text='Eine neue Seite im Menü STATISTIK zeigt, wer jeden Wettbewerb der Saison gewonnen hat: jede Apertura und Clausura, jeden Pokal und jedes Playoff, auf einen Blick.',
     next401_winners='Die Titel zum Saisonende auf der SIEGER-Seite.',
