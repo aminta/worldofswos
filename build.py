@@ -759,6 +759,20 @@ def saves_table(lang):
             f'<th>{esc(t["saves_cols"][1])}</th></tr></thead><tbody>{rows}</tbody></table><p><strong>{esc(t["saves_tip"])}</strong></p>')
 
 
+def launch_block(lang):
+    x = install.EXTRA[lang]
+    bat = install.BATLANG[lang]
+    code = ('@echo off\ncd /d "%~dp0DOSBOX"\nstart "" DOSBox.exe -conf "..\\dosbox_SWOS.conf" '
+            f'-conf "..\\dosbox_SWOS_single_{bat}.conf" -noconsole -c "exit"')
+    return (f'<h2 id="launch">{esc(x["lh"])}</h2><p>{x["lt"][0]}</p><pre class="panel" style="white-space:pre-wrap;'
+            f'overflow-wrap:anywhere;font-size:14px">{esc(code)}</pre><p>{x["lt"][1]}</p>')
+
+
+def joypad_block(lang):
+    x = install.EXTRA[lang]
+    return f'<h2 id="joypad">{esc(x["jh"])}</h2><ul>' + ''.join(f'<li>{i}</li>' for i in x['jt']) + '</ul>'
+
+
 def install_page(d, lang):
     g, t = install.G[lang], T[lang]
 
@@ -788,7 +802,7 @@ def install_page(d, lang):
     body = f'''<div class="wrap page-head"><h1>{esc(g['title'])}</h1><p>{esc(g['lead'])}</p></div>
 <div class="wrap doc"><h2>{esc(g['section'])}</h2><ol class="steps">{steps}</ol>
 <p class="panel" style="margin-top:16px">{esc(g['fallback'])}{(' ' + esc(t['progfiles_manual'])) if RELEASED else ''}</p>
-{f'<p class="panel next">{esc(t["progfiles"])}</p>' if RELEASED else ''}{cases}{saves_table(lang)}</div>'''
+{f'<p class="panel next" id="progfiles">{esc(t["progfiles"])}</p>' if RELEASED else ''}{cases}{launch_block(lang)}{saves_table(lang)}{joypad_block(lang)}</div>'''
     return page(lang, 'install/', g['title'], body, active='install')
 
 
