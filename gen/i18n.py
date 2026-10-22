@@ -33,6 +33,7 @@ T = {
  'en': dict(
     next401_h='The upcoming 4.0.1',
     next401=['Leagues in their exact 2026-27 formats: Mexico (Liga MX Apertura / Clausura with the Liguilla), Colombia (Apertura and Finalización with the cuadrangulares), Peru (Apertura / Clausura and the title play-off), Uruguay (Apertura, Intermedio, Clausura).',
+             'Guatemala, El Salvador and Paraguay in their exact 2026-27 formats (Apertura / Clausura with their final phases).',
              'The real Clausura calendars of Costa Rica, Honduras and Panama, as soon as they are published.',
              'Continental cups: the Libertadores group thirds play the Sudamericana play-off; the AFC Champions League Elite league stage and the Challenge League groups are played by your club.',
              'European places always from the right association.',
@@ -176,6 +177,7 @@ T = {
  'it': dict(
     next401_h='La prossima 4.0.1',
     next401=['Campionati nelle loro formule 2026-27 esatte: Messico (Liga MX Apertura / Clausura con la Liguilla), Colombia (Apertura e Finalización con i cuadrangulares), Perù (Apertura / Clausura e lo spareggio per il titolo), Uruguay (Apertura, Intermedio, Clausura).',
+             'Guatemala, El Salvador e Paraguay nelle loro formule 2026-27 esatte (Apertura / Clausura con le loro fasi finali).',
              'I veri calendari della Clausura di Costa Rica, Honduras e Panama, appena saranno pubblicati.',
              'Coppe continentali: le terze dei gironi della Libertadores giocano lo spareggio della Sudamericana; la fase campionato della AFC Champions League Elite e i gironi della Challenge League li gioca la tua squadra.',
              'I posti europei sempre dalla federazione giusta.',
@@ -317,6 +319,7 @@ T = {
  'fr': dict(
     next401_h='La prochaine 4.0.1',
     next401=["Des championnats dans leurs formules 2026-27 exactes : Mexique (Liga MX Apertura / Clausura avec la Liguilla), Colombie (Apertura et Finalización avec les cuadrangulares), Pérou (Apertura / Clausura et le barrage pour le titre), Uruguay (Apertura, Intermedio, Clausura).",
+             "Le Guatemala, le Salvador et le Paraguay dans leurs formules 2026-27 exactes (Apertura / Clausura avec leurs phases finales).",
              "Les vrais calendriers de la Clausura du Costa Rica, du Honduras et du Panama, dès leur publication.",
              "Coupes continentales : les troisièmes de groupe de la Libertadores jouent le barrage de la Sudamericana ; la phase de ligue de l'AFC Champions League Elite et les groupes de la Challenge League sont joués par votre club.",
              "Des places européennes toujours attribuées à la bonne association.",
@@ -462,6 +465,7 @@ T = {
  'de': dict(
     next401_h='Die kommende 4.0.1',
     next401=['Ligen in ihren genauen Modi 2026-27: Mexiko (Liga MX Apertura / Clausura mit der Liguilla), Kolumbien (Apertura und Finalización mit den Cuadrangulares), Peru (Apertura / Clausura und das Meister-Playoff), Uruguay (Apertura, Intermedio, Clausura).',
+             'Guatemala, El Salvador und Paraguay in ihren genauen Modi 2026-27 (Apertura / Clausura mit ihren Endrunden).',
              'Die echten Clausura-Spielpläne von Costa Rica, Honduras und Panama, sobald sie veröffentlicht sind.',
              'Kontinentalpokale: Die Gruppendritten der Libertadores spielen das Playoff der Sudamericana; die Ligaphase der AFC Champions League Elite und die Gruppen der Challenge League spielt dein Verein selbst.',
              'Europapokalplätze immer vom richtigen Verband.',
