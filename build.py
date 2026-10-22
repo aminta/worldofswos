@@ -361,7 +361,7 @@ def main_menu(lang):
     if not RELEASED:
         return ''
     t = T[lang]
-    f = f'main-menu-{lang}' if have(f'main-menu-{lang}') else 'main-menu-it'
+    f = f'main-menu-{lang}'
     if not have(f):
         return ''
     return (f'<section class="wrap"><figure class="shot lead-shot"><img src="/static/img/{f}.png" width="1600" height="1200" '
@@ -383,6 +383,8 @@ def home(d, lang):
             if held(f[:-3], lang):
                 continue                            # taken off until retaken                          # name-it: this language's capture when there is one
             fl = f[:-3] + '-' + lang if f.endswith('-it') and have(f[:-3] + '-' + lang) else f
+            if RELEASED and f.endswith('-it') and fl != f[:-3] + '-' + lang:
+                continue                            # released: a slot only in its own language (Davide)
             if have(fl):
                 figs += (f'<figure class="shot"><img src="/static/img/{fl}.png" width="1600" height="1200" '
                          f'loading="lazy" alt="{esc(c)}"><figcaption>{esc(c)}</figcaption></figure>')
@@ -396,7 +398,7 @@ def home(d, lang):
     if CUPS:
         tiles = ''
         for f, c in t['cups']:
-            fl = f'{f}-{lang}' if have(f'{f}-{lang}') else f'{f}-it'
+            fl = f'{f}-{lang}' if have(f'{f}-{lang}') else (f'{f}-it' if not RELEASED else '')
             if f in CUPS_TEXT:
                 tiles += (f'<figure class="shot"><div class="soon-box" style="padding:18px;text-align:center">'
                           f'<p class="px" style="color:var(--gold);font-size:18px;margin:0 0 10px">{esc(t["ic_tile"])}</p>'
@@ -661,6 +663,8 @@ def frames(lang):
         if held(f, lang):
             continue
         fl = lang if os.path.exists(os.path.join(ROOT, 'static', 'img', f'{f}-{lang}.png')) else 'it'
+        if RELEASED and fl != lang:
+            continue
         out.append(f'<figure class="shot"><img src="/static/img/{f}-{fl}.png" width="1600" height="1200" '
                    f'loading="lazy" alt="{esc(cap)}"><figcaption>{esc(cap)}</figcaption></figure>')
     return f'<div class="cards" style="margin:18px 0 26px;grid-template-columns:repeat(auto-fill,minmax(min(100%,440px),1fr))">{"".join(out)}</div>'
