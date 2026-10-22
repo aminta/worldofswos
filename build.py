@@ -870,11 +870,16 @@ def frames_in():
     inc = os.path.join(ROOT, 'incoming')
     for f in sorted(os.listdir(inc)) if os.path.isdir(inc) else []:
         src, dst = os.path.join(inc, f), os.path.join(ROOT, 'static', 'img', f)
-        if f.endswith('.png') and (not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src)):
+        pend = os.path.join(ROOT, 'static', 'pending', f)   # a new take of an approved frame waits for its check
+        ok = json.load(open(os.path.join(DATA, 'frames_ok.json'))) if os.path.exists(os.path.join(DATA, 'frames_ok.json')) else []
+        target = pend if f[:-4] in ok and os.path.exists(dst) else dst
+        newer = not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src)
+        if f.endswith('.png') and newer and (not os.path.exists(target) or os.path.getmtime(target) < os.path.getmtime(src)):
             from PIL import Image
+            os.makedirs(os.path.dirname(target), exist_ok=True)
             im = Image.open(src)
-            im.resize((im.width * 5, im.height * 6), Image.NEAREST).save(dst, optimize=True)
-            print(f'frame: {f}')
+            im.resize((im.width * 5, im.height * 6), Image.NEAREST).save(target, optimize=True)
+            print(f'frame: {f}' + (' (pending: approve with build.py --approve NAME)' if target == pend else ''))
 
 
 def build():
@@ -882,7 +887,7 @@ def build():
     d = load()
     if os.path.exists(OUT):
         shutil.rmtree(OUT)
-    shutil.copytree(os.path.join(ROOT, 'static'), os.path.join(OUT, 'static'))
+    shutil.copytree(os.path.join(ROOT, 'static'), os.path.join(OUT, 'static'), ignore=shutil.ignore_patterns('pending'))
     write('static/logo.svg', logo_svg(64, 'World of SWOS'))
     if FRAMES_OK is not None:                       # unchecked frames are not published at all
         img = os.path.join(OUT, 'static', 'img')
@@ -918,6 +923,16 @@ def build():
 
 
 if __name__ == '__main__':
+    if '--approve' in sys.argv:                      # build.py --approve name-xx [name-yy ...]: a checked new take goes live
+        for n in sys.argv[sys.argv.index('--approve') + 1:]:
+            pend = os.path.join(ROOT, 'static', 'pending', n + '.png')
+            if os.path.exists(pend):
+                os.replace(pend, os.path.join(ROOT, 'static', 'img', n + '.png'))
+            ok = set(json.load(open(os.path.join(DATA, 'frames_ok.json'))))
+            ok.add(n)
+            json.dump(sorted(ok), open(os.path.join(DATA, 'frames_ok.json'), 'w'), indent=0)
+            print('approved', n)
+        sys.exit(0)
     if '--refresh' in sys.argv:
         refresh()
     build()
