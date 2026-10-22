@@ -31,6 +31,7 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    next401_rc12=['Serie D: the Poule Scudetto and the group play-off when your club rests on the last matchday.', 'National cups you don\'t play no longer listed among your competitions.'],
     saves_h='Which saved careers work with 4.0', saves_cols=('Careers saved with', 'With 4.0'),
     saves_rows={'orig': 'the original SWOS 96/97', 'v1': 'the mod 1.x', 'v2': 'the mod 2.x', 'v3': 'the mod 3.x (1996-97 careers and Europe 1984-85)', 'beta': 'the 4.0 betas (World 2026-27)'},
     saves_status={'ok': 'They work: load, play, save, reload (tested)', 'pending': 'Being tested', 'beta': 'They work (tested); the new first-season features and last season\'s WINNERS page need a new career or a season end'},
@@ -186,6 +187,7 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    next401_rc12=['Serie D: la Poule Scudetto e il play-off del girone quando la tua squadra riposa all\'ultima giornata.', 'Le coppe nazionali che non giochi non compaiono più tra le tue competizioni.'],
     saves_h='Quali carriere salvate funzionano con la 4.0', saves_cols=('Carriere salvate con', 'Con la 4.0'),
     saves_rows={'orig': 'lo SWOS 96/97 originale', 'v1': 'la mod 1.x', 'v2': 'la mod 2.x', 'v3': 'la mod 3.x (carriere 1996-97 ed Europa 1984-85)', 'beta': 'le beta della 4.0 (Mondo 2026-27)'},
     saves_status={'ok': 'Funzionano: si caricano, si gioca, si salva, si ricarica (verificato)', 'pending': 'In verifica', 'beta': 'Funzionano (verificato); le novità della prima stagione e la pagina VINCITORI della stagione precedente richiedono una nuova carriera o una fine stagione'},
@@ -339,6 +341,7 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    next401_rc12=["Serie D : la Poule Scudetto et le barrage du groupe quand votre club est au repos lors de la dernière journée.", "Les coupes nationales que vous ne jouez pas n'apparaissent plus parmi vos compétitions."],
     saves_h='Quelles carrières sauvegardées fonctionnent avec la 4.0', saves_cols=('Carrières sauvegardées avec', 'Avec la 4.0'),
     saves_rows={'orig': 'le SWOS 96/97 original', 'v1': 'le mod 1.x', 'v2': 'le mod 2.x', 'v3': 'le mod 3.x (carrières 1996-97 et Europe 1984-85)', 'beta': 'les bêtas de la 4.0 (Monde 2026-27)'},
     saves_status={'ok': 'Elles fonctionnent : chargement, jeu, sauvegarde, rechargement (testé)', 'pending': 'En cours de test', 'beta': "Elles fonctionnent (testé) ; les nouveautés de la première saison et la page VAINQUEURS de la saison précédente demandent une nouvelle carrière ou une fin de saison"},
@@ -496,6 +499,7 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    next401_rc12=['Serie D: die Poule Scudetto und das Staffel-Playoff, wenn dein Verein am letzten Spieltag spielfrei hat.', 'Landespokale, die du nicht spielst, stehen nicht mehr in deiner Wettbewerbsliste.'],
     saves_h='Welche gespeicherten Karrieren mit 4.0 funktionieren', saves_cols=('Karrieren gespeichert mit', 'Mit 4.0'),
     saves_rows={'orig': 'dem originalen SWOS 96/97', 'v1': 'der Mod 1.x', 'v2': 'der Mod 2.x', 'v3': 'der Mod 3.x (Karrieren 1996-97 und Europa 1984-85)', 'beta': 'den Betas von 4.0 (Welt 2026-27)'},
     saves_status={'ok': 'Funktionieren: laden, spielen, speichern, neu laden (getestet)', 'pending': 'Wird getestet', 'beta': 'Funktionieren (getestet); die Neuerungen der ersten Saison und die SIEGER-Seite der Vorsaison brauchen eine neue Karriere oder ein Saisonende'},
