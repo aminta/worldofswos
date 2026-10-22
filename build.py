@@ -385,6 +385,8 @@ def home(d, lang):
             fl = f[:-3] + '-' + lang if f.endswith('-it') and have(f[:-3] + '-' + lang) else f
             if RELEASED and f.endswith('-it') and fl != f[:-3] + '-' + lang:
                 continue                            # released: a slot only in its own language (Davide)
+            if RELEASED and not have(fl):
+                continue                            # released: no 'coming soon' tiles
             if have(fl):
                 figs += (f'<figure class="shot"><img src="/static/img/{fl}.png" width="1600" height="1200" '
                          f'loading="lazy" alt="{esc(c)}"><figcaption>{esc(c)}</figcaption></figure>')
