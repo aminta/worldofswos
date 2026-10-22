@@ -36,7 +36,7 @@ REPO = 'https://github.com/aminta/swos-9697-mod'
 PATCHER = REPO + '/releases/download/v4.0/swos-9697-mod-patcher.html'
 RELEASE_PAGE = REPO + '/releases/tag/v4.0'
 PATCHER_MD5 = ''
-WINNERS = 'none'        # 'none': no page tonight (4.0.1 lists the page) · 'page': page without season-end titles (block on,
+WINNERS = 'full'        # 'none': no page tonight (4.0.1 lists the page) · 'page': page without season-end titles (block on,
                         # 4.0.1 lists the titles) · 'full': page + titles (block on, nothing in 4.0.1)
 WINNERS_40 = WINNERS in ('page', 'full')        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
 RELEASES = REPO + '/releases'
