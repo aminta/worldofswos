@@ -36,6 +36,7 @@ REPO = 'https://github.com/aminta/swos-9697-mod'
 PATCHER = REPO + '/releases/download/v4.0/swos-9697-mod-patcher.html'
 RELEASE_PAGE = REPO + '/releases/tag/v4.0'
 RELEASES = REPO + '/releases'
+CONTENT_40 = True   # the 4.0 content (cups, main menu, news page, 4.0.1 list): live since Davide's OK 2026-10-22
 RELEASED = os.environ.get('WOS_RELEASED') == '1' or False   # THE switch (env for the local preview only). False until 4.0 is on GitHub: download buttons and the install section say "Coming soon"
 TWELVE_BIT_URL = 'https://www.facebook.com/retrogaming12bit'   # https://12bit.it when the new site is out
 _tb = '<img class="assoc-logo" src="/static/img/12bit.png" width="64" height="80" alt="12 Bit Retrogaming, associazione culturale (Trieste)">'
@@ -59,7 +60,7 @@ def held(base, lang):
 NEXT_TEXTS = True      # the World page and the competitions list from data/next/ (the 4.0 notes; Davide's ok 2026-10-20)
 CUPS_HEADS = ('Continental club cups 2026-27', 'Coppe continentali per club 2026-27',
               'Les coupes continentales de clubs 2026-27', 'Die Kontinentalpokale der Vereine 2026-27')
-CUPS = os.environ.get('WOS_CUPS') == '1' or RELEASED           # the continental cups section: preview only until the Regia's go
+CUPS = os.environ.get('WOS_CUPS') == '1' or CONTENT_40           # the continental cups section: preview only until the Regia's go
 CUPS_HOLD = set()
 CUPS_TEXT = {'fifa-intercontinental'}   # no 4.0 screenshot: a text tile   # rc2 IC frame is a test artifact (Palmeiras forced into the CAF place): retake in rc3
 CONTS = ['europe', 'north_america', 'south_america', 'asia', 'oceania', 'africa']
@@ -358,7 +359,7 @@ def have(f):
 
 def main_menu(lang):
     """4.0's lead image: the game's main menu with the green 2026-27 career button (release only)."""
-    if not RELEASED:
+    if not CONTENT_40:
         return ''
     t = T[lang]
     f = f'main-menu-{lang}'
@@ -383,9 +384,9 @@ def home(d, lang):
             if held(f[:-3], lang):
                 continue                            # taken off until retaken                          # name-it: this language's capture when there is one
             fl = f[:-3] + '-' + lang if f.endswith('-it') and have(f[:-3] + '-' + lang) else f
-            if RELEASED and f.endswith('-it') and fl != f[:-3] + '-' + lang:
+            if CONTENT_40 and f.endswith('-it') and fl != f[:-3] + '-' + lang:
                 continue                            # released: a slot only in its own language (Davide)
-            if RELEASED and not have(fl):
+            if CONTENT_40 and not have(fl):
                 continue                            # released: no 'coming soon' tiles
             if have(fl):
                 figs += (f'<figure class="shot"><img src="/static/img/{fl}.png" width="1600" height="1200" '
@@ -400,7 +401,7 @@ def home(d, lang):
     if CUPS:
         tiles = ''
         for f, c in t['cups']:
-            fl = f'{f}-{lang}' if have(f'{f}-{lang}') else (f'{f}-it' if not RELEASED else '')
+            fl = f'{f}-{lang}' if have(f'{f}-{lang}') else (f'{f}-it' if not CONTENT_40 else '')
             if f in CUPS_TEXT:
                 tiles += (f'<figure class="shot"><div class="soon-box" style="padding:18px;text-align:center">'
                           f'<p class="px" style="color:var(--gold);font-size:18px;margin:0 0 10px">{esc(t["ic_tile"])}</p>'
@@ -411,7 +412,8 @@ def home(d, lang):
             else:
                 tiles += (f'<figure class="shot soon"><div class="soon-box"><span>{esc(t["soon_tile"])}</span></div>'
                           f'<figcaption>{esc(c)}</figcaption></figure>')
-        cups = f'<h2 id="cups">{esc(t["h_cups"])}</h2><div class="cards cups">{tiles}</div>'
+        soon40 = '' if RELEASED else f'<p class="note"><span class="next-tag px" style="font-size:11px">4.0</span> {esc(t["with40"])}</p>'
+        cups = f'<h2 id="cups">{esc(t["h_cups"])}</h2>{soon40}<div class="cards cups">{tiles}</div>'
     if RELEASED:
         dl_btn = f'<a class="btn green" href="{PATCHER}">{esc(t["dl"])}<small>{esc(t["dl_small"])}</small></a>'
         dl_btn2 = f'<a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a>'
@@ -430,7 +432,7 @@ def home(d, lang):
 <p class="lead">{esc(t['lead'])}</p>
 <div class="cta">
 {dl_btn}
-{f'<a class="btn blue" href="/{lang}/news/">{esc(t["news_title"])}</a>' if RELEASED else ''}
+{f'<a class="btn blue" href="/{lang}/news/">{esc(t["news_title"])}</a>' if CONTENT_40 else ''}
 <a class="btn orange" href="#install">{esc(t['how'])}</a>
 <a class="btn blue" href="/{lang}/countries/">{esc(t['see_world'])}</a>
 </div>
@@ -449,7 +451,7 @@ def home(d, lang):
 <div class="cards">{''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}</p></article>' for h, p in already.A[lang][1])}</div>
 <h2 id="next">{esc(t['h_next'])}</h2>
 <div class="panel next">{(f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["next401_h"])}</strong></p><ul>'
-  + ''.join(f'<li>{esc(x)}</li>' for x in t['next401']) + '</ul>') if RELEASED else ''}<p><span class="next-tag px">4.1</span> {esc(t['next41'])}</p>
+  + ''.join(f'<li>{esc(x)}</li>' for x in t['next401']) + '</ul>') if CONTENT_40 else ''}<p><span class="next-tag px">4.1</span> {esc(t['next41'])}</p>
 <p><span class="next-tag px">4.2</span> {esc(t['next_text'])}</p>
 <p class="note" style="margin:0">{esc(t['next_note'])}</p></div>
 <h2>{esc(t['h_shots'])}</h2>
@@ -666,7 +668,7 @@ def frames(lang):
         if held(f, lang):
             continue
         fl = lang if os.path.exists(os.path.join(ROOT, 'static', 'img', f'{f}-{lang}.png')) else 'it'
-        if RELEASED and fl != lang:
+        if CONTENT_40 and fl != lang:
             continue
         out.append(f'<figure class="shot"><img src="/static/img/{f}-{fl}.png" width="1600" height="1200" '
                    f'loading="lazy" alt="{esc(cap)}"><figcaption>{esc(cap)}</figcaption></figure>')
@@ -774,7 +776,10 @@ def news_page(d, lang):
         bl, _ = tr.translate(bl, lang)
     bl = [b for b in bl if not (b[0] == 'p' and b[1].strip() == '---')]
     body = (f'<div class="wrap page-head"><h1>{esc(t["news_title"])}</h1></div><div class="wrap doc">'
-            f'<p><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>{main_menu(lang).replace("<section class=\"wrap\">", "").replace("</section>", "")}'
+            + (f'<p><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>' if RELEASED else
+               f'<p class="panel next"><span class="next-tag px">4.0</span> {esc(t["with40"])}</p>'
+               f'<p><span class="btn green soon-btn disabled" aria-disabled="true">{esc(t["dl"])}<small>{esc(t["dl_with40"])}</small></span></p>')
+            + f'{main_menu(lang).replace("<section class=\"wrap\">", "").replace("</section>", "")}'
             f'{md.render(bl, _notes_link(lang), shift=-1)}</div>')
     return page(lang, 'news/', t['news_title'], body)
 
@@ -853,7 +858,7 @@ def build():
                  'credits/': credits(d, lang), 'classic/': classic_page(d, lang), 'bug/': bug_page(d, lang)}
         if INSTALL_PAGE:
             pages['install/'] = install_page(d, lang)
-        if RELEASED:
+        if CONTENT_40:
             pages['news/'] = news_page(d, lang)
         for code in d['order']:
             pages[f'countries/{code}/'] = country(d, code, lang)
