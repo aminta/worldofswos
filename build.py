@@ -35,12 +35,12 @@ REPO = 'https://github.com/aminta/swos-9697-mod'
 # 4.0 is not released yet: both point to the releases page (at release: /releases/latest/download/swos-9697-mod-patcher.html)
 PATCHER = REPO + '/releases/download/v4.0/swos-9697-mod-patcher.html'
 RELEASE_PAGE = REPO + '/releases/tag/v4.0'
-PATCHER_MD5 = ''
+PATCHER_MD5 = ''        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
 WINNERS = 'full'        # 'none': no page tonight (4.0.1 lists the page) · 'page': page without season-end titles (block on,
                         # 4.0.1 lists the titles) · 'full': page + titles (block on, nothing in 4.0.1)
 WINNERS_40 = WINNERS in ('page', 'full')
 # saved careers with 4.0 (the Regia's verified results): row -> 'ok' | 'pending' | 'beta'
-SAVES = [('orig', 'ok'), ('v1', 'ok'), ('v2', 'ok'), ('v3', 'ok'), ('beta', 'beta')]   # verified on the 4.0 release build (Regia 2026-10-22)        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
+SAVES = [('orig', 'ok'), ('v1', 'ok'), ('v2', 'ok'), ('v3', 'ok'), ('beta', 'beta')]   # verified on the 4.0 release build (Regia 2026-10-22)
 RELEASES = REPO + '/releases'
 CONTENT_40 = True   # the 4.0 content (cups, main menu, news page, 4.0.1 list): live since Davide's OK 2026-10-22
 RELEASED = os.environ.get('WOS_RELEASED') == '1' or False   # THE switch (env for the local preview only). False until 4.0 is on GitHub: download buttons and the install section say "Coming soon"
