@@ -51,7 +51,7 @@ GUIDE_PATCHER = REPO + '/releases/download/v3.3.6/swos-9697-mod-patcher.html'   
 GUIDE_DONE_SHOTS = False    # the 'done' shots show 4.0 text (MOD_BACKUP\4.0): off until there are 3.3.6 ones
 # frames off the site until retaken (Regia's audit 2026-10-20: old names / old frames / old FORMAT style):
 # 'name' = every language, 'name-xx' = that language only
-SPLITS_OK = False     # the rc5 split frames checked against their captions
+SPLITS_OK = True      # the rc5 split frames checked against their captions
 SHOTS_HOLD = set() if SPLITS_OK else {'split-scotland', 'split-austria'}   # rc2 retakes passed 2026-10-21; splits wait for rc3
 
 

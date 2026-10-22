@@ -221,7 +221,7 @@ details[open] summary { margin-bottom: 12px; }
 /* the association: 12 Bit Retrogaming Trieste */
 .assoc { display: flex; align-items: center; gap: 16px; margin: 0 0 1em; }
 .assoc p { margin: 0; }
-.assoc-logo { display: block; width: 76px; height: auto; background: #fff; padding: 0; border: 2px solid var(--line); flex: none; }
+.assoc-logo { display: block; width: 76px; max-width: none; height: auto; background: #fff; padding: 0; border: 2px solid var(--line); flex: none; }
 
 /* coming next (roadmap) */
 .next { border-color: var(--orange); }
@@ -246,3 +246,9 @@ details[open] summary { margin-bottom: 12px; }
 .soon-sticker.out { background: linear-gradient(135deg, #4fd85a 0%, #12a02a 55%, #075a14 100%); border-color: #a8f0ae #053a0c #053a0c #a8f0ae; }
 .lead-shot { max-width: 960px; margin: 10px auto 18px; border-color: var(--green-hi); box-shadow: 6px 6px 0 var(--shadow); }
 .lead-shot figcaption { color: #fff; font-size: 14px; text-align: center; text-shadow: 2px 2px 0 var(--shadow); }
+.assoc > a { flex: none; display: block; }
+@media (max-width: 600px) {
+  .assoc { flex-direction: column; align-items: center; text-align: center; }
+  .assoc-logo { width: 96px; }
+}
+@media (max-width: 600px) { h3 { font-size: 15px; letter-spacing: 0; } }
