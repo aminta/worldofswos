@@ -764,7 +764,7 @@ def launch_block(lang):
     bat = install.BATLANG[lang]
     code = ('@echo off\ncd /d "%~dp0DOSBOX"\nstart "" DOSBox.exe -conf "..\\dosbox_SWOS.conf" '
             f'-conf "..\\dosbox_SWOS_single_{bat}.conf" -noconsole -c "exit"')
-    return (f'<h2 id="launch">{esc(x["lh"])}</h2><p>{x["lt"][0]}</p><pre class="panel" style="white-space:pre-wrap;'
+    return (f'<h2 id="launch">{esc(x["lh"])}</h2><p class="panel next">{esc(x["no64"])}</p><p>{x["lt"][0]}</p><pre class="panel" style="white-space:pre-wrap;'
             f'overflow-wrap:anywhere;font-size:14px">{esc(code)}</pre><p>{x["lt"][1]}</p>')
 
 
