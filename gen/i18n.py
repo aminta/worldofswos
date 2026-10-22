@@ -31,7 +31,7 @@ CONTINENT = {
 
 T = {
  'en': dict(
-    warn_foreign="Warning: in the 22/10 build of 4.0, buying a player from the foreign market (VIEW FOREIGN MARKET) closes the game. Please don't buy from the foreign market: a fixed 4.0 is coming within hours. Other transfers work.",
+    warn_foreign="Warning: in the 22/10 build of 4.0, buying a player from the foreign market (VIEW FOREIGN PLAYER MARKET) closes the game. Please don't buy from the foreign market: a fixed 4.0 is coming within hours. Other transfers work.",
     og_title='SWOS 96/97 Mod 4.0 - World 2026-27',
     next401_cups='National cups follow promotions and relegations: each season\'s entrants come from the current divisions (e.g. a club promoted to Serie C plays the Coppa Italia Serie C).', next401_cal='The two-line calendar labels of the UEFA qualifying rounds fitted.',
     next401_rc12=['Serie D: the Poule Scudetto and the group play-off when your club rests on the last matchday.'],
@@ -337,7 +337,7 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
-    warn_foreign="Avertissement : dans la version 4.0 du 22/10, acheter un joueur sur le marché étranger (menu du marché étranger) ferme le jeu. N'achetez pas de joueurs sur le marché étranger : une 4.0 corrigée arrive d'ici quelques heures. Les autres transferts fonctionnent.",
+    warn_foreign="Avertissement : dans la version 4.0 du 22/10, acheter un joueur sur le marché étranger (VOIR MARCHE ETRANG JOUEURS DISPO) ferme le jeu. N'achetez pas de joueurs sur le marché étranger : une 4.0 corrigée arrive d'ici quelques heures. Les autres transferts fonctionnent.",
     og_title='SWOS 96/97 Mod 4.0 - Monde 2026-27',
     next401_cups="Les coupes nationales suivent les montées et les relégations : les participants de chaque saison viennent des divisions actuelles (par exemple, un club promu en Serie C joue la Coppa Italia Serie C).", next401_cal='Les libellés sur deux lignes des tours de qualification UEFA dans le calendrier ajustés.',
     next401_rc12=["Serie D : la Poule Scudetto et le barrage du groupe quand votre club est au repos lors de la dernière journée."],
@@ -493,7 +493,7 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
-    warn_foreign='Warnung: In der 4.0 vom 22.10. beendet der Kauf eines Spielers auf dem Auslandsmarkt (Menü Auslandsmarkt) das Spiel. Bitte keine Spieler auf dem Auslandsmarkt kaufen: Eine korrigierte 4.0 kommt in wenigen Stunden. Die anderen Transfers funktionieren.',
+    warn_foreign='Warnung: In der 4.0 vom 22.10. beendet der Kauf eines Spielers auf dem Ausländischen Spielermarkt (AUSLÄNDISCHN SPIELERMARKT ANZEIG) das Spiel. Bitte keine Spieler auf dem Ausländischen Spielermarkt kaufen: Eine korrigierte 4.0 kommt in wenigen Stunden. Die anderen Transfers funktionieren.',
     og_title='SWOS 96/97 Mod 4.0 - Welt 2026-27',
     next401_cups='Landespokale folgen Auf- und Abstiegen: Die Teilnehmer jeder Saison kommen aus den aktuellen Spielklassen (zum Beispiel spielt ein in die Serie C aufgestiegener Verein die Coppa Italia Serie C).', next401_cal='Die zweizeiligen Kalenderbezeichnungen der UEFA-Qualifikationsrunden angepasst.',
     next401_rc12=['Serie D: die Poule Scudetto und das Staffel-Playoff, wenn dein Verein am letzten Spieltag spielfrei hat.'],
