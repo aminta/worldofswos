@@ -367,6 +367,17 @@ def have(f):
     return os.path.exists(os.path.join(ROOT, 'static', 'img', f + '.png')) and (FRAMES_OK is None or f in FRAMES_OK)
 
 
+def winners_block(lang, head='h2'):
+    """4.0's WINNERS page (STAT > VINCITORI / WINNERS / VAINQUEURS / SIEGER), with its own-language frame when checked."""
+    if not (RELEASED and WINNERS_40):
+        return ''
+    t = T[lang]
+    wf = f'winners-{lang}'
+    shot = (f'<figure class="shot" style="max-width:640px;margin:12px 0"><img src="/static/img/{wf}.png" width="1600" '
+            f'height="1200" loading="lazy" alt="{esc(t["h_winners"])}"></figure>') if have(wf) else ''
+    return f'<{head} id="winners">{esc(t["h_winners"])}</{head}><p>{esc(t["winners_text"])}</p>{shot}'
+
+
 def main_menu(lang):
     """4.0's lead image: the game's main menu with the green 2026-27 career button (release only)."""
     if not CONTENT_40:
@@ -409,12 +420,7 @@ def home(d, lang):
         if figs:                                    # (a group with every tile held disappears)
             shots += (f'<h3>{esc(g)}</h3><div class="cards" style="grid-template-columns:repeat(auto-fill,'
                       f'minmax(min(100%,440px),1fr))">{figs}</div>')
-    winners = ''
-    if RELEASED and WINNERS_40:                     # 4.0's WINNERS page (STAT menu), with its frame when checked
-        wf = f'winners-{lang}'
-        shot = (f'<figure class="shot" style="max-width:640px;margin:12px 0"><img src="/static/img/{wf}.png" width="1600" '
-                f'height="1200" loading="lazy" alt="{esc(t["h_winners"])}"></figure>') if have(wf) else ''
-        winners = f'<h2 id="winners">{esc(t["h_winners"])}</h2><p>{esc(t["winners_text"])}</p>{shot}'
+    winners = winners_block(lang)
     cups = ''
     if CUPS:
         tiles = ''
@@ -709,7 +715,7 @@ def world(d, lang):
     l2 = lang
     body = f'''<div class="wrap page-head"><h1>{esc(t['h_world'])}</h1><p class="tagline px" style="color:var(--gold)">
 {esc(t['world_lead'])}</p></div>
-<div class="wrap">{frames(lang)}</div>
+<div class="wrap">{frames(lang)}{winners_block(lang)}</div>
 <div class="wrap doc" lang="{l2}">{wip}{'' if RELEASED else f'<p class="panel next"><span class="next-tag px">4.0</span> {esc(t["with40"])}</p>'}<nav class="panel" aria-label="{esc(t['toc'])}"><strong>{esc(t['toc'])}</strong>
 <ul class="toc">{toc}</ul></nav>
 {md.render(main, _notes_link(lang), shift=-1, ids=md.slug)}</div>'''
@@ -798,7 +804,7 @@ def news_page(d, lang):
             + (f'<p><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>' if RELEASED else
                f'<p class="panel next"><span class="next-tag px">4.0</span> {esc(t["with40"])}</p>'
                f'<p><span class="btn green soon-btn disabled" aria-disabled="true">{esc(t["dl"])}<small>{esc(t["dl_with40"])}</small></span></p>')
-            + f'{main_menu(lang).replace("<section class=\"wrap\">", "").replace("</section>", "")}'
+            + f'{winners_block(lang)}{main_menu(lang).replace("<section class=\"wrap\">", "").replace("</section>", "")}'
             f'{md.render(bl, _notes_link(lang), shift=-1)}</div>')
     return page(lang, 'news/', t['news_title'], body)
 
