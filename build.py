@@ -38,7 +38,9 @@ RELEASE_PAGE = REPO + '/releases/tag/v4.0'
 PATCHER_MD5 = ''
 WINNERS = 'full'        # 'none': no page tonight (4.0.1 lists the page) · 'page': page without season-end titles (block on,
                         # 4.0.1 lists the titles) · 'full': page + titles (block on, nothing in 4.0.1)
-WINNERS_40 = WINNERS in ('page', 'full')        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
+WINNERS_40 = WINNERS in ('page', 'full')
+# saved careers with 4.0 (the Regia's verified results): row -> 'ok' | 'pending' | 'beta'
+SAVES = [('orig', 'pending'), ('v1', 'pending'), ('v2', 'pending'), ('v3', 'ok'), ('beta', 'beta')]        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
 RELEASES = REPO + '/releases'
 CONTENT_40 = True   # the 4.0 content (cups, main menu, news page, 4.0.1 list): live since Davide's OK 2026-10-22
 RELEASED = os.environ.get('WOS_RELEASED') == '1' or False   # THE switch (env for the local preview only). False until 4.0 is on GitHub: download buttons and the install section say "Coming soon"
@@ -745,6 +747,15 @@ def classic_page(d, lang):
     return page(lang, 'classic/', t['h_classic_page'], body, active='classic')
 
 
+def saves_table(lang):
+    if not RELEASED:
+        return ''
+    t = T[lang]
+    rows = ''.join(f'<tr><td>{esc(t["saves_rows"][k])}</td><td>{esc(t["saves_status"][v])}</td></tr>' for k, v in SAVES)
+    return (f'<h2 id="saves">{esc(t["saves_h"])}</h2><table class="saves"><thead><tr><th>{esc(t["saves_cols"][0])}</th>'
+            f'<th>{esc(t["saves_cols"][1])}</th></tr></thead><tbody>{rows}</tbody></table><p><strong>{esc(t["saves_tip"])}</strong></p>')
+
+
 def install_page(d, lang):
     g, t = install.G[lang], T[lang]
 
@@ -774,7 +785,7 @@ def install_page(d, lang):
     body = f'''<div class="wrap page-head"><h1>{esc(g['title'])}</h1><p>{esc(g['lead'])}</p></div>
 <div class="wrap doc"><h2>{esc(g['section'])}</h2><ol class="steps">{steps}</ol>
 <p class="panel" style="margin-top:16px">{esc(g['fallback'])}{(' ' + esc(t['progfiles_manual'])) if RELEASED else ''}</p>
-{f'<p class="panel next">{esc(t["progfiles"])}</p>' if RELEASED else ''}{cases}</div>'''
+{f'<p class="panel next">{esc(t["progfiles"])}</p>' if RELEASED else ''}{cases}{saves_table(lang)}</div>'''
     return page(lang, 'install/', g['title'], body, active='install')
 
 

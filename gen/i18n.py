@@ -31,6 +31,10 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    saves_h='Which saved careers work with 4.0', saves_cols=('Careers saved with', 'With 4.0'),
+    saves_rows={'orig': 'the original SWOS 96/97', 'v1': 'the mod 1.x', 'v2': 'the mod 2.x', 'v3': 'the mod 3.x (1996-97 careers and Europe 1984-85)', 'beta': 'the 4.0 betas (World 2026-27)'},
+    saves_status={'ok': 'They work: load, play, save, reload (tested)', 'pending': 'Being tested', 'beta': 'They work (tested); the new first-season features and last season\'s WINNERS page need a new career or a season end'},
+    saves_tip='To play the World 2026-27 in full, start a new career.',
     progfiles='Is the game in Program Files (for example GOG Galaxy\'s folder, C:\\Program Files (x86)\\GOG Galaxy\\Games)? Chrome and Edge do not open that folder ("contains system files"). Use the manual steps, or copy the game folder somewhere else (for example Documents), install the mod into the copy with one click, then copy its contents back over the original (Windows asks for administrator permission: accept) and play as usual.',
     progfiles_manual='If the game is in Program Files, Windows asks for administrator permission when you copy or extract the files into its folder: accept.',
     next401_winners_page='A new WINNERS page in the STAT menu: who won each competition of the season.',
@@ -182,6 +186,10 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    saves_h='Quali carriere salvate funzionano con la 4.0', saves_cols=('Carriere salvate con', 'Con la 4.0'),
+    saves_rows={'orig': 'lo SWOS 96/97 originale', 'v1': 'la mod 1.x', 'v2': 'la mod 2.x', 'v3': 'la mod 3.x (carriere 1996-97 ed Europa 1984-85)', 'beta': 'le beta della 4.0 (Mondo 2026-27)'},
+    saves_status={'ok': 'Funzionano: si caricano, si gioca, si salva, si ricarica (verificato)', 'pending': 'In verifica', 'beta': 'Funzionano (verificato); le novità della prima stagione e la pagina VINCITORI della stagione precedente richiedono una nuova carriera o una fine stagione'},
+    saves_tip='Per giocare il Mondo 2026-27 completo, inizia una nuova carriera.',
     progfiles="Il gioco è in Program Files / Programmi (per esempio la cartella di GOG Galaxy, C:\\Program Files (x86)\\GOG Galaxy\\Games)? Chrome ed Edge non aprono quella cartella («contiene file di sistema»). Usa i passi a mano, oppure copia la cartella del gioco altrove (per esempio in Documenti), installa la mod nella copia con un clic, poi ricopia il suo contenuto sopra l'originale (Windows chiede il permesso di amministratore: accetta) e gioca come sempre.",
     progfiles_manual='Se il gioco è in Program Files / Programmi, Windows chiede il permesso di amministratore quando copi o estrai i file nella sua cartella: accetta.',
     next401_winners_page='Una nuova pagina VINCITORI nel menu STAT: chi ha vinto ogni competizione della stagione.',
@@ -331,6 +339,10 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    saves_h='Quelles carrières sauvegardées fonctionnent avec la 4.0', saves_cols=('Carrières sauvegardées avec', 'Avec la 4.0'),
+    saves_rows={'orig': 'le SWOS 96/97 original', 'v1': 'le mod 1.x', 'v2': 'le mod 2.x', 'v3': 'le mod 3.x (carrières 1996-97 et Europe 1984-85)', 'beta': 'les bêtas de la 4.0 (Monde 2026-27)'},
+    saves_status={'ok': 'Elles fonctionnent : chargement, jeu, sauvegarde, rechargement (testé)', 'pending': 'En cours de test', 'beta': "Elles fonctionnent (testé) ; les nouveautés de la première saison et la page VAINQUEURS de la saison précédente demandent une nouvelle carrière ou une fin de saison"},
+    saves_tip='Pour jouer le Monde 2026-27 au complet, commencez une nouvelle carrière.',
     progfiles="Le jeu est dans Program Files / Programmes (par exemple le dossier de GOG Galaxy, C:\\Program Files (x86)\\GOG Galaxy\\Games) ? Chrome et Edge n'ouvrent pas ce dossier (« contient des fichiers système »). Suivez les étapes à la main, ou copiez le dossier du jeu ailleurs (par exemple dans Documents), installez le mod dans la copie en un clic, puis recopiez son contenu par-dessus l'original (Windows demande l'autorisation d'administrateur : acceptez) et jouez comme d'habitude.",
     progfiles_manual="Si le jeu est dans Program Files / Programmes, Windows demande l'autorisation d'administrateur quand vous copiez ou extrayez les fichiers dans son dossier : acceptez.",
     next401_winners_page='Une nouvelle page VAINQUEURS dans le menu STATS : les vainqueurs de chaque compétition de la saison.',
@@ -484,6 +496,10 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    saves_h='Welche gespeicherten Karrieren mit 4.0 funktionieren', saves_cols=('Karrieren gespeichert mit', 'Mit 4.0'),
+    saves_rows={'orig': 'dem originalen SWOS 96/97', 'v1': 'der Mod 1.x', 'v2': 'der Mod 2.x', 'v3': 'der Mod 3.x (Karrieren 1996-97 und Europa 1984-85)', 'beta': 'den Betas von 4.0 (Welt 2026-27)'},
+    saves_status={'ok': 'Funktionieren: laden, spielen, speichern, neu laden (getestet)', 'pending': 'Wird getestet', 'beta': 'Funktionieren (getestet); die Neuerungen der ersten Saison und die SIEGER-Seite der Vorsaison brauchen eine neue Karriere oder ein Saisonende'},
+    saves_tip='Um die Welt 2026-27 vollständig zu spielen, beginne eine neue Karriere.',
     progfiles='Liegt das Spiel unter Programme / Program Files (zum Beispiel im Ordner von GOG Galaxy, C:\\Program Files (x86)\\GOG Galaxy\\Games)? Chrome und Edge öffnen diesen Ordner nicht („enthält Systemdateien“). Folge den Schritten von Hand, oder kopiere den Spielordner woandershin (zum Beispiel nach Dokumente), installiere die Mod mit einem Klick in die Kopie, kopiere dann ihren Inhalt über das Original zurück (Windows fragt nach Administratorrechten: bestätigen) und spiel wie gewohnt.',
     progfiles_manual='Liegt das Spiel unter Programme / Program Files, fragt Windows beim Kopieren oder Entpacken der Dateien in seinen Ordner nach Administratorrechten: bestätigen.',
     next401_winners_page='Eine neue SIEGER-Seite im Menü STATISTIK: wer jeden Wettbewerb der Saison gewonnen hat.',
