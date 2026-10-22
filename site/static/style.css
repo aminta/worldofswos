@@ -244,3 +244,5 @@ details[open] summary { margin-bottom: 12px; }
 .bug-cta p { margin: 0; font-size: 15px; line-height: 1.5; color: #fff; text-shadow: 2px 2px 0 var(--shadow); flex: 1 1 320px; }
 @media (max-width: 600px) { .bug-cta .btn { width: 100%; } }
 .soon-sticker.out { background: linear-gradient(135deg, #4fd85a 0%, #12a02a 55%, #075a14 100%); border-color: #a8f0ae #053a0c #053a0c #a8f0ae; }
+.lead-shot { max-width: 960px; margin: 10px auto 18px; border-color: var(--green-hi); box-shadow: 6px 6px 0 var(--shadow); }
+.lead-shot figcaption { color: #fff; font-size: 14px; text-align: center; text-shadow: 2px 2px 0 var(--shadow); }

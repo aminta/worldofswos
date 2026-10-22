@@ -31,6 +31,7 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    menu_cap='One click from the main menu to the World 2026-27 career: the new green CAREER 2026-27 button.',
     out_now='Out now', out_sub='SWOS 96/97 Mod 4.0 · free', cur40='The 4.0 release on GitHub', news_title='What\'s new in 4.0',
     ic_tile='FIFA Intercontinental Cup', ic_line='The real 2026 stepladder: the African-Asian-Pacific play-off and Cup, the Derby of the Americas, the FIFA Challenger Cup, then the final against the UEFA Champions League winner.',
     aus_note='plays in the AFC: listed under Asia',
@@ -167,6 +168,7 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    menu_cap='Un clic dal menu principale alla carriera Mondo 2026-27: il nuovo pulsante verde CARRIERA 2026-27.',
     out_now='Disponibile', out_sub='SWOS 96/97 Mod 4.0 · gratis', cur40='La release 4.0 su GitHub', news_title='Le novità della 4.0',
     ic_tile='Coppa Intercontinentale FIFA', ic_line='La vera scala del 2026: lo spareggio e la Coppa Africa-Asia-Pacifico, il Derby delle Americhe, la FIFA Challenger Cup, poi la finale contro la vincitrice della UEFA Champions League.',
     aus_note='gioca nella AFC: è sotto Asia',
@@ -301,6 +303,7 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    menu_cap='Un clic depuis le menu principal vers la carrière Monde 2026-27 : le nouveau bouton vert CARRIERE 2026-27.',
     out_now='Disponible', out_sub='SWOS 96/97 Mod 4.0 · gratuit', cur40='La version 4.0 sur GitHub', news_title='Les nouveautés de la 4.0',
     ic_tile='Coupe intercontinentale de la FIFA', ic_line="La vraie échelle 2026 : le barrage et la Coupe Afrique-Asie-Pacifique, le Derby des Amériques, la FIFA Challenger Cup, puis la finale contre le vainqueur de la Ligue des champions de l'UEFA.",
     aus_note="joue dans l'AFC : classée en Asie",
@@ -439,6 +442,7 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    menu_cap='Ein Klick vom Hauptmenü zur Karriere Welt 2026-27: die neue grüne Schaltfläche KARRIERE 2026-27.',
     out_now='Jetzt verfügbar', out_sub='SWOS 96/97 Mod 4.0 · kostenlos', cur40='Die Version 4.0 auf GitHub', news_title='Das Neue in 4.0',
     ic_tile='FIFA-Interkontinentalpokal', ic_line='Die echte Stufenleiter 2026: Playoff und Pokal Afrika-Asien-Pazifik, das Derby der Amerikas, der FIFA Challenger Cup, dann das Finale gegen den Sieger der UEFA Champions League.',
     aus_note='spielt in der AFC: unter Asien',

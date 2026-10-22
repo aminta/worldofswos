@@ -356,6 +356,18 @@ def have(f):
     return os.path.exists(os.path.join(ROOT, 'static', 'img', f + '.png'))
 
 
+def main_menu(lang):
+    """4.0's lead image: the game's main menu with the green 2026-27 career button (release only)."""
+    if not RELEASED:
+        return ''
+    t = T[lang]
+    f = f'main-menu-{lang}' if have(f'main-menu-{lang}') else 'main-menu-it'
+    if not have(f):
+        return ''
+    return (f'<section class="wrap"><figure class="shot lead-shot"><img src="/static/img/{f}.png" width="1600" height="1200" '
+            f'alt="{esc(t["menu_cap"])}"><figcaption class="px">{esc(t["menu_cap"])}</figcaption></figure></section>')
+
+
 def home(d, lang):
     t, s = T[lang], d['stats']
     stats = ''.join(f'<div class="stat"><b>{fmt_num(s[k], lang)}</b><span>{esc(t["s_" + k].format(n=s["new_conti"]))}</span></div>'
@@ -421,6 +433,7 @@ def home(d, lang):
 <div class="stats">{stats}</div>
 <p class="note" style="max-width:820px;margin:8px auto 0">{esc(t['stats_note'].format(**{k: fmt_num(v, lang) for k, v in s.items()}))}</p>
 </div></section>
+{main_menu(lang)}
 <section class="wrap"><div class="bug-cta"><p class="px">{esc(t['bug_cta'])}</p>
 <a class="btn orange" href="/{lang}/bug/">{esc(t['bug_title'])}</a></div></section>
 <section class="wrap">
@@ -754,7 +767,8 @@ def news_page(d, lang):
         bl, _ = tr.translate(bl, lang)
     bl = [b for b in bl if not (b[0] == 'p' and b[1].strip() == '---')]
     body = (f'<div class="wrap page-head"><h1>{esc(t["news_title"])}</h1></div><div class="wrap doc">'
-            f'<p><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>{md.render(bl, _notes_link(lang), shift=-1)}</div>')
+            f'<p><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>{main_menu(lang).replace("<section class=\"wrap\">", "").replace("</section>", "")}'
+            f'{md.render(bl, _notes_link(lang), shift=-1)}</div>')
     return page(lang, 'news/', t['news_title'], body)
 
 
