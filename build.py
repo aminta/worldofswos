@@ -40,7 +40,7 @@ WINNERS = 'full'        # 'none': no page tonight (4.0.1 lists the page) · 'pag
                         # 4.0.1 lists the titles) · 'full': page + titles (block on, nothing in 4.0.1)
 WINNERS_40 = WINNERS in ('page', 'full')
 # saved careers with 4.0 (the Regia's verified results): row -> 'ok' | 'pending' | 'beta'
-SAVES = [('orig', 'pending'), ('v1', 'pending'), ('v2', 'pending'), ('v3', 'ok'), ('beta', 'beta')]        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
+SAVES = [('orig', 'ok'), ('v1', 'ok'), ('v2', 'ok'), ('v3', 'ok'), ('beta', 'beta')]   # verified on the 4.0 release build (Regia 2026-10-22)        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
 RELEASES = REPO + '/releases'
 CONTENT_40 = True   # the 4.0 content (cups, main menu, news page, 4.0.1 list): live since Davide's OK 2026-10-22
 RELEASED = os.environ.get('WOS_RELEASED') == '1' or False   # THE switch (env for the local preview only). False until 4.0 is on GitHub: download buttons and the install section say "Coming soon"
