@@ -853,6 +853,11 @@ def build():
         shutil.rmtree(OUT)
     shutil.copytree(os.path.join(ROOT, 'static'), os.path.join(OUT, 'static'))
     write('static/logo.svg', logo_svg(64, 'World of SWOS'))
+    if FRAMES_OK is not None:                       # unchecked frames are not published at all
+        img = os.path.join(OUT, 'static', 'img')
+        for f in os.listdir(img):
+            if f.endswith('.png') and f != '12bit.png' and f[:-4] not in FRAMES_OK:
+                os.remove(os.path.join(img, f))
     for lang in LANGS:                              # the social preview cards
         t = T[lang]
         ogimage.card(os.path.join(OUT, 'static', f'og-{lang}.png'), t['tagline'], t['concept'],
