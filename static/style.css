@@ -255,3 +255,7 @@ details[open] summary { margin-bottom: 12px; }
 .saves { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 15px; }
 .saves th, .saves td { border: 2px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
 .saves th { background: #1b36c4; font-family: var(--pixel); text-transform: uppercase; font-size: 13px; }
+/* long unbroken strings (paths, md5, code) wrap instead of overflowing on phones */
+main, .doc li, .doc p, .steps li, .panel, .saves td, code { overflow-wrap: anywhere; }
+.saves { table-layout: fixed; }
+.shot { max-width: 100%; }
