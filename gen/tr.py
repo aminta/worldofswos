@@ -44,6 +44,11 @@ def translate(blocks, lang):
     tr, out, miss = load(lang), [], 0
     for key, kind, m in units(blocks):
         t = tr.get(key, {}).get('t')
+        if t is None:                          # the release payoff: always the home's own wording
+            from i18n import T as _T
+            core = m.strip().strip('*_').strip()
+            if core == _T['en']['tagline']:
+                t = m.replace(core, _T[lang]['tagline'])
         miss += t is None
         src = t if t is not None else m
         if kind == 'li':
