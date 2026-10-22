@@ -35,6 +35,7 @@ REPO = 'https://github.com/aminta/swos-9697-mod'
 # 4.0 is not released yet: both point to the releases page (at release: /releases/latest/download/swos-9697-mod-patcher.html)
 PATCHER = REPO + '/releases/download/v4.0/swos-9697-mod-patcher.html'
 RELEASE_PAGE = REPO + '/releases/tag/v4.0'
+PATCHER_MD5 = ''        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
 RELEASES = REPO + '/releases'
 CONTENT_40 = True   # the 4.0 content (cups, main menu, news page, 4.0.1 list): live since Davide's OK 2026-10-22
 RELEASED = os.environ.get('WOS_RELEASED') == '1' or False   # THE switch (env for the local preview only). False until 4.0 is on GitHub: download buttons and the install section say "Coming soon"
@@ -379,7 +380,9 @@ def home(d, lang):
     t, s = T[lang], d['stats']
     stats = ''.join(f'<div class="stat"><b>{fmt_num(s[k], lang)}</b><span>{esc(t["s_" + k].format(n=s["new_conti"]))}</span></div>'
                     for k in ['countries', 'clubs', 'comps', 'conti', 'guests'] if s.get(k))
-    cards = ''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}</p></article>' for h, p in t['cards'])
+    cards = ''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}'
+                    + (f' {esc(t["tables_row"])}' if RELEASED and i == len(t['cards']) - 1 else '') + '</p></article>'
+                    for i, (h, p) in enumerate(t['cards']))
     steps = ''.join('<li>' + st.format(careers=f'<strong>{GAME["careers"][lang]}</strong>',
                                          world=f'<strong>{GAME["world"][lang]}</strong>') + '</li>'
                     for st in t['steps'])
@@ -403,6 +406,12 @@ def home(d, lang):
         if figs:                                    # (a group with every tile held disappears)
             shots += (f'<h3>{esc(g)}</h3><div class="cards" style="grid-template-columns:repeat(auto-fill,'
                       f'minmax(min(100%,440px),1fr))">{figs}</div>')
+    winners = ''
+    if RELEASED:                                    # 4.0's WINNERS page (STAT menu), with its frame when checked
+        wf = f'winners-{lang}'
+        shot = (f'<figure class="shot" style="max-width:640px;margin:12px 0"><img src="/static/img/{wf}.png" width="1600" '
+                f'height="1200" loading="lazy" alt="{esc(t["h_winners"])}"></figure>') if have(wf) else ''
+        winners = f'<h2 id="winners">{esc(t["h_winners"])}</h2><p>{esc(t["winners_text"])}</p>{shot}'
     cups = ''
     if CUPS:
         tiles = ''
@@ -453,11 +462,11 @@ def home(d, lang):
 {''.join(f'<p>{p}</p>' for p in t['what'])}
 <h2>{esc(t['h_high'])}</h2>
 <div class="cards">{cards}</div>
-{cups}<h2 id="already">{esc(already.A[lang][0])}</h2>
+{winners}{cups}<h2 id="already">{esc(already.A[lang][0])}</h2>
 <div class="cards">{''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}</p></article>' for h, p in already.A[lang][1])}</div>
 <h2 id="next">{esc(t['h_next'])}</h2>
 <div class="panel next">{(f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["next401_h"])}</strong></p><ul>'
-  + ''.join(f'<li>{esc(x)}</li>' for x in t['next401']) + '</ul>') if CONTENT_40 else ''}<p><span class="next-tag px">4.1</span> {esc(t['next41'])}</p>
+  + ''.join(f'<li>{esc(x)}</li>' for x in t['next401'] + ([t['next401_winners']] if RELEASED else [])) + '</ul>') if CONTENT_40 else ''}<p><span class="next-tag px">4.1</span> {esc(t['next41'])}</p>
 <p><span class="next-tag px">4.2</span> {esc(t['next_text'])}</p>
 <p class="note" style="margin:0">{esc(t['next_note'])}</p></div>
 <h2>{esc(t['h_shots'])}</h2>
@@ -744,7 +753,8 @@ def install_page(d, lang):
     common = [x if GUIDE_DONE_SHOTS else x.replace(' [SHOT patcher-done]', '') for x in g['common']]
     if RELEASED:                                    # with 4.0: the release's patcher
         dl = (f'<p style="margin:10px 0 0"><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>'
-              f'<p class="note" style="margin:8px 0 0"><a href="{RELEASE_PAGE}">{esc(t["cur40"])}</a></p>')
+              f'<p class="note" style="margin:8px 0 0"><a href="{RELEASE_PAGE}">{esc(t["cur40"])}</a>'
+              + (f' · MD5 <code>{PATCHER_MD5}</code>' if PATCHER_MD5 else '') + '</p>')
     else:                                           # until then: disabled, and the current 3.3.6 on GitHub
         dl = (f'<p style="margin:10px 0 0"><span class="btn green soon-btn disabled" aria-disabled="true">{esc(t["dl"])}'
               f'<small>{esc(t["dl_with40"])}</small></span></p>'

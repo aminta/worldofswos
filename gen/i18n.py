@@ -31,6 +31,10 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    h_winners='Who won what: the WINNERS page',
+    winners_text='A new page in the STAT menu lists who won each competition of the season: every Apertura and Clausura, every trophy and every play-off, at a glance.',
+    next401_winners='Season-end titles on the WINNERS page.',
+    tables_row='The club you manage stands out in every table, framed in its own row.',
     next401_h='The upcoming 4.0.1',
     next401=['Leagues in their exact 2026-27 formats: Mexico (Liga MX Apertura / Clausura with the Liguilla), Colombia (Apertura and Finalización with the cuadrangulares), Peru (Apertura / Clausura and the title play-off), Uruguay (Apertura, Intermedio, Clausura).',
              'Guatemala, El Salvador and Paraguay in their exact 2026-27 formats (Apertura / Clausura with their final phases).',
@@ -175,6 +179,10 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    h_winners='Chi ha vinto cosa: la pagina VINCITORI',
+    winners_text='Una nuova pagina nel menu STAT elenca chi ha vinto ogni competizione della stagione: ogni Apertura e Clausura, ogni trofeo e ogni play-off, a colpo d\'occhio.',
+    next401_winners='I titoli di fine stagione nella pagina VINCITORI.',
+    tables_row='La squadra che alleni risalta in ogni classifica, con la sua riga incorniciata.',
     next401_h='La prossima 4.0.1',
     next401=['Campionati nelle loro formule 2026-27 esatte: Messico (Liga MX Apertura / Clausura con la Liguilla), Colombia (Apertura e Finalización con i cuadrangulares), Perù (Apertura / Clausura e lo spareggio per il titolo), Uruguay (Apertura, Intermedio, Clausura).',
              'Guatemala, El Salvador e Paraguay nelle loro formule 2026-27 esatte (Apertura / Clausura con le loro fasi finali).',
@@ -317,6 +325,10 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    h_winners='Qui a gagné quoi : la page des VAINQUEURS',
+    winners_text="Une nouvelle page du menu STATS liste les vainqueurs de chaque compétition de la saison : chaque Apertura et Clausura, chaque trophée et chaque barrage, d'un seul coup d'œil.",
+    next401_winners='Les titres de fin de saison sur la page des VAINQUEURS.',
+    tables_row='Le club que vous dirigez ressort dans chaque classement, sa ligne encadrée.',
     next401_h='La prochaine 4.0.1',
     next401=["Des championnats dans leurs formules 2026-27 exactes : Mexique (Liga MX Apertura / Clausura avec la Liguilla), Colombie (Apertura et Finalización avec les cuadrangulares), Pérou (Apertura / Clausura et le barrage pour le titre), Uruguay (Apertura, Intermedio, Clausura).",
              "Le Guatemala, le Salvador et le Paraguay dans leurs formules 2026-27 exactes (Apertura / Clausura avec leurs phases finales).",
@@ -463,6 +475,10 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    h_winners='Wer hat was gewonnen: die SIEGER-Seite',
+    winners_text='Eine neue Seite im Menü STATISTIK zeigt, wer jeden Wettbewerb der Saison gewonnen hat: jede Apertura und Clausura, jeden Pokal und jedes Playoff, auf einen Blick.',
+    next401_winners='Die Titel zum Saisonende auf der SIEGER-Seite.',
+    tables_row='Dein Verein hebt sich in jeder Tabelle ab, seine Zeile eingerahmt.',
     next401_h='Die kommende 4.0.1',
     next401=['Ligen in ihren genauen Modi 2026-27: Mexiko (Liga MX Apertura / Clausura mit der Liguilla), Kolumbien (Apertura und Finalización mit den Cuadrangulares), Peru (Apertura / Clausura und das Meister-Playoff), Uruguay (Apertura, Intermedio, Clausura).',
              'Guatemala, El Salvador und Paraguay in ihren genauen Modi 2026-27 (Apertura / Clausura mit ihren Endrunden).',
