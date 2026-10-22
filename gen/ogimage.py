@@ -36,7 +36,7 @@ def wrap(text, f, width, d):
     return lines + [cur] if cur else lines
 
 
-def card(path, tagline, concept, soon, soon_sub, soon_test=''):
+def card(path, tagline, concept, soon, soon_sub, soon_test='', green=False):
     im = Image.new('RGB', (W, H), (3, 10, 51))
     px = im.load()
     for y in range(H):                                   # radial blue, as the site's background
@@ -83,7 +83,8 @@ def card(path, tagline, concept, soon, soon_sub, soon_test=''):
         sd.rectangle([10, 10, sw + 9, sh + 9], fill=(0, 3, 24, 255))
         for i in range(sh):
             t = i / (sh - 1)
-            sd.line([(0, i), (sw - 1, i)], fill=(int(255 - 117 * t), int(74 - 68 * t), int(58 - 42 * t), 255))
+            sd.line([(0, i), (sw - 1, i)], fill=((int(40 - 30 * t), int(200 - 110 * t), int(60 - 40 * t), 255) if green else
+                                                (int(255 - 117 * t), int(74 - 68 * t), int(58 - 42 * t), 255)))
         sd.rectangle([0, 0, sw - 1, sh - 1], outline=(255, 154, 138, 255), width=4)
         fs = font(40)
         words = soon.upper().split()

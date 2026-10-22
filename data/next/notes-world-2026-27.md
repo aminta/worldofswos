@@ -1,8 +1,6 @@
-
-
 ## English
 
-**SWOS 96/97 Mod 4.0: the World 2026-27 career, today's football as it really is** (DRAFT)
+**SWOS 96/97 Mod 4.0: the World 2026-27 career, today's football as it really is**
 
 
 A historic career world of the **2026-27 season**: 91 countries, 2,003 clubs in the league divisions (Italy down to the real Serie D: 156 clubs in 9 groups) and 119
@@ -10,7 +8,9 @@ that play only Brazil's state championships, plus 104 clubs waiting outside the 
 state second divisions, the clubs below the B teams' leagues) and 159 guest clubs of the continental cups: 2,385
 clubs with a team record in all, real squads at the
 end of the summer 2026 transfer window. In CLASSIC CAREERS choose WORLD 2026-27, then the continent and the country (EUROPE lists the
-first 43 UEFA associations by ranking, the others are under OTHER NATIONS).
+first 43 UEFA associations by ranking, the others are under OTHER NATIONS). Or, from the main menu, the green
+CAREER 2026-27 button next to CAREER: it opens the career menu, and its CHOOSE TEAM goes straight to the World
+2026-27's continents.
 
 ### Rebuilt exactly, point by point
 
@@ -138,6 +138,8 @@ Cearense, Pernambucano, Alagoano and Mato-Grossense.
   Cearense's six qualifiers are drawn into two groups of three that play each other (real: each group's clubs play
   the other group's); the Catarinense semi-final crossing is assumed; the Pernambucano's second division clubs are those of 2025; the side trophies (Taca Rio, Taca Farroupilha,
   Trofeu Inconfidencia, Campeao do Interior) are not played.
+- **FORMAT pages**: each state championship's page tells its format in plain words (groups, finals, byes,
+  relegation), in 4 languages.
 
 *At least everything the original game had*
 - **Never fewer leagues or divisions than SWOS 96/97**: England's four divisions, with League Two and its 4th-7th
@@ -146,7 +148,6 @@ Cearense, Pernambucano, Alagoano and Mato-Grossense.
   the Northern, Central and Southern Leagues; Australia's A-League with the NPL of New South Wales, Victoria and
   Queensland, closed as in reality; El Salvador's Primera, Segunda in two zones and Tercera; and Suriname, Taiwan,
   India and Ghana, back with their real leagues and cups.
-
 
 
 *European cups (UEFA 2026-27)*
@@ -263,7 +264,7 @@ Cearense, Pernambucano, Alagoano and Mato-Grossense.
   - **Played by your club**, with the real round names (TURNO PRELIMINARE, PRIMO TURNO, TRENTADUESIMI ... FINALE).
   - The ties your club does not play are decided by the clubs' strength (their best 11, as every other simulated
     result), home advantage included.
-  - Its bracket screens show every round from the trentaduesimi on. 
+  - Its bracket screens show every round from the trentaduesimi on.
 
 *National cups 2026-27*
 - **Every club still in when the data was taken (October 2026)**, each from **its real round**: clubs entering later
@@ -275,11 +276,16 @@ Cearense, Pernambucano, Alagoano and Mato-Grossense.
 
 *League tables in colour*
 - **Every league table shows its end-of-season zones**, as on TV: Champions League (or the European Cup) and direct
-  promotion light blue; Europa League (or the UEFA Cup), promotion and European play-offs green; Conference League
-  dark blue; play-out orange; relegation gray. The places follow the real rules: the UEFA 2026/27 access list by
+  promotion light blue; Europa League (or the UEFA Cup), promotion play-offs and European play-offs for a Europa
+  League place green; Conference League dark blue, a European play-off for a Conference League place too (Austria,
+  Denmark, the Netherlands, Northern Ireland, Bulgaria); play-out orange; relegation gray. The places follow the real rules: the UEFA 2026/27 access list by
   association rank (qualifying rounds included), and each league's own promotions, relegations and play-offs (Serie
-  B 3rd-8th and 16th-17th, the Serie C groups 2nd-10th). A legend on the header line names the colours each table
-  uses. In the Europe 1984-85 world too.
+  B 3rd-8th and 16th-17th, the Serie C groups 2nd-10th), every kind of play-off included (promotion, title,
+  placement: green P.OFF; the Serie D groups 2nd-5th, the Czech 7th-10th, the A-League, the MLS, Costa Rica ...). One
+  legend, always in the same place, top left above the table header, names the colours each table uses: leagues,
+  split leagues, long tables, the continental cups' groups (in their title row: the group headers fill the row below)
+  and the Brazilian state championships alike. In split and group tables each club's zone is its place in its own
+  group. In the Europe 1984-85 world too.
   In the World 2026-27 the European places in every season come from the engine's own UEFA ranking (the one a year
   old, as UEFA's access list uses) and the real 2026/27 access list; the European Performance Spots and the title
   holders' rebalancing are decided at the season end and are not coloured in advance.
@@ -449,6 +455,15 @@ Cearense, Pernambucano, Alagoano and Mato-Grossense.
 - Other game modes (friendlies, seasons, tourneys, the 1996-97 career) are unchanged.
 
 **Mod rules of this world**
+- **One knockout rule for the mod's play-offs** (Serie B, Serie C and Serie D play-offs and the other leagues'
+  play-offs the mod plays): a single match level after 90 minutes goes to extra time, then the better-placed club
+  goes through; two-legged ties as their real rules. No replays anywhere, and no replay dates in the calendar.
+- **A Serie D club plays only what its real club plays**: its group (and its play-off or play-out) and the Coppa
+  Italia Serie D. The national Coppa Italia is still played for its winner but is not in a Serie D club's calendar
+  or VISUAL. COMPETIZ.
+- **European places**: in some seasons one of the 108 European places goes to a club of a different association
+  from the one the access list names. The number of clubs in each European cup and the title holders' places are
+  always right (fixed in 4.0.1).
 - The two Milan clubs are called INTER and MILAN (the game had INTER MILAN and AC MILAN), also in the Europe 1984-85
   world (its INTERNAZIONALE) and in the transfer pool. A career saved with an earlier version keeps the names it was
   saved with.
@@ -603,11 +618,33 @@ Cearense, Pernambucano, Alagoano and Mato-Grossense.
 - The game files hold derived data only: the squads, skills and prices are computed from these sources (the game's
   own price scale); no market values, ratings or source pages are shipped.
 
+**Also in this release**
+- Europe 1984-85 career: league tables in colour (see above), each competition's FORMAT page with its table colours,
+  the European cups' titles without a leading space.
+- Long competition titles no longer overwrite the game's memory (the title field holds 34 characters): they are
+  shortened to their usual short form, which also fixes the classic season DDR 1988-89's European cup titles.
+- CLASSIC CAREERS no longer lists ALBANIA as an entry of its own (since 3.0 the first country of the Europe 1984-85
+  world also appeared next to the world).
+- The 1996-97 game as it really was (the real 1996-97 groups, Supercup, Intertoto, leagues and cups) comes in 4.1.
 
+**Updating**
+- **One-click install** (Chrome or Edge): choose the game folder (GOG, CD install, eXoDOS / DOSBox; Mac GOG: the
+  .harddisk folder inside the app) and the patcher recognises the version, keeps the files it changes in
+  MOD_BACKUP\4.0 and writes the mod in place; from the CD it copies the game into a new folder first. Run it again
+  to update. The page is in 4 languages (IT / EN / FR / DE); the manual download stays for other browsers.
+- The patcher upgrades every published version (1.0.1 to 3.3.6, CD and GOG, also the English SWOS++ version) and the
+  original game, checking every file before and after (an old file goes back to the original, then to 4.0). Drop your
+  executable and DATA files as usual: the patcher writes every file the World 2026-27 needs (its team files and
+  squads beyond 16, the waiting clubs' pools, the continental guests' team files, its world files, the FORMAT texts
+  and the table colours in 4 languages) and the changed originals (the executables, TEAM files, the renamed
+  EUROCUP.TMD, UEFACUP.TMD and POOLPLYR.DAT). Copy the new files into DATA too, or use the one-click install. The patcher page now needs a recent browser (Chrome 103+,
+  Safari 16.4+, Firefox 113+).
+- Saves: careers of the 1996-97 game saved with 3.3.6 and earlier load and play on. Careers of the Europe 1984-85 world saved with
+  3.x load and play on too. 
 
 ## Italiano
 
-**SWOS 96/97 Mod 4.0: la carriera Mondo 2026-27, il calcio di oggi com'è davvero** (BOZZA)
+**SWOS 96/97 Mod 4.0: la carriera Mondo 2026-27, il calcio di oggi com'è davvero**
 
 
 Un mondo di carriera storica della **stagione 2026-27**: 91 nazioni, 2.003 club nelle divisioni dei campionati (l'Italia fino alla Serie D vera: 156 club in 9 gironi) e 119
@@ -615,7 +652,9 @@ che giocano solo i campionati statali brasiliani, più 104 club in attesa fuori 
 divisioni statali brasiliane, i club sotto i campionati delle squadre B) e 159 club ospiti delle coppe
 continentali: 2.385 club con una scheda squadra in tutto, rose reali
 alla fine del mercato estivo 2026. In CARR. STORICHE scegli MONDO 2026-27, poi il continente e la nazione (EUROPA elenca le prime 43
-federazioni UEFA per ranking, le altre sono in ALTRE NAZIONI).
+federazioni UEFA per ranking, le altre sono in ALTRE NAZIONI). Oppure, dal menu principale, il pulsante verde
+CARRIERA 2026-27 accanto a CARRIERA: apre il menu della carriera, e il suo SCEGLI SQUADRA porta subito ai continenti
+del Mondo 2026-27.
 
 ### Ricostruito esattamente, punto per punto
 L'obiettivo di questo mondo: il calcio di oggi com'è davvero, fino alle regole che quasi nessun giocatore nota.
@@ -745,6 +784,8 @@ Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
   le sei qualificate del Cearense sono sorteggiate in due gironi da tre che giocano tra loro (vero: ogni club gioca
   contro quelli dell'altro girone); l'incrocio delle semifinali del Catarinense è presunto; i club della seconda serie del Pernambucano sono quelli del 2025; i trofei minori (Taca
   Rio, Taca Farroupilha, Trofeu Inconfidencia, Campeao do Interior) non si giocano.
+- **Pagine FORMULA**: la pagina di ogni campionato statale ne racconta la formula in parole semplici (gironi, fase
+  finale, esenti, retrocessioni), in 4 lingue.
 
 *Almeno tutto quello che aveva il gioco originale*
 - **Mai meno campionati o divisioni di SWOS 96/97**: le quattro divisioni inglesi, con la League Two e i suoi play-off
@@ -753,7 +794,6 @@ Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
   League neozelandese con le Northern, Central e Southern League; la A-League australiana con le NPL di New South
   Wales, Victoria e Queensland, chiuse come nella realtà; Primera, Segunda in due zone e Tercera di El Salvador; e
   Suriname, Taiwan, India e Ghana, di nuovo con i loro veri campionati e coppe.
-
 
 
 *Coppe europee (UEFA 2026-27)*
@@ -872,7 +912,7 @@ Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
   - **La gioca la tua squadra**, coi nomi veri dei turni (TURNO PRELIMINARE, PRIMO TURNO, TRENTADUESIMI ... FINALE).
   - Le sfide che non giochi si decidono con la forza dei club (i migliori 11, come ogni altro risultato simulato),
     compreso il vantaggio del campo.
-  - Le schermate del tabellone mostrano ogni turno dai trentaduesimi in poi. 
+  - Le schermate del tabellone mostrano ogni turno dai trentaduesimi in poi.
 
 *Coppe nazionali 2026-27*
 - **Tutte le squadre ancora in corsa quando sono stati presi i dati (ottobre 2026)**, ognuna dal **suo turno vero**:
@@ -884,11 +924,17 @@ Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
 
 *Classifiche a colori*
 - **Ogni classifica di campionato mostra le sue zone di fine stagione**, come in TV: Champions League (o Coppa dei
-  Campioni) e promozione diretta in azzurro; Europa League (o Coppa UEFA), play-off promozione e spareggi europei in
-  verde; Conference League in blu scuro; play-out in arancione; retrocessione in grigio. I posti seguono le regole
+  Campioni) e promozione diretta in azzurro; Europa League (o Coppa UEFA), play-off promozione e spareggi europei per
+  un posto in Europa League in verde; Conference League in blu scuro, anche lo spareggio europeo che vale un posto in
+  Conference League (Austria, Danimarca, Olanda, Irlanda del Nord, Bulgaria); play-out in arancione; retrocessione in grigio. I posti seguono le regole
   vere: la lista d'accesso UEFA 2026/27 secondo il ranking delle federazioni (preliminari compresi) e le promozioni,
-  retrocessioni e spareggi di ogni campionato (Serie B 3ª-8ª e 16ª-17ª, i gironi di Serie C 2ª-10ª). Una legenda
-  sulla riga del titolo indica i colori usati in quella classifica. Anche nel mondo Europa 1984-85.
+  retrocessioni e spareggi di ogni campionato (Serie B 3ª-8ª e 16ª-17ª, i gironi di Serie C 2ª-10ª), tutti i tipi di
+  play-off compresi (promozione, scudetto, piazzamento: verde P.OFF; i gironi di Serie D 2ª-5ª, la Rep. Ceca 7ª-10ª,
+  l'A-League, la MLS, il Costa Rica ...). Una sola legenda, sempre nello stesso posto, in alto a sinistra sopra
+  l'intestazione della classifica, indica i colori usati: campionati, campionati divisi, classifiche lunghe, gironi
+  delle coppe continentali (nella riga del titolo: la riga sotto è occupata dalle intestazioni dei gironi) e
+  campionati statali brasiliani. Nelle classifiche divise e a gironi la zona di ogni club è il suo posto nel suo
+  girone. Anche nel mondo Europa 1984-85.
   Nel Mondo 2026-27 i posti europei di ogni stagione vengono dal ranking UEFA del gioco (quello dell'anno prima,
   come nella access list UEFA) e dalla access list vera 2026/27; gli European Performance Spots e i ritocchi per i
   detentori dei titoli si decidono a fine stagione e non vengono colorati in anticipo.
@@ -1069,6 +1115,16 @@ Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
 - Le altre modalità (amichevoli, stagioni, tornei, carriera 1996-97) non cambiano.
 
 **Regole della mod per questo mondo**
+- **Una sola regola per gli scontri diretti dei play-off della mod** (play-off di Serie B, Serie C e Serie D e quelli
+  degli altri campionati giocati dalla mod): una gara unica in parità dopo 90 minuti va ai supplementari, poi passa
+  la meglio piazzata; andata e ritorno secondo le regole vere. Nessuna ripetizione, e nessuna data di ripetizione in
+  calendario.
+- **Un club di Serie D gioca solo quello che gioca il club vero**: il suo girone (e i suoi play-off o play-out) e la
+  Coppa Italia Serie D. La Coppa Italia nazionale si gioca comunque per la sua vincitrice, ma non compare nel
+  calendario né in VISUAL. COMPETIZ. di un club di Serie D.
+- **Posti europei**: in alcune stagioni uno dei 108 posti europei va a un club di una federazione diversa da quella
+  indicata dalla lista d'accesso. Il numero di club di ogni coppa europea e i posti delle detentrici sono sempre
+  giusti (corretto nella 4.0.1).
 - Le due squadre di Milano si chiamano INTER e MILAN (il gioco aveva INTER MILAN e AC MILAN), anche nel mondo Europa
   1984-85 (dove era INTERNAZIONALE) e nel mercato dei giocatori. Una carriera salvata con una versione precedente tiene
   i nomi con cui è stata salvata.
@@ -1243,4 +1299,28 @@ Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
 91 nazioni, 134 divisioni, 87 coppe nazionali, 14 coppe di lega, 13 campionati statali, 15 competizioni continentali (UEFA 3 + 12 nuove): ogni competizione giocabile e la sua formula, generate dalla build della release: [world-2026-27-competitions.md](world-2026-27-competitions.md).
 
 
+**Anche in questa versione**
+- Carriera Europa 1984-85: classifiche a colori (vedi sopra), la pagina FORMULA di ogni competizione coi colori della
+  classifica, i titoli delle coppe europee senza lo spazio iniziale.
+- I titoli lunghi delle competizioni non sovrascrivono più la memoria del gioco (il campo del titolo ha 34
+  caratteri): vengono accorciati alla loro forma breve abituale, e questo corregge anche i titoli delle coppe europee
+  della stagione storica DDR 1988-89.
+- CARR. STORICHE non elenca più ALBANIA come voce a sé (dalla 3.0 la prima nazione del mondo Europa 1984-85
+  compariva anche accanto al mondo).
+- Il gioco 1996-97 com'era davvero (i gironi veri 1996-97, Supercoppa, Intertoto, campionati e coppe) arriva nella 4.1.
 
+**Aggiornamento**
+- **Installazione con un clic** (Chrome o Edge): scegli la cartella del gioco (GOG, CD installato, eXoDOS / DOSBox;
+  Mac GOG: la cartella .harddisk dentro l'app) e il patcher riconosce la versione, mette i file che cambia in
+  MOD_BACKUP\4.0 e scrive la mod al loro posto; dal CD copia prima il gioco in una cartella nuova. Rilancialo per
+  aggiornare. La pagina è in 4 lingue (IT / EN / FR / DE); il download a mano resta per gli altri browser.
+- Il patcher aggiorna tutte le versioni pubblicate (dalla 1.0.1 alla 3.3.6, CD e GOG, anche la versione inglese con
+  SWOS++) e il gioco originale, controllando ogni file prima e dopo (un file vecchio torna all'originale, poi alla
+  4.0). Trascina come sempre l'eseguibile e i file di DATA: il patcher scrive tutti i file che servono al Mondo
+  2026-27 (i file delle squadre e le rose oltre i 16, le riserve dei club in attesa, i file delle squadre ospiti delle
+  coppe continentali, i file del mondo, i testi FORMULA e i colori delle classifiche nelle 4 lingue) e gli originali
+  modificati (gli eseguibili, i file TEAM, i rinominati EUROCUP.TMD, UEFACUP.TMD e POOLPLYR.DAT). Copia anche i file
+  nuovi in DATA, oppure usa l'installazione con un clic. La pagina del patcher ora
+  richiede un browser recente (Chrome 103+, Safari 16.4+, Firefox 113+).
+- Salvataggi: le carriere del gioco 1996-97 salvate con la 3.3.6 e precedenti si caricano e continuano. Anche le carriere del mondo
+  Europa 1984-85 salvate con la 3.x si caricano e continuano. 

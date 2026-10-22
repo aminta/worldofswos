@@ -70,6 +70,9 @@ if __name__ == '__main__':
     build.RELEASED = True                    # translate the next notes (data/next/), the ones that go live with 4.0
     d = build.load()
     main, cred, _ = build.notes_part(d, "en")
+    rel = os.path.join(build.DATA, 'next', 'notes-4.0.md')       # the 4.0 release notes ('What's new' page)
+    if os.path.exists(rel):
+        cred = cred + md.blocks(build.split_langs(open(rel, encoding='utf-8').read())['en'])
     tr = load(lang)
     todo = [(k, kind, m) for k, kind, m in units(main + cred) if k not in tr]
     if cmd == 'todo':

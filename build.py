@@ -33,9 +33,10 @@ from i18n import CONTINENT, GAME, LANG_NAME, LANGS, LOCALE, T   # noqa: E402
 SITE_URL = 'https://worldofswos.com'
 REPO = 'https://github.com/aminta/swos-9697-mod'
 # 4.0 is not released yet: both point to the releases page (at release: /releases/latest/download/swos-9697-mod-patcher.html)
-PATCHER = REPO + '/releases/latest/download/swos-9697-mod-patcher.html'
+PATCHER = REPO + '/releases/download/v4.0/swos-9697-mod-patcher.html'
+RELEASE_PAGE = REPO + '/releases/tag/v4.0'
 RELEASES = REPO + '/releases'
-RELEASED = False        # False until 4.0 is on GitHub: download buttons and the install section say "Coming soon"
+RELEASED = os.environ.get('WOS_RELEASED') == '1' or False   # THE switch (env for the local preview only). False until 4.0 is on GitHub: download buttons and the install section say "Coming soon"
 TWELVE_BIT_URL = 'https://www.facebook.com/retrogaming12bit'   # https://12bit.it when the new site is out
 _tb = '<img class="assoc-logo" src="/static/img/12bit.png" width="64" height="80" alt="12 Bit Retrogaming, associazione culturale (Trieste)">'
 TWELVE_BIT = f'<a href="{TWELVE_BIT_URL}">{_tb}</a>' if TWELVE_BIT_URL else _tb
@@ -49,7 +50,8 @@ GUIDE_PATCHER = REPO + '/releases/download/v3.3.6/swos-9697-mod-patcher.html'   
 GUIDE_DONE_SHOTS = False    # the 'done' shots show 4.0 text (MOD_BACKUP\4.0): off until there are 3.3.6 ones
 # frames off the site until retaken (Regia's audit 2026-10-20: old names / old frames / old FORMAT style):
 # 'name' = every language, 'name-xx' = that language only
-SHOTS_HOLD = {'split-scotland', 'split-austria'}   # rc2 retakes passed 2026-10-21; splits wait for rc3
+SPLITS_OK = False     # the rc5 split frames checked against their captions
+SHOTS_HOLD = set() if SPLITS_OK else {'split-scotland', 'split-austria'}   # rc2 retakes passed 2026-10-21; splits wait for rc3
 
 
 def held(base, lang):
@@ -57,8 +59,9 @@ def held(base, lang):
 NEXT_TEXTS = True      # the World page and the competitions list from data/next/ (the 4.0 notes; Davide's ok 2026-10-20)
 CUPS_HEADS = ('Continental club cups 2026-27', 'Coppe continentali per club 2026-27',
               'Les coupes continentales de clubs 2026-27', 'Die Kontinentalpokale der Vereine 2026-27')
-CUPS = os.environ.get('WOS_CUPS') == '1'           # the continental cups section: preview only until the Regia's go
-CUPS_HOLD = {'fifa-intercontinental'}   # rc2 IC frame is a test artifact (Palmeiras forced into the CAF place): retake in rc3
+CUPS = os.environ.get('WOS_CUPS') == '1' or RELEASED           # the continental cups section: preview only until the Regia's go
+CUPS_HOLD = set()
+CUPS_TEXT = {'fifa-intercontinental'}   # no 4.0 screenshot: a text tile   # rc2 IC frame is a test artifact (Palmeiras forced into the CAF place): retake in rc3
 CONTS = ['europe', 'north_america', 'south_america', 'asia', 'oceania', 'africa']
 CONT_MD = {'Europe': 'europe', 'North and Central America': 'north_america', 'South America': 'south_america',
            'Asia': 'asia', 'Oceania': 'oceania', 'Africa': 'africa', 'Europa': 'europe',
@@ -136,7 +139,8 @@ def refresh():
     # only when RELEASED; data/*.md is the frozen version already public (Regia, 2026-10-20)
     os.makedirs(os.path.join(DATA, 'next'), exist_ok=True)
     for src, dst in [('release/notes-world-2026-27.md', 'notes-world-2026-27.md'),
-                     ('release/world-2026-27-competitions.md', 'competitions.md')]:
+                     ('release/world-2026-27-competitions.md', 'competitions.md'),
+                     ('release/notes-4.0.md', 'notes-4.0.md')]:
         open(os.path.join(DATA, 'next', dst), 'w', encoding='utf-8').write(md.strip_comments(show(src)))
     # the in-game FORMAT texts and the countries' names, with the mod's own tools (exported, never run in the repo)
     with tempfile.TemporaryDirectory() as tmp:
@@ -381,7 +385,11 @@ def home(d, lang):
         tiles = ''
         for f, c in t['cups']:
             fl = f'{f}-{lang}' if have(f'{f}-{lang}') else f'{f}-it'
-            if f not in CUPS_HOLD and have(fl):
+            if f in CUPS_TEXT:
+                tiles += (f'<figure class="shot"><div class="soon-box" style="padding:18px;text-align:center">'
+                          f'<p class="px" style="color:var(--gold);font-size:18px;margin:0 0 10px">{esc(t["ic_tile"])}</p>'
+                          f'<p style="margin:0;font-size:14px">{esc(t["ic_line"])}</p></div><figcaption>{esc(c)}</figcaption></figure>')
+            elif f not in CUPS_HOLD and have(fl):
                 tiles += (f'<figure class="shot"><img src="/static/img/{fl}.png" width="1600" height="1200" loading="lazy" '
                           f'alt="{esc(c)}"><figcaption>{esc(c)}</figcaption></figure>')
             else:
@@ -395,8 +403,9 @@ def home(d, lang):
     else:
         dl_btn = dl_btn2 = ''                       # the red "coming soon" sticker at the top of the page instead
         soon_inst = f'<p class="panel"><strong class="px" style="color:var(--gold)">{esc(t["soon"])}</strong> {esc(t["soon_install"])}</p>'
-    sticker = '' if RELEASED else (f'<p class="soon-sticker" role="note"><b>{esc(t["soon"])}</b>'
-                                   f'<span>{esc(t["soon_dl"])}</span><i>{esc(t["soon_test"])}</i></p>')
+    sticker = (f'<p class="soon-sticker out" role="note"><b>{esc(t["out_now"])}</b><span>{esc(t["out_sub"])}</span></p>'
+               if RELEASED else (f'<p class="soon-sticker" role="note"><b>{esc(t["soon"])}</b>'
+                                   f'<span>{esc(t["soon_dl"])}</span><i>{esc(t["soon_test"])}</i></p>'))
     body = f'''<section class="hero"><div class="wrap">{sticker}
 {logo_svg(240, t['site']).replace('<svg ', '<svg class="logo" ', 1)}
 <p class="px" style="color:var(--dim);margin:0 0 14px">{esc(t['kicker'])}</p>
@@ -405,6 +414,7 @@ def home(d, lang):
 <p class="lead">{esc(t['lead'])}</p>
 <div class="cta">
 {dl_btn}
+{f'<a class="btn blue" href="/{lang}/news/">{esc(t["news_title"])}</a>' if RELEASED else ''}
 <a class="btn orange" href="#install">{esc(t['how'])}</a>
 <a class="btn blue" href="/{lang}/countries/">{esc(t['see_world'])}</a>
 </div>
@@ -705,7 +715,8 @@ def install_page(d, lang):
         return out
     common = [x if GUIDE_DONE_SHOTS else x.replace(' [SHOT patcher-done]', '') for x in g['common']]
     if RELEASED:                                    # with 4.0: the release's patcher
-        dl = f'<p style="margin:10px 0 0"><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>'
+        dl = (f'<p style="margin:10px 0 0"><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>'
+              f'<p class="note" style="margin:8px 0 0"><a href="{RELEASE_PAGE}">{esc(t["cur40"])}</a></p>')
     else:                                           # until then: disabled, and the current 3.3.6 on GitHub
         dl = (f'<p style="margin:10px 0 0"><span class="btn green soon-btn disabled" aria-disabled="true">{esc(t["dl"])}'
               f'<small>{esc(t["dl_with40"])}</small></span></p>'
@@ -730,6 +741,21 @@ def bug_page(d, lang):
 <noscript><a href="https://tally.so/r/{f}">{esc(t['bug_title'])}</a></noscript></div></div>
 <script src="https://tally.so/widgets/embed.js" async></script>'''
     return page(lang, 'bug/', t['bug_title'], body)
+
+
+def news_page(d, lang):
+    """'What's new in 4.0' from release/notes-4.0.md (EN / IT; FR / DE translated block by block)."""
+    t = T[lang]
+    src = split_langs(open(os.path.join(DATA, 'next', 'notes-4.0.md'), encoding='utf-8').read())
+    bl = md.blocks(src['it' if lang == 'it' else 'en'])
+    if bl and bl[0][0] == 'h':
+        bl = bl[1:]                                  # the release title
+    if lang in ('fr', 'de'):
+        bl, _ = tr.translate(bl, lang)
+    bl = [b for b in bl if not (b[0] == 'p' and b[1].strip() == '---')]
+    body = (f'<div class="wrap page-head"><h1>{esc(t["news_title"])}</h1></div><div class="wrap doc">'
+            f'<p><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>{md.render(bl, _notes_link(lang), shift=-1)}</div>')
+    return page(lang, 'news/', t['news_title'], body)
 
 
 def not_found():
@@ -798,13 +824,16 @@ def build():
     for lang in LANGS:                              # the social preview cards
         t = T[lang]
         ogimage.card(os.path.join(OUT, 'static', f'og-{lang}.png'), t['tagline'], t['concept'],
-                     '' if RELEASED else t['soon'], t['soon_dl'], t['soon_test'])
+                     t['out_now'] if RELEASED else t['soon'], t['out_sub'] if RELEASED else t['soon_dl'],
+                     '' if RELEASED else t['soon_test'], green=RELEASED)
     urls = []
     for lang in LANGS:
         pages = {'': home(d, lang), 'countries/': countries_index(d, lang), 'world/': world(d, lang),
                  'credits/': credits(d, lang), 'classic/': classic_page(d, lang), 'bug/': bug_page(d, lang)}
         if INSTALL_PAGE:
             pages['install/'] = install_page(d, lang)
+        if RELEASED:
+            pages['news/'] = news_page(d, lang)
         for code in d['order']:
             pages[f'countries/{code}/'] = country(d, code, lang)
         for p, text in pages.items():

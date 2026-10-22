@@ -31,6 +31,8 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    out_now='Out now', out_sub='SWOS 96/97 Mod 4.0 · free', cur40='The 4.0 release on GitHub', news_title='What\'s new in 4.0',
+    ic_tile='FIFA Intercontinental Cup', ic_line='The real 2026 stepladder: the African-Asian-Pacific play-off and Cup, the Derby of the Americas, the FIFA Challenger Cup, then the final against the UEFA Champions League winner.',
     aus_note='plays in the AFC: listed under Asia',
     places_h='Continental places (season 1)', places_none='No direct continental place in season 1.',
     bug_cta='Found a bug? Tell us: attach your .CAR save and we\'ll fix it.',
@@ -165,6 +167,8 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    out_now='Disponibile', out_sub='SWOS 96/97 Mod 4.0 · gratis', cur40='La release 4.0 su GitHub', news_title='Le novità della 4.0',
+    ic_tile='Coppa Intercontinentale FIFA', ic_line='La vera scala del 2026: lo spareggio e la Coppa Africa-Asia-Pacifico, il Derby delle Americhe, la FIFA Challenger Cup, poi la finale contro la vincitrice della UEFA Champions League.',
     aus_note='gioca nella AFC: è sotto Asia',
     places_h='Posti nelle coppe continentali (stagione 1)', places_none='Nessun posto diretto nelle coppe continentali nella stagione 1.',
     bug_cta='Hai trovato un bug? Segnalacelo: allega il salvataggio .CAR e lo correggiamo.',
@@ -297,6 +301,8 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    out_now='Disponible', out_sub='SWOS 96/97 Mod 4.0 · gratuit', cur40='La version 4.0 sur GitHub', news_title='Les nouveautés de la 4.0',
+    ic_tile='Coupe intercontinentale de la FIFA', ic_line="La vraie échelle 2026 : le barrage et la Coupe Afrique-Asie-Pacifique, le Derby des Amériques, la FIFA Challenger Cup, puis la finale contre le vainqueur de la Ligue des champions de l'UEFA.",
     aus_note="joue dans l'AFC : classée en Asie",
     places_h='Places en coupes continentales (saison 1)', places_none='Aucune place directe en coupe continentale lors de la saison 1.',
     bug_cta="Vous avez trouvé un bug ? Dites-le-nous : joignez votre sauvegarde .CAR et nous le corrigerons.",
@@ -433,6 +439,8 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    out_now='Jetzt verfügbar', out_sub='SWOS 96/97 Mod 4.0 · kostenlos', cur40='Die Version 4.0 auf GitHub', news_title='Das Neue in 4.0',
+    ic_tile='FIFA-Interkontinentalpokal', ic_line='Die echte Stufenleiter 2026: Playoff und Pokal Afrika-Asien-Pazifik, das Derby der Amerikas, der FIFA Challenger Cup, dann das Finale gegen den Sieger der UEFA Champions League.',
     aus_note='spielt in der AFC: unter Asien',
     places_h='Plätze in den Kontinentalpokalen (Saison 1)', places_none='Kein direkter Platz in einem Kontinentalpokal in Saison 1.',
     bug_cta='Einen Fehler gefunden? Sag es uns: Häng deinen .CAR-Spielstand an, und wir beheben ihn.',

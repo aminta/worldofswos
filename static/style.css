@@ -243,3 +243,4 @@ details[open] summary { margin-bottom: 12px; }
   box-shadow: 4px 4px 0 var(--shadow); }
 .bug-cta p { margin: 0; font-size: 15px; line-height: 1.5; color: #fff; text-shadow: 2px 2px 0 var(--shadow); flex: 1 1 320px; }
 @media (max-width: 600px) { .bug-cta .btn { width: 100%; } }
+.soon-sticker.out { background: linear-gradient(135deg, #4fd85a 0%, #12a02a 55%, #075a14 100%); border-color: #a8f0ae #053a0c #053a0c #a8f0ae; }
