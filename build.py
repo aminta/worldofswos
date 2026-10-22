@@ -353,8 +353,14 @@ def fmt_num(n, lang):
     return f'{int(n):,}'.replace(',', sep)
 
 
+FRAMES_OK = set(json.load(open(os.path.join(DATA, 'frames_ok.json')))) if os.path.exists(
+    os.path.join(DATA, 'frames_ok.json')) else None
+
+
 def have(f):
-    return os.path.exists(os.path.join(ROOT, 'static', 'img', f + '.png'))
+    """A frame goes on the site only when it exists AND was checked (data/frames_ok.json: added by hand after the
+    check: mid-season data, the right structure, real legend, title and caption matching)."""
+    return os.path.exists(os.path.join(ROOT, 'static', 'img', f + '.png')) and (FRAMES_OK is None or f in FRAMES_OK)
 
 
 def main_menu(lang):
@@ -667,7 +673,7 @@ def frames(lang):
     for f, cap in zip(FRAMES, T[lang]['frames']):
         if held(f, lang):
             continue
-        fl = lang if os.path.exists(os.path.join(ROOT, 'static', 'img', f'{f}-{lang}.png')) else 'it'
+        fl = lang if have(f'{f}-{lang}') else 'it'
         if CONTENT_40 and fl != lang:
             continue
         out.append(f'<figure class="shot"><img src="/static/img/{f}-{fl}.png" width="1600" height="1200" '
