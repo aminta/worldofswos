@@ -773,7 +773,8 @@ def install_page(d, lang):
                     for h, items in g['cases'] if 'MISTER_DRAFT' not in items)       # MiSTer: held
     body = f'''<div class="wrap page-head"><h1>{esc(g['title'])}</h1><p>{esc(g['lead'])}</p></div>
 <div class="wrap doc"><h2>{esc(g['section'])}</h2><ol class="steps">{steps}</ol>
-<p class="panel" style="margin-top:16px">{esc(g['fallback'])}</p>{cases}</div>'''
+<p class="panel" style="margin-top:16px">{esc(g['fallback'])}{(' ' + esc(t['progfiles_manual'])) if RELEASED else ''}</p>
+{f'<p class="panel next">{esc(t["progfiles"])}</p>' if RELEASED else ''}{cases}</div>'''
     return page(lang, 'install/', g['title'], body, active='install')
 
 

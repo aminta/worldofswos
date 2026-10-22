@@ -31,9 +31,11 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    progfiles='Is the game in Program Files (for example GOG Galaxy\'s folder, C:\\Program Files (x86)\\GOG Galaxy\\Games)? Chrome and Edge do not open that folder ("contains system files"). Use the manual steps, or copy the game folder somewhere else (for example Documents), install the mod into the copy with one click, then copy its contents back over the original (Windows asks for administrator permission: accept) and play as usual.',
+    progfiles_manual='If the game is in Program Files, Windows asks for administrator permission when you copy or extract the files into its folder: accept.',
     next401_winners_page='A new WINNERS page in the STAT menu: who won each competition of the season.',
     h_winners='Who won what: the WINNERS page',
-    winners_text='A new page in the STAT menu lists who won each competition of the season: every Apertura and Clausura, every trophy and every play-off, at a glance.',
+    winners_text='A new page in the STAT menu lists who won each competition of the season: every Apertura and Clausura, every trophy and every play-off, at a glance. After the season end it also shows the previous season\'s winners.',
     next401_winners='Season-end titles on the WINNERS page.',
     tables_row='Your club keeps its own colour in every table, never mixed up with the zones.',
     next401_h='The upcoming 4.0.1',
@@ -180,9 +182,11 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    progfiles="Il gioco è in Program Files / Programmi (per esempio la cartella di GOG Galaxy, C:\\Program Files (x86)\\GOG Galaxy\\Games)? Chrome ed Edge non aprono quella cartella («contiene file di sistema»). Usa i passi a mano, oppure copia la cartella del gioco altrove (per esempio in Documenti), installa la mod nella copia con un clic, poi ricopia il suo contenuto sopra l'originale (Windows chiede il permesso di amministratore: accetta) e gioca come sempre.",
+    progfiles_manual='Se il gioco è in Program Files / Programmi, Windows chiede il permesso di amministratore quando copi o estrai i file nella sua cartella: accetta.',
     next401_winners_page='Una nuova pagina VINCITORI nel menu STAT: chi ha vinto ogni competizione della stagione.',
     h_winners='Chi ha vinto cosa: la pagina VINCITORI',
-    winners_text='Una nuova pagina nel menu STAT elenca chi ha vinto ogni competizione della stagione: ogni Apertura e Clausura, ogni trofeo e ogni play-off, a colpo d\'occhio.',
+    winners_text='Una nuova pagina nel menu STAT elenca chi ha vinto ogni competizione della stagione: ogni Apertura e Clausura, ogni trofeo e ogni play-off, a colpo d\'occhio. Dopo la fine della stagione mostra anche i vincitori della stagione precedente.',
     next401_winners='I titoli di fine stagione nella pagina VINCITORI.',
     tables_row='La tua squadra resta nel suo colore in ogni classifica, senza confondersi con le zone.',
     next401_h='La prossima 4.0.1',
@@ -327,9 +331,11 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    progfiles="Le jeu est dans Program Files / Programmes (par exemple le dossier de GOG Galaxy, C:\\Program Files (x86)\\GOG Galaxy\\Games) ? Chrome et Edge n'ouvrent pas ce dossier (« contient des fichiers système »). Suivez les étapes à la main, ou copiez le dossier du jeu ailleurs (par exemple dans Documents), installez le mod dans la copie en un clic, puis recopiez son contenu par-dessus l'original (Windows demande l'autorisation d'administrateur : acceptez) et jouez comme d'habitude.",
+    progfiles_manual="Si le jeu est dans Program Files / Programmes, Windows demande l'autorisation d'administrateur quand vous copiez ou extrayez les fichiers dans son dossier : acceptez.",
     next401_winners_page='Une nouvelle page VAINQUEURS dans le menu STATS : les vainqueurs de chaque compétition de la saison.',
     h_winners='Qui a gagné quoi : la page des VAINQUEURS',
-    winners_text="Une nouvelle page du menu STATS liste les vainqueurs de chaque compétition de la saison : chaque Apertura et Clausura, chaque trophée et chaque barrage, d'un seul coup d'œil.",
+    winners_text="Une nouvelle page du menu STATS liste les vainqueurs de chaque compétition de la saison : chaque Apertura et Clausura, chaque trophée et chaque barrage, d'un seul coup d'œil. Après la fin de saison, elle montre aussi les vainqueurs de la saison précédente.",
     next401_winners='Les titres de fin de saison sur la page des VAINQUEURS.',
     tables_row='Votre club garde sa propre couleur dans chaque classement, sans se confondre avec les zones.',
     next401_h='La prochaine 4.0.1',
@@ -478,9 +484,11 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    progfiles='Liegt das Spiel unter Programme / Program Files (zum Beispiel im Ordner von GOG Galaxy, C:\\Program Files (x86)\\GOG Galaxy\\Games)? Chrome und Edge öffnen diesen Ordner nicht („enthält Systemdateien“). Folge den Schritten von Hand, oder kopiere den Spielordner woandershin (zum Beispiel nach Dokumente), installiere die Mod mit einem Klick in die Kopie, kopiere dann ihren Inhalt über das Original zurück (Windows fragt nach Administratorrechten: bestätigen) und spiel wie gewohnt.',
+    progfiles_manual='Liegt das Spiel unter Programme / Program Files, fragt Windows beim Kopieren oder Entpacken der Dateien in seinen Ordner nach Administratorrechten: bestätigen.',
     next401_winners_page='Eine neue SIEGER-Seite im Menü STATISTIK: wer jeden Wettbewerb der Saison gewonnen hat.',
     h_winners='Wer hat was gewonnen: die SIEGER-Seite',
-    winners_text='Eine neue Seite im Menü STATISTIK zeigt, wer jeden Wettbewerb der Saison gewonnen hat: jede Apertura und Clausura, jeden Pokal und jedes Playoff, auf einen Blick.',
+    winners_text='Eine neue Seite im Menü STATISTIK zeigt, wer jeden Wettbewerb der Saison gewonnen hat: jede Apertura und Clausura, jeden Pokal und jedes Playoff, auf einen Blick. Nach dem Saisonende zeigt sie auch die Sieger der vorigen Saison.',
     next401_winners='Die Titel zum Saisonende auf der SIEGER-Seite.',
     tables_row='Dein Verein behält in jeder Tabelle seine eigene Farbe und vermischt sich nicht mit den Zonen.',
     next401_h='Die kommende 4.0.1',
