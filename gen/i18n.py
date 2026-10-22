@@ -31,6 +31,12 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    next401_h='The upcoming 4.0.1',
+    next401=['Leagues in their exact 2026-27 formats: Mexico (Liga MX Apertura / Clausura with the Liguilla), Colombia (Apertura and Finalización with the cuadrangulares), Peru (Apertura / Clausura and the title play-off), Uruguay (Apertura, Intermedio, Clausura).',
+             'The real Clausura calendars of Costa Rica, Honduras and Panama, as soon as they are published.',
+             'Continental cups: the Libertadores group thirds play the Sudamericana play-off; the AFC Champions League Elite league stage and the Challenge League groups are played by your club.',
+             'European places always from the right association.',
+             'Smaller fixes: the stray pixels after a job offer letter, the SWOS++ menu music.'],
     menu_cap='One click from the main menu to the World 2026-27 career: the new green CAREER 2026-27 button.',
     out_now='Out now', out_sub='SWOS 96/97 Mod 4.0 · free', cur40='The 4.0 release on GitHub', news_title='What\'s new in 4.0',
     ic_tile='FIFA Intercontinental Cup', ic_line='The real 2026 stepladder: the African-Asian-Pacific play-off and Cup, the Derby of the Americas, the FIFA Challenger Cup, then the final against the UEFA Champions League winner.',
@@ -168,6 +174,12 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    next401_h='La prossima 4.0.1',
+    next401=['Campionati nelle loro formule 2026-27 esatte: Messico (Liga MX Apertura / Clausura con la Liguilla), Colombia (Apertura e Finalización con i cuadrangulares), Perù (Apertura / Clausura e lo spareggio per il titolo), Uruguay (Apertura, Intermedio, Clausura).',
+             'I veri calendari della Clausura di Costa Rica, Honduras e Panama, appena saranno pubblicati.',
+             'Coppe continentali: le terze dei gironi della Libertadores giocano lo spareggio della Sudamericana; la fase campionato della AFC Champions League Elite e i gironi della Challenge League li gioca la tua squadra.',
+             'I posti europei sempre dalla federazione giusta.',
+             'Correzioni minori: i pixel spuri dopo una lettera di offerta di lavoro, la musica dei menu con SWOS++.'],
     menu_cap='Un clic dal menu principale alla carriera Mondo 2026-27: il nuovo pulsante verde CARRIERA 2026-27.',
     out_now='Disponibile', out_sub='SWOS 96/97 Mod 4.0 · gratis', cur40='La release 4.0 su GitHub', news_title='Le novità della 4.0',
     ic_tile='Coppa Intercontinentale FIFA', ic_line='La vera scala del 2026: lo spareggio e la Coppa Africa-Asia-Pacifico, il Derby delle Americhe, la FIFA Challenger Cup, poi la finale contro la vincitrice della UEFA Champions League.',
@@ -303,6 +315,12 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    next401_h='La prochaine 4.0.1',
+    next401=["Des championnats dans leurs formules 2026-27 exactes : Mexique (Liga MX Apertura / Clausura avec la Liguilla), Colombie (Apertura et Finalización avec les cuadrangulares), Pérou (Apertura / Clausura et le barrage pour le titre), Uruguay (Apertura, Intermedio, Clausura).",
+             "Les vrais calendriers de la Clausura du Costa Rica, du Honduras et du Panama, dès leur publication.",
+             "Coupes continentales : les troisièmes de groupe de la Libertadores jouent le barrage de la Sudamericana ; la phase de ligue de l'AFC Champions League Elite et les groupes de la Challenge League sont joués par votre club.",
+             "Des places européennes toujours attribuées à la bonne association.",
+             "Petites corrections : les pixels parasites après une lettre d'offre d'emploi, la musique des menus avec SWOS++."],
     menu_cap='Un clic depuis le menu principal vers la carrière Monde 2026-27 : le nouveau bouton vert CARRIERE 2026-27.',
     out_now='Disponible', out_sub='SWOS 96/97 Mod 4.0 · gratuit', cur40='La version 4.0 sur GitHub', news_title='Les nouveautés de la 4.0',
     ic_tile='Coupe intercontinentale de la FIFA', ic_line="La vraie échelle 2026 : le barrage et la Coupe Afrique-Asie-Pacifique, le Derby des Amériques, la FIFA Challenger Cup, puis la finale contre le vainqueur de la Ligue des champions de l'UEFA.",
@@ -442,6 +460,12 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    next401_h='Die kommende 4.0.1',
+    next401=['Ligen in ihren genauen Modi 2026-27: Mexiko (Liga MX Apertura / Clausura mit der Liguilla), Kolumbien (Apertura und Finalización mit den Cuadrangulares), Peru (Apertura / Clausura und das Meister-Playoff), Uruguay (Apertura, Intermedio, Clausura).',
+             'Die echten Clausura-Spielpläne von Costa Rica, Honduras und Panama, sobald sie veröffentlicht sind.',
+             'Kontinentalpokale: Die Gruppendritten der Libertadores spielen das Playoff der Sudamericana; die Ligaphase der AFC Champions League Elite und die Gruppen der Challenge League spielt dein Verein selbst.',
+             'Europapokalplätze immer vom richtigen Verband.',
+             'Kleinere Korrekturen: die verirrten Pixel nach einem Brief mit einem Jobangebot, die Menümusik mit SWOS++.'],
     menu_cap='Ein Klick vom Hauptmenü zur Karriere Welt 2026-27: die neue grüne Schaltfläche KARRIERE 2026-27.',
     out_now='Jetzt verfügbar', out_sub='SWOS 96/97 Mod 4.0 · kostenlos', cur40='Die Version 4.0 auf GitHub', news_title='Das Neue in 4.0',
     ic_tile='FIFA-Interkontinentalpokal', ic_line='Die echte Stufenleiter 2026: Playoff und Pokal Afrika-Asien-Pazifik, das Derby der Amerikas, der FIFA Challenger Cup, dann das Finale gegen den Sieger der UEFA Champions League.',

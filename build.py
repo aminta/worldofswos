@@ -448,7 +448,8 @@ def home(d, lang):
 {cups}<h2 id="already">{esc(already.A[lang][0])}</h2>
 <div class="cards">{''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}</p></article>' for h, p in already.A[lang][1])}</div>
 <h2 id="next">{esc(t['h_next'])}</h2>
-<div class="panel next"><p><span class="next-tag px">4.1</span> {esc(t['next41'])}</p>
+<div class="panel next">{(f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["next401_h"])}</strong></p><ul>'
+  + ''.join(f'<li>{esc(x)}</li>' for x in t['next401']) + '</ul>') if RELEASED else ''}<p><span class="next-tag px">4.1</span> {esc(t['next41'])}</p>
 <p><span class="next-tag px">4.2</span> {esc(t['next_text'])}</p>
 <p class="note" style="margin:0">{esc(t['next_note'])}</p></div>
 <h2>{esc(t['h_shots'])}</h2>
