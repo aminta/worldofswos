@@ -259,3 +259,8 @@ details[open] summary { margin-bottom: 12px; }
 main, .doc li, .doc p, .steps li, .panel, .saves td, code { overflow-wrap: anywhere; }
 .saves { table-layout: fixed; }
 .shot { max-width: 100%; }
+
+.warn { display: flex; gap: 14px; align-items: flex-start; margin: 14px auto; max-width: 820px; padding: 14px 18px; text-align: left;
+  background: #5a0a0a; border: 3px solid #ff5a4a; box-shadow: 4px 4px 0 var(--shadow); }
+.warn b { flex: none; width: 34px; height: 34px; display: grid; place-items: center; background: #ffd84a; color: #5a0a0a; font-size: 22px; text-shadow: none; }
+.warn p { margin: 0; font-weight: 600; color: #fff; }

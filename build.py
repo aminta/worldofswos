@@ -395,6 +395,15 @@ def main_menu(lang):
             f'alt="{esc(t["menu_cap"])}"><figcaption class="px">{esc(t["menu_cap"])}</figcaption></figure></section>')
 
 
+WARN_FOREIGN = True    # urgent notice: remove when the fixed 4.0 is out (Regia 2026-10-22)
+
+
+def warn_banner(lang):
+    if not WARN_FOREIGN:
+        return ''
+    return (f'<div class="warn" role="alert"><b class="px">!</b><p>{esc(T[lang]["warn_foreign"])}</p></div>')
+
+
 def home(d, lang):
     t, s = T[lang], d['stats']
     stats = ''.join(f'<div class="stat"><b>{fmt_num(s[k], lang)}</b><span>{esc(t["s_" + k].format(n=s["new_conti"]))}</span></div>'
@@ -455,7 +464,7 @@ def home(d, lang):
                                    f'<span>{esc(t["soon_dl"])}</span><i>{esc(t["soon_test"])}</i></p>'))
     body = f'''<section class="hero"><div class="wrap">{sticker}
 {logo_svg(240, t['site']).replace('<svg ', '<svg class="logo" ', 1)}
-<p class="px" style="color:var(--dim);margin:0 0 14px">{esc(t['kicker'])}</p>
+{warn_banner(lang)}<p class="px" style="color:var(--dim);margin:0 0 14px">{esc(t['kicker'])}</p>
 <h1>{esc(t['tagline'])}</h1>
 <p class="tagline">{esc(t['concept'])}</p>
 <p class="lead">{esc(t['lead'])}</p>
@@ -799,7 +808,7 @@ def install_page(d, lang):
     steps = ''.join(f'<li>{text(x)}' + (dl if i == 0 else '') + '</li>' for i, x in enumerate(common))
     cases = ''.join(f'<h2>{esc(h)}</h2><ul>' + ''.join(f'<li>{text(x)}</li>' for x in items) + '</ul>'
                     for h, items in g['cases'] if 'MISTER_DRAFT' not in items)       # MiSTer: held
-    body = f'''<div class="wrap page-head"><h1>{esc(g['title'])}</h1><p>{esc(g['lead'])}</p></div>
+    body = f'''<div class="wrap page-head"><h1>{esc(g['title'])}</h1>{warn_banner(lang)}<p>{esc(g['lead'])}</p></div>
 <div class="wrap doc"><h2>{esc(g['section'])}</h2><ol class="steps">{steps}</ol>
 <p class="panel" style="margin-top:16px">{esc(g['fallback'])}{(' ' + esc(t['progfiles_manual'])) if RELEASED else ''}</p>
 {f'<p class="panel next" id="progfiles">{esc(t["progfiles"])}</p>' if RELEASED else ''}{cases}{launch_block(lang)}{saves_table(lang)}{joypad_block(lang)}</div>'''
@@ -829,7 +838,7 @@ def news_page(d, lang):
     if lang in ('fr', 'de'):
         bl, _ = tr.translate(bl, lang)
     bl = [b for b in bl if not (b[0] == 'p' and b[1].strip() == '---')]
-    body = (f'<div class="wrap page-head"><h1>{esc(t["news_title"])}</h1></div><div class="wrap doc">'
+    body = (f'<div class="wrap page-head"><h1>{esc(t["news_title"])}</h1>{warn_banner(lang)}</div><div class="wrap doc">'
             + (f'<p><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>' if RELEASED else
                f'<p class="panel next"><span class="next-tag px">4.0</span> {esc(t["with40"])}</p>'
                f'<p><span class="btn green soon-btn disabled" aria-disabled="true">{esc(t["dl"])}<small>{esc(t["dl_with40"])}</small></span></p>')
