@@ -86,12 +86,19 @@ def card(path, tagline, concept, soon, soon_sub, soon_test='', green=False):
             sd.line([(0, i), (sw - 1, i)], fill=((int(40 - 30 * t), int(200 - 110 * t), int(60 - 40 * t), 255) if green else
                                                 (int(255 - 117 * t), int(74 - 68 * t), int(58 - 42 * t), 255)))
         sd.rectangle([0, 0, sw - 1, sh - 1], outline=(255, 154, 138, 255), width=4)
-        fs = font(40)
         words = soon.upper().split()
-        shadow_text(sd, (sw // 2, 38), words[0], fs, (255, 255, 255), shadow=(74, 2, 6), off=4, anchor='mm')
-        shadow_text(sd, (sw // 2, 80), ' '.join(words[1:]), fs, (255, 255, 255), shadow=(74, 2, 6), off=4, anchor='mm')
+        lines = [words[0], ' '.join(words[1:])] if len(words) > 1 and soon.upper() == 'COMING SOON' else [soon.upper()]
+        if len(words) == 2 and soon.upper() != 'COMING SOON' and len(soon) < 12:
+            lines = [soon.upper()]
+        size = 40
+        while size > 18 and max(sd.textlength(x, font=font(size)) for x in lines) > sw - 40:
+            size -= 2
+        fs = font(size)
+        y0 = 38 if len(lines) == 2 else 58
+        for k, ln in enumerate(lines):
+            shadow_text(sd, (sw // 2, y0 + k * 42), ln, fs, (255, 255, 255), shadow=(74, 2, 6), off=4, anchor='mm')
         f3 = font(15, False)
-        yy = 112
+        yy = 112 if len(lines) == 2 else 104
         for line in wrap(soon_sub.upper(), f3, sw - 24, sd)[:2]:
             shadow_text(sd, (sw // 2, yy), line, f3, (255, 255, 255), shadow=(74, 2, 6), off=2, anchor='mm')
             yy += 20

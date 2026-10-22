@@ -322,10 +322,10 @@ def page(lang, path, title, body, desc='', active=None, langs=None):
 <meta property="og:description" content="{esc(og_desc)}">
 <meta property="og:type" content="website"><meta property="og:url" content="{SITE_URL}{url}">
 <meta property="og:locale" content="{LOCALE[lang]}">
-<meta property="og:image" content="{SITE_URL}/static/og-{lang}.png?v=40"><meta property="og:image:width" content="1200">
+<meta property="og:image" content="{SITE_URL}/static/og-{lang}.png?v=41"><meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(t['tagline'])}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(og_title)}">
-<meta name="twitter:description" content="{esc(og_desc)}"><meta name="twitter:image" content="{SITE_URL}/static/og-{lang}.png?v=40">
+<meta name="twitter:description" content="{esc(og_desc)}"><meta name="twitter:image" content="{SITE_URL}/static/og-{lang}.png?v=41">
 <meta name="theme-color" content="#0a1a6e">
 <link rel="icon" href="/static/logo.svg" type="image/svg+xml">
 <link rel="preload" href="/static/fonts/silkscreen-700-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -842,8 +842,8 @@ def root_index():
 <link rel="canonical" href="{SITE_URL}/en/">{alt}<link rel="alternate" hreflang="x-default" href="{SITE_URL}/">
 <meta property="og:title" content="World of SWOS · SWOS 96/97 Mod"><meta property="og:type" content="website">
 <meta property="og:description" content="{esc(T['en']['meta_home'])}"><meta property="og:url" content="{SITE_URL}/">
-<meta property="og:image" content="{SITE_URL}/static/og-en.png?v=40"><meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{SITE_URL}/static/og-en.png?v=40">
+<meta property="og:image" content="{SITE_URL}/static/og-en.png?v=41"><meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{SITE_URL}/static/og-en.png?v=41">
 <link rel="icon" href="/static/logo.svg" type="image/svg+xml"><link rel="stylesheet" href="/static/style.css">
 <script>
 (function () {{
