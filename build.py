@@ -35,7 +35,8 @@ REPO = 'https://github.com/aminta/swos-9697-mod'
 # 4.0 is not released yet: both point to the releases page (at release: /releases/latest/download/swos-9697-mod-patcher.html)
 PATCHER = REPO + '/releases/download/v4.0/swos-9697-mod-patcher.html'
 RELEASE_PAGE = REPO + '/releases/tag/v4.0'
-PATCHER_MD5 = ''        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
+PATCHER_MD5 = ''
+WINNERS_40 = False      # the WINNERS page is in the released build (else it stays only in the 4.0.1 list)        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
 RELEASES = REPO + '/releases'
 CONTENT_40 = True   # the 4.0 content (cups, main menu, news page, 4.0.1 list): live since Davide's OK 2026-10-22
 RELEASED = os.environ.get('WOS_RELEASED') == '1' or False   # THE switch (env for the local preview only). False until 4.0 is on GitHub: download buttons and the install section say "Coming soon"
@@ -407,7 +408,7 @@ def home(d, lang):
             shots += (f'<h3>{esc(g)}</h3><div class="cards" style="grid-template-columns:repeat(auto-fill,'
                       f'minmax(min(100%,440px),1fr))">{figs}</div>')
     winners = ''
-    if RELEASED:                                    # 4.0's WINNERS page (STAT menu), with its frame when checked
+    if RELEASED and WINNERS_40:                     # 4.0's WINNERS page (STAT menu), with its frame when checked
         wf = f'winners-{lang}'
         shot = (f'<figure class="shot" style="max-width:640px;margin:12px 0"><img src="/static/img/{wf}.png" width="1600" '
                 f'height="1200" loading="lazy" alt="{esc(t["h_winners"])}"></figure>') if have(wf) else ''
@@ -466,7 +467,7 @@ def home(d, lang):
 <div class="cards">{''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}</p></article>' for h, p in already.A[lang][1])}</div>
 <h2 id="next">{esc(t['h_next'])}</h2>
 <div class="panel next">{(f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["next401_h"])}</strong></p><ul>'
-  + ''.join(f'<li>{esc(x)}</li>' for x in t['next401'] + ([t['next401_winners']] if RELEASED else [])) + '</ul>') if CONTENT_40 else ''}<p><span class="next-tag px">4.1</span> {esc(t['next41'])}</p>
+  + ''.join(f'<li>{esc(x)}</li>' for x in t['next401'] + ([t['next401_winners']] if RELEASED and not WINNERS_40 else [])) + '</ul>') if CONTENT_40 else ''}<p><span class="next-tag px">4.1</span> {esc(t['next41'])}</p>
 <p><span class="next-tag px">4.2</span> {esc(t['next_text'])}</p>
 <p class="note" style="margin:0">{esc(t['next_note'])}</p></div>
 <h2>{esc(t['h_shots'])}</h2>
