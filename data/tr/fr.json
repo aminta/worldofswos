@@ -527,10 +527,6 @@
   "en": "- At the end of a season the game finishes every competition still open and shows each one in turn: in this world there are many more of them than in the original game, so the sequence takes longer (about a second each on a fast 486; the time is the original game's own menu drawing, not the mod's code).",
   "t": "- À la fin d'une saison, le jeu termine chaque compétition encore ouverte et les montre une à une : dans ce monde il y en a bien plus que dans le jeu original, donc la séquence dure plus longtemps (environ une seconde chacune sur un 486 rapide ; c'est le temps d'affichage des menus du jeu original, pas le code du mod)."
  },
- "df496135b169": {
-  "en": "- The World 2026-27 has no national teams yet: no national team offers a job in this career (planned for 4.2).",
-  "t": "- Le Monde 2026-27 n'a pas encore de sélections nationales : aucune sélection ne propose de poste dans cette carrière (prévu pour la 4.2)."
- },
  "cc480c722e9f": {
   "en": "- A career saved with one language's executable and loaded with another keeps the first language's competition titles, and its league tables show no zone colours, no FORMAT page and no overall table (annual table / Supporters' Shield): continue a career with the language you started it in.",
   "t": "- Une carrière sauvegardée avec l'exécutable d'une langue et chargée avec celui d'une autre garde les noms des compétitions de la première langue, et ses classements n'ont ni couleurs de zones, ni page FORMULE, ni classement général (classement annuel / Supporters' Shield) : continuez une carrière dans la langue où vous l'avez commencée."
@@ -675,10 +671,6 @@
   "en": "- The season end shows every open competition in turn: in this world it takes longer than in the original game.",
   "t": "- La fin de saison montre une à une toutes les compétitions encore ouvertes : dans ce monde, cela prend plus de temps que dans le jeu original."
  },
- "65b1a998739e": {
-  "en": "- The World 2026-27 has no national teams yet (planned for 4.2).",
-  "t": "- Le Monde 2026-27 n'a pas encore de sélections nationales (prévu pour la 4.2)."
- },
  "5b087d6f1c06": {
   "en": "Every rule, source and limit: the [full release notes](https://github.com/aminta/swos-9697-mod/blob/main/release/notes-world-2026-27.md).",
   "t": "Chaque règle, source et limite : les [notes de version complètes](https://worldofswos.com/fr/world/)."
@@ -698,14 +690,6 @@
  "c37ff1ecf57e": {
   "en": "- After a job offer letter in a career, a few stray pixels can appear on the menu buttons until the next match reloads the menu graphics: cosmetic only, saves are not affected (fixed in the upcoming 4.0.1).",
   "t": "- Après une lettre d'offre d'emploi en carrière, quelques pixels parasites peuvent apparaître sur les boutons des menus jusqu'à ce que le match suivant recharge les graphismes des menus : purement esthétique, les sauvegardes ne sont pas touchées (corrigé dans la prochaine 4.0.1)."
- },
- "a782f0cb11fb": {
-  "en": "- The World 2026-27 has no national teams yet: no national team offers a job in this career (planned for the upcoming 4.2).",
-  "t": "- Le Monde 2026-27 n'a pas encore de sélections nationales : aucune sélection ne propose de poste dans cette carrière (prévu pour la prochaine 4.2)."
- },
- "e7458fdd0549": {
-  "en": "- The World 2026-27 has no national teams yet (planned for the upcoming 4.2).",
-  "t": "- Le Monde 2026-27 n'a pas encore de sélections nationales (prévu pour la prochaine 4.2)."
  },
  "f030b036d9c6": {
   "en": "- **European places**: in some seasons one of the 108 European places goes to a club of a different association from the one the access list names. The number of clubs in each European cup and the title holders' places are always right (fixed in the upcoming 4.0.1).",
@@ -734,5 +718,29 @@
  "c224d6e50922": {
   "en": "- **Tables in colour**: in each state's first stage the places that go on are painted (green P.OFF; light blue for the clubs that skip a knockout round and go straight to a later one), and in a one-group state the relegated places gray; with several groups each club's zone is its place in its own group. Declared: in the states with several groups relegation is decided on the overall table, so it is not painted in the groups.",
   "t": "- **Classements en couleur** : dans la première phase de chaque État, les places qualificatives sont colorées (P.OFF en vert ; bleu clair pour les clubs qui sautent un tour à élimination directe et entrent plus tard), et dans un État à groupe unique les places de relégation en gris ; avec plusieurs groupes, la zone de chaque club correspond à sa place dans son propre groupe. Déclaré : dans les États à plusieurs groupes, la relégation se décide sur le classement général, elle n'est donc pas colorée dans les groupes."
+ },
+ "df496135b169": {
+  "en": "- The World 2026-27 has no national teams yet: no national team offers a job in this career (planned for 4.2).",
+  "t": "- Le Monde 2026-27 n'a pas encore de sélections nationales : aucune sélection ne propose de poste dans cette carrière (prévu pour la 4.2)."
+ },
+ "65b1a998739e": {
+  "en": "- The World 2026-27 has no national teams yet (planned for 4.2).",
+  "t": "- Le Monde 2026-27 n'a pas encore de sélections nationales (prévu pour la 4.2)."
+ },
+ "f001d50e2f74": {
+  "en": "- The World 2026-27 has no national teams yet: no national team offers a job in this career (planned for the upcoming 5.0).",
+  "t": "- Le Monde 2026-27 n'a pas encore de sélections nationales : aucune sélection ne propose de poste dans cette carrière (prévu pour la prochaine 5.0)."
+ },
+ "b224ff480726": {
+  "en": "- The World 2026-27 has no national teams yet (planned for the upcoming 5.0).",
+  "t": "- Le Monde 2026-27 n'a pas encore de sélections nationales (prévu pour la prochaine 5.0)."
+ },
+ "a782f0cb11fb": {
+  "en": "- The World 2026-27 has no national teams yet: no national team offers a job in this career (planned for the upcoming 4.2).",
+  "t": "- Le Monde 2026-27 n'a pas encore de sélections nationales : aucune sélection ne propose de poste dans cette carrière (prévu pour la prochaine 4.2)."
+ },
+ "e7458fdd0549": {
+  "en": "- The World 2026-27 has no national teams yet (planned for the upcoming 4.2).",
+  "t": "- Le Monde 2026-27 n'a pas encore de sélections nationales (prévu pour la prochaine 4.2)."
  }
 }

@@ -527,10 +527,6 @@
   "en": "- At the end of a season the game finishes every competition still open and shows each one in turn: in this world there are many more of them than in the original game, so the sequence takes longer (about a second each on a fast 486; the time is the original game's own menu drawing, not the mod's code).",
   "t": "- Am Ende einer Saison bringt das Spiel jeden noch offenen Wettbewerb zu Ende und zeigt sie nacheinander: In dieser Welt sind es viel mehr als im Originalspiel, deshalb dauert die Abfolge länger (etwa eine Sekunde pro Wettbewerb auf einem schnellen 486; die Zeit ist der Menüaufbau des Originalspiels, nicht der Code der Mod)."
  },
- "df496135b169": {
-  "en": "- The World 2026-27 has no national teams yet: no national team offers a job in this career (planned for 4.2).",
-  "t": "- Die Welt 2026-27 hat noch keine Nationalmannschaften: In dieser Karriere bietet keine Nationalmannschaft einen Job an (geplant für 4.2)."
- },
  "cc480c722e9f": {
   "en": "- A career saved with one language's executable and loaded with another keeps the first language's competition titles, and its league tables show no zone colours, no FORMAT page and no overall table (annual table / Supporters' Shield): continue a career with the language you started it in.",
   "t": "- Eine Karriere, die mit der ausführbaren Datei einer Sprache gespeichert und mit der einer anderen geladen wird, behält die Wettbewerbsnamen der ersten Sprache, und ihre Tabellen zeigen keine Zonenfarben, keine MODUS-Seite und keine Gesamttabelle (Jahrestabelle / Supporters' Shield): Spiel eine Karriere in der Sprache weiter, in der du sie begonnen hast."
@@ -675,10 +671,6 @@
   "en": "- The season end shows every open competition in turn: in this world it takes longer than in the original game.",
   "t": "- Das Saisonende zeigt nacheinander jeden offenen Wettbewerb: In dieser Welt dauert das länger als im Originalspiel."
  },
- "65b1a998739e": {
-  "en": "- The World 2026-27 has no national teams yet (planned for 4.2).",
-  "t": "- Die Welt 2026-27 hat noch keine Nationalmannschaften (geplant für 4.2)."
- },
  "5b087d6f1c06": {
   "en": "Every rule, source and limit: the [full release notes](https://github.com/aminta/swos-9697-mod/blob/main/release/notes-world-2026-27.md).",
   "t": "Jede Regel, Quelle und Grenze: die [vollständigen Versionshinweise](https://worldofswos.com/de/world/)."
@@ -698,14 +690,6 @@
  "c37ff1ecf57e": {
   "en": "- After a job offer letter in a career, a few stray pixels can appear on the menu buttons until the next match reloads the menu graphics: cosmetic only, saves are not affected (fixed in the upcoming 4.0.1).",
   "t": "- Nach einem Brief mit einem Jobangebot in der Karriere können auf den Menüschaltflächen ein paar verirrte Pixel erscheinen, bis das nächste Spiel die Menügrafik neu lädt: nur optisch, Spielstände sind nicht betroffen (behoben in der kommenden 4.0.1)."
- },
- "a782f0cb11fb": {
-  "en": "- The World 2026-27 has no national teams yet: no national team offers a job in this career (planned for the upcoming 4.2).",
-  "t": "- Die Welt 2026-27 hat noch keine Nationalmannschaften: In dieser Karriere bietet keine Nationalmannschaft einen Job an (geplant für die kommende 4.2)."
- },
- "e7458fdd0549": {
-  "en": "- The World 2026-27 has no national teams yet (planned for the upcoming 4.2).",
-  "t": "- Die Welt 2026-27 hat noch keine Nationalmannschaften (geplant für die kommende 4.2)."
  },
  "f030b036d9c6": {
   "en": "- **European places**: in some seasons one of the 108 European places goes to a club of a different association from the one the access list names. The number of clubs in each European cup and the title holders' places are always right (fixed in the upcoming 4.0.1).",
@@ -734,5 +718,29 @@
  "c224d6e50922": {
   "en": "- **Tables in colour**: in each state's first stage the places that go on are painted (green P.OFF; light blue for the clubs that skip a knockout round and go straight to a later one), and in a one-group state the relegated places gray; with several groups each club's zone is its place in its own group. Declared: in the states with several groups relegation is decided on the overall table, so it is not painted in the groups.",
   "t": "- **Tabellen in Farbe**: In der ersten Phase jedes Bundesstaats sind die Plätze gefärbt, die weiterkommen (grün P.OFF; hellblau für die Vereine, die eine K.-o.-Runde überspringen und später einsteigen), und in einem Staat mit nur einer Gruppe die Abstiegsplätze grau; bei mehreren Gruppen richtet sich die Zone jedes Vereins nach seinem Platz in der eigenen Gruppe. Erklärt: In den Staaten mit mehreren Gruppen wird der Abstieg in der Gesamttabelle entschieden und deshalb in den Gruppen nicht gefärbt."
+ },
+ "df496135b169": {
+  "en": "- The World 2026-27 has no national teams yet: no national team offers a job in this career (planned for 4.2).",
+  "t": "- Die Welt 2026-27 hat noch keine Nationalmannschaften: In dieser Karriere bietet keine Nationalmannschaft einen Job an (geplant für 4.2)."
+ },
+ "65b1a998739e": {
+  "en": "- The World 2026-27 has no national teams yet (planned for 4.2).",
+  "t": "- Die Welt 2026-27 hat noch keine Nationalmannschaften (geplant für 4.2)."
+ },
+ "f001d50e2f74": {
+  "en": "- The World 2026-27 has no national teams yet: no national team offers a job in this career (planned for the upcoming 5.0).",
+  "t": "- Die Welt 2026-27 hat noch keine Nationalmannschaften: In dieser Karriere bietet keine Nationalmannschaft einen Job an (geplant für die kommende 5.0)."
+ },
+ "b224ff480726": {
+  "en": "- The World 2026-27 has no national teams yet (planned for the upcoming 5.0).",
+  "t": "- Die Welt 2026-27 hat noch keine Nationalmannschaften (geplant für die kommende 5.0)."
+ },
+ "a782f0cb11fb": {
+  "en": "- The World 2026-27 has no national teams yet: no national team offers a job in this career (planned for the upcoming 4.2).",
+  "t": "- Die Welt 2026-27 hat noch keine Nationalmannschaften: In dieser Karriere bietet keine Nationalmannschaft einen Job an (geplant für die kommende 4.2)."
+ },
+ "e7458fdd0549": {
+  "en": "- The World 2026-27 has no national teams yet (planned for the upcoming 4.2).",
+  "t": "- Die Welt 2026-27 hat noch keine Nationalmannschaften (geplant für die kommende 4.2)."
  }
 }
