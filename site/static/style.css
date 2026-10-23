@@ -264,3 +264,6 @@ main, .doc li, .doc p, .steps li, .panel, .saves td, code { overflow-wrap: anywh
   background: #5a0a0a; border: 3px solid #ff5a4a; box-shadow: 4px 4px 0 var(--shadow); }
 .warn b { flex: none; width: 34px; height: 34px; display: grid; place-items: center; background: #ffd84a; color: #5a0a0a; font-size: 22px; text-shadow: none; }
 .warn p { margin: 0; font-weight: 600; color: #fff; }
+/* the corner sticker never leaves the page: keep it inside, and let its long word shrink */
+@media (min-width: 861px) { .soon-sticker { right: 12px; top: -10px; max-width: min(380px, 38vw); } }
+.soon-sticker b { white-space: normal; font-size: clamp(18px, 2.4vw, 34px); overflow-wrap: anywhere; }
