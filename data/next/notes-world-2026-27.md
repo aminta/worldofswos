@@ -295,19 +295,37 @@ Cearense, Pernambucano, Alagoano and Mato-Grossense.
 
 *League tables in colour*
 - **Every league table shows its end-of-season zones**, as on TV: Champions League (or the European Cup) and direct
-  promotion light blue; Europa League (or the UEFA Cup), promotion play-offs and European play-offs for a Europa
-  League place green; Conference League dark blue, a European play-off for a Conference League place too (Austria,
-  Denmark, the Netherlands, Northern Ireland, Bulgaria); play-out orange; relegation gray. The places follow the real rules: the UEFA 2026/27 access list by
+  promotion light blue; Europa League (or the UEFA Cup) and promotion play-offs green; Conference League dark blue;
+  the places of a European play-off (Austria's title group 5th and qualification group's top two, the Netherlands,
+  Denmark, Northern Ireland, Bulgaria ...) green P.OFF with their own legend entry, not the cup's colour (the cup is
+  decided by the play-off; a table can show up to six legend boxes, e.g. the Netherlands: CL, EL, CONF, P.OFF, P.OUT,
+  RETR); play-out orange; relegation gray. The places follow the real rules: the UEFA 2026/27 access list by
   association rank (qualifying rounds included), and each league's own promotions, relegations and play-offs (Serie
   B 3rd-8th and 16th-17th, the Serie C groups 2nd-10th), every kind of play-off included (promotion, title,
   placement: green P.OFF; the Serie D groups 2nd-5th, the Czech 7th-10th, the A-League, the MLS, Costa Rica ...). One
   legend, always in the same place, top left above the table header, names the colours each table uses: leagues,
   split leagues, long tables, the continental cups' groups (in their title row: the group headers fill the row below)
   and the Brazilian state championships alike. In split and group tables each club's zone is its place in its own
-  group. In the Europe 1984-85 world too.
+  group. In the Europe 1984-85 world too. Before a table's first match day the clubs are still in their initial order,
+  so the table has no colours and no legend yet; the leagues whose groups are known from the start (the MLS
+  conferences, Argentina's zones, Panama's conferences) show their group headers from day one. Your club's row keeps
+  its name box without a frame; a thin black border appears only when the box has the same colour as the zone.
   In the World 2026-27 the European places in every season come from the engine's own UEFA ranking (the one a year
   old, as UEFA's access list uses) and the real 2026/27 access list; the European Performance Spots and the title
-  holders' rebalancing are decided at the season end and are not coloured in advance.
+  holders' rebalancing are decided at the season end and are not coloured in advance. Liechtenstein, which has no
+  national league of its own, enters by its own access-list row: its cup winner goes to the Conference League first
+  qualifying round wherever the association ranks.
+- **WINNERS page**: in a competition's STAT menu, WINNERS lists the titles the league decides beyond its table
+  (play-off winners, the Apertura / Clausura champions, a state championship's champion) with the club that won each
+  this season: TO BE PLAYED before it starts, IN PROGRESS while it is played; the titles decided at the season end
+  are listed too, and after the season end the page shows last season's winners. A title play-off reads
+  "PLAYOFFS - <title>" (PLAY-OFFS in French; e.g. PLAYOFFS - MLS CUP), and officially titled intermediate winners
+  are listed (the MLS's Eastern and Western Conference champions; the MLS's league line is the SUPPORTERS' SHIELD).
+  The Serie D's Poule Scudetto is listed too (PLAYOFF - SCUDETTO SERIE D in the Italian game: IN PROGRESS, then its
+  champion). After the season end, last season's page shows the division your club played in, also after a promotion
+  or relegation (e.g. a club promoted from Serie D girone A through the Poule sees SERIE D GIRONE A and the Poule's
+  winner). In 4 languages (VINCITORI / DA
+  GIOCARE / IN CORSO, VAINQUEURS / A JOUER / EN COURS, SIEGER / NOCH OFFEN / IM GANGE).
 - **Continental places outside Europe**: the top flights of the other confederations colour their real club-cup
   places: light blue for the first cup (Copa Libertadores, Concacaf Champions Cup, AFC Champions League Elite, CAF
   Champions League, OFC Champions League), green for the second (Copa Sudamericana, AFC Champions League Two, CAF
@@ -477,9 +495,12 @@ Cearense, Pernambucano, Alagoano and Mato-Grossense.
 - **One knockout rule for the mod's play-offs** (Serie B, Serie C and Serie D play-offs and the other leagues'
   play-offs the mod plays): a single match level after 90 minutes goes to extra time, then the better-placed club
   goes through; two-legged ties as their real rules. No replays anywhere, and no replay dates in the calendar.
+- **Quick season end**: at the end of a season the other countries' competitions are simulated without being shown one by one (your own country's competitions and the European cups still show, as in the original game), with a progress line at the bottom of the screen (SIMULATING OTHER COUNTRIES... n/N). The original game shows every competition of every country
+  for a moment; with the World 2026-27's 264 competitions that took minutes on a real 486. The results are the same.
 - **A Serie D club plays only what its real club plays**: its group (and its play-off or play-out) and the Coppa
   Italia Serie D. The national Coppa Italia is still played for its winner but is not in a Serie D club's calendar
-  or VISUAL. COMPETIZ.
+  or VISUAL. COMPETIZ.; in general a national cup is listed among your competitions and in your calendar only if your
+  club takes part in it.
 - **European places**: in some seasons one of the 108 European places goes to a club of a different association
   from the one the access list names. The number of clubs in each European cup and the title holders' places are
   always right (fixed in the upcoming 4.0.1).
@@ -606,9 +627,13 @@ Cearense, Pernambucano, Alagoano and Mato-Grossense.
 **Known limits**
 - After a job offer letter in a career, a few stray pixels can appear on the menu buttons until the next match
   reloads the menu graphics: cosmetic only, saves are not affected (fixed in the upcoming 4.0.1).
-- At the end of a season the game finishes every competition still open and shows each one in turn: in this world
-  there are many more of them than in the original game, so the sequence takes longer (about a second each on a fast
-  486; the time is the original game's own menu drawing, not the mod's code).
+- National cups of the World 2026-27 keep their 2026-27 entrants every season: a club promoted or relegated into another
+  division doesn't join that division's cup (e.g. Mestre promoted to Serie C doesn't play the Coppa Italia Serie C);
+  the upcoming 4.0.1 draws each season's entrants from the current divisions.
+- In Serie D groups with an odd number of clubs, a club that rests on the last match day does not play its Poule
+  Scudetto or group play-off: it is decided by simulation (fixed in the upcoming 4.0.1).
+- A few very long match-screen titles (a long competition name + a long round + the leg) can still be cut at the
+  game's 40 characters; the upcoming 4.0.1 checks and fits every title.
 - The World 2026-27 has no national teams yet: no national team offers a job in this career (planned for the upcoming 5.0).
 - A career saved with one language's executable and loaded with another keeps the first language's competition
   titles, and its league tables show no zone colours, no FORMAT page and no overall table (annual table / Supporters'
@@ -641,7 +666,9 @@ Cearense, Pernambucano, Alagoano and Mato-Grossense.
 - Europe 1984-85 career: league tables in colour (see above), each competition's FORMAT page with its table colours,
   the European cups' titles without a leading space.
 - Long competition titles no longer overwrite the game's memory (the title field holds 34 characters): they are
-  shortened to their usual short form, which also fixes the classic season DDR 1988-89's European cup titles.
+  shortened to their usual short form, which also fixes the classic season DDR 1988-89's European cup titles. A
+  competition name longer than the VISUAL. COMPETIZ. button (160 px) is shortened to fit, keeping the words that tell
+  it apart (e.g. ARABIA SAUDITA PRO LEAGUE, ITALIA PLAY-OUT SERIE C GIR. A), never two equal names in one country.
 - CLASSIC CAREERS no longer lists ALBANIA as an entry of its own (since 3.0 the first country of the Europe 1984-85
   world also appeared next to the world).
 - The 1996-97 game as it really was (the real 1996-97 groups, Supercup, Intertoto, leagues and cups) comes in 4.1.
@@ -651,6 +678,9 @@ Cearense, Pernambucano, Alagoano and Mato-Grossense.
   .harddisk folder inside the app) and the patcher recognises the version, keeps the files it changes in
   MOD_BACKUP\4.0 and writes the mod in place; from the CD it copies the game into a new folder first. Run it again
   to update. The page is in 4 languages (IT / EN / FR / DE); the manual download stays for other browsers.
+  If the game is in Program Files (GOG Galaxy's default folder), the browser will not open that folder: copy the game
+  folder elsewhere (e.g. Documents), patch the copy, then copy its contents back over the original (Windows asks for
+  administrator permission: accept) and play as usual; or use the manual mode.
 - The patcher upgrades every published version (1.0.1 to 3.3.6, CD and GOG, also the English SWOS++ version) and the
   original game, checking every file before and after (an old file goes back to the original, then to 4.0). Drop your
   executable and DATA files as usual: the patcher writes every file the World 2026-27 needs (its team files and
@@ -658,8 +688,10 @@ Cearense, Pernambucano, Alagoano and Mato-Grossense.
   and the table colours in 4 languages) and the changed originals (the executables, TEAM files, the renamed
   EUROCUP.TMD, UEFACUP.TMD and POOLPLYR.DAT). Copy the new files into DATA too, or use the one-click install. The patcher page now needs a recent browser (Chrome 103+,
   Safari 16.4+, Firefox 113+).
-- Saves: careers of the 1996-97 game saved with 3.3.6 and earlier load and play on. Careers of the Europe 1984-85 world saved with
-  3.x load and play on too. 
+- Saves: careers saved with the original game and with every earlier version of the mod (1.x, 2.x, 3.x: 1996-97 and Europe
+  1984-85) load and play on.
+
+Thanks to DaniSwos for the Europe 1984-85 database, to Marco for the reports, to Roman for the install feedback and to Gianmarco for the Program Files report.
 
 ## Italiano
 
@@ -963,9 +995,11 @@ Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
 
 *Classifiche a colori*
 - **Ogni classifica di campionato mostra le sue zone di fine stagione**, come in TV: Champions League (o Coppa dei
-  Campioni) e promozione diretta in azzurro; Europa League (o Coppa UEFA), play-off promozione e spareggi europei per
-  un posto in Europa League in verde; Conference League in blu scuro, anche lo spareggio europeo che vale un posto in
-  Conference League (Austria, Danimarca, Olanda, Irlanda del Nord, Bulgaria); play-out in arancione; retrocessione in grigio. I posti seguono le regole
+  Campioni) e promozione diretta in azzurro; Europa League (o Coppa UEFA) e play-off promozione in verde; Conference
+  League in blu scuro; i posti di uno spareggio europeo (la 5ª del gruppo titolo e le prime due del gruppo di
+  qualificazione in Austria, l'Olanda, la Danimarca, l'Irlanda del Nord, la Bulgaria ...) in verde P.OFF con la loro
+  voce di legenda, non nel colore della coppa (la coppa la decide lo spareggio; una classifica può mostrare fino a sei
+  riquadri di legenda, per esempio l'Olanda: CL, EL, CONF, P.OFF, P.OUT, RETR); play-out in arancione; retrocessione in grigio. I posti seguono le regole
   vere: la lista d'accesso UEFA 2026/27 secondo il ranking delle federazioni (preliminari compresi) e le promozioni,
   retrocessioni e spareggi di ogni campionato (Serie B 3ª-8ª e 16ª-17ª, i gironi di Serie C 2ª-10ª), tutti i tipi di
   play-off compresi (promozione, scudetto, piazzamento: verde P.OFF; i gironi di Serie D 2ª-5ª, la Rep. Ceca 7ª-10ª,
@@ -973,10 +1007,28 @@ Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
   l'intestazione della classifica, indica i colori usati: campionati, campionati divisi, classifiche lunghe, gironi
   delle coppe continentali (nella riga del titolo: la riga sotto è occupata dalle intestazioni dei gironi) e
   campionati statali brasiliani. Nelle classifiche divise e a gironi la zona di ogni club è il suo posto nel suo
-  girone. Anche nel mondo Europa 1984-85.
+  girone. Anche nel mondo Europa 1984-85. Prima della prima giornata di una classifica i club sono ancora nel loro
+  ordine iniziale, quindi la classifica non ha ancora colori né legenda; i campionati con i gruppi noti dall'inizio
+  (le conference della MLS, le zone dell'Argentina, le conference di Panama) mostrano le intestazioni dei gruppi dal
+  primo giorno. La riga del tuo club tiene il riquadro del nome senza cornice; un sottile bordo nero compare solo
+  quando il riquadro ha lo stesso colore della zona.
   Nel Mondo 2026-27 i posti europei di ogni stagione vengono dal ranking UEFA del gioco (quello dell'anno prima,
   come nella access list UEFA) e dalla access list vera 2026/27; gli European Performance Spots e i ritocchi per i
-  detentori dei titoli si decidono a fine stagione e non vengono colorati in anticipo.
+  detentori dei titoli si decidono a fine stagione e non vengono colorati in anticipo. Il Liechtenstein, che non ha un
+  campionato nazionale suo, entra con la sua riga della lista d'accesso: la vincitrice della coppa va al primo turno
+  preliminare di Conference League qualunque sia il posto della federazione nel ranking.
+- **Pagina VINCITORI**: nel menu STAT di una competizione, VINCITORI elenca i titoli che il campionato assegna oltre
+  alla classifica (le vincitrici dei play-off, i campioni di Apertura e Clausura, il campione di uno statale) con il
+  club che li ha vinti in questa stagione: DA GIOCARE prima che inizi, IN CORSO mentre si gioca; ci sono anche i
+  titoli che si decidono a fine stagione, e dopo la fine della stagione la pagina mostra le vincitrici della stagione
+  appena conclusa. Un play-off per il titolo si legge "PLAYOFF - <titolo>" (per esempio PLAYOFF - MLS CUP), e sono
+  elencati anche i titoli intermedi ufficiali (CAMPIONE EASTERN CONFERENCE e CAMPIONE WESTERN CONFERENCE della MLS;
+  per la MLS la riga del campionato è il SUPPORTERS' SHIELD). C'è anche la Poule Scudetto della Serie D (PLAYOFF -
+  SCUDETTO SERIE D: IN CORSO, poi la campionessa). Dopo la fine della stagione, la pagina della stagione appena
+  conclusa mostra la divisione in cui il tuo club ha giocato, anche dopo una promozione o una retrocessione (per
+  esempio un club promosso dalla Serie D girone A tramite la Poule vede SERIE D GIRONE A e la vincitrice della Poule).
+  In 4 lingue (WINNERS / TO BE PLAYED / IN PROGRESS, VAINQUEURS / A JOUER / EN COURS, SIEGER /
+  NOCH OFFEN / IM GANGE).
 - **Posti continentali fuori dall'Europa**: le massime serie delle altre confederazioni colorano i loro posti veri
   nelle coppe per club: azzurro per la prima coppa (Copa Libertadores, Concacaf Champions Cup, AFC Champions League
   Elite, CAF Champions League, OFC Champions League), verde per la seconda (Copa Sudamericana, AFC Champions League
@@ -1158,9 +1210,12 @@ Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
   degli altri campionati giocati dalla mod): una gara unica in parità dopo 90 minuti va ai supplementari, poi passa
   la meglio piazzata; andata e ritorno secondo le regole vere. Nessuna ripetizione, e nessuna data di ripetizione in
   calendario.
+- **Fine stagione veloce**: a fine stagione le competizioni delle altre nazioni vengono simulate senza essere mostrate una per una (le competizioni della tua nazione e le coppe europee si vedono ancora, come nel gioco originale), con una riga di avanzamento in fondo allo schermo (SIMULAZIONE ALTRE NAZIONI... n/N). Il gioco originale mostra per un attimo ogni competizione di
+  ogni nazione; con le 264 competizioni del Mondo 2026-27 su un 486 vero servivano minuti. I risultati sono gli stessi.
 - **Un club di Serie D gioca solo quello che gioca il club vero**: il suo girone (e i suoi play-off o play-out) e la
   Coppa Italia Serie D. La Coppa Italia nazionale si gioca comunque per la sua vincitrice, ma non compare nel
-  calendario né in VISUAL. COMPETIZ. di un club di Serie D.
+  calendario né in VISUAL. COMPETIZ. di un club di Serie D; in generale una coppa nazionale compare tra le tue
+  competizioni e nel tuo calendario solo se il tuo club la gioca.
 - **Posti europei**: in alcune stagioni uno dei 108 posti europei va a un club di una federazione diversa da quella
   indicata dalla lista d'accesso. Il numero di club di ogni coppa europea e i posti delle detentrici sono sempre
   giusti (corretto nella prossima 4.0.1).
@@ -1295,9 +1350,13 @@ Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
 - Dopo una lettera di offerta di lavoro in carriera, sui pulsanti dei menu possono comparire alcuni pixel sporchi
   finché la partita successiva non ricarica la grafica dei menu: solo estetico, i salvataggi non ne risentono
   (corretto nella prossima 4.0.1).
-- A fine stagione il gioco conclude tutte le competizioni ancora aperte e le mostra una dopo l'altra: in questo mondo
-  sono molte più che nel gioco originale, quindi la sequenza dura di più (circa un secondo ciascuna su un 486 veloce;
-  il tempo è quello del disegno dei menu del gioco originale, non del codice della mod).
+- Le coppe nazionali del Mondo 2026-27 tengono ogni stagione le partecipanti del 2026-27: una squadra promossa o
+  retrocessa non entra nella coppa della nuova categoria (es. il Mestre promosso in Serie C non gioca la Coppa Italia
+  Serie C); la prossima 4.0.1 ricava ogni stagione le partecipanti dalle categorie del momento.
+- Nei gironi di Serie D con un numero dispari di squadre, una squadra che riposa all'ultima giornata non gioca la
+  Poule Scudetto o il play-off del girone: vengono simulati (corretto nella prossima 4.0.1).
+- Alcuni titoli molto lunghi della schermata della partita (un nome di competizione lungo + un turno lungo + la gara)
+  possono ancora essere tagliati ai 40 caratteri del gioco; la prossima 4.0.1 controlla e adatta ogni titolo.
 - Il Mondo 2026-27 non ha ancora le nazionali: in questa carriera nessuna nazionale offre un lavoro (previste nella
   prossima 5.0).
 - Una carriera salvata con l'eseguibile di una lingua e caricata con quello di un'altra tiene i titoli delle
@@ -1343,7 +1402,9 @@ Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
   classifica, i titoli delle coppe europee senza lo spazio iniziale.
 - I titoli lunghi delle competizioni non sovrascrivono più la memoria del gioco (il campo del titolo ha 34
   caratteri): vengono accorciati alla loro forma breve abituale, e questo corregge anche i titoli delle coppe europee
-  della stagione storica DDR 1988-89.
+  della stagione storica DDR 1988-89. Un nome di competizione più lungo del pulsante di VISUAL. COMPETIZ. (160 px)
+  viene accorciato per starci, tenendo le parole che lo distinguono (per esempio ARABIA SAUDITA PRO LEAGUE, ITALIA
+  PLAY-OUT SERIE C GIR. A), mai due nomi uguali nella stessa nazione.
 - CARR. STORICHE non elenca più ALBANIA come voce a sé (dalla 3.0 la prima nazione del mondo Europa 1984-85
   compariva anche accanto al mondo).
 - Il gioco 1996-97 com'era davvero (i gironi veri 1996-97, Supercoppa, Intertoto, campionati e coppe) arriva nella 4.1.
@@ -1353,6 +1414,10 @@ Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
   Mac GOG: la cartella .harddisk dentro l'app) e il patcher riconosce la versione, mette i file che cambia in
   MOD_BACKUP\4.0 e scrive la mod al loro posto; dal CD copia prima il gioco in una cartella nuova. Rilancialo per
   aggiornare. La pagina è in 4 lingue (IT / EN / FR / DE); il download a mano resta per gli altri browser.
+  Se il gioco è in Programmi (la cartella predefinita di GOG Galaxy), il browser non apre quella cartella: copia la
+  cartella del gioco altrove (per esempio in Documenti), applica la patch alla copia, poi ricopia il suo contenuto
+  sopra l'originale (Windows chiede il permesso di amministratore: accetta) e gioca come sempre; oppure usa la
+  modalità manuale.
 - Il patcher aggiorna tutte le versioni pubblicate (dalla 1.0.1 alla 3.3.6, CD e GOG, anche la versione inglese con
   SWOS++) e il gioco originale, controllando ogni file prima e dopo (un file vecchio torna all'originale, poi alla
   4.0). Trascina come sempre l'eseguibile e i file di DATA: il patcher scrive tutti i file che servono al Mondo
@@ -1361,5 +1426,7 @@ Baiano, Cearense, Pernambucano, Alagoano e Mato-Grossense.
   modificati (gli eseguibili, i file TEAM, i rinominati EUROCUP.TMD, UEFACUP.TMD e POOLPLYR.DAT). Copia anche i file
   nuovi in DATA, oppure usa l'installazione con un clic. La pagina del patcher ora
   richiede un browser recente (Chrome 103+, Safari 16.4+, Firefox 113+).
-- Salvataggi: le carriere del gioco 1996-97 salvate con la 3.3.6 e precedenti si caricano e continuano. Anche le carriere del mondo
-  Europa 1984-85 salvate con la 3.x si caricano e continuano. 
+- Salvataggi: le carriere salvate con il gioco originale e con ogni versione precedente della mod (1.x, 2.x, 3.x: 1996-97 ed Europa
+  1984-85) si caricano e continuano.
+
+Grazie a DaniSwos per il database Europa 1984-85, a Marco per le segnalazioni, a Roman per i consigli sull'installazione e a Gianmarco per la segnalazione sulla cartella Programmi.

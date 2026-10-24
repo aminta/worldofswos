@@ -742,5 +742,297 @@
  "e7458fdd0549": {
   "en": "- The World 2026-27 has no national teams yet (planned for the upcoming 4.2).",
   "t": "- Le Monde 2026-27 n'a pas encore de sélections nationales (prévu pour la prochaine 4.2)."
+ },
+ "fcf6ca637fbb": {
+  "en": "Football competitions, global and local, that no other game has, has ever had, or probably ever will.",
+  "t": "Des compétitions de football, mondiales et locales, qu'aucun autre jeu n'a, n'a jamais eues, ni n'aura probablement jamais."
+ },
+ "af14f8656b30": {
+  "en": "- **Every league table shows its end-of-season zones**, as on TV: Champions League (or the European Cup) and direct promotion light blue; Europa League (or the UEFA Cup) and promotion play-offs green; Conference League dark blue; the places of a European play-off (Austria's title group 5th and qualification group's top two, the Netherlands, Denmark, Northern Ireland, Bulgaria ...) green P.OFF with their own legend entry, not the cup's colour (the cup is decided by the play-off; a table can show up to six legend boxes, e.g. the Netherlands: CL, EL, CONF, P.OFF, P.OUT, RETR); play-out orange; relegation gray. The places follow the real rules: the UEFA 2026/27 access list by association rank (qualifying rounds included), and each league's own promotions, relegations and play-offs (Serie B 3rd-8th and 16th-17th, the Serie C groups 2nd-10th), every kind of play-off included (promotion, title, placement: green P.OFF; the Serie D groups 2nd-5th, the Czech 7th-10th, the A-League, the MLS, Costa Rica ...). One legend, always in the same place, top left above the table header, names the colours each table uses: leagues, split leagues, long tables, the continental cups' groups (in their title row: the group headers fill the row below) and the Brazilian state championships alike. In split and group tables each club's zone is its place in its own group. In the Europe 1984-85 world too. Before a table's first match day the clubs are still in their initial order, so the table has no colours and no legend yet; the leagues whose groups are known from the start (the MLS conferences, Argentina's zones, Panama's conferences) show their group headers from day one. Your club's row keeps its name box without a frame; a thin black border appears only when the box has the same colour as the zone. In the World 2026-27 the European places in every season come from the engine's own UEFA ranking (the one a year old, as UEFA's access list uses) and the real 2026/27 access list; the European Performance Spots and the title holders' rebalancing are decided at the season end and are not coloured in advance. Liechtenstein, which has no national league of its own, enters by its own access-list row: its cup winner goes to the Conference League first qualifying round wherever the association ranks.",
+  "t": "- **Chaque classement affiche ses zones de fin de saison**, comme à la télévision : Ligue des champions (ou Coupe des clubs champions européens) et promotion directe en bleu clair ; Ligue Europa (ou Coupe UEFA) et barrages de promotion en vert ; Ligue Conférence en bleu foncé ; les places d'un barrage européen (5e du groupe titre de l'Autriche et deux premiers du groupe de qualification, Pays-Bas, Danemark, Irlande du Nord, Bulgarie ...) en P.OFF vert avec leur propre entrée dans la légende, pas la couleur de la coupe (la coupe se joue en barrage ; un classement peut afficher jusqu'à six cases de légende, p. ex. les Pays-Bas : CL, EL, CONF, P.OFF, P.OUT, RETR) ; barrage de maintien (play-out) en orange ; relégation en gris. Les places suivent les règles réelles : la liste d'accès UEFA 2026/27 par classement des associations (tours préliminaires compris) et les montées, descentes et barrages propres à chaque championnat (Serie B 3e-8e et 16e-17e, groupes de Serie C 2e-10e), tous les types de barrages compris (promotion, titre, classement : P.OFF vert ; groupes de Serie D 2e-5e, 7e-10e tchèque, A-League, MLS, Costa Rica ...). Une seule légende, toujours au même endroit, en haut à gauche au-dessus de l'en-tête du tableau, nomme les couleurs de chaque classement : championnats, championnats à phase finale scindée, longs classements, groupes des coupes continentales (dans leur ligne de titre : les en-têtes de groupe remplissent la ligne en dessous) et championnats d'État brésiliens. Dans les classements scindés et en groupes, la zone de chaque club est sa place dans son propre groupe. Dans le monde Europe 1984-85 aussi. Avant la première journée d'un classement, les clubs sont encore dans leur ordre initial : le tableau n'a donc ni couleurs ni légende ; les championnats dont les groupes sont connus dès le départ (conférences de la MLS, zones de l'Argentine, conférences du Panama) affichent leurs en-têtes de groupe dès le premier jour. La ligne de votre club garde sa case de nom sans cadre ; une fine bordure noire n'apparaît que si la case a la même couleur que la zone. Dans le Monde 2026-27, les places européennes de chaque saison viennent du classement UEFA propre au moteur (celui d'il y a un an, comme dans la liste d'accès de l'UEFA) et de la liste d'accès réelle 2026/27 ; les places de performance européenne et le rééquilibrage des tenants du titre se décident en fin de saison et ne sont pas colorés à l'avance. Le Liechtenstein, qui n'a pas de championnat national, entre par sa propre ligne de la liste d'accès : son vainqueur de coupe va au premier tour préliminaire de la Ligue Conférence quel que soit le rang de l'association."
+ },
+ "39cb39b43623": {
+  "en": "- **WINNERS page**: in a competition's STAT menu, WINNERS lists the titles the league decides beyond its table (play-off winners, the Apertura / Clausura champions, a state championship's champion) with the club that won each this season: TO BE PLAYED before it starts, IN PROGRESS while it is played; the titles decided at the season end are listed too, and after the season end the page shows last season's winners. A title play-off reads \"PLAYOFFS - <title>\" (PLAY-OFFS in French; e.g. PLAYOFFS - MLS CUP), and officially titled intermediate winners are listed (the MLS's Eastern and Western Conference champions; the MLS's league line is the SUPPORTERS' SHIELD). The Serie D's Poule Scudetto is listed too (PLAYOFF - SCUDETTO SERIE D in the Italian game: IN PROGRESS, then its champion). After the season end, last season's page shows the division your club played in, also after a promotion or relegation (e.g. a club promoted from Serie D girone A through the Poule sees SERIE D GIRONE A and the Poule's winner). In 4 languages (VINCITORI / DA GIOCARE / IN CORSO, VAINQUEURS / A JOUER / EN COURS, SIEGER / NOCH OFFEN / IM GANGE).",
+  "t": "- **Page VAINQUEURS** : dans le menu STAT d'une compétition, VAINQUEURS liste les titres que le championnat décide en plus de son classement (vainqueurs de barrages, champions d'Apertura / de Clausura, champion d'un championnat d'État) avec le club qui a gagné chacun cette saison : A JOUER avant son début, EN COURS pendant qu'il se joue ; les titres décidés en fin de saison sont listés aussi, et après la fin de saison la page montre les vainqueurs de la saison précédente. Un barrage pour le titre s'écrit « PLAY-OFFS - <titre> » (p. ex. PLAY-OFFS - MLS CUP) et les vainqueurs intermédiaires à titre officiel sont listés (champions des conférences Est et Ouest de la MLS ; la ligne du championnat MLS est le SUPPORTERS' SHIELD). La Poule Scudetto de la Serie D est listée aussi (PLAYOFF - SCUDETTO SERIE D dans le jeu italien : EN COURS, puis son champion). Après la fin de saison, la page de la saison précédente montre la division où a joué votre club, aussi après une promotion ou une relégation (p. ex. un club promu de la Serie D girone A par la Poule voit SERIE D GIRONE A et le vainqueur de la Poule). En 4 langues (VINCITORI / DA GIOCARE / IN CORSO, VAINQUEURS / A JOUER / EN COURS, SIEGER / NOCH OFFEN / IM GANGE)."
+ },
+ "618687d22d03": {
+  "en": "- **Quick season end**: at the end of a season the other countries' competitions are simulated without being shown one by one (your own country's competitions and the European cups still show, as in the original game), with a progress line at the bottom of the screen (SIMULATING OTHER COUNTRIES... n/N). The original game shows every competition of every country for a moment; with the World 2026-27's 264 competitions that took minutes on a real 486. The results are the same.",
+  "t": "- **Fin de saison rapide** : à la fin d'une saison, les compétitions des autres pays sont simulées sans être montrées une par une (les compétitions de votre pays et les coupes européennes s'affichent toujours, comme dans le jeu original), avec une ligne de progression en bas de l'écran (SIMULATING OTHER COUNTRIES... n/N). Le jeu original montre un instant chaque compétition de chaque pays ; avec les 264 compétitions du Monde 2026-27, cela prenait des minutes sur un vrai 486. Les résultats sont les mêmes."
+ },
+ "10de4fd9a6bb": {
+  "en": "- **A Serie D club plays only what its real club plays**: its group (and its play-off or play-out) and the Coppa Italia Serie D. The national Coppa Italia is still played for its winner but is not in a Serie D club's calendar or VISUAL. COMPETIZ.; in general a national cup is listed among your competitions and in your calendar only if your club takes part in it.",
+  "t": "- **Un club de Serie D ne joue que ce que joue son vrai club** : son groupe (et son barrage de promotion ou de maintien) et la Coupe d'Italie Serie D. La Coupe d'Italie nationale se joue toujours pour son vainqueur mais ne figure ni dans le calendrier ni dans VISUAL. COMPETIZ. d'un club de Serie D ; en général, une coupe nationale n'est listée parmi vos compétitions et dans votre calendrier que si votre club y participe."
+ },
+ "8f523839b2b0": {
+  "en": "- National cups of the World 2026-27 keep their 2026-27 entrants every season: a club promoted or relegated into another division doesn't join that division's cup (e.g. Mestre promoted to Serie C doesn't play the Coppa Italia Serie C); the upcoming 4.0.1 draws each season's entrants from the current divisions.",
+  "t": "- Les coupes nationales du Monde 2026-27 gardent leurs participants 2026-27 chaque saison : un club promu ou relégué dans une autre division ne rejoint pas la coupe de cette division (p. ex. Mestre, promu en Serie C, ne joue pas la Coupe d'Italie Serie C) ; la prochaine 4.0.1 tire les participants de chaque saison des divisions actuelles."
+ },
+ "68792ad83df7": {
+  "en": "- In Serie D groups with an odd number of clubs, a club that rests on the last match day does not play its Poule Scudetto or group play-off: it is decided by simulation (fixed in the upcoming 4.0.1).",
+  "t": "- Dans les groupes de Serie D à nombre impair de clubs, un club qui se repose lors de la dernière journée ne joue pas sa Poule Scudetto ni son barrage de groupe : ils sont décidés par simulation (corrigé dans la prochaine 4.0.1)."
+ },
+ "1645e00d1470": {
+  "en": "- A few very long match-screen titles (a long competition name + a long round + the leg) can still be cut at the game's 40 characters; the upcoming 4.0.1 checks and fits every title.",
+  "t": "- Quelques titres d'écran de match très longs (un long nom de compétition + un long tour + le match aller/retour) peuvent encore être coupés aux 40 caractères du jeu ; la prochaine 4.0.1 contrôle et ajuste chaque titre."
+ },
+ "d90b85fcd6b2": {
+  "en": "- Long competition titles no longer overwrite the game's memory (the title field holds 34 characters): they are shortened to their usual short form, which also fixes the classic season DDR 1988-89's European cup titles. A competition name longer than the VISUAL. COMPETIZ. button (160 px) is shortened to fit, keeping the words that tell it apart (e.g. ARABIA SAUDITA PRO LEAGUE, ITALIA PLAY-OUT SERIE C GIR. A), never two equal names in one country.",
+  "t": "- Les longs titres de compétition n'écrasent plus la mémoire du jeu (le champ du titre contient 34 caractères) : ils sont raccourcis à leur forme courte habituelle, ce qui corrige aussi les titres des coupes européennes de la saison classique RDA 1988-89. Un nom de compétition plus long que le bouton VISUAL. COMPETIZ. (160 px) est raccourci pour y tenir, en gardant les mots qui le distinguent (p. ex. ARABIA SAUDITA PRO LEAGUE, ITALIA PLAY-OUT SERIE C GIR. A), jamais deux noms identiques dans un même pays."
+ },
+ "13f6941ef31d": {
+  "en": "- **One-click install** (Chrome or Edge): choose the game folder (GOG, CD install, eXoDOS / DOSBox; Mac GOG: the .harddisk folder inside the app) and the patcher recognises the version, keeps the files it changes in MOD_BACKUP\\4.0 and writes the mod in place; from the CD it copies the game into a new folder first. Run it again to update. The page is in 4 languages (IT / EN / FR / DE); the manual download stays for other browsers. If the game is in Program Files (GOG Galaxy's default folder), the browser will not open that folder: copy the game folder elsewhere (e.g. Documents), patch the copy, then copy its contents back over the original (Windows asks for administrator permission: accept) and play as usual; or use the manual mode.",
+  "t": "- **Installation en un clic** (Chrome ou Edge) : choisissez le dossier du jeu (GOG, installation CD, eXoDOS / DOSBox ; GOG sur Mac : le dossier .harddisk dans l'application) et le patcher reconnaît la version, garde les fichiers qu'il modifie dans MOD_BACKUP\\4.0 et écrit le mod sur place ; depuis le CD, il copie d'abord le jeu dans un nouveau dossier. Relancez-le pour mettre à jour. La page est en 4 langues (IT / EN / FR / DE) ; le téléchargement manuel reste disponible pour les autres navigateurs. Si le jeu est dans Program Files (le dossier par défaut de GOG Galaxy), le navigateur n'ouvrira pas ce dossier : copiez le dossier du jeu ailleurs (p. ex. Documents), patchez la copie, puis recopiez son contenu sur l'original (Windows demande l'autorisation de l'administrateur : acceptez) et jouez comme d'habitude ; ou utilisez le mode manuel."
+ },
+ "81f401eee28b": {
+  "en": "- Saves: careers saved with the original game and with every earlier version of the mod (1.x, 2.x, 3.x: 1996-97 and Europe 1984-85) load and play on.",
+  "t": "- Sauvegardes : les carrières sauvegardées avec le jeu original et avec toutes les versions précédentes du mod (1.x, 2.x, 3.x : 1996-97 et Europe 1984-85) se chargent et continuent."
+ },
+ "0d9472cfa88c": {
+  "en": "Thanks to DaniSwos for the Europe 1984-85 database, to Marco for the reports, to Roman for the install feedback and to Gianmarco for the Program Files report.",
+  "t": "Merci à DaniSwos pour la base de données Europe 1984-85, à Marco pour les rapports, à Roman pour son retour sur l'installation et à Gianmarco pour le rapport sur Program Files."
+ },
+ "f28242601a6a": {
+  "en": "- **WINNERS page**: in a competition's STAT menu, the season's titles beyond the table (play-offs, Apertura / Clausura, state champions) with their winners, TO BE PLAYED or IN PROGRESS; after the season end, last season's.",
+  "t": "- **Page VAINQUEURS** : dans le menu STAT d'une compétition, les titres de la saison au-delà du classement (barrages, Apertura / Clausura, champions d'État) avec leurs vainqueurs, A JOUER ou EN COURS ; après la fin de saison, ceux de la saison précédente."
+ },
+ "c7f584a96271": {
+  "en": "- **Quick season end**: the other countries' competitions are simulated without being shown one by one (your own country's competitions and the European cups still show, as in the original game), with a progress line (SIMULATING OTHER COUNTRIES... n/N).",
+  "t": "- **Fin de saison rapide** : les compétitions des autres pays sont simulées sans être montrées une par une (celles de votre pays et les coupes européennes s'affichent toujours, comme dans le jeu original), avec une ligne de progression (SIMULATING OTHER COUNTRIES... n/N)."
+ },
+ "54597c378bc6": {
+  "en": "- If the game is in Program Files (GOG Galaxy's default folder), the browser won't open it: copy the game folder elsewhere, patch the copy, copy its contents back over the original (Windows asks for administrator permission: accept), or use the manual mode.",
+  "t": "- Si le jeu est dans Program Files (le dossier par défaut de GOG Galaxy), le navigateur ne l'ouvrira pas : copiez le dossier du jeu ailleurs, patchez la copie, recopiez son contenu sur l'original (Windows demande l'autorisation de l'administrateur : acceptez), ou utilisez le mode manuel."
+ },
+ "1744499f5bbc": {
+  "en": "- Start a new career to play the World 2026-27. Careers saved with the original game and with every earlier version of the mod (1.x, 2.x, 3.x: 1996-97 and Europe 1984-85) load and play on.",
+  "t": "- Commencez une nouvelle carrière pour jouer le Monde 2026-27. Les carrières sauvegardées avec le jeu original et avec toutes les versions précédentes du mod (1.x, 2.x, 3.x : 1996-97 et Europe 1984-85) se chargent et continuent."
+ },
+ "b59cebed24ad": {
+  "en": "SWOS 96/97 Mod 4.0.1",
+  "t": "SWOS 96/97 Mod 4.0.1"
+ },
+ "d55eca9c5b86": {
+  "en": "4.0.1 brings a joypad that works out of the box on GOG and, in the World 2026-27, more leagues in their real format (Mexico, Peru, Colombia, Uruguay), a nationality for every player, cups that follow promotions and relegations, line-ups by role, simpler menus and a safer install, plus fixes for some 4.0 bugs. Everything in 4.0 stays as it was; careers saved with 4.0 load and play on.",
+  "t": "La 4.0.1 apporte une manette qui fonctionne dès l'installation sur GOG et, dans le Monde 2026-27, davantage de championnats dans leur format réel (Mexique, Pérou, Colombie, Uruguay), une nationalité pour chaque joueur, des coupes qui suivent les promotions et les relégations, des compositions par poste, des menus plus simples et une installation plus sûre, ainsi que des corrections de bugs de la 4.0. Tout ce qui est dans la 4.0 reste comme avant ; les carrières sauvegardées avec la 4.0 se chargent et continuent."
+ },
+ "3fa1abcda466": {
+  "en": "Joypad ready",
+  "t": "Manette prête"
+ },
+ "76125938159e": {
+  "en": "- **Plug the joypad in and play.** On a GOG install, the one-click install now sets everything up: the joypad is player 1 and the keyboard is player 2, with a ready calibration, and both the stick and the d-pad work. The keyboard still works as before.",
+  "t": "- **Branchez la manette et jouez.** Sur une installation GOG, l'installation en un clic règle tout désormais : la manette est le joueur 1 et le clavier le joueur 2, avec une calibration prête, et le stick comme la croix directionnelle fonctionnent. Le clavier marche toujours comme avant."
+ },
+ "463ed432f565": {
+  "en": "- **No joypad, no problem.** The game now checks at start whether a joypad is connected and goes to the keyboard automatically when there is none, so keyboard players do not have to change anything.",
+  "t": "- **Pas de manette, pas de souci.** Le jeu vérifie maintenant au démarrage si une manette est branchée et passe automatiquement au clavier s'il n'y en a pas : les joueurs au clavier n'ont rien à changer."
+ },
+ "d1edfc1c7b21": {
+  "en": "- **Your own settings.** The install page has a tick, 'GOG version: I have a joypad / gamepad', already on for GOG: untick it to keep your own controls settings, and run the install again without the tick to put the originals back (the changed files are backed up).",
+  "t": "- **Vos propres réglages.** La page d'installation a une case, « Version GOG : j'ai une manette / un gamepad », cochée d'office pour GOG : décochez-la pour garder vos propres réglages de commandes, et relancez l'installation sans la case pour remettre les originaux (les fichiers modifiés sont sauvegardés)."
+ },
+ "86d8f8d71e07": {
+  "en": "- **Your own DOSBox (CD installs):** its own box, 'Using your own DOSBox (CD, eXoDOS, other)?', is off by default. Tick it if you have a joypad (it changes only SETUP.DAT) and add three lines to your DOSBox configuration (`[joystick]`, `joysticktype=2axis`, `timed=false`); mapping the d-pad and what to do in DOSBox-X are explained in the README and on the install page.",
+  "t": "- **Votre propre DOSBox (installations CD) :** sa propre case, « Vous utilisez votre propre DOSBox (CD, eXoDOS, autre) ? », est décochée par défaut. Cochez-la si vous avez une manette (cela ne modifie que SETUP.DAT) et ajoutez trois lignes à la configuration de votre DOSBox (`[joystick]`, `joysticktype=2axis`, `timed=false`) ; l'association de la croix directionnelle et la marche à suivre dans DOSBox-X sont expliquées dans le README et sur la page d'installation."
+ },
+ "02863229c975": {
+  "en": "Mexico, exactly",
+  "t": "Le Mexique, exactement"
+ },
+ "04f4cd2d8e00": {
+  "en": "- **Liga MX and the Liga de Expansión MX** now play their real 2026-27 season. Each has two tournaments a season: the *Apertura* (the opening tournament) and the *Clausura* (the closing one). Each tournament is a single table, the Clausura starting again from zero points. The Apertura 2026 is played on its real match days (from Transfermarkt). Each tournament is followed by its own final phase, the *liguilla* (Mexican for the play-off): the top 8 go straight in (Liga MX has no play-in from the Apertura 2026), 1st v 8th, 2nd v 7th, 3rd v 6th, 4th v 5th, re-seeded semi-finals, all over two legs (a tie level on aggregate goes to the better placed club) and a final with extra time and penalties. Your club can play every phase.",
+  "t": "- **La Liga MX et la Liga de Expansión MX** jouent maintenant leur vraie saison 2026-27. Chacune a deux tournois par saison : l'*Apertura* (le tournoi d'ouverture) et la *Clausura* (celui de clôture). Chaque tournoi est un classement unique, la Clausura repartant de zéro point. L'Apertura 2026 se joue sur ses vraies journées (d'après Transfermarkt). Chaque tournoi est suivi de sa propre phase finale, la *liguilla* (mot mexicain pour barrage) : les 8 premiers y entrent directement (la Liga MX n'a pas de play-in à partir de l'Apertura 2026), 1er contre 8e, 2e contre 7e, 3e contre 6e, 4e contre 5e, demi-finales re-têtes de série, le tout en matchs aller-retour (une égalité sur l'ensemble des deux matchs profite au mieux classé) et une finale avec prolongation et tirs au but. Votre club peut jouer toutes les phases."
+ },
+ "71fabe825bd4": {
+  "en": "- **Liga MX: the Campeón de Campeones.** The winners of the Apertura and the Clausura meet in one match at a neutral ground (a draw goes to penalties, no extra time); a club that won both gets the trophy without a match. The Liga MX has held it every year since 2023 (sources: Mediotiempo, Fox Sports México, La Razón).",
+  "t": "- **Liga MX : le Campeón de Campeones.** Les vainqueurs de l'Apertura et de la Clausura se rencontrent en un match sur terrain neutre (en cas d'égalité, tirs au but, sans prolongation) ; un club qui a gagné les deux reçoit le trophée sans match. La Liga MX le dispute chaque année depuis 2023 (sources : Mediotiempo, Fox Sports México, La Razón)."
+ },
+ "2c217d207de2": {
+  "en": "- **Liga de Expansión MX:** 16 clubs, the same liguillas and its own Campeón de Campeones, over two legs. No promotion or relegation in 2026-27.",
+  "t": "- **Liga de Expansión MX :** 16 clubs, les mêmes liguillas et son propre Campeón de Campeones, en aller-retour. Pas de promotion ni de relégation en 2026-27."
+ },
+ "17fc1120e32d": {
+  "en": "- Declared:\n  - The Clausura 2027 calendars are not published yet: each Clausura plays its Apertura's match days mirrored (home and away swapped) until the real ones are out.\n  - Expansión's Campeón de Campeones over two legs (second leg at the better placed club, extra time and penalties) is our reading: no source gives its format for 2026-27 (the 2021-22 one went to penalties).\n  - One Expansión Apertura match (Atlético La Paz v Leones Negros, match day 8) is missing from the published fixtures (Transfermarkt): it is played at Leones Negros, so every club has 7 home and 7 away matches.",
+  "t": "- Déclaré :\n  - Les calendriers de la Clausura 2027 ne sont pas encore publiés : chaque Clausura joue les journées de son Apertura en miroir (domicile et extérieur inversés) jusqu'à la sortie des vrais calendriers.\n  - Le Campeón de Campeones de l'Expansión en aller-retour (match retour chez le mieux classé, prolongation et tirs au but) est notre lecture : aucune source ne donne son format pour 2026-27 (celui de 2021-22 se jouait aux tirs au but).\n  - Un match de l'Apertura d'Expansión (Atlético La Paz - Leones Negros, journée 8) manque dans le calendrier publié (Transfermarkt) : il se joue chez Leones Negros, de sorte que chaque club a 7 matchs à domicile et 7 à l'extérieur."
+ },
+ "f87a1e4c43a5": {
+  "en": "South America: Peru, Colombia and Uruguay, the tournaments of the year",
+  "t": "Amérique du Sud : Pérou, Colombie et Uruguay, les tournois de l'année"
+ },
+ "ef1ef0d5cd65": {
+  "en": "- **Peru** (Liga 1, 18 clubs): the Apertura and the Clausura, 17 match days each, everybody once, on the real 2026 calendar; the Clausura starts again from zero points. Each tournament's table leader wins it. The accumulated table (Apertura + Clausura) is in STAT > ANNUAL TABLE. The national title goes to the Liga 1 play-offs: the two tournament winners (if they are in the accumulated top 8) and the accumulated table's top 2. A tournament winner in the top 2 waits in the final; with four clubs the semi-finals are 1st v 4th and 2nd v 3rd by the accumulated table. Everything is over two legs. A club that wins both tournaments is champion without playing.",
+  "t": "- **Pérou** (Liga 1, 18 clubs) : l'Apertura et la Clausura, 17 journées chacune, chacun une fois, sur le vrai calendrier 2026 ; la Clausura repart de zéro point. Le leader du classement de chaque tournoi le gagne. Le classement cumulé (Apertura + Clausura) se trouve dans STAT > ANNUAL TABLE. Le titre national revient aux barrages de la Liga 1 : les deux vainqueurs de tournoi (s'ils sont dans les 8 premiers du cumulé) et les 2 premiers du cumulé. Un vainqueur de tournoi classé dans les 2 premiers attend en finale ; à quatre clubs, les demi-finales sont 1er contre 4e et 2e contre 3e d'après le classement cumulé. Le tout en aller-retour. Un club qui gagne les deux tournois est champion sans jouer."
+ },
+ "1030195d6faf": {
+  "en": "- **Colombia** (Primera A, 20 clubs): the Apertura, 19 match days on the real calendar. Its top 8 then play quarter-finals 1st v 8th, 4th v 5th, 2nd v 7th and 3rd v 6th, semi-finals and a final, all over two legs, with the second leg at the better placed club and penalties if level. The *Finalización* (Colombia's second tournament) is 19 match days from zero points. Its top 8 then play two *cuadrangulares* (groups of four, home and away): the 1st and the 2nd head the groups and the other six are drawn, three per group, as the Dimayor (Colombia's league organiser) draws them. The two group winners play a two-legged final.",
+  "t": "- **Colombie** (Primera A, 20 clubs) : l'Apertura, 19 journées sur le vrai calendrier. Ses 8 premiers jouent ensuite des quarts de finale 1er contre 8e, 4e contre 5e, 2e contre 7e et 3e contre 6e, des demi-finales et une finale, le tout en aller-retour, match retour chez le mieux classé et tirs au but en cas d'égalité. La *Finalización* (le second tournoi de Colombie) compte 19 journées à partir de zéro point. Ses 8 premiers jouent ensuite deux *cuadrangulares* (groupes de quatre, aller-retour) : le 1er et le 2e dirigent les groupes et les six autres sont tirés au sort, trois par groupe, comme le fait la Dimayor (l'organisateur du championnat colombien). Les deux vainqueurs de groupe jouent une finale en aller-retour."
+ },
+ "cd45b692da72": {
+  "en": "- **Uruguay** (16 clubs): the Apertura (15 match days, real calendar), then the *Intermedio* (the mid-year tournament), then the Clausura (15 match days, real calendar), each from zero points.\n  - The Intermedio splits the clubs into two series by the Apertura table, in a snake order: series A = 1st, 4th, 5th, 8th, 9th, 12th, 13th, 16th. Each series is one round, and its winners meet in a final on neutral ground (extra time and penalties).\n  - The annual table adds up all three tournaments.\n  - The title: a single-match semi-final on neutral ground between the Apertura and the Clausura champions, then a two-legged final against the annual table's leader. The final is not played when the semi-final's winner leads the annual table. A club that wins both the Apertura and the Clausura is champion at once (the rules of the AUF, Uruguay's football association, for the coincidence of titles).",
+  "t": "- **Uruguay** (16 clubs) : l'Apertura (15 journées, vrai calendrier), puis l'*Intermedio* (le tournoi de milieu d'année), puis la Clausura (15 journées, vrai calendrier), chacun à partir de zéro point.\n  - L'Intermedio répartit les clubs en deux séries d'après le classement de l'Apertura, en serpentin : série A = 1er, 4e, 5e, 8e, 9e, 12e, 13e, 16e. Chaque série est un tour unique et leurs vainqueurs se rencontrent en finale sur terrain neutre (prolongation et tirs au but).\n  - Le classement annuel additionne les trois tournois.\n  - Le titre : une demi-finale en un match sur terrain neutre entre les champions de l'Apertura et de la Clausura, puis une finale en aller-retour contre le leader du classement annuel. La finale n'a pas lieu si le vainqueur de la demi-finale est en tête du classement annuel. Un club qui gagne l'Apertura et la Clausura est champion tout de suite (règles de l'AUF, la fédération uruguayenne, pour la coïncidence des titres)."
+ },
+ "4dfd21d7fe51": {
+  "en": "- Your club can play every final phase. Every tournament's winner is listed on the WINNERS page.",
+  "t": "- Votre club peut jouer toutes les phases finales. Le vainqueur de chaque tournoi est listé sur la page VAINQUEURS."
+ },
+ "bd97d51f4073": {
+  "en": "- Declared:\n  - The Clausura and Finalización calendars are the Apertura's mirrored, match day by match day, as every published match day shows. The last match days not yet published (Peru 4, Colombia 2, Uruguay 3) follow that mirror. Their dates are a week apart: for Peru that ends on 22 November, the real last day.\n  - Uruguay's Intermedio uses the game's own calendar of the two series, dated between the Apertura and the Clausura.\n  - Colombia's cuadrangulares: the group fixtures are the game's, so the heads are not always at home on the last match day; clubs level on points in a group are separated by goal difference, where the Dimayor uses the better regular-season place.\n  - Peru's play-offs: a tournament winner outside the accumulated top 8 gives its place to the next club of that table (the tournament rules do not say what happens); a tie level on aggregate goes to penalties, and the final's better placed club is at home in the second leg.\n  - Relegation by *promedio* (the average of points over the last seasons: 3 seasons in Colombia, 2 in Uruguay) is not in. Peru and Colombia have one division in the world, so nobody goes down there. Uruguay relegates the last 3 of the end-of-season table.\n  - Paraguay's two tournaments are not here yet (see \"Declared for 4.0.2\").",
+  "t": "- Déclaré :\n  - Les calendriers de la Clausura et de la Finalización sont ceux de l'Apertura en miroir, journée par journée, comme le montre chaque journée publiée. Les dernières journées pas encore publiées (Pérou 4, Colombie 2, Uruguay 3) suivent ce miroir. Leurs dates sont espacées d'une semaine : pour le Pérou, cela finit le 22 novembre, la vraie dernière journée.\n  - L'Intermedio de l'Uruguay utilise le calendrier propre au jeu pour les deux séries, daté entre l'Apertura et la Clausura.\n  - Les cuadrangulares de Colombie : les matchs de groupe sont ceux du jeu, donc les têtes de groupe ne sont pas toujours à domicile à la dernière journée ; les clubs à égalité de points dans un groupe sont départagés par la différence de buts, là où la Dimayor utilise la meilleure place en saison régulière.\n  - Les barrages du Pérou : un vainqueur de tournoi hors des 8 premiers du cumulé cède sa place au club suivant de ce classement (le règlement des tournois ne dit pas ce qui se passe) ; une égalité sur l'ensemble des deux matchs se règle aux tirs au but, et le mieux classé de la finale reçoit au match retour.\n  - La relégation au *promedio* (la moyenne de points sur les dernières saisons : 3 saisons en Colombie, 2 en Uruguay) n'y est pas. Le Pérou et la Colombie n'ont qu'une division dans le monde, donc personne n'y descend. L'Uruguay relègue les 3 derniers du classement de fin de saison.\n  - Les deux tournois du Paraguay ne sont pas encore là (voir « Annoncé pour la 4.0.2 »)."
+ },
+ "08979f615528": {
+  "en": "A nationality for every player",
+  "t": "Une nationalité pour chaque joueur"
+ },
+ "4d16bb50b0ff": {
+  "en": "- Players from 58 nations that the original game did not have now show their own nationality instead of the nearest one: Montenegro (MNE), Kosovo (KOS), Andorra (AND), Gibraltar (GIB), Kazakhstan (KAZ), Cape Verde (CPV), Curaçao (CUW), Haiti (HAI), Cuba (CUB), the Dominican Republic (DOM), Lebanon (LBN), Palestine (PLE), Hong Kong (HKG), Thailand (THA), Indonesia (IDN), Tahiti (TAH) and more. The nationality is the three-letter FIFA code, as in the original game, the same in every language, on the squad and transfer screens.",
+  "t": "- Les joueurs de 58 nations que le jeu original n'avait pas affichent maintenant leur propre nationalité au lieu de la plus proche : Monténégro (MNE), Kosovo (KOS), Andorre (AND), Gibraltar (GIB), Kazakhstan (KAZ), Cap-Vert (CPV), Curaçao (CUW), Haïti (HAI), Cuba (CUB), République dominicaine (DOM), Liban (LBN), Palestine (PLE), Hong Kong (HKG), Thaïlande (THA), Indonésie (IDN), Tahiti (TAH) et d'autres. La nationalité est le code FIFA à trois lettres, comme dans le jeu original, le même dans toutes les langues, sur les écrans d'effectif et de transferts."
+ },
+ "726fb86c264b": {
+  "en": "- Rule: these nations have no national team in the game, so their players are not called up (before, a Montenegrin could be called up by Yugoslavia, an Andorran by Spain).",
+  "t": "- Règle : ces nations n'ont pas d'équipe nationale dans le jeu, leurs joueurs ne sont donc pas appelés (avant, un Monténégrin pouvait être appelé par la Yougoslavie, un Andorran par l'Espagne)."
+ },
+ "37be523b4478": {
+  "en": "- Careers of the 1996-97 game and of the Europe 1984-85 world are unchanged.",
+  "t": "- Les carrières du jeu 1996-97 et du monde Europe 1984-85 ne changent pas."
+ },
+ "2d315c64ad02": {
+  "en": "World 2026-27 cups",
+  "t": "Coupes du Monde 2026-27"
+ },
+ "9722e3b043e0": {
+  "en": "- **National and league cups follow promotions and relegations** (World 2026-27). In 4.0 every cup kept the same clubs every season, so a promoted or relegated club never joined its new division's cup (Mestre, promoted to Serie C, played no Coppa Italia Serie C). Now, from the second season, each cup takes its clubs from the divisions as they are that season, with the real format: each division sends as many clubs, and gets as many byes, as in the real cup (the Coppa Italia Serie C: 5, 7 and 5 from the three Serie C groups; the Copa del Rey: 20 from LaLiga and 21 from LaLiga 2). Within a division, the clubs relegated from the division above come first, then the clubs that stayed, then the promoted ones, each by last season's final place; your club always takes part when its division does. The first season keeps the real 2026-27 draw. Every national and league cup of the world follows this rule (101 of 102); the one cup that includes a club from outside its country's league keeps its fixed list. The rule is on each cup's FORMAT page.",
+  "t": "- **Les coupes nationales et de ligue suivent les promotions et les relégations** (Monde 2026-27). Dans la 4.0, chaque coupe gardait les mêmes clubs chaque saison : un club promu ou relégué ne rejoignait donc jamais la coupe de sa nouvelle division (Mestre, promu en Serie C, ne jouait pas la Coupe d'Italie Serie C). Désormais, à partir de la deuxième saison, chaque coupe prend ses clubs dans les divisions telles qu'elles sont cette saison-là, avec le format réel : chaque division envoie autant de clubs, et obtient autant d'exemptions, que dans la vraie coupe (Coupe d'Italie Serie C : 5, 7 et 5 des trois groupes de Serie C ; Copa del Rey : 20 de la LaLiga et 21 de la LaLiga 2). Au sein d'une division, les clubs relégués de la division supérieure passent en premier, puis les clubs restés, puis les promus, chacun selon la place finale de la saison dernière ; votre club participe toujours quand sa division le fait. La première saison garde le vrai tirage 2026-27. Toutes les coupes nationales et de ligue du monde suivent cette règle (101 sur 102) ; l'unique coupe qui inclut un club hors du championnat de son pays garde sa liste fixe. La règle figure sur la page FORMAT de chaque coupe."
+ },
+ "6bc66742ee37": {
+  "en": "- The main Coppa Italia keeps its real shape (its 16 clubs are from Serie A and Serie B), so a Serie C club does not enter it; the Coppa Italia Serie D is unchanged.",
+  "t": "- La Coupe d'Italie principale garde sa forme réelle (ses 16 clubs viennent de la Serie A et de la Serie B) : un club de Serie C n'y entre donc pas ; la Coupe d'Italie Serie D ne change pas."
+ },
+ "34da7d01134a": {
+  "en": "- Saves: the clubs' final places are saved with the career. A 4.0 save loads and plays on; its first new season orders the clubs as the game lists them until a season has been completed.",
+  "t": "- Sauvegardes : les places finales des clubs sont sauvegardées avec la carrière. Une sauvegarde de la 4.0 se charge et continue ; sa première nouvelle saison classe les clubs comme le jeu les liste, jusqu'à ce qu'une saison soit terminée."
+ },
+ "d6b2c727c9c9": {
+  "en": "Line-ups that make sense",
+  "t": "Des compositions sensées"
+ },
+ "18092ab06bd5": {
+  "en": "- The computer teams of the World 2026-27, of Europe 1984-85 and of the historic season packs (since 3.0) used to field their starters in the order of the team list, so the left-back stood at centre-back and the left midfielder in central midfield. Now each team's 11 starters follow their roles (goalkeeper, right-back, two centre-backs, left-back, right midfielder, two central midfielders, left midfielder, two forwards): 3,529 teams corrected. The original 1996-97 teams and the hand-written line-ups of the historic tourneys are unchanged.",
+  "t": "- Les équipes gérées par l'ordinateur du Monde 2026-27, d'Europe 1984-85 et des packs de saisons historiques (depuis la 3.0) alignaient leurs titulaires dans l'ordre de la liste de l'équipe : l'arrière gauche se retrouvait défenseur central et le milieu gauche milieu axial. Maintenant, les 11 titulaires de chaque équipe suivent leurs postes (gardien, arrière droit, deux défenseurs centraux, arrière gauche, milieu droit, deux milieux axiaux, milieu gauche, deux attaquants) : 3 529 équipes corrigées. Les équipes originales de 1996-97 et les compositions écrites à la main des tournois historiques ne changent pas."
+ },
+ "678813cf0ca2": {
+  "en": "- In a career started before 4.0.1, the clubs the career already holds in memory keep their old line-up.",
+  "t": "- Dans une carrière commencée avant la 4.0.1, les clubs que la carrière a déjà en mémoire gardent leur ancienne composition."
+ },
+ "8540ae9176a2": {
+  "en": "Menus and screens",
+  "t": "Menus et écrans"
+ },
+ "0be8ca4e2178": {
+  "en": "- **Buying a foreign player** now opens straight on the continents (World 2026-27) or on the nations (Europe 1984-85), without a CARR. STORICHE (CLASSIC CAREERS) menu in front (in the World 2026-27 that was a violet entry).",
+  "t": "- **L'achat d'un joueur étranger** s'ouvre maintenant directement sur les continents (Monde 2026-27) ou sur les nations (Europe 1984-85), sans le menu CARR. STORICHE (CARRIÈRES CLASSIQUES) devant (dans le Monde 2026-27, c'était une entrée violette)."
+ },
+ "f288f6955ce9": {
+  "en": "- **Career calendar:** the two-line labels of the UEFA qualifying rounds are short enough for their line, e.g. \"PRELIM. CL\" over \"TURNO 1 AND.\" (each language with its own round word).",
+  "t": "- **Calendrier de carrière :** les étiquettes sur deux lignes des tours préliminaires de l'UEFA sont assez courtes pour leur ligne, p. ex. « PRELIM. CL » au-dessus de « TURNO 1 AND. » (chaque langue avec son propre mot pour « tour »)."
+ },
+ "5c655939c03f": {
+  "en": "- **UEFA qualifying rounds**: when your club wins a qualifying tie, the next round now appears in the career calendar straight after the return leg. Before, it was added only when you went on to the next match, so for a while the calendar seemed to have no next round.",
+  "t": "- **Tours préliminaires de l'UEFA** : quand votre club gagne une rencontre de qualification, le tour suivant apparaît maintenant dans le calendrier de carrière juste après le match retour. Avant, il n'était ajouté qu'au passage au match suivant, si bien que le calendrier semblait un temps sans tour suivant."
+ },
+ "78fef25d8935": {
+  "en": "- **Match titles** are fitted to the title bar by their real width: no title is cut any more (the 4.0 limit on long titles is gone) and none starts with a stray space. We checked the longest title of every competition.",
+  "t": "- **Les titres de match** sont ajustés à la barre de titre selon leur largeur réelle : aucun titre n'est plus coupé (la limite de la 4.0 sur les longs titres a disparu) et aucun ne commence par une espace parasite. Nous avons vérifié le titre le plus long de chaque compétition."
+ },
+ "13b12250da9c": {
+  "en": "- **WINNERS page:** a competition's long name is shown in full when it fits (TROFEO DE CAMPEONES, not TROFEO CAMP.).",
+  "t": "- **Page VAINQUEURS :** le long nom d'une compétition s'affiche en entier quand il tient (TROFEO DE CAMPEONES, et non TROFEO CAMP.)."
+ },
+ "fd6c3ebf7bef": {
+  "en": "Install",
+  "t": "Installation"
+ },
+ "4d91cb70dde6": {
+  "en": "- **GOG:** GOG's own shortcut starts the English version. When the one-click install finds GOG's DOSBox, it writes one launcher per language beside the game: \"SWOS Mod - Italiano.bat\", \"SWOS Mod - English.bat\", \"SWOS Mod - Francais.bat\" and \"SWOS Mod - Deutsch.bat\" (for the languages GOG's folder has a configuration for). Start the game with them. A re-run writes back a launcher that was deleted.",
+  "t": "- **GOG :** le raccourci propre à GOG lance la version anglaise. Quand l'installation en un clic trouve le DOSBox de GOG, elle écrit un lanceur par langue à côté du jeu : « SWOS Mod - Italiano.bat », « SWOS Mod - English.bat », « SWOS Mod - Francais.bat » et « SWOS Mod - Deutsch.bat » (pour les langues dont le dossier de GOG a une configuration). Lancez le jeu avec eux. Une nouvelle exécution réécrit un lanceur supprimé."
+ },
+ "cb5b7eae37c1": {
+  "en": "- **A half-finished install** is now caught twice. The one-click page shows \"Writing the mod: i / N files... Do not close or reload the page\", checks every file it wrote and ends with \"Done: N / N files written and verified\" or, in red, \"INSTALL INCOMPLETE: only k of N files were written correctly ... choose the game folder again\" (this part was already in the 23 October re-issue of 4.0). And if some World 2026-27 files are still missing, choosing the world (CLASSIC CAREERS, the green CAREER 2026-27 button, or Europe 1984-85) no longer quits to DOS: the game says \"INCOMPLETE INSTALL: RUN THE PATCHER AGAIN\" (in each language) and goes back to the menu.",
+  "t": "- **Une installation à moitié faite** est maintenant détectée deux fois. La page en un clic affiche « Writing the mod: i / N files... Do not close or reload the page », vérifie chaque fichier écrit et se termine par « Done: N / N files written and verified » ou, en rouge, « INSTALL INCOMPLETE: only k of N files were written correctly ... choose the game folder again » (cette partie était déjà dans la réédition du 23 octobre de la 4.0). Et si des fichiers du Monde 2026-27 manquent encore, le choix du monde (CARRIÈRES CLASSIQUES, le bouton vert CARRIÈRE 2026-27, ou Europe 1984-85) ne quitte plus vers DOS : le jeu affiche « INCOMPLETE INSTALL: RUN THE PATCHER AGAIN » (dans chaque langue) et revient au menu."
+ },
+ "1dbbe8a92498": {
+  "en": "Known issues of 4.0, revisited",
+  "t": "Problèmes connus de la 4.0, revus"
+ },
+ "a87f27b2a695": {
+  "en": "- **European places**: the 4.0 notes warned that in some seasons a European place could go to a club of the wrong country. This had already been fixed in 4.0 before its release and has not happened since: every country gets its right European places.",
+  "t": "- **Places européennes** : les notes de la 4.0 signalaient que, certaines saisons, une place européenne pouvait aller à un club du mauvais pays. C'était déjà corrigé dans la 4.0 avant sa sortie et cela ne s'est plus produit : chaque pays obtient ses bonnes places européennes."
+ },
+ "bf75a1c079aa": {
+  "en": "- **Serie D groups with an odd number of clubs**: in such a group one club rests on each match day. If yours rests on the last one, it does not play the Poule Scudetto or its group play-off: they are decided by simulation. The 4.0 notes announced a fix for 4.0.1; the fix we tried could make the season impossible to finish, so it is planned for 4.0.2.",
+  "t": "- **Groupes de Serie D à nombre impair de clubs** : dans un tel groupe, un club se repose à chaque journée. Si le vôtre se repose à la dernière, il ne joue pas la Poule Scudetto ni son barrage de groupe : ils sont décidés par simulation. Les notes de la 4.0 annonçaient une correction pour la 4.0.1 ; celle que nous avons essayée pouvait rendre la saison impossible à terminer, elle est donc prévue pour la 4.0.2."
+ },
+ "9add6f9acb4a": {
+  "en": "- **Copa Libertadores group thirds**: in 4.0 their move to the Copa Sudamericana play-off was simulated. Now your club, third in its Libertadores group, plays the play-off (both legs, January). This works from your career's second season, because the first season's continental cups are the world's own. The rest of the Sudamericana, and the Libertadores round of 16 for a group winner or runner-up (both from February), are still simulated at the season end, because they come after the domestic season has ended (Argentina's ends in December). Planned for 4.0.2.",
+  "t": "- **Troisièmes des groupes de la Copa Libertadores** : dans la 4.0, leur passage au barrage de la Copa Sudamericana était simulé. Maintenant, votre club, troisième de son groupe de Libertadores, joue le barrage (aller-retour, en janvier). Cela fonctionne à partir de la deuxième saison de votre carrière, car les coupes continentales de la première saison sont celles du monde. Le reste de la Sudamericana, et les huitièmes de la Libertadores pour un premier ou un deuxième de groupe (tous deux à partir de février), sont encore simulés en fin de saison, car ils tombent après la fin de la saison nationale (celle de l'Argentine finit en décembre). Prévu pour la 4.0.2."
+ },
+ "6c5a9d61ac90": {
+  "en": "- **Serie D**: a career saved after its Coppa Italia Serie D tie was drawn no longer starts the play-offs after a few match days when loaded (the tie is played; 4.0 saves affected are repaired on load). Gianmarco.",
+  "t": "- **Serie D** : une carrière sauvegardée après le tirage de sa rencontre de Coupe d'Italie Serie D ne lance plus les barrages après quelques journées au chargement (la rencontre se joue ; les sauvegardes 4.0 concernées sont réparées au chargement). Gianmarco."
+ },
+ "70fd7f471893": {
+  "en": "- Careers saved during a season in which a play-off or title decider was settled without your club (for example Argentina's Apertura / Clausura knockouts when your club missed them, or Malta's decider when one club won both rounds) no longer start the next season with an empty league after loading (the match screen could not be played).",
+  "t": "- Les carrières sauvegardées pendant une saison où un barrage ou une finale de titre a été réglé sans votre club (p. ex. les phases à élimination de l'Apertura / Clausura d'Argentine quand votre club les a manquées, ou la finale de Malte quand un club a gagné les deux tours) ne commencent plus la saison suivante avec un championnat vide après le chargement (l'écran de match ne pouvait pas se jouer)."
+ },
+ "b2a91b1f6269": {
+  "en": "- **World 2026-27**: a career saved with an earlier version no longer shows garbled titles on the European cup finals at the season end (seen in 4.0 too).",
+  "t": "- **Monde 2026-27** : une carrière sauvegardée avec une version antérieure n'affiche plus de titres illisibles sur les finales de coupes européennes en fin de saison (vu aussi dans la 4.0)."
+ },
+ "bc4f40e956b3": {
+  "en": "- **Menu buttons**: the 4.0 notes mentioned a few wrong pixels on the menu buttons after a job offer. It was not a problem of the released 4.0 (it only showed up in a test version), so we took it off the list. If you see it, let us know.",
+  "t": "- **Boutons de menu** : les notes de la 4.0 mentionnaient quelques pixels erronés sur les boutons de menu après une offre d'emploi. Ce n'était pas un problème de la 4.0 publiée (il n'apparaissait que dans une version de test) ; nous l'avons donc retiré de la liste. Si vous le voyez, dites-le-nous."
+ },
+ "1d0920311fd4": {
+  "en": "Declared for 4.0.2",
+  "t": "Annoncé pour la 4.0.2"
+ },
+ "52c49b25962f": {
+  "en": "- **AFC Challenge League:** its group stage (5 groups of 4, everybody once; the 5 winners and the 3 best runners-up go to the quarter-finals) is still simulated; your club joins at the quarter-finals. Playing the groups needs a ranking of the runners-up across the groups, which is not ready.",
+  "t": "- **AFC Challenge League :** sa phase de groupes (5 groupes de 4, chacun une fois ; les 5 vainqueurs et les 3 meilleurs deuxièmes vont en quarts de finale) est encore simulée ; votre club rejoint aux quarts de finale. Jouer les groupes demande un classement des deuxièmes entre les groupes, qui n'est pas prêt."
+ },
+ "89f562b0486e": {
+  "en": "- **AFC Champions League Elite:** its league stage (all the clubs in one table) is still simulated; it will be played in 4.0.2.",
+  "t": "- **AFC Champions League Elite :** sa phase de ligue (tous les clubs dans un seul classement) est encore simulée ; elle sera jouée dans la 4.0.2."
+ },
+ "7c79f96a1fa9": {
+  "en": "- **Guatemala, El Salvador and Paraguay:** their real 44-match-day calendars (two tournaments a season) are longer than the game's calendar can hold today; they keep the format they had in 4.0 until then.",
+  "t": "- **Guatemala, Salvador et Paraguay :** leurs vrais calendriers de 44 journées (deux tournois par saison) sont plus longs que ce que le calendrier du jeu peut contenir aujourd'hui ; ils gardent le format qu'ils avaient dans la 4.0 jusque-là."
+ },
+ "74c3c2d241e0": {
+  "en": "- **Calendars not yet published:** the Clausura 2027 of Mexico, Costa Rica, Honduras and Panama, and the last match days of Peru, Colombia and Uruguay, repeat the first half's fixtures with home and away swapped until the real calendars are out.",
+  "t": "- **Calendriers pas encore publiés :** la Clausura 2027 du Mexique, du Costa Rica, du Honduras et du Panama, et les dernières journées du Pérou, de la Colombie et de l'Uruguay, reprennent les rencontres de la première moitié avec domicile et extérieur inversés jusqu'à la sortie des vrais calendriers."
+ },
+ "cd11521951eb": {
+  "en": "- **Colombia's cuadrangulares:** the real order of the group fixtures and the tie-break by regular-season place. Planned for 4.0.2.",
+  "t": "- **Cuadrangulares de Colombie :** l'ordre réel des matchs de groupe et le départage par la place en saison régulière. Prévu pour la 4.0.2."
+ },
+ "dfefd8d79947": {
+  "en": "- **Single-match ties**: in some cups a single match (for example the Copa do Brasil final) that ends level goes to extra time before the penalties, while the real rule goes straight to penalties. This has been so since 3.2; it will follow the real rule in 4.0.2.",
+  "t": "- **Rencontres en un match** : dans certaines coupes, un match unique (p. ex. la finale de la Copa do Brasil) qui finit à égalité va en prolongation avant les tirs au but, alors que la vraie règle va directement aux tirs au but. C'est ainsi depuis la 3.2 ; la 4.0.2 suivra la vraie règle."
+ },
+ "c60576a08bf5": {
+  "en": "- **Management record**: for a season in which your club went out in a European qualifying round, the record shows the qualifying competition with 'FINALIST' instead of the round in which it went out. It will show the round in 4.0.2.",
+  "t": "- **Palmarès de gestion** : pour une saison où votre club a été éliminé dans un tour préliminaire européen, le palmarès montre la compétition de qualification avec « FINALIST » au lieu du tour où il est sorti. Il montrera le tour dans la 4.0.2."
+ },
+ "a42072985c03": {
+  "en": "- **Serie D rest day and the Libertadores continuation:** see \"Known issues of 4.0, revisited\".",
+  "t": "- **Jour de repos en Serie D et suite de la Libertadores :** voir « Problèmes connus de la 4.0, revus »."
+ },
+ "97cba4858411": {
+  "en": "Thanks",
+  "t": "Remerciements"
+ },
+ "848836346c33": {
+  "en": "Thanks to Roman for the nationalities, to Gianmarco for the install report, the line-ups and the Serie D report, to Filippo for the GOG launch, to Pietro for the Champions League qualifying report and to Marco and Luigi for the joypad question.",
+  "t": "Merci à Roman pour les nationalités, à Gianmarco pour le rapport d'installation, les compositions et le rapport sur la Serie D, à Filippo pour le lancement GOG, à Pietro pour le rapport sur les qualifications de Ligue des champions, et à Marco et Luigi pour la question sur la manette."
  }
 }

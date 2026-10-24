@@ -33,9 +33,9 @@ from i18n import CONTINENT, GAME, LANG_NAME, LANGS, LOCALE, T   # noqa: E402
 SITE_URL = 'https://worldofswos.com'
 REPO = 'https://github.com/aminta/swos-9697-mod'
 # 4.0 is not released yet: both point to the releases page (at release: /releases/latest/download/swos-9697-mod-patcher.html)
-PATCHER = REPO + '/releases/download/v4.0/swos-9697-mod-patcher.html'
-RELEASE_PAGE = REPO + '/releases/tag/v4.0'
-PATCHER_MD5 = '923bf8ee35e4174cdb486c1f4e22b9cd'        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
+PATCHER = REPO + '/releases/download/v4.0.1/swos-9697-mod-patcher.html'
+RELEASE_PAGE = REPO + '/releases/tag/v4.0.1'
+PATCHER_MD5 = '4775f8df81ea9b8e5aa4cf7476a48b92'        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
 WINNERS = 'full'        # 'none': no page tonight (4.0.1 lists the page) · 'page': page without season-end titles (block on,
                         # 4.0.1 lists the titles) · 'full': page + titles (block on, nothing in 4.0.1)
 WINNERS_40 = WINNERS in ('page', 'full')
@@ -147,7 +147,8 @@ def refresh():
     os.makedirs(os.path.join(DATA, 'next'), exist_ok=True)
     for src, dst in [('release/notes-world-2026-27.md', 'notes-world-2026-27.md'),
                      ('release/world-2026-27-competitions.md', 'competitions.md'),
-                     ('release/notes-4.0.md', 'notes-4.0.md')]:
+                     ('release/notes-4.0.md', 'notes-4.0.md'),
+                     ('release/notes-4.0.1.md', 'notes-4.0.1.md')]:
         open(os.path.join(DATA, 'next', dst), 'w', encoding='utf-8').write(md.strip_comments(show(src)))
     # the in-game FORMAT texts and the countries' names, with the mod's own tools (exported, never run in the repo)
     with tempfile.TemporaryDirectory() as tmp:
@@ -162,7 +163,7 @@ def refresh():
                 '    if not os.path.exists(p): continue\n'
                 '    pk = json.load(open(p))\n'
                 '    items = [{"title": t, "text": {l: page(w, t, tx[l], l) for l in fmtgame.LANGS}} '
-                'for w, cid, t, tx in fmtgame.from_pack(os.path.join(d, s))]\n'
+                'for w, cid, t, tx in fmtgame.from_pack(os.path.join(d, s)) if \"win\" not in tx]\n'
                 '    out[s] = {"names": pk["button_names"], "continent": pk["continent"], "fmt": items}\n'
                 'json.dump(out, open(sys.argv[3], "w"), ensure_ascii=False, indent=0)\n'
                 + STATS_CODE)
@@ -322,10 +323,10 @@ def page(lang, path, title, body, desc='', active=None, langs=None):
 <meta property="og:description" content="{esc(og_desc)}">
 <meta property="og:type" content="website"><meta property="og:url" content="{SITE_URL}{url}">
 <meta property="og:locale" content="{LOCALE[lang]}">
-<meta property="og:image" content="{SITE_URL}/static/og-{lang}.png?v=41"><meta property="og:image:width" content="1200">
+<meta property="og:image" content="{SITE_URL}/static/og-{lang}.png?v=42"><meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(t['tagline'])}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(og_title)}">
-<meta name="twitter:description" content="{esc(og_desc)}"><meta name="twitter:image" content="{SITE_URL}/static/og-{lang}.png?v=41">
+<meta name="twitter:description" content="{esc(og_desc)}"><meta name="twitter:image" content="{SITE_URL}/static/og-{lang}.png?v=42">
 <meta name="theme-color" content="#0a1a6e">
 <link rel="icon" href="/static/logo.svg" type="image/svg+xml">
 <link rel="preload" href="/static/fonts/silkscreen-700-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -395,7 +396,7 @@ def main_menu(lang):
             f'alt="{esc(t["menu_cap"])}"><figcaption class="px">{esc(t["menu_cap"])}</figcaption></figure></section>')
 
 
-RELEASED_401 = False    # flip when 4.0.1 is on GitHub: Joypad headline + 'what's new' instead of 'the upcoming 4.0.1'
+RELEASED_401 = True    # flip when 4.0.1 is on GitHub: Joypad headline + 'what's new' instead of 'the upcoming 4.0.1'
 WARN_FOREIGN = False   # urgent notice: remove when the fixed 4.0 is out (Regia 2026-10-22)
 
 
@@ -471,7 +472,7 @@ def home(d, lang):
 <p class="lead">{esc(t['lead'])}</p>
 <div class="cta">
 {dl_btn}
-{f'<a class="btn blue" href="/{lang}/news/">{esc(t["news_title"])}</a>' if CONTENT_40 else ''}
+{f'<a class="btn blue" href="/{lang}/news/">{esc(t["news_title401"] if RELEASED_401 else t["news_title"])}</a>' if CONTENT_40 else ''}
 <a class="btn orange" href="#install">{esc(t['how'])}</a>
 <a class="btn blue" href="/{lang}/countries/">{esc(t['see_world'])}</a>
 </div>
@@ -489,7 +490,7 @@ def home(d, lang):
 {winners}{cups}<h2 id="already">{esc(already.A[lang][0])}</h2>
 <div class="cards">{''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}</p></article>' for h, p in already.A[lang][1])}</div>
 <h2 id="next">{esc(t['h_next'])}</h2>
-<div class="panel next">{(f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["joy_h"])}</strong></p><p>{esc(t["joy_text"])}</p>') if RELEASED_401 else ''}{(f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["next401_h"])}</strong></p><ul>'
+<div class="panel next">{(f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["joy_h"])}</strong></p><p>{esc(t["joy_text"])} <a href="/{lang}/news/">{esc(t["news_title401"])}</a></p>') if RELEASED_401 else ''}{'' if RELEASED_401 else (f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["next401_h"])}</strong></p><ul>'
   + ''.join(f'<li>{esc(x)}</li>' for x in (([t['next401_cups']] if RELEASED else []) + t['next401']) + (t['next401_rc12'] + [t['next401_cal']] if RELEASED else []) + ([t['next401_winners_page' if WINNERS == 'none' else 'next401_winners']] if RELEASED and WINNERS != 'full' else [])) + '</ul>') if CONTENT_40 else ''}<p><span class="next-tag px">5.0</span> {esc(t['next_text'])}</p>
 <p class="note" style="margin:0">{esc(t['next_note'])}</p></div>
 <h2>{esc(t['h_shots'])}</h2>
@@ -828,23 +829,27 @@ def bug_page(d, lang):
     return page(lang, 'bug/', t['bug_title'], body)
 
 
-def news_page(d, lang):
+def news_page(d, lang, ver=None):
     """'What's new in 4.0' from release/notes-4.0.md (EN / IT; FR / DE translated block by block)."""
     t = T[lang]
-    src = split_langs(open(os.path.join(DATA, 'next', 'notes-4.0.md'), encoding='utf-8').read())
+    ver = ver or ('4.0.1' if RELEASED_401 else '4.0')
+    src = split_langs(open(os.path.join(DATA, 'next', f'notes-{ver}.md'), encoding='utf-8').read())
+    title = t['news_title401'] if ver == '4.0.1' else t['news_title']
+    path = 'news/' if ver == ('4.0.1' if RELEASED_401 else '4.0') else 'news/4.0/'
     bl = md.blocks(src['it' if lang == 'it' else 'en'])
     if bl and bl[0][0] == 'h':
         bl = bl[1:]                                  # the release title
     if lang in ('fr', 'de'):
         bl, _ = tr.translate(bl, lang)
     bl = [b for b in bl if not (b[0] == 'p' and b[1].strip() == '---')]
-    body = (f'<div class="wrap page-head"><h1>{esc(t["news_title"])}</h1>{warn_banner(lang)}</div><div class="wrap doc">'
+    body = (f'<div class="wrap page-head"><h1>{esc(title)}</h1>{warn_banner(lang)}</div><div class="wrap doc">'
             + (f'<p><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>' if RELEASED else
                f'<p class="panel next"><span class="next-tag px">4.0</span> {esc(t["with40"])}</p>'
                f'<p><span class="btn green soon-btn disabled" aria-disabled="true">{esc(t["dl"])}<small>{esc(t["dl_with40"])}</small></span></p>')
-            + f'{main_menu(lang).replace("<section class=\"wrap\">", "").replace("</section>", "")}{winners_block(lang)}'
-            f'{md.render(bl, _notes_link(lang), shift=-1)}</div>')
-    return page(lang, 'news/', t['news_title'], body)
+            + (f'{main_menu(lang).replace("<section class=\"wrap\">", "").replace("</section>", "")}{winners_block(lang)}' if ver == '4.0' else '')
+            + f'{md.render(bl, _notes_link(lang), shift=-1)}'
+            + (f'<p><a class="btn blue" href="/{lang}/news/4.0/">{esc(t["news_title"])}</a></p>' if ver == '4.0.1' else '') + '</div>')
+    return page(lang, path, title, body)
 
 
 def not_found():
@@ -865,8 +870,8 @@ def root_index():
 <link rel="canonical" href="{SITE_URL}/en/">{alt}<link rel="alternate" hreflang="x-default" href="{SITE_URL}/">
 <meta property="og:title" content="World of SWOS · SWOS 96/97 Mod"><meta property="og:type" content="website">
 <meta property="og:description" content="{esc(T['en']['meta_home'])}"><meta property="og:url" content="{SITE_URL}/">
-<meta property="og:image" content="{SITE_URL}/static/og-en.png?v=41"><meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{SITE_URL}/static/og-en.png?v=41">
+<meta property="og:image" content="{SITE_URL}/static/og-en.png?v=42"><meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{SITE_URL}/static/og-en.png?v=42">
 <link rel="icon" href="/static/logo.svg" type="image/svg+xml"><link rel="stylesheet" href="/static/style.css">
 <script>
 (function () {{
@@ -933,6 +938,8 @@ def build():
             pages['install/'] = install_page(d, lang)
         if CONTENT_40:
             pages['news/'] = news_page(d, lang)
+            if RELEASED_401:
+                pages['news/4.0/'] = news_page(d, lang, '4.0')
         for code in d['order']:
             pages[f'countries/{code}/'] = country(d, code, lang)
         for p, text in pages.items():
