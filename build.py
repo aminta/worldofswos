@@ -395,6 +395,7 @@ def main_menu(lang):
             f'alt="{esc(t["menu_cap"])}"><figcaption class="px">{esc(t["menu_cap"])}</figcaption></figure></section>')
 
 
+RELEASED_401 = False    # flip when 4.0.1 is on GitHub: Joypad headline + 'what's new' instead of 'the upcoming 4.0.1'
 WARN_FOREIGN = False   # urgent notice: remove when the fixed 4.0 is out (Regia 2026-10-22)
 
 
@@ -488,7 +489,7 @@ def home(d, lang):
 {winners}{cups}<h2 id="already">{esc(already.A[lang][0])}</h2>
 <div class="cards">{''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}</p></article>' for h, p in already.A[lang][1])}</div>
 <h2 id="next">{esc(t['h_next'])}</h2>
-<div class="panel next">{(f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["next401_h"])}</strong></p><ul>'
+<div class="panel next">{(f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["joy_h"])}</strong></p><p>{esc(t["joy_text"])}</p>') if RELEASED_401 else ''}{(f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["next401_h"])}</strong></p><ul>'
   + ''.join(f'<li>{esc(x)}</li>' for x in (([t['next401_cups']] if RELEASED else []) + t['next401']) + (t['next401_rc12'] + [t['next401_cal']] if RELEASED else []) + ([t['next401_winners_page' if WINNERS == 'none' else 'next401_winners']] if RELEASED and WINNERS != 'full' else [])) + '</ul>') if CONTENT_40 else ''}<p><span class="next-tag px">5.0</span> {esc(t['next_text'])}</p>
 <p class="note" style="margin:0">{esc(t['next_note'])}</p></div>
 <h2>{esc(t['h_shots'])}</h2>

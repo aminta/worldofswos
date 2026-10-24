@@ -31,6 +31,8 @@ CONTINENT = {
 
 T = {
  'en': dict(
+    joy_h='Joypad ready',
+    joy_text='On GOG the patcher sets up the joypad (stick and d-pad) with a ready calibration. The keyboard still works, and with no joypad the game switches to the keyboard by itself.',
     warn_foreign="Warning: in the 22/10 build of 4.0, in the World 2026-27 career, buying a player from the foreign market (VIEW FOREIGN PLAYER MARKET) closes the game. Please don't buy from the foreign market in that career: a fixed 4.0 is coming within hours. Other transfers and other careers work.",
     og_title='SWOS 96/97 Mod 4.0 - World 2026-27',
     next401_cups='National cups follow promotions and relegations: each season\'s entrants come from the current divisions (e.g. a club promoted to Serie C plays the Coppa Italia Serie C).', next401_cal='The two-line calendar labels of the UEFA qualifying rounds fitted.',
@@ -184,6 +186,8 @@ T = {
     lang_wip='', notfound='Page not found', notfound_p='This page is out of play.', back_home='Back to the home page',
  ),
  'it': dict(
+    joy_h='Joypad pronto',
+    joy_text='Su GOG il patcher configura il joypad (levetta e croce direzionale) con una taratura già pronta. La tastiera funziona come prima, e se non c\'è nessun joypad il gioco passa da solo alla tastiera.',
     warn_foreign='Avviso: nella 4.0 del 22/10, nella carriera Mondo 2026-27, acquistare un giocatore dal mercato estero (VISUAL. MERCATO STRANIERO) chiude il gioco. Non acquistare giocatori dal mercato estero in quella carriera: una 4.0 corretta arriva entro poche ore. Gli altri trasferimenti e le altre carriere funzionano.',
     og_title='SWOS 96/97 Mod 4.0 - Mondo 2026-27',
     next401_cups='Le coppe nazionali seguono promozioni e retrocessioni: le partecipanti di ogni stagione vengono dalle divisioni attuali (per esempio una squadra promossa in Serie C gioca la Coppa Italia Serie C).', next401_cal='Le etichette su due righe dei turni preliminari UEFA nel calendario sistemate.',
@@ -335,6 +339,8 @@ T = {
     back_home='Torna alla home',
  ),
  'fr': dict(
+    joy_h='Manette prête',
+    joy_text="Sur GOG, le patcher configure la manette (stick et croix directionnelle) avec un étalonnage prêt à l'emploi. Le clavier fonctionne comme avant, et sans manette le jeu passe tout seul au clavier.",
     warn_foreign="Avertissement : dans la version 4.0 du 22/10, dans la carrière Monde 2026-27, acheter un joueur sur le marché étranger (VOIR MARCHE ETRANG JOUEURS DISPO) ferme le jeu. N'achetez pas de joueurs sur le marché étranger dans cette carrière : une 4.0 corrigée arrive d'ici quelques heures. Les autres transferts et les autres carrières fonctionnent.",
     og_title='SWOS 96/97 Mod 4.0 - Monde 2026-27',
     next401_cups="Les coupes nationales suivent les montées et les relégations : les participants de chaque saison viennent des divisions actuelles (par exemple, un club promu en Serie C joue la Coppa Italia Serie C).", next401_cal='Les libellés sur deux lignes des tours de qualification UEFA dans le calendrier ajustés.',
@@ -490,6 +496,8 @@ T = {
     notfound='Page introuvable', notfound_p='Cette page est sortie du terrain.', back_home="Retour à l'accueil",
  ),
  'de': dict(
+    joy_h='Gamepad startklar',
+    joy_text='Auf GOG richtet der Patcher das Gamepad (Stick und Steuerkreuz) mit einer fertigen Kalibrierung ein. Die Tastatur funktioniert weiter, und ohne Gamepad schaltet das Spiel selbst auf die Tastatur um.',
     warn_foreign='Warnung: In der 4.0 vom 22.10. beendet in der Karriere Welt 2026-27 der Kauf eines Spielers auf dem Ausländischen Spielermarkt (AUSLÄNDISCHN SPIELERMARKT ANZEIG) das Spiel. Bitte in dieser Karriere keine Spieler auf dem Ausländischen Spielermarkt kaufen: Eine korrigierte 4.0 kommt in wenigen Stunden. Die anderen Transfers und die anderen Karrieren funktionieren.',
     og_title='SWOS 96/97 Mod 4.0 - Welt 2026-27',
     next401_cups='Landespokale folgen Auf- und Abstiegen: Die Teilnehmer jeder Saison kommen aus den aktuellen Spielklassen (zum Beispiel spielt ein in die Serie C aufgestiegener Verein die Coppa Italia Serie C).', next401_cal='Die zweizeiligen Kalenderbezeichnungen der UEFA-Qualifikationsrunden angepasst.',
