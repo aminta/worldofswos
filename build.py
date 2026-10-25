@@ -783,6 +783,25 @@ def joypad_block(lang):
     return f'<h2 id="joypad">{esc(x["jh"])}</h2><ul>' + ''.join(f'<li>{i}</li>' for i in x['jt']) + '</ul>'
 
 
+VIDEO = {'it': ('o10rEdfasvU', 'Video: come si installa', '',
+                'Installazione con un clic su GOG, il trucco per Program Files, primo avvio con «SWOS Mod - Italiano.bat» e il pulsante CARRIERA 2026-27, aggiornamento dalla 4.0, versione CD, joypad con il tuo DOSBox.'),
+         'en': ('lmbYbEYYaoM', 'Video: how to install', '',
+                'One-click install on GOG, the Program Files tip, first start with the "SWOS Mod - English.bat" launcher and the CAREER 2026-27 button, update from 4.0, CD version, joypad with your own DOSBox.'),
+         'fr': ('lmbYbEYYaoM', 'Vidéo : comment installer', ' (en anglais)',
+                "Installation en un clic sur GOG, l'astuce Program Files, premier lancement avec « SWOS Mod - Francais.bat » et le bouton CARRIÈRE 2026-27, mise à jour depuis la 4.0, version CD, manette avec votre propre DOSBox."),
+         'de': ('lmbYbEYYaoM', 'Video: So wird installiert', ' (auf Englisch)',
+                'Installation mit einem Klick bei GOG, der Tipp zu Program Files, erster Start mit „SWOS Mod - Deutsch.bat“ und dem Knopf KARRIERE 2026-27, Update von der 4.0, CD-Version, Joypad mit eigener DOSBox.')}
+
+
+def video_block(lang):
+    vid, h, note, cap = VIDEO[lang]
+    return (f'<h2 id="video">{esc(h)}{esc(note)}</h2><div class="video" style="position:relative;max-width:720px;aspect-ratio:16/9">'
+            f'<iframe src="https://www.youtube-nocookie.com/embed/{vid}" title="{esc(h)}" loading="lazy" allowfullscreen '
+            f'allow="accelerometer; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" '
+            f'style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>'
+            f'<p class="note">{esc(cap)} <a href="https://youtu.be/{vid}">youtu.be/{vid}</a></p>')
+
+
 def install_page(d, lang):
     g, t = install.G[lang], T[lang]
 
@@ -810,7 +829,7 @@ def install_page(d, lang):
     cases = ''.join(f'<h2>{esc(h)}</h2><ul>' + ''.join(f'<li>{text(x)}</li>' for x in items) + '</ul>'
                     for h, items in g['cases'] if 'MISTER_DRAFT' not in items)       # MiSTer: held
     body = f'''<div class="wrap page-head"><h1>{esc(g['title'])}</h1>{warn_banner(lang)}<p>{esc(g['lead'])}</p></div>
-<div class="wrap doc"><h2>{esc(g['section'])}</h2><ol class="steps">{steps}</ol>
+<div class="wrap doc">{video_block(lang)}<h2>{esc(g['section'])}</h2><ol class="steps">{steps}</ol>
 <p class="panel" style="margin-top:16px">{esc(g['fallback'])}{(' ' + esc(t['progfiles_manual'])) if RELEASED else ''}</p>
 {f'<p class="panel next" id="progfiles">{esc(t["progfiles"])}</p>' if RELEASED else ''}{cases}{launch_block(lang)}{saves_table(lang)}{joypad_block(lang)}</div>'''
     return page(lang, 'install/', g['title'], body, active='install')
