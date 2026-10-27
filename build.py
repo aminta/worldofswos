@@ -33,9 +33,9 @@ from i18n import CONTINENT, GAME, LANG_NAME, LANGS, LOCALE, T   # noqa: E402
 SITE_URL = 'https://worldofswos.com'
 REPO = 'https://github.com/aminta/swos-9697-mod'
 # 4.0 is not released yet: both point to the releases page (at release: /releases/latest/download/swos-9697-mod-patcher.html)
-PATCHER = REPO + '/releases/download/v4.0.1/swos-9697-mod-patcher.html'
-RELEASE_PAGE = REPO + '/releases/tag/v4.0.1'
-PATCHER_MD5 = '4775f8df81ea9b8e5aa4cf7476a48b92'        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
+PATCHER = REPO + '/releases/download/v4.0.2/swos-9697-mod-patcher.html'
+RELEASE_PAGE = REPO + '/releases/tag/v4.0.2'
+PATCHER_MD5 = '76defb19cb265686d5adb810c209de5d'        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
 WINNERS = 'full'        # 'none': no page tonight (4.0.1 lists the page) · 'page': page without season-end titles (block on,
                         # 4.0.1 lists the titles) · 'full': page + titles (block on, nothing in 4.0.1)
 WINNERS_40 = WINNERS in ('page', 'full')
@@ -148,7 +148,8 @@ def refresh():
     for src, dst in [('release/notes-world-2026-27.md', 'notes-world-2026-27.md'),
                      ('release/world-2026-27-competitions.md', 'competitions.md'),
                      ('release/notes-4.0.md', 'notes-4.0.md'),
-                     ('release/notes-4.0.1.md', 'notes-4.0.1.md')]:
+                     ('release/notes-4.0.1.md', 'notes-4.0.1.md'),
+                     ('release/notes-4.0.2.md', 'notes-4.0.2.md')]:
         open(os.path.join(DATA, 'next', dst), 'w', encoding='utf-8').write(md.strip_comments(show(src)))
     # the in-game FORMAT texts and the countries' names, with the mod's own tools (exported, never run in the repo)
     with tempfile.TemporaryDirectory() as tmp:
@@ -472,7 +473,7 @@ def home(d, lang):
 <p class="lead">{esc(t['lead'])}</p>
 <div class="cta">
 {dl_btn}
-{f'<a class="btn blue" href="/{lang}/news/">{esc(t["news_title401"] if RELEASED_401 else t["news_title"])}</a>' if CONTENT_40 else ''}
+{f'<a class="btn blue" href="/{lang}/news/">{esc(t["news_title402"])}</a>' if CONTENT_40 else ''}
 <a class="btn orange" href="#install">{esc(t['how'])}</a>
 <a class="btn blue" href="/{lang}/countries/">{esc(t['see_world'])}</a>
 </div>
@@ -490,7 +491,7 @@ def home(d, lang):
 {winners}{cups}<h2 id="already">{esc(already.A[lang][0])}</h2>
 <div class="cards">{''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}</p></article>' for h, p in already.A[lang][1])}</div>
 <h2 id="next">{esc(t['h_next'])}</h2>
-<div class="panel next">{(f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["joy_h"])}</strong></p><p>{esc(t["joy_text"])} <a href="/{lang}/news/">{esc(t["news_title401"])}</a></p>') if RELEASED_401 else ''}{'' if RELEASED_401 else (f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["next401_h"])}</strong></p><ul>'
+<div class="panel next">{(f'<p><span class="next-tag px">4.0.2</span> <strong>{esc(t["h402"])}</strong></p><p>{esc(t["t402"])} <a href="/{lang}/news/">{esc(t["news_title402"])}</a></p>') if RELEASED_401 else ''}{'' if RELEASED_401 else (f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["next401_h"])}</strong></p><ul>'
   + ''.join(f'<li>{esc(x)}</li>' for x in (([t['next401_cups']] if RELEASED else []) + t['next401']) + (t['next401_rc12'] + [t['next401_cal']] if RELEASED else []) + ([t['next401_winners_page' if WINNERS == 'none' else 'next401_winners']] if RELEASED and WINNERS != 'full' else [])) + '</ul>') if CONTENT_40 else ''}<p><span class="next-tag px">5.0</span> {esc(t['next_text'])}</p>
 <p class="note" style="margin:0">{esc(t['next_note'])}</p></div>
 <h2>{esc(t['h_shots'])}</h2>
@@ -851,10 +852,10 @@ def bug_page(d, lang):
 def news_page(d, lang, ver=None):
     """'What's new in 4.0' from release/notes-4.0.md (EN / IT; FR / DE translated block by block)."""
     t = T[lang]
-    ver = ver or ('4.0.1' if RELEASED_401 else '4.0')
+    ver = ver or '4.0.2'
     src = split_langs(open(os.path.join(DATA, 'next', f'notes-{ver}.md'), encoding='utf-8').read())
-    title = t['news_title401'] if ver == '4.0.1' else t['news_title']
-    path = 'news/' if ver == ('4.0.1' if RELEASED_401 else '4.0') else 'news/4.0/'
+    title = {'4.0.2': t['news_title402'], '4.0.1': t['news_title401']}.get(ver, t['news_title'])
+    path = 'news/' if ver == '4.0.2' else f'news/{ver}/'
     bl = md.blocks(src['it' if lang == 'it' else 'en'])
     if bl and bl[0][0] == 'h':
         bl = bl[1:]                                  # the release title
@@ -867,7 +868,7 @@ def news_page(d, lang, ver=None):
                f'<p><span class="btn green soon-btn disabled" aria-disabled="true">{esc(t["dl"])}<small>{esc(t["dl_with40"])}</small></span></p>')
             + (f'{main_menu(lang).replace("<section class=\"wrap\">", "").replace("</section>", "")}{winners_block(lang)}' if ver == '4.0' else '')
             + f'{md.render(bl, _notes_link(lang), shift=-1)}'
-            + (f'<p><a class="btn blue" href="/{lang}/news/4.0/">{esc(t["news_title"])}</a></p>' if ver == '4.0.1' else '') + '</div>')
+            + (f'<p class="cta">' + ''.join(f'<a class="btn blue" href="/{lang}/news/{v}/">{esc(n)}</a>' for v, n in (('4.0.1', t['news_title401']), ('4.0', t['news_title'])) if v != ver) + '</p>' if ver == '4.0.2' else '') + '</div>')
     return page(lang, path, title, body)
 
 
@@ -957,8 +958,8 @@ def build():
             pages['install/'] = install_page(d, lang)
         if CONTENT_40:
             pages['news/'] = news_page(d, lang)
-            if RELEASED_401:
-                pages['news/4.0/'] = news_page(d, lang, '4.0')
+            pages['news/4.0.1/'] = news_page(d, lang, '4.0.1')
+            pages['news/4.0/'] = news_page(d, lang, '4.0')
         for code in d['order']:
             pages[f'countries/{code}/'] = country(d, code, lang)
         for p, text in pages.items():

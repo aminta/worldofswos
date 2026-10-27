@@ -1034,5 +1034,181 @@
  "848836346c33": {
   "en": "Thanks to Roman for the nationalities, to Gianmarco for the install report, the line-ups and the Serie D report, to Filippo for the GOG launch, to Pietro for the Champions League qualifying report and to Marco and Luigi for the joypad question.",
   "t": "Merci à Roman pour les nationalités, à Gianmarco pour le rapport d'installation, les compositions et le rapport sur la Serie D, à Filippo pour le lancement GOG, à Pietro pour le rapport sur les qualifications de Ligue des champions, et à Marco et Luigi pour la question sur la manette."
+ },
+ "5e6fe854935c": {
+  "en": "SWOS 96/97 Mod 4.0.2",
+  "t": "SWOS 96/97 Mod 4.0.2"
+ },
+ "bbce7d166f93": {
+  "en": "4.0.2 puts two things first: the game now always runs in **full graphics**, and the **real kits of 227 Italian clubs**. It also brings bigger squads and buying players from other clubs' extra players, a CONTROLS menu inside the game, editable shirt numbers, a keyboard mode for joypads on GOG, more leagues in their real format (Guatemala, El Salvador, Paraguay), fixes to the European places and a long list of fixes to menus and screens. Everything in 4.0 and 4.0.1 stays as it was; careers saved with 4.0 or 4.0.1 load and play on (see \"Good to know\").",
+  "t": "La 4.0.2 met deux choses en avant : le jeu tourne désormais toujours en **graphismes complets**, et les **vrais maillots de 227 clubs italiens**. Elle apporte aussi des effectifs plus grands et l'achat de joueurs en surnombre d'autres clubs, un menu COMMANDES dans le jeu, des numéros de maillot modifiables, un mode clavier pour les manettes sur GOG, d'autres championnats dans leur format réel (Guatemala, Salvador, Paraguay), des corrections des places européennes et une longue liste de corrections de menus et d'écrans. Tout ce qui est dans la 4.0 et la 4.0.1 reste comme avant ; les carrières sauvegardées avec la 4.0 ou la 4.0.1 se chargent et continuent (voir « Bon à savoir »)."
+ },
+ "88fed514f02f": {
+  "en": "In the spotlight",
+  "t": "Au premier plan"
+ },
+ "f81d87a0d951": {
+  "en": "- **Full graphics, always.** The game used to start in the reduced graphics mode meant for slow PCs of 1996 whenever its settings file said so: that is how GOG's own settings file is made, and a slow MiSTer does the same. You got poorer graphics, no shirt numbers 17-99 over the players' heads, and players with dark skin and blond hair drawn as a block of pixels. Now the game always starts in full graphics. If you want the old reduced mode, start the game with `/H`. In the reduced mode the two problems above are fixed too.",
+  "t": "- **Graphismes complets, toujours.** Le jeu démarrait en mode graphique réduit, prévu pour les PC lents de 1996, dès que son fichier de réglages le disait : c'est ainsi qu'est fait le fichier de réglages de GOG, et une MiSTer lente fait pareil. Vous aviez des graphismes plus pauvres, pas de numéros de maillot 17-99 au-dessus des joueurs, et des joueurs à la peau foncée et aux cheveux blonds dessinés comme un bloc de pixels. Maintenant le jeu démarre toujours en graphismes complets. Si vous voulez l'ancien mode réduit, lancez le jeu avec `/H`. Dans le mode réduit, les deux problèmes ci-dessus sont aussi corrigés."
+ },
+ "6bbd1a09cdee": {
+  "en": "- **The real kits of 227 Italian clubs.** Every Italian club from Serie A down to Serie D (227 clubs, checked one by one) now plays in its real 2026-27 kits: first and second shirt, shirt colours, shorts and socks. In Serie D many clubs had stand-in colours: now they are the right ones. Sources: the clubs' official shops and pages (Serie A to C), Wikipedia and the kit archives (Serie D).",
+  "t": "- **Les vrais maillots de 227 clubs italiens.** Chaque club italien, de la Serie A à la Serie D (227 clubs, vérifiés un par un), joue maintenant avec ses vrais maillots 2026-27 : premier et second maillot, couleurs du maillot, short et chaussettes. En Serie D, beaucoup de clubs avaient des couleurs de remplacement : ce sont maintenant les bonnes. Sources : les boutiques et pages officielles des clubs (Serie A à C), Wikipédia et les archives de maillots (Serie D)."
+ },
+ "e7d0afc17316": {
+  "en": "- **Malen is no longer blond** (Donyell Malen, Roma): the game has no bald heads, so he has dark hair, the closest look. The \"pile of pixels\" that appeared in his place in a match is fixed (it was the reduced graphics mode, see above).",
+  "t": "- **Malen n'est plus blond** (Donyell Malen, Roma) : le jeu n'a pas de têtes chauves, il a donc les cheveux foncés, l'aspect le plus proche. Le « tas de pixels » qui apparaissait à sa place dans un match est corrigé (c'était le mode graphique réduit, voir plus haut)."
+ },
+ "ad82bd7d3298": {
+  "en": "Bigger squads, and buying from other clubs' extra players",
+  "t": "Des effectifs plus grands, et l'achat des surnombres des autres clubs"
+ },
+ "2b7ad2b9b399": {
+  "en": "- **Bigger squads.** In the World 2026-27 career, the club you manage now starts with up to 30 real players (the 16 of its team record plus up to 14 more, the club's next most important players), instead of the 16 plus 10 invented reserves. Computer clubs still play with their 16. The extra players are never better than the weakest of the club's 16, and they are paid like reserves (66%) until they are transferred. The game's squad limit is still 30: a club that starts with 30 players has to sell before it can buy.",
+  "t": "- **Des effectifs plus grands.** Dans la carrière Monde 2026-27, le club que vous dirigez démarre maintenant avec jusqu'à 30 vrais joueurs (les 16 de la fiche de son équipe plus jusqu'à 14 autres, les joueurs suivants les plus importants du club), au lieu des 16 plus 10 remplaçants inventés. Les clubs de l'ordinateur jouent toujours avec leurs 16. Les joueurs en plus ne sont jamais meilleurs que le plus faible des 16 du club et sont payés comme des remplaçants (66 %) jusqu'à leur transfert. La limite d'effectif du jeu reste 30 : un club qui démarre avec 30 joueurs doit vendre avant de pouvoir acheter."
+ },
+ "bf662d19e156": {
+  "en": "- **Buying other clubs' extra players.** The national transfer market can now offer players 17-30 of other clubs, with price and wage from the mod's scale. When you buy one he joins your squad and cannot be bought a second time in that career.",
+  "t": "- **Acheter les surnombres des autres clubs.** Le marché national des transferts peut maintenant proposer les joueurs 17-30 des autres clubs, avec prix et salaire de l'échelle du mod. Quand vous en achetez un, il rejoint votre effectif et ne peut plus être acheté une seconde fois dans cette carrière."
+ },
+ "cecaee632ba9": {
+  "en": "- **Looking at other clubs' full squads.** When you browse a club to buy, a second page (the button next to ESCI) lists its extra players. In STAT, VIS. SQUADRE (the squad view) now also shows a club's full squad, with a PAG. SUCC. button for the page of extras. These are for looking only: the computer club still plays with its 16.",
+  "t": "- **Voir les effectifs complets des autres clubs.** Quand vous parcourez un club pour acheter, une deuxième page (le bouton à côté de ESCI) liste ses joueurs en plus. Dans STAT, VIS. SQUADRE (la vue des effectifs) montre aussi l'effectif complet d'un club, avec un bouton PAG. SUCC. pour la page des joueurs en plus. C'est à regarder seulement : le club de l'ordinateur joue toujours avec ses 16."
+ },
+ "bee75ca77f75": {
+  "en": "Controls",
+  "t": "Commandes"
+ },
+ "bc752b97c6df": {
+  "en": "- **A CONTROLS menu inside the game.** OPTIONS now has a COMANDI / CONTROLS / COMMANDES / STEUERUNG button (between ESCI A DOS and ESCI). There you choose the input (keyboard only, joypad 1 + keyboard 2, keyboard 1 + joypad 2, two joypads), set each key by pressing it (a key already used is refused, ESC keeps the old one), calibrate the joypads (stick centred, then every corner, with a live test line) and save: the choice is written into the game's SETUP.DAT. If no joypad is connected the game goes on with the keyboard. The button is not there with SWOS++.",
+  "t": "- **Un menu COMMANDES dans le jeu.** OPTIONS a maintenant un bouton COMANDI / CONTROLS / COMMANDES / STEUERUNG (entre ESCI A DOS et ESCI). Vous y choisissez l'entrée (clavier seul, manette 1 + clavier 2, clavier 1 + manette 2, deux manettes), réglez chaque touche en l'appuyant (une touche déjà utilisée est refusée, ESC garde l'ancienne), calibrez les manettes (stick au centre, puis chaque coin, avec une ligne de test en direct) et sauvegardez : le choix est écrit dans le SETUP.DAT du jeu. Si aucune manette n'est branchée, le jeu continue au clavier. Le bouton n'est pas là avec SWOS++."
+ },
+ "b5ff7e7df0e3": {
+  "en": "- **Joypad in keyboard mode (GOG).** For joysticks that work in the menus but, in a match, only go up and left (two-axis sticks without a d-pad): the install page has a third tick, \"GOG version, joypad in keyboard mode\", off by default and used together with the first one. The stick, the d-pad and the buttons become the arrow keys and Ctrl; no calibration, any joystick or joypad works, and joypad and keyboard both control player 1. Untick it and install again to go back to the calibrated joypad.",
+  "t": "- **Manette en mode clavier (GOG).** Pour les joysticks qui marchent dans les menus mais, en match, ne vont qu'en haut et à gauche (sticks à deux axes sans croix directionnelle) : la page d'installation a une troisième case, « Version GOG, manette en mode clavier », décochée par défaut et utilisée avec la première. Le stick, la croix directionnelle et les boutons deviennent les flèches du clavier et Ctrl ; pas de calibration, tout joystick ou manette fonctionne, et manette et clavier commandent tous deux le joueur 1. Décochez-la et réinstallez pour revenir à la manette calibrée."
+ },
+ "3f973cad8da5": {
+  "en": "- **Edit your shirt numbers.** On the team screen before a match, press LEFT on one of your players to light his number: UP / DOWN go to the next / previous free number from 1 to 99, or type the digits (a number already in use is swapped with its owner); FIRE, ENTER, LEFT or RIGHT confirm, ESC cancels. It works only on your own team. The first change gives every player of the team his own number; from then on the team keeps its numbers (no automatic 12-16 on the bench, no swapping of numbers, new players get a free one). Careers and seasons save the numbers; in a friendly they last for the session.",
+  "t": "- **Modifiez vos numéros de maillot.** Sur l'écran de l'équipe avant un match, appuyez sur GAUCHE sur l'un de vos joueurs pour allumer son numéro : HAUT / BAS vont au numéro libre suivant / précédent de 1 à 99, ou tapez les chiffres (un numéro déjà utilisé est échangé avec son porteur) ; TIR, ENTRÉE, GAUCHE ou DROITE confirment, ESC annule. Cela ne marche que sur votre propre équipe. Le premier changement donne à chaque joueur de l'équipe son propre numéro ; ensuite l'équipe garde ses numéros (pas de 12-16 automatique sur le banc, pas d'échange de numéros, les nouveaux joueurs en reçoivent un libre). Les carrières et les saisons sauvegardent les numéros ; en match amical, ils durent le temps de la session."
+ },
+ "9f57221497a4": {
+  "en": "- **Numbers of two digits** are now drawn well on the tactics pitch, and in the bench list in a match (the number ends in one column, clear of the face icon, and the name starts a little further right).",
+  "t": "- **Les numéros à deux chiffres** sont maintenant bien dessinés sur le terrain tactique et dans la liste du banc en match (le numéro finit dans une colonne, à l'écart de l'icône du visage, et le nom commence un peu plus à droite)."
+ },
+ "379e5d2d2e9b": {
+  "en": "- **The number over your player's head.** Some players had no number over their head in a match, even when you controlled them, mostly on GOG and on MiSTer. It was a game start-up problem: the game left some of its memory not cleared and only DOSBox-X happens to clear it. Now the game clears it. In the reduced graphics mode (`/H`) the numbers 17-99 are drawn too.",
+  "t": "- **Le numéro au-dessus de la tête de votre joueur.** Certains joueurs n'avaient pas de numéro au-dessus de la tête en match, même quand vous les contrôliez, surtout sur GOG et sur MiSTer. C'était un problème de démarrage du jeu : il laissait une partie de sa mémoire non effacée et seul DOSBox-X l'efface par hasard. Maintenant le jeu l'efface. En mode graphique réduit (`/H`), les numéros 17-99 sont aussi dessinés."
+ },
+ "ad431b399a48": {
+  "en": "Cups, tournaments and leagues",
+  "t": "Coupes, tournois et championnats"
+ },
+ "eaaae59bc690": {
+  "en": "- **European places.** A club that wins its league and the Conference League in the same season, and so already has a Champions League place, keeps the Champions League place (before, it was sent to the Europa League and its Champions League place was passed down). Reported by Pietro.",
+  "t": "- **Places européennes.** Un club qui gagne son championnat et la Ligue Conférence la même saison, et a donc déjà une place en Ligue des champions, garde sa place en Ligue des champions (avant, il était envoyé en Ligue Europa et sa place en Ligue des champions était transmise). Signalé par Pietro."
+ },
+ "09c1f494f7b0": {
+  "en": "- **CONCACAF Champions Cup:** a tie level on aggregate goes to away goals, then extra time (where away goals no longer count), then penalties, as in the real 2026 competition. The CAF Champions League and Confederation Cup ties your club plays decide on away goals and then penalties, as in 2025-26.",
+  "t": "- **CONCACAF Champions Cup :** une rencontre à égalité sur l'ensemble des deux matchs se décide aux buts à l'extérieur, puis en prolongation (où les buts à l'extérieur ne comptent plus), puis aux tirs au but, comme dans la vraie compétition 2026. Les rencontres de CAF Champions League et de Coupe de la Confédération que joue votre club se décident aux buts à l'extérieur puis aux tirs au but, comme en 2025-26."
+ },
+ "8ca23ff8f8c4": {
+  "en": "- **Guatemala and El Salvador** now play their real 2026-27 season: two tournaments, the Apertura and the Clausura, each a double round robin of 12 clubs, points reset in between, and an annual table. Each tournament ends with its real final phase: the 3rd-6th and 4th-5th play-offs and the semi-finals over two legs (the better placed club goes through when level), then the final: over two legs in Guatemala, one match at a neutral ground in El Salvador, with extra time and penalties. Declared: the Clausura's calendar repeats the Apertura's with home and away swapped (the real 2027 dates are not out yet); when the regular phase ends level on points, the game's order applies (goal difference, goals scored).",
+  "t": "- **Guatemala et Salvador** jouent maintenant leur vraie saison 2026-27 : deux tournois, l'Apertura et la Clausura, chacun en aller-retour à 12 clubs, points remis à zéro entre les deux, et un classement annuel. Chaque tournoi se termine par sa vraie phase finale : les barrages 3e-6e et 4e-5e et les demi-finales en aller-retour (le mieux classé passe en cas d'égalité), puis la finale : en aller-retour au Guatemala, en un match sur terrain neutre au Salvador, avec prolongation et tirs au but. Déclaré : le calendrier de la Clausura reprend celui de l'Apertura avec domicile et extérieur inversés (les vraies dates 2027 ne sont pas encore connues) ; quand la phase régulière finit à égalité de points, l'ordre du jeu s'applique (différence de buts, buts marqués)."
+ },
+ "bb5279d11404": {
+  "en": "- **Paraguay** plays its real 2026 season: the Apertura and the Clausura, 22 match days each, home and away, on the real calendar, the Clausura from zero points. The leader of each table wins the tournament. Level on points, the order is decided by points in the matches between the clubs concerned (the \"head-to-head\"), then the head-to-head goal difference, the goal difference and the goals scored; an extra match at a neutral ground only if the clubs are still level on all of these. Declared: three or more clubs level at the top: no draw, the table's order after those criteria; no relegation (one division in the world).",
+  "t": "- **Paraguay** joue sa vraie saison 2026 : l'Apertura et la Clausura, 22 journées chacune, aller-retour, sur le vrai calendrier, la Clausura à partir de zéro point. Le leader de chaque classement gagne le tournoi. À égalité de points, l'ordre est décidé par les points dans les matchs entre les clubs concernés (la « confrontation directe »), puis la différence de buts de ces matchs, la différence de buts et les buts marqués ; un match supplémentaire sur terrain neutre seulement si les clubs sont encore à égalité sur tout cela. Déclaré : trois clubs ou plus à égalité en tête : pas de match, l'ordre du classement après ces critères ; pas de relégation (une seule division dans le monde)."
+ },
+ "ab1c0b051426": {
+  "en": "- **Mexico: the right title on every screen.** The Liga MX and Liga de Expansión tables and calendars are titled with the tournament being played (LIGA MX APERTURA, then LIGA MX CLAUSURA; MX APERTURA / MX CLAUSURA in the calendar).",
+  "t": "- **Mexique : le bon titre sur chaque écran.** Les classements et calendriers de la Liga MX et de la Liga de Expansión portent le titre du tournoi en cours (LIGA MX APERTURA, puis LIGA MX CLAUSURA ; MX APERTURA / MX CLAUSURA dans le calendrier)."
+ },
+ "0f9098e3b1a4": {
+  "en": "- **The WINNERS page.** For the play-offs that decide the title in your own league (for example Peru's Liga 1 play-offs, or Uruguay's CAMPEONATO URUGUAYO) it now says DA GIOCARE (\"to be played\") until the end of the season decides it, instead of leaving the line out. In Uruguay and Peru the champion is named as soon as one club leads both the Apertura and the Clausura (no play-off then).",
+  "t": "- **La page VAINQUEURS.** Pour les barrages qui décident le titre de votre propre championnat (par exemple les barrages de la Liga 1 du Pérou, ou le CAMPEONATO URUGUAYO), elle affiche maintenant A JOUER (« à jouer ») jusqu'à ce que la fin de saison le décide, au lieu d'omettre la ligne. En Uruguay et au Pérou, le champion est nommé dès qu'un club mène à la fois l'Apertura et la Clausura (pas de barrage alors)."
+ },
+ "50f9ed8fd716": {
+  "en": "- **Serie D play-offs.** The FORMAT page of the Serie D groups and of the play-off now says clearly that the group play-offs decide placings only and give no promotion (a user who won them twice expected to go up).",
+  "t": "- **Barrages de Serie D.** La page FORMAT des groupes de Serie D et du barrage dit maintenant clairement que les barrages de groupe ne décident que des places et ne donnent aucune promotion (un utilisateur qui les avait gagnés deux fois s'attendait à monter)."
+ },
+ "78dfb42bcc27": {
+  "en": "- **Club buttons in the lists.** In the team choice of a career and in the club list of the transfer market, the buttons with the names of the Serie D clubs appeared in different, random colours. Now they all have their normal colour.",
+  "t": "- **Boutons des clubs dans les listes.** Dans le choix de l'équipe d'une carrière et dans la liste des clubs du marché des transferts, les boutons portant les noms des clubs de Serie D apparaissaient dans des couleurs différentes, au hasard. Maintenant ils ont tous leur couleur normale."
+ },
+ "e4c3746fe3f3": {
+  "en": "- **VISUALIZZA MONDO** (view the world) in the historic worlds (World 2026-27, Europe 1984-85, 1996-97) opens straight on the world's continents (or countries), with no one-entry menu first.",
+  "t": "- **VISUALIZZA MONDO** (voir le monde) dans les mondes historiques (Monde 2026-27, Europe 1984-85, 1996-97) s'ouvre directement sur les continents (ou les pays) du monde, sans menu à une seule entrée devant."
+ },
+ "f31121c00b98": {
+  "en": "- **Save names.** A save called CON, NUL, PRN, AUX, COM1, LPT1 and the like (with or without an extension) used to write into the DOS device: no file, and the career was lost. The game now refuses the name with a message (NOME FILE NON VALIDO / INVALID FILENAME / NOM DE FICHIER INVALIDE / DATEINAME NICHT ERLAUBT) and goes back to the save box.",
+  "t": "- **Noms de sauvegarde.** Une sauvegarde nommée CON, NUL, PRN, AUX, COM1, LPT1 et similaires (avec ou sans extension) écrivait dans le périphérique DOS : aucun fichier, et la carrière était perdue. Le jeu refuse maintenant le nom avec un message (NOME FILE NON VALIDO / INVALID FILENAME / NOM DE FICHIER INVALIDE / DATEINAME NICHT ERLAUBT) et revient à la boîte de sauvegarde."
+ },
+ "b4159a8e5021": {
+  "en": "- **STATS menu.** Coming back from FORMAT or WINNERS the menu no longer changes (before, extra entries appeared and an empty page 'NESSUNA DESCRIZIONE').",
+  "t": "- **Menu STATS.** En revenant de FORMAT ou de WINNERS, le menu ne change plus (avant, des entrées en plus apparaissaient et une page vide « NESSUNA DESCRIZIONE »)."
+ },
+ "f40254606850": {
+  "en": "- **Data corrections (World 2026-27).** The club AMERICA PE and TREFELIN B & G have their right names, 22 pairs of clubs with the same name are told apart, and 105 clubs that had no coach now have one. Further coaches are still missing for some clubs (El Salvador, Brazil, Australia, Italy, Suriname, Chinese Taipei).",
+  "t": "- **Corrections de données (Monde 2026-27).** Le club AMERICA PE et TREFELIN B & G ont leurs bons noms, 22 paires de clubs de même nom sont distinguées, et 105 clubs qui n'avaient pas d'entraîneur en ont maintenant un. Il manque encore des entraîneurs pour certains clubs (Salvador, Brésil, Australie, Italie, Suriname, Taïwan)."
+ },
+ "79fc372dc790": {
+  "en": "Good to know",
+  "t": "Bon à savoir"
+ },
+ "ad9ccaa59e80": {
+  "en": "- **Saves.** Careers saved with 4.0 or 4.0.1 load and play on. A career saved with 4.0.2 whose transfer market lists a player 17-30 of another club, or in which you have bought one, can only be loaded with 4.0.2 or later (older versions would read the player from the wrong place).",
+  "t": "- **Sauvegardes.** Les carrières sauvegardées avec la 4.0 ou la 4.0.1 se chargent et continuent. Une carrière sauvegardée avec la 4.0.2 dont le marché des transferts liste un joueur 17-30 d'un autre club, ou dans laquelle vous en avez acheté un, ne peut être chargée qu'avec la 4.0.2 ou plus récente (les anciennes versions liraient le joueur au mauvais endroit)."
+ },
+ "eb5669de6ea3": {
+  "en": "- **European qualifying rounds.** If your club drops from the Champions League qualifying into the Conference League (or the Europa League) qualifying, the calendar shows the rounds already played under the new cup's name too (for example \"PRELIM. ECL\" for the first round). Only the label is wrong: the draw, the opponents and the places you earn are right. This will be fixed in 4.0.3.",
+  "t": "- **Tours préliminaires européens.** Si votre club passe des qualifications de la Ligue des champions à celles de la Ligue Conférence (ou de la Ligue Europa), le calendrier montre les tours déjà joués aussi sous le nom de la nouvelle coupe (par exemple « PRELIM. ECL » pour le premier tour). Seule l'étiquette est fausse : le tirage, les adversaires et les places que vous gagnez sont justes. Ce sera corrigé dans la 4.0.3."
+ },
+ "ebd8c7c210d1": {
+  "en": "- **Planned for 4.0.3:** a nationality list for the coaches of each world, and bald players.",
+  "t": "- **Prévu pour la 4.0.3 :** une liste de nationalités pour les entraîneurs de chaque monde, et les joueurs chauves."
+ },
+ "fd2aaebdc040": {
+  "en": "- **Reduced graphics:** the reduced mode is now only on request (`/H`); on a very slow PC `/F` and the low-memory rule work as before.",
+  "t": "- **Graphismes réduits :** le mode réduit n'existe plus que sur demande (`/H`) ; sur un PC très lent, `/F` et la règle de la mémoire faible fonctionnent comme avant."
+ },
+ "078fa48b2e35": {
+  "en": "Declared, as in 4.0.1",
+  "t": "Déclaré, comme dans la 4.0.1"
+ },
+ "1a690444e091": {
+  "en": "These were announced for 4.0.2 in the 4.0.1 notes and are **not** in this release; they stay as described there.",
+  "t": "Ces points étaient annoncés pour la 4.0.2 dans les notes de la 4.0.1 et ne sont **pas** dans cette version ; ils restent comme décrits là."
+ },
+ "e5f41cb00e06": {
+  "en": "- **AFC Challenge League** groups and **AFC Champions League Elite** league stage: still simulated (your club joins at the quarter-finals / the knockout).",
+  "t": "- **Groupes de l'AFC Challenge League** et **phase de ligue de l'AFC Champions League Elite** : toujours simulés (votre club rejoint aux quarts de finale / à la phase à élimination)."
+ },
+ "3cc669e6cb7d": {
+  "en": "- **Calendars not yet published** (the Clausura 2027 of Mexico, Costa Rica, Honduras and Panama, and the last match days of Peru, Colombia and Uruguay): they repeat the first half's fixtures with home and away swapped.",
+  "t": "- **Calendriers pas encore publiés** (la Clausura 2027 du Mexique, du Costa Rica, du Honduras et du Panama, et les dernières journées du Pérou, de la Colombie et de l'Uruguay) : ils reprennent les rencontres de la première moitié avec domicile et extérieur inversés."
+ },
+ "bfaf303b5fbd": {
+  "en": "- **Colombia's cuadrangulares:** the real order of the group fixtures and the tie-break by regular-season place.",
+  "t": "- **Cuadrangulares de Colombie :** l'ordre réel des matchs de groupe et le départage par la place en saison régulière."
+ },
+ "a35b4e36957a": {
+  "en": "- **Single-match ties** that end level (for example the Copa do Brasil final): extra time before the penalties, while the real rule goes straight to penalties.",
+  "t": "- **Rencontres en un match** qui finissent à égalité (par exemple la finale de la Copa do Brasil) : prolongation avant les tirs au but, alors que la vraie règle va directement aux tirs au but."
+ },
+ "bd5dcdbcb81c": {
+  "en": "- **Management record:** for a season in which your club went out in a European qualifying round, it shows the qualifying competition with 'FINALIST' instead of the round.",
+  "t": "- **Palmarès de gestion :** pour une saison où votre club a été éliminé dans un tour préliminaire européen, il montre la compétition de qualification avec « FINALIST » au lieu du tour."
+ },
+ "0db43265d90c": {
+  "en": "- **Serie D groups with an odd number of clubs:** if your club rests on the last match day, its Poule Scudetto or group play-off is decided by simulation.",
+  "t": "- **Groupes de Serie D à nombre impair de clubs :** si votre club se repose à la dernière journée, sa Poule Scudetto ou son barrage de groupe est décidé par simulation."
+ },
+ "f3531425e7dd": {
+  "en": "- **Copa Libertadores / Sudamericana:** the rounds that come after the domestic season has ended (the Sudamericana after the play-off, a group winner's or runner-up's round of 16 in February) are simulated at the season end.",
+  "t": "- **Copa Libertadores / Sudamericana :** les tours qui viennent après la fin de la saison nationale (la Sudamericana après le barrage, les huitièmes d'un premier ou deuxième de groupe en février) sont simulés en fin de saison."
+ },
+ "5dd42385ea6f": {
+  "en": "Thanks to Pietro for the Champions League report that led to the European places fix, to Marco for the joypad in keyboard mode and the shirt numbers, and to everyone who sent a report from the site.",
+  "t": "Merci à Pietro pour le rapport sur la Ligue des champions qui a mené à la correction des places européennes, à Marco pour la manette en mode clavier et les numéros de maillot, et à tous ceux qui ont envoyé un rapport depuis le site."
  }
 }
