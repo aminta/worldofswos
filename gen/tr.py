@@ -78,6 +78,9 @@ if __name__ == '__main__':
     rel = os.path.join(build.DATA, 'next', 'notes-4.0.md')       # the 4.0 release notes ('What's new' page)
     if os.path.exists(rel):
         cred = cred + md.blocks(build.split_langs(open(rel, encoding='utf-8').read())['en'])
+    rel5 = os.path.join(build.DATA, 'next', 'notes-4.0.5.md')
+    if os.path.exists(rel5):
+        cred = cred + md.blocks(build.split_langs(open(rel5, encoding='utf-8').read())['en'])
     rel2 = os.path.join(build.DATA, 'next', 'notes-4.0.2.md')
     if os.path.exists(rel2):
         cred = cred + md.blocks(build.split_langs(open(rel2, encoding='utf-8').read())['en'])

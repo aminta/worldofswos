@@ -1210,5 +1210,281 @@
  "5dd42385ea6f": {
   "en": "Thanks to Pietro for the Champions League report that led to the European places fix, to Marco for the joypad in keyboard mode and the shirt numbers, and to everyone who sent a report from the site.",
   "t": "Merci à Pietro pour le rapport sur la Ligue des champions qui a mené à la correction des places européennes, à Marco pour la manette en mode clavier et les numéros de maillot, et à tous ceux qui ont envoyé un rapport depuis le site."
+ },
+ "a2eba91889fb": {
+  "en": "SWOS 96/97 Mod 4.0.5",
+  "t": "SWOS 96/97 Mod 4.0.5"
+ },
+ "bcd086e4d605": {
+  "en": "4.0.5 brings the **long benches** awaited for 30 years (each competition has its real 2026-27 bench, up to 15 players), the **national Super Cups** in the World 2026-27 (nine countries, in their real format, played by your club when it qualifies) and the **bald players**, also awaited for 30 years, drawn by Marco. It also brings the real European draws and the real league calendars in the first season, the Mexican Campeón de Campeones in July, your own kits kept for good (SELECT KITS: ALWAYS), a list of coach nationalities for each world, New Zealand's championship phase and many fixes. Everything in 4.0, 4.0.1 and 4.0.2 stays as it was; careers saved with those versions load and play on.",
+  "t": "La 4.0.5 apporte les **bancs longs** attendus depuis 30 ans (chaque compétition a son vrai banc 2026-27, jusqu'à 15 joueurs), les **Supercoupes nationales** du Monde 2026-27 (neuf pays, dans leur format réel, jouées par votre club quand il est qualifié) et les **joueurs chauves**, eux aussi attendus depuis 30 ans, dessinés par Marco. Elle apporte aussi les vrais tirages européens et les vrais calendriers de championnat dès la première saison, le Campeón de Campeones mexicain en juillet, vos propres maillots gardés pour de bon (SELECT KITS : ALWAYS), une liste de nationalités d'entraîneurs pour chaque monde, la phase de championnat de la Nouvelle-Zélande et de nombreuses corrections. Tout ce qui est dans la 4.0, la 4.0.1 et la 4.0.2 reste comme avant ; les carrières sauvegardées avec ces versions se chargent et continuent."
+ },
+ "6c21c754ba6c": {
+  "en": "In the spotlight: long benches, awaited for 30 years",
+  "t": "Au premier plan : les bancs longs, attendus depuis 30 ans"
+ },
+ "fca27380064e": {
+  "en": "Since 1996 SWOS has had 5 substitutes on the bench, and players have asked for more ever since. Awaited for 30 years, long benches are here: each competition has its real 2026-27 bench, up to 15 players, that scrolls in the match, with every player's name on the pitch.",
+  "t": "Depuis 1996, SWOS a 5 remplaçants sur le banc, et les joueurs en demandent plus depuis toujours. Attendus depuis 30 ans, les bancs longs sont là : chaque compétition a son vrai banc 2026-27, jusqu'à 15 joueurs, qui défile pendant le match, avec le nom de chaque joueur sur le terrain."
+ },
+ "baf954306e42": {
+  "en": "- **Long benches in World 2026-27 careers.** The bench is no longer always 5: every league, cup, play-off and continental cup uses its real 2026-27 rule (from the regulations or from real match sheets). Serie A 15; Serie B, LaLiga, the Brasileirão, the Argentine league and the UEFA and South American cups 12; Ligue 2 10; Premier League, Championship, Bundesliga, Ligue 1, MLS and Serie D 9; and so on. Where we have no data, the related league's bench or the confederation's usual bench applies. You can still make up to 5 substitutions, plus one more in extra time where the competition allows it (FA Cup, UEFA cups).\n  - Before the match, the squad, line-up and tactics screens show the whole bench as a list that scrolls. At the end of the bench, pressing down on the last row jumps back to the top of the bench; pressing up from the top of the bench still goes to the starters (thanks to Marco for the idea).\n  - In the match the dugout shows 5 players at a time and scrolls as you move down it; you can bring on any of them, and every player on the pitch shows his name, whatever his squad number.\n  - The computer's clubs bring their full bench as well, their extra players included.\n  - Friendlies, seasons, the historic worlds and the original 1996-97 game keep the bench of 5.\n  - Highlights saved with a bench of more than 5 need 4.0.5 or later: an older version draws a yellow band where a player numbered 17 or above should show his name.",
+  "t": "- **Bancs longs dans les carrières Monde 2026-27.** Le banc n'est plus toujours de 5 : chaque championnat, coupe, barrage et coupe continentale suit sa vraie règle 2026-27 (d'après les règlements ou de vraies feuilles de match). Serie A 15 ; Serie B, LaLiga, le Brasileirão, le championnat argentin et les coupes de l'UEFA et d'Amérique du Sud 12 ; Ligue 2 10 ; Premier League, Championship, Bundesliga, Ligue 1, MLS et Serie D 9 ; etc. Là où nous n'avons pas de données, c'est le banc du championnat apparenté ou le banc habituel de la confédération qui s'applique. Vous pouvez toujours faire jusqu'à 5 remplacements, plus un de plus en prolongation là où la compétition le permet (FA Cup, coupes de l'UEFA).\n  - Avant le match, les écrans d'effectif, de composition et de tactique montrent tout le banc sous forme de liste qui défile. À la fin du banc, appuyer vers le bas sur la dernière ligne revient en haut du banc ; appuyer vers le haut depuis le haut du banc mène toujours aux titulaires (merci à Marco pour l'idée).\n  - Pendant le match, le banc montre 5 joueurs à la fois et défile quand on descend ; vous pouvez faire entrer n'importe lequel, et chaque joueur sur le terrain affiche son nom, quel que soit son numéro.\n  - Les clubs de l'ordinateur amènent eux aussi leur banc complet, joueurs en plus compris.\n  - Les matchs amicaux, les saisons, les mondes historiques et le jeu original 1996-97 gardent le banc de 5.\n  - Les temps forts sauvegardés avec un banc de plus de 5 demandent la 4.0.5 ou plus récente : une version plus ancienne dessine une bande jaune là où un joueur numéroté 17 ou plus devrait montrer son nom."
+ },
+ "65d68343be8b": {
+  "en": "National Super Cups (World 2026-27)",
+  "t": "Supercoupes nationales (Monde 2026-27)"
+ },
+ "ad4b477ac24f": {
+  "en": "A *Super Cup* is a match between the league champion and the national cup winner, played before the season's competitions start (or, in three countries, a small tournament). In 4.0.5 nine are played in your career, and your club plays its tie whenever it is one of the entrants. It appears in the calendar like any other cup, has its own paragraph on the FORMAT page of the national cup, and the trophy goes into your career record.",
+  "t": "Une *Supercoupe* est un match entre le champion et le vainqueur de la coupe nationale, joué avant le début des compétitions de la saison (ou, dans trois pays, un petit tournoi). Dans la 4.0.5, neuf sont jouées dans votre carrière, et votre club joue sa rencontre chaque fois qu'il en est un des participants. Elle apparaît dans le calendrier comme n'importe quelle coupe, a son propre paragraphe sur la page FORMAT de la coupe nationale, et le trophée entre dans le palmarès de votre carrière."
+ },
+ "e45dbca15e42": {
+  "en": "- **One match** (a single match on neutral ground, 90 minutes then penalties, no extra time):\n  - **Supercoppa Italiana**, 22 December: league champion v cup winner.\n  - **FA Community Shield** (England), mid-August: league champion v FA Cup winner.\n  - **German Super Cup**, late August: league champion v DFB-Pokal winner.\n  - **Trophée des Champions** (France), mid-August: league champion v Coupe de France winner.\n  - **Supercopa do Brasil**, late January: league champion v Copa do Brasil winner.",
+  "t": "- **Un seul match** (un match sur terrain neutre, 90 minutes puis tirs au but, sans prolongation) :\n  - **Supercoppa Italiana**, 22 décembre : champion contre vainqueur de la coupe.\n  - **FA Community Shield** (Angleterre), mi-août : champion contre vainqueur de la FA Cup.\n  - **Supercoupe d'Allemagne**, fin août : champion contre vainqueur de la DFB-Pokal.\n  - **Trophée des Champions** (France), mi-août : champion contre vainqueur de la Coupe de France.\n  - **Supercopa do Brasil**, fin janvier : champion contre vainqueur de la Copa do Brasil."
+ },
+ "f350be38e1cc": {
+  "en": "- **Final four** (two semi-finals and a final in the same week, on neutral ground; the four entrants are the league champion, the cup winner, the cup finalist and the league runner-up; semi-finals: champion v cup finalist, and cup winner v league runner-up):\n  - **Supercopa de España**, early February (semi-finals 2-3 February, final 6 February): 90 minutes then penalties.\n  - **Turkish Super Cup**, early January (semi-finals 4-5 January, final 9 January): extra time (2 x 15 minutes), then penalties.\n  - **Saudi Super Cup**, December (semi-finals 19-20 December, final 23 December): extra time, then penalties.",
+  "t": "- **Final four** (deux demi-finales et une finale la même semaine, sur terrain neutre ; les quatre participants sont le champion, le vainqueur de la coupe, le finaliste de la coupe et le dauphin du championnat ; demi-finales : champion contre finaliste de la coupe, et vainqueur de la coupe contre dauphin) :\n  - **Supercopa de España**, début février (demi-finales les 2-3 février, finale le 6 février) : 90 minutes puis tirs au but.\n  - **Supercoupe de Turquie**, début janvier (demi-finales les 4-5 janvier, finale le 9 janvier) : prolongation (2 x 15 minutes), puis tirs au but.\n  - **Supercoupe d'Arabie saoudite**, décembre (demi-finales les 19-20 décembre, finale le 23 décembre) : prolongation, puis tirs au but."
+ },
+ "605c3a3d32f5": {
+  "en": "- **Who plays, every season.** The entrants are decided by the rule above at the end of each season, from that season's real results; in the first season of the world they are the real 2026-27 ones (for example Inter v Lazio in Italy). A *double* (the same club wins the league and the cup) frees a place, which goes to: the cup finalist in Italy; the league runner-up in England, Germany, France and Brazil; the next club in the league (the 3rd) in Spain, Turkey and Saudi Arabia, in the final four's freed places.",
+  "t": "- **Qui joue, chaque saison.** Les participants sont fixés par la règle ci-dessus à la fin de chaque saison, d'après les vrais résultats de cette saison ; dans la première saison du monde, ce sont les vrais de 2026-27 (par exemple Inter - Lazio en Italie). Un *doublé* (le même club gagne le championnat et la coupe) libère une place, qui revient : au finaliste de la coupe en Italie ; au dauphin du championnat en Angleterre, en Allemagne, en France et au Brésil ; au club suivant du championnat (le 3e) en Espagne, en Turquie et en Arabie saoudite, dans les places libérées du final four."
+ },
+ "49cc1edf08b2": {
+  "en": "- **When.** In a new career the December-to-February ones are played already in the world's first season, with the real 2026-27 entrants. The summer ones (England, Germany, France, and Brazil's, which is in January) start from your **second** season, because the first season's entrants are the 2025-26 ones, which the game does not have.",
+  "t": "- **Quand.** Dans une nouvelle carrière, celles de décembre à février se jouent déjà dans la première saison du monde, avec les vrais participants 2026-27. Celles de l'été (Angleterre, Allemagne, France, et celle du Brésil, qui est en janvier) commencent à partir de votre **deuxième** saison, car les participants de la première saison sont ceux de 2025-26, que le jeu n'a pas."
+ },
+ "ad24e45ac233": {
+  "en": "- **Mexico: the Campeón de Campeones in July.** Liga MX's Campeón de Campeones, until now played at the end of the season, is now played in July (25 July), from the second season: the winner of the Apertura against the winner of the Clausura of the season before, a single match on neutral ground, penalties if level. A club that won both tournaments gets the trophy without a match. The Liga de Expansión's stays at the end of the season, as before.",
+  "t": "- **Mexique : le Campeón de Campeones en juillet.** Le Campeón de Campeones de la Liga MX, jusqu'ici joué en fin de saison, se joue maintenant en juillet (25 juillet), à partir de la deuxième saison : le vainqueur de l'Apertura contre le vainqueur de la Clausura de la saison précédente, un match sur terrain neutre, tirs au but en cas d'égalité. Un club qui a gagné les deux tournois reçoit le trophée sans match. Celui de la Liga de Expansión reste en fin de saison, comme avant."
+ },
+ "c8058c161b72": {
+  "en": "- Declared (points that no source confirms or that we simplified):\n  - All the Super Cups are played on neutral ground, 90 minutes then penalties unless stated above.\n  - **Italy:** the date (22 December) and the venue come from the press, not official; the cup finalist taking a double's place is our reading.\n  - **Spain:** the pairings follow the usual rule; the double rule (the next in the league) comes from an older source; both semi-finals are in one game week.\n  - **Turkey:** which entrant meets which is inferred from the 2027 pairs; extra time follows the Turkish federation's last known rule; the venues are not announced; the double rule (league 3rd) is not verified.\n  - **Saudi Arabia:** in the first season the field is the real 2026 one (Al-Hilal is not in it); from the second season the usual rule applies (champion v cup finalist, cup winner v league runner-up), not verified, and so is the double rule (league 3rd).\n  - **France:** straight penalties are assumed (no source); after a PSG double, the league runner-up is the second entrant; the real host is drawn, here it is neutral.\n  - **Germany:** the real match is at the second club's ground, here it is neutral.\n  - **England:** from the second season the same week as 2026 (16 August), on neutral ground (2026 was at Cardiff).\n  - **Brazil:** from the second season; the 2027 entrants are not known, so the rule decides; the venue is not known (neutral); penalties after 90 minutes and the league-runner-up double rule are not verified.\n  - **Mexico:** from the second season, 25 July as in 2026 (played in the USA), on neutral ground; penalties after 90 minutes follow the pack's data.",
+  "t": "- Déclaré (points qu'aucune source ne confirme ou que nous avons simplifiés) :\n  - Toutes les Supercoupes se jouent sur terrain neutre, 90 minutes puis tirs au but sauf indication ci-dessus.\n  - **Italie :** la date (22 décembre) et le lieu viennent de la presse, pas d'une source officielle ; le finaliste de la coupe prenant la place d'un doublé est notre lecture.\n  - **Espagne :** les affiches suivent la règle habituelle ; la règle du doublé (le suivant du championnat) vient d'une source plus ancienne ; les deux demi-finales ont lieu la même journée.\n  - **Turquie :** qui rencontre qui est déduit des affiches de 2027 ; la prolongation suit la dernière règle connue de la fédération turque ; les lieux ne sont pas annoncés ; la règle du doublé (3e du championnat) n'est pas vérifiée.\n  - **Arabie saoudite :** dans la première saison, le plateau est le vrai de 2026 (Al-Hilal n'en fait pas partie) ; à partir de la deuxième saison s'applique la règle habituelle (champion contre finaliste de la coupe, vainqueur de la coupe contre dauphin), non vérifiée, comme la règle du doublé (3e du championnat).\n  - **France :** les tirs au but directs sont supposés (aucune source) ; après un doublé du PSG, le dauphin est le second participant ; le vrai hôte est tiré au sort, ici le terrain est neutre.\n  - **Allemagne :** le vrai match se joue chez le second club, ici sur terrain neutre.\n  - **Angleterre :** à partir de la deuxième saison, la même semaine qu'en 2026 (16 août), sur terrain neutre (2026 : Cardiff).\n  - **Brésil :** à partir de la deuxième saison ; les participants 2027 ne sont pas connus, c'est donc la règle qui décide ; le lieu n'est pas connu (neutre) ; les tirs au but après 90 minutes et la règle du doublé (dauphin) ne sont pas vérifiés.\n  - **Mexique :** à partir de la deuxième saison, le 25 juillet comme en 2026 (joué aux États-Unis), sur terrain neutre ; les tirs au but après 90 minutes suivent les données du pack."
+ },
+ "46c59316f93b": {
+  "en": "Bald players, awaited for 30 years",
+  "t": "Les joueurs chauves, attendus depuis 30 ans"
+ },
+ "7d4f91db808d": {
+  "en": "Bald players too were awaited for 30 years: the game had always drawn a full head of hair on everyone. A very warm, heartfelt thank-you to Marco, who drew these heads for us, with patience and talent.",
+  "t": "Les joueurs chauves aussi étaient attendus depuis 30 ans : le jeu avait toujours dessiné une chevelure complète à tout le monde. Un très grand merci, du fond du cœur, à Marco, qui a dessiné ces têtes pour nous, avec patience et talent."
+ },
+ "76f370b2d12d": {
+  "en": "- **Two looks, 67 players.** 67 real players of the World 2026-27 are now bald, with one of two looks: *receding* (a bald crown, hair at the sides) or *shaved* (a shaved head with its shading, drawn by Marco: pink with skin-tone edges on light skin, brown with a darker shade on dark skin). Among them Malen, Molina, Dimarco, Rüdiger, Koulibaly, Guirassy, M. Antonio, Niakhaté, Matić, T. Ream and Iličić. They are also bald on the squad and tactics lists, in the pre-match line-up and in Edit Teams. The pink is a new colour in the match; in the reduced graphics mode both shaved looks use the plain skin colour (no pink, no shade).",
+  "t": "- **Deux looks, 67 joueurs.** 67 vrais joueurs du Monde 2026-27 sont maintenant chauves, avec l'un de deux looks : *dégarni* (le haut du crâne chauve, des cheveux sur les côtés) ou *rasé* (un crâne rasé avec son ombrage, dessiné par Marco : rose aux bords couleur de peau sur peau claire, brun avec une teinte plus foncée sur peau foncée). Parmi eux Malen, Molina, Dimarco, Rüdiger, Koulibaly, Guirassy, M. Antonio, Niakhaté, Matić, T. Ream et Iličić. Ils sont aussi chauves dans les listes d'effectif et de tactique, dans la composition d'avant-match et dans Edit Teams. Le rose est une nouvelle couleur dans le match ; en mode graphique réduit, les deux looks rasés utilisent la couleur de peau unie (ni rose ni ombre)."
+ },
+ "a81ceed8b139": {
+  "en": "- With SWOS++ the bald players keep their normal look (with hair) for now: the bald look works only without SWOS++.",
+  "t": "- Avec SWOS++, les joueurs chauves gardent pour l'instant leur look normal (avec des cheveux) : le look chauve ne fonctionne que sans SWOS++."
+ },
+ "ead5e503f97b": {
+  "en": "Real fixtures in the first season (World 2026-27)",
+  "t": "Vrais calendriers dès la première saison (Monde 2026-27)"
+ },
+ "ab87c7ca3c4b": {
+  "en": "- **European cups.** In the first season of the World 2026-27 the league phases of the Champions League, Europa League and Conference League use the real 2026-27 draws: all the pairings, home and away, and the order of the match days.",
+  "t": "- **Coupes européennes.** Dans la première saison du Monde 2026-27, les phases de ligue de la Ligue des champions, de la Ligue Europa et de la Ligue Conférence utilisent les vrais tirages 2026-27 : toutes les affiches, à domicile et à l'extérieur, et l'ordre des journées."
+ },
+ "e775b2ee0100": {
+  "en": "- **Leagues with the real calendar.** In the first season of a World 2026-27 career these top divisions play the real 2026-27 calendar, every match day, home and away: Italy, England, Spain, Germany, France, Portugal, the Netherlands, Belgium, Turkey, Poland, Czech Republic, Greece, Romania, Ukraine, Russia, Serbia, Bulgaria, Israel, Denmark, Austria, Slovakia, Luxembourg, Wales, Scotland, Hungary, Northern Ireland, Andorra, Moldova, Croatia, Slovenia and Bosnia and Herzegovina (31 leagues). Argentina, the MLS and the Latin American leagues already had their real calendars. Later seasons are generated by the game.",
+  "t": "- **Championnats au vrai calendrier.** Dans la première saison d'une carrière Monde 2026-27, ces premières divisions jouent le vrai calendrier 2026-27, chaque journée, à domicile et à l'extérieur : Italie, Angleterre, Espagne, Allemagne, France, Portugal, Pays-Bas, Belgique, Turquie, Pologne, République tchèque, Grèce, Roumanie, Ukraine, Russie, Serbie, Bulgarie, Israël, Danemark, Autriche, Slovaquie, Luxembourg, Pays de Galles, Écosse, Hongrie, Irlande du Nord, Andorre, Moldavie, Croatie, Slovénie et Bosnie-Herzégovine (31 championnats). L'Argentine, la MLS et les championnats latino-américains avaient déjà leurs vrais calendriers. Les saisons suivantes sont générées par le jeu."
+ },
+ "8c2c10aa7919": {
+  "en": "- **Scotland and Northern Ireland, after the split.** The Scottish Premiership now plays the real calendar in the first season too; after the split into two groups, home games follow the Scottish rule (the club that hosted that opponent fewer times plays at home). Northern Ireland is fixed as well: after the split, home games follow the official rule again (the club that was away in the third meeting plays at home).",
+  "t": "- **Écosse et Irlande du Nord, après la scission.** La Premiership écossaise joue maintenant le vrai calendrier aussi dans la première saison ; après la scission en deux groupes, les matchs à domicile suivent la règle écossaise (le club qui a reçu cet adversaire moins souvent joue à domicile). L'Irlande du Nord est corrigée aussi : après la scission, les matchs à domicile suivent de nouveau la règle officielle (le club qui était à l'extérieur à la troisième rencontre joue à domicile)."
+ },
+ "210d01fc65e2": {
+  "en": "- **North Macedonia.** The first division now plays 4 rounds (36 matches), as in the official 2026-27 rules. The FORMAT page also describes the bottom of the table (9th and 10th go down, the 8th plays a one-match play-off at a neutral ground against the third of the second division, penalties if level): this is only described there.",
+  "t": "- **Macédoine du Nord.** La première division joue maintenant 4 tours (36 matchs), comme dans le règlement officiel 2026-27. La page FORMAT décrit aussi le bas du classement (les 9e et 10e descendent, le 8e joue un barrage en un match sur terrain neutre contre le troisième de la deuxième division, tirs au but en cas d'égalité) : cela n'y est que décrit."
+ },
+ "1d05c3a9a155": {
+  "en": "- Declared:\n  - The dates follow the game's weekly spacing, not the exact real dates.\n  - Leagues that split in two groups after a first stage (for example Denmark, Austria, Slovakia, Czech Republic, Greece, Romania, Serbia, Bulgaria, Israel, Hungary, Northern Ireland): only the regular season before the split is the real calendar; the rounds after the split depend on the table, so the game generates them.\n  - North Macedonia keeps a generated calendar (with its 4 rounds).\n  - Albania, Cyprus, Kosovo, Malta, Montenegro, San Marino, Gibraltar, Switzerland, Azerbaijan, Armenia, Liechtenstein and the leagues played in the calendar year (Norway, Sweden, Finland, Iceland, Ireland, Kazakhstan, Latvia, Lithuania, Faroe Islands, Estonia, Georgia, Belarus) keep a generated calendar for now: their full 2026-27 list is not published yet (or the season is already running).\n  - A few matches can still move in real life (television choices): the lists are those published between June and August 2026, with the matches moved before 30 October 2026.",
+  "t": "- Déclaré :\n  - Les dates suivent l'espacement hebdomadaire du jeu, pas les dates réelles exactes.\n  - Championnats qui se scindent en deux groupes après une première phase (par exemple Danemark, Autriche, Slovaquie, République tchèque, Grèce, Roumanie, Serbie, Bulgarie, Israël, Hongrie, Irlande du Nord) : seule la saison régulière avant la scission suit le vrai calendrier ; les tours après la scission dépendent du classement, le jeu les génère donc.\n  - La Macédoine du Nord garde un calendrier généré (avec ses 4 tours).\n  - Albanie, Chypre, Kosovo, Malte, Monténégro, Saint-Marin, Gibraltar, Suisse, Azerbaïdjan, Arménie, Liechtenstein et les championnats joués sur l'année civile (Norvège, Suède, Finlande, Islande, Irlande, Kazakhstan, Lettonie, Lituanie, îles Féroé, Estonie, Géorgie, Biélorussie) gardent pour l'instant un calendrier généré : leur liste complète 2026-27 n'est pas encore publiée (ou la saison est déjà en cours).\n  - Quelques matchs peuvent encore bouger dans la réalité (choix de la télévision) : les listes sont celles publiées entre juin et août 2026, avec les matchs déplacés avant le 30 octobre 2026."
+ },
+ "68d70e596c65": {
+  "en": "Careers",
+  "t": "Carrières"
+ },
+ "d67b91ac9b11": {
+  "en": "- **SELECT KITS: JUST THIS MATCH / ALWAYS.** The kit editor has a new switch. In a career, **ALWAYS** keeps the kits you edit for your club: they stay in the following matches, in your saves and across seasons, and the season-end kit refresh never overwrites them. The default is **JUST THIS MATCH**, as before. How: SELECT KITS, edit your club's kit, choose ALWAYS, OK. The choice between first and second kit stays per match.",
+  "t": "- **SELECT KITS : JUST THIS MATCH / ALWAYS.** L'éditeur de maillots a un nouvel interrupteur. Dans une carrière, **ALWAYS** garde les maillots que vous modifiez pour votre club : ils restent dans les matchs suivants, dans vos sauvegardes et d'une saison à l'autre, et la mise à jour des maillots de fin de saison ne les écrase jamais. Par défaut c'est **JUST THIS MATCH**, comme avant. Comment : SELECT KITS, modifiez le maillot de votre club, choisissez ALWAYS, OK. Le choix entre premier et second maillot reste par match."
+ },
+ "b0ae526efc77": {
+  "en": "- **Coach nationality, per world.** The list of nationalities a coach can have now depends on the world: CAREER (Europe 1984-85) offers the nations of that era (East Germany, USSR, West Germany, Yugoslavia...), CAREER 2026-27 the nations of today.",
+  "t": "- **Nationalité de l'entraîneur, par monde.** La liste des nationalités qu'un entraîneur peut avoir dépend maintenant du monde : CARRIÈRE (Europe 1984-85) propose les nations de cette époque (RDA, URSS, RFA, Yougoslavie...), CARRIÈRE 2026-27 celles d'aujourd'hui."
+ },
+ "13db2a6e2a8d": {
+  "en": "- **Serie C groups.** At the end of each season the clubs coming up from Serie D or down from Serie B go into group A, B or C much as the Lega Pro does it. This approximates its criteria (geography, public order) from the real groups of the last ten seasons: northern clubs never go to group C, southern clubs never to group A, every region has a first and a second choice, and the U23 sides fill whichever group is short of a club. A club that came up from the Eccellenza keeps following its own region's groups in later seasons (reported by Enzo).",
+  "t": "- **Groupes de Serie C.** À la fin de chaque saison, les clubs qui montent de la Serie D ou descendent de la Serie B vont dans le groupe A, B ou C à peu près comme le fait la Lega Pro. Cela approche ses critères (géographie, ordre public) à partir des vrais groupes des dix dernières saisons : les clubs du nord ne vont jamais dans le groupe C, ceux du sud jamais dans le groupe A, chaque région a un premier et un second choix, et les équipes U23 comblent le groupe auquel il manque un club. Un club monté de l'Eccellenza continue de suivre les groupes de sa propre région les saisons suivantes (signalé par Enzo)."
+ },
+ "d6fc5818a7c7": {
+  "en": "- **Milan Futuro** is now Milan's B team: it can reach Serie B at most, and never plays in the same division as Milan.",
+  "t": "- **Milan Futuro** est maintenant l'équipe B du Milan : elle peut monter en Serie B au plus, et ne joue jamais dans la même division que le Milan."
+ },
+ "2ededdc7b4c3": {
+  "en": "- **Breno** has its coach.",
+  "t": "- **Breno** a son entraîneur."
+ },
+ "a025d9ee3e96": {
+  "en": "- **Serie D: FINISH SEASON and your group play-off.** When your club's last league match is followed by another competition's day before its bye, FINISH SEASON no longer skips your group play-off: the menu comes back with MATCH and you play it.",
+  "t": "- **Serie D : FINISH SEASON et votre barrage de groupe.** Quand le dernier match de championnat de votre club est suivi d'une autre compétition avant son repos, FINISH SEASON ne saute plus votre barrage de groupe : le menu revient avec MATCH et vous le jouez."
+ },
+ "efe965281670": {
+  "en": "- **Title play-offs.** The champion of a title play-off you are not in (a final four, a finals series, the Serie D Poule Scudetto...) is now decided as your league ends: the WINNERS page shows it at the end of the season and it stays the same after CONTINUE. Fixed too (since 4.0): in a play-off with clubs from another division, that division's final table could change between the play-off draw and the season end.",
+  "t": "- **Barrages pour le titre.** Le champion d'un barrage pour le titre auquel vous ne participez pas (un final four, une série de finales, la Poule Scudetto de Serie D...) est maintenant décidé à la fin de votre championnat : la page VAINQUEURS le montre en fin de saison et il reste le même après CONTINUE. Corrigé aussi (depuis la 4.0) : dans un barrage avec des clubs d'une autre division, le classement final de cette division pouvait changer entre le tirage du barrage et la fin de saison."
+ },
+ "1a63d6c2b003": {
+  "en": "- **Copa Libertadores, first qualifying round.** A club that won the first qualifying round now plays both legs of the second (before: only the return leg, and leaving that screen could crash the game to DOS; since 4.0).",
+  "t": "- **Copa Libertadores, premier tour préliminaire.** Un club qui a gagné le premier tour préliminaire joue maintenant les deux matchs du second (avant : seulement le retour, et quitter cet écran pouvait faire planter le jeu sous DOS ; depuis la 4.0)."
+ },
+ "71ab3833d8c4": {
+  "en": "- **Kits for the Eccellenza reserve.** The 42 Italian clubs of the Eccellenza (the level below Serie D) that can be promoted into Serie D (for example NOLA) now have their real kits; before they had an invented colour and white shorts. In a career already under way, a club that is already in YOUR Serie D group keeps its old kit until the current season ends; from the next season it has its real one.",
+  "t": "- **Maillots de la réserve de l'Eccellenza.** Les 42 clubs italiens de l'Eccellenza (le niveau sous la Serie D) qui peuvent monter en Serie D (par exemple NOLA) ont maintenant leurs vrais maillots ; avant, ils avaient une couleur inventée et un short blanc. Dans une carrière déjà en cours, un club déjà dans VOTRE groupe de Serie D garde son ancien maillot jusqu'à la fin de la saison en cours ; dès la suivante, il a le vrai."
+ },
+ "308c6e6167d0": {
+  "en": "- **Copa Libertadores.** A club that finished 3rd in its group and dropped into the Copa Sudamericana could get your career stuck later in the season (the same match shown again and again). Fixed (it was there since 4.0.1).",
+  "t": "- **Copa Libertadores.** Un club troisième de son groupe et tombé en Copa Sudamericana pouvait bloquer votre carrière plus tard dans la saison (le même match affiché en boucle). Corrigé (c'était là depuis la 4.0.1)."
+ },
+ "5d199572fa26": {
+  "en": "- **Coppa Italia Serie D in older careers.** Loading a career saved with a 4.0.x version while a Coppa Italia Serie D tie was waiting showed a wrong competition name ('RV. TITOLO') in the fixture list. Fixed.",
+  "t": "- **Coppa Italia Serie D dans les anciennes carrières.** Charger une carrière sauvegardée avec une version 4.0.x pendant qu'une rencontre de Coppa Italia Serie D attendait montrait un mauvais nom de compétition (« RV. TITOLO ») dans la liste des rencontres. Corrigé."
+ },
+ "692c51c2bad9": {
+  "en": "- **Coppa Italia Serie D.** When your club was not in the last rounds, the final was always played by the same two clubs of the preliminary round, so the same club won the cup every season. Now the real semi-final winners play the final (found by Ben, of OpenSWOS).",
+  "t": "- **Coppa Italia Serie D.** Quand votre club n'était pas dans les derniers tours, la finale était toujours jouée par les deux mêmes clubs du tour préliminaire, si bien que le même club gagnait la coupe chaque saison. Maintenant, les vrais vainqueurs des demi-finales jouent la finale (trouvé par Ben, d'OpenSWOS)."
+ },
+ "72e5b9851f98": {
+  "en": "- **Italian kits: 20 clubs fixed.** CATANIA now plays in red-and-azure stripes (reported by Salvatore). Stripes are back for Catanzaro (home and away), Juve Stabia, Carrarese, Pisa (away), Carpi (away), Pescara and Grosseto, and Teramo, Ossese, Venafro, Bra, Millesimo, Scanzorosciate, Legnago Salus, Pro Sesto, Mezzolara, Monastir, Certosa Campagnano and Real Forio now have striped shirts. Where two kits still look alike, the game uses its plain emergency kit, as happens in real life.",
+  "t": "- **Maillots italiens : 20 clubs corrigés.** CATANIA joue maintenant en rayures rouge et azur (signalé par Salvatore). Les rayures reviennent pour Catanzaro (domicile et extérieur), Juve Stabia, Carrarese, Pisa (extérieur), Carpi (extérieur), Pescara et Grosseto, et Teramo, Ossese, Venafro, Bra, Millesimo, Scanzorosciate, Legnago Salus, Pro Sesto, Mezzolara, Monastir, Certosa Campagnano et Real Forio ont maintenant des maillots rayés. Là où deux maillots se ressemblent encore, le jeu utilise son maillot de secours uni, comme dans la réalité."
+ },
+ "3ea789afe0ac": {
+  "en": "- **An away kit against every opponent.** Every club of Serie A to Serie D and of the Eccellenza reserve now has a usable away kit against every possible opponent (second kits added for Sansepolcro, Angelana, Venafro and Nola).",
+  "t": "- **Un maillot extérieur contre chaque adversaire.** Chaque club de Serie A à Serie D et de la réserve de l'Eccellenza a maintenant un maillot extérieur utilisable contre tout adversaire possible (seconds maillots ajoutés pour Sansepolcro, Angelana, Venafro et Nola)."
+ },
+ "4a0898a158be": {
+  "en": "- **Kits of careers started earlier.** If you started a career with an earlier version, at the season end the club you manage takes this version's kits too (for example Ischia), unless you changed them yourself (thanks Francesco).",
+  "t": "- **Maillots des carrières commencées plus tôt.** Si vous avez commencé une carrière avec une version antérieure, à la fin de la saison le club que vous dirigez prend lui aussi les maillots de cette version (par exemple Ischia), sauf si vous les avez changés vous-même (merci Francesco)."
+ },
+ "d3b84f820d56": {
+  "en": "- **Transfers: more players in one deal.** The \"+\" on an offer (to add a second player of the same club) now has NEXT PAGE too, so a club's players 17-30 can be added to the deal (thanks to Enzo).",
+  "t": "- **Transferts : plusieurs joueurs en une seule affaire.** Le « + » d'une offre (pour ajouter un deuxième joueur du même club) a maintenant aussi PAGE SUIVANTE, de sorte que les joueurs 17-30 d'un club peuvent être ajoutés à l'affaire (merci à Enzo)."
+ },
+ "75cdd8514320": {
+  "en": "- **Play-offs and play-outs: who goes through on a level tie.** When a level tie is decided by the better league placing (Italian, Japanese, Argentine, Central American and other play-offs and play-outs), the result line now says who goes through and why, for example \"A.E.T. - LIGORNA THROUGH (BETTER PLACED)\", instead of only \"A.E.T.\" or nothing. It also fixes two-leg ties level on aggregate, which wrongly said \"WIN 2-2 ON AGG.\". The same line shows in the round results list.",
+  "t": "- **Barrages de promotion et de maintien : qui passe en cas d'égalité.** Quand une égalité est décidée par la meilleure place au classement (barrages italiens, japonais, argentins, d'Amérique centrale et autres), la ligne du résultat dit maintenant qui passe et pourquoi, par exemple « A.E.T. - LIGORNA THROUGH (BETTER PLACED) », au lieu de seulement « A.E.T. » ou de rien. Cela corrige aussi les rencontres aller-retour à égalité sur l'ensemble, qui disaient à tort « WIN 2-2 ON AGG. ». La même ligne apparaît dans la liste des résultats du tour."
+ },
+ "9f016bbf4590": {
+  "en": "- **WINNERS page for every league.** It now shows this season and last season for every league, the league your club actually played in.",
+  "t": "- **Page VAINQUEURS pour chaque championnat.** Elle montre maintenant cette saison et la précédente pour chaque championnat, celui où votre club a réellement joué."
+ },
+ "df97a5b407da": {
+  "en": "- **Super Cup on the WINNERS page, all season.** If your club lost its final-four semi-final, the final is simulated and its winner is shown.",
+  "t": "- **Supercoupe sur la page VAINQUEURS, toute la saison.** Si votre club a perdu sa demi-finale de final four, la finale est simulée et son vainqueur est affiché."
+ },
+ "48347623d8d8": {
+  "en": "- **PHASE 1 page for leagues with a split.** After the split it opens by itself, until the first result of the second phase; in STAT you switch between PHASE 1 and GROUPS.",
+  "t": "- **Page PHASE 1 pour les championnats à scission.** Après la scission, elle s'ouvre toute seule, jusqu'au premier résultat de la seconde phase ; dans STAT, vous passez de PHASE 1 à GROUPS."
+ },
+ "d3575704a851": {
+  "en": "- **Shirt numbers on the bench.** A team with real squad numbers above 16 now keeps them on the bench in every mode (friendlies, seasons, preset competitions; careers already did), also for teams edited with external editors. When a duplicated number is fixed, the starter keeps his (reported by Marco).",
+  "t": "- **Numéros de maillot sur le banc.** Une équipe avec de vrais numéros au-dessus de 16 les garde maintenant sur le banc dans tous les modes (matchs amicaux, saisons, compétitions prédéfinies ; les carrières le faisaient déjà), aussi pour les équipes modifiées avec des éditeurs externes. Quand un numéro en double est corrigé, le titulaire garde le sien (signalé par Marco)."
+ },
+ "8d175f4f2385": {
+  "en": "- **Names of 14 characters in the match.** Player names of up to 14 characters now show in the match: write ROBERTO_CARLOS and it appears as 'ROBERTO CARLOS' (the '_' joins two words); a single long surname such as SCHWEINSTEIGER shows in full. A first name plus a surname of 12 to 14 letters is still shortened: use the '_' to join them (thanks to Marco and Francesco for the tip).",
+  "t": "- **Noms de 14 caractères dans le match.** Les noms de joueurs jusqu'à 14 caractères s'affichent maintenant dans le match : écrivez ROBERTO_CARLOS et il apparaît comme « ROBERTO CARLOS » (le « _ » relie deux mots) ; un seul nom de famille long comme SCHWEINSTEIGER s'affiche en entier. Un prénom plus un nom de 12 à 14 lettres est encore raccourci : utilisez le « _ » pour les relier (merci à Marco et Francesco pour l'astuce)."
+ },
+ "d4c550e09b21": {
+  "en": "- **Double first names.** For 772 players whose name starts with two first names, the two are now joined, so the match shows the surname: MARC_OLIVER KEMPF appears as 'KEMPF', not 'OLIVER KEMPF'. On the squad screens the joiner looks like a space.",
+  "t": "- **Prénoms doubles.** Pour 772 joueurs dont le nom commence par deux prénoms, les deux sont maintenant reliés, si bien que le match montre le nom de famille : MARC_OLIVER KEMPF apparaît comme « KEMPF », pas « OLIVER KEMPF ». Sur les écrans d'effectif, le lien ressemble à une espace."
+ },
+ "ca3f5412f714": {
+  "en": "- **National top scorers: INT column.** The national top scorers table has a new INT column with the goals scored in the international cups (Champions League, Europa League, Libertadores...); before, they only counted in the total. Goals scored in play-offs, play-outs, title play-offs, the NZ Grand Final, the national supercups and the Coppa Italia Serie D now count in the scorers table (league (LGE), cup 1 (CUP1) and cup 2 (CUP2) columns) and in the total; before, they were lost and changed the scorer's form (they could even mark a reserve as a trial player). Goals in New Zealand's championship group and Italy's Poule Scudetto now count as league goals instead of international ones (thanks to Luigi for the scorers report).",
+  "t": "- **Meilleurs buteurs nationaux : colonne INT.** Le tableau des meilleurs buteurs nationaux a une nouvelle colonne INT avec les buts marqués dans les coupes internationales (Ligue des champions, Ligue Europa, Libertadores...) ; avant, ils ne comptaient que dans le total. Les buts marqués en barrages de promotion et de maintien, barrages pour le titre, Grand Final néo-zélandaise, Supercoupes nationales et Coppa Italia Serie D comptent maintenant dans le tableau des buteurs (colonnes championnat (LGE), coupe 1 (CUP1) et coupe 2 (CUP2)) et dans le total ; avant, ils étaient perdus et changeaient la forme du buteur (ils pouvaient même marquer un remplaçant comme joueur à l'essai). Les buts du groupe de championnat néo-zélandais et de la Poule Scudetto italienne comptent maintenant comme buts de championnat au lieu d'internationaux (merci à Luigi pour le rapport sur les buteurs)."
+ },
+ "556a8a5e87f6": {
+  "en": "- **REGGINA** now plays in amaranto (maroon).",
+  "t": "- **REGGINA** joue maintenant en amaranto (bordeaux)."
+ },
+ "5a4fee42c92a": {
+  "en": "- **Title play-offs with groups and knockouts** (the Poule Scudetto and others): the final is now called FINALE (it was called SEMIFINALE).",
+  "t": "- **Barrages pour le titre avec groupes et élimination directe** (la Poule Scudetto et d'autres) : la finale s'appelle maintenant FINALE (elle s'appelait SEMIFINALE)."
+ },
+ "2efe6c9876bc": {
+  "en": "- **Job offer letters.** After reading a job offer letter, a few stray pixels damaged the menus' background until the next match (since 4.0). Fixed.",
+  "t": "- **Lettres d'offre d'emploi.** Après la lecture d'une lettre d'offre d'emploi, quelques pixels parasites abîmaient le fond des menus jusqu'au match suivant (depuis la 4.0). Corrigé."
+ },
+ "c132cf01ca0e": {
+  "en": "- **Earlier stages in STAT.** STAT has separate entries for the earlier stages of the season (Mexico: MX APERTURA; Argentina: L.P. APERTURA; Uruguay: PR. APERTURA, PR. INTERMEDIO...), each showing that stage's final table with its own zone colours, for example during the Clausura.  Argentina's earlier tournament table shows the ZONA A and ZONA B headings, with each zone's top 8 in green.",
+  "t": "- **Phases précédentes dans STAT.** STAT a des entrées séparées pour les phases précédentes de la saison (Mexique : MX APERTURA ; Argentine : L.P. APERTURA ; Uruguay : PR. APERTURA, PR. INTERMEDIO...), chacune montrant le classement final de cette phase avec ses propres couleurs de zones, par exemple pendant la Clausura. Le classement du tournoi précédent de l'Argentine montre les titres ZONA A et ZONA B, avec les 8 premiers de chaque zone en vert."
+ },
+ "884cf0a910d7": {
+  "en": "- **Table colours skip B teams and reserves.** The colours of the tables now skip B teams and reserve sides that cannot be promoted or reach the play-offs: if one finishes in a coloured place it stays uncoloured and the next club takes the colour (Spain, Portugal, Germany, the Netherlands, New Zealand; Italy's B teams only if their first team is in the division above). In New Zealand's National League Championship the two green places always go to the top two clubs that can reach the Grand Final, never to an A-League reserve side.",
+  "t": "- **Les couleurs des classements ignorent les équipes B et les réserves.** Les couleurs des classements ignorent maintenant les équipes B et les réserves qui ne peuvent pas monter ni atteindre les barrages : si l'une finit à une place colorée, elle reste sans couleur et le club suivant prend la couleur (Espagne, Portugal, Allemagne, Pays-Bas, Nouvelle-Zélande ; les équipes B italiennes seulement si leur équipe première est dans la division supérieure). Dans le National League Championship néo-zélandais, les deux places vertes vont toujours aux deux premiers clubs qui peuvent atteindre la Grand Final, jamais à une réserve d'A-League."
+ },
+ "ad7a45b49497": {
+  "en": "- **Fixture list, home team first.** The career fixture list now shows the home team first, as real fixture lists do (for example CHIVAS v AMERICA).",
+  "t": "- **Liste des rencontres, équipe à domicile d'abord.** La liste des rencontres de carrière montre maintenant l'équipe à domicile d'abord, comme les vraies listes (par exemple CHIVAS v AMERICA)."
+ },
+ "32391a890d6f": {
+  "en": "- **Job offer, VIEW SQUAD.** It shows the whole squad: page 2 has players 17-30.",
+  "t": "- **Offre d'emploi, VIEW SQUAD.** Elle montre tout l'effectif : la page 2 contient les joueurs 17-30."
+ },
+ "4247d2fefce9": {
+  "en": "- **Menus aligned.** The gap between CONTROLS and EXIT in the main menu is now even (reported by Marco). In the shirt-number editor the green background is filled, and the shadow of the big numbers is visible there and on the tactics screen.",
+  "t": "- **Menus alignés.** L'espace entre CONTROLS et EXIT dans le menu principal est maintenant régulier (signalé par Marco). Dans l'éditeur de numéros de maillot, le fond vert est rempli, et l'ombre des grands numéros est visible là et sur l'écran de tactique."
+ },
+ "92d665966d83": {
+  "en": "- **CONTROLS: one device choice removed.** The 'P1 KEYBOARD, P2 JOYPAD' choice is gone: the game always played it as P1 JOYPAD, P2 KEYBOARD, swapping the two players' devices. A file saved with it now shows P1 JOYPAD, P2 KEYBOARD (reported by Marco).",
+  "t": "- **CONTROLS : un choix d'appareil supprimé.** Le choix « P1 KEYBOARD, P2 JOYPAD » a disparu : le jeu le jouait toujours comme P1 JOYPAD, P2 KEYBOARD, en échangeant les appareils des deux joueurs. Un fichier sauvegardé avec lui affiche maintenant P1 JOYPAD, P2 KEYBOARD (signalé par Marco)."
+ },
+ "8f99634eab6f": {
+  "en": "- **SEASON WINNERS: Serie D title round.** The SEASON WINNERS page calls the Serie D title round POULE SCUDETTO SERIE D (its own name, as in the calendar), so it can't be mistaken for the Serie D group play-offs.",
+  "t": "- **SEASON WINNERS : tour pour le titre de Serie D.** La page SEASON WINNERS appelle le tour pour le titre de Serie D POULE SCUDETTO SERIE D (son vrai nom, comme dans le calendrier), pour qu'on ne le confonde pas avec les barrages de groupe de Serie D."
+ },
+ "9856f2a9aa85": {
+  "en": "- **The \"SWOS 16/17\" package.** The install page recognises that package and explains, in the four languages, how to install: with the original CD that comes in the package, or with the GOG version (reported by Francesco and Paolo).",
+  "t": "- **Le pack « SWOS 16/17 ».** La page d'installation reconnaît ce pack et explique, dans les quatre langues, comment l'installer : avec le CD original fourni dans le pack, ou avec la version GOG (signalé par Francesco et Paolo)."
+ },
+ "bb19c50c4f57": {
+  "en": "- **Saves.** Careers saved with 4.0, 4.0.1 and 4.0.2 load and play on. In a career saved with an earlier version the Super Cups start from the first season end after loading.",
+  "t": "- **Sauvegardes.** Les carrières sauvegardées avec la 4.0, la 4.0.1 et la 4.0.2 se chargent et continuent. Dans une carrière sauvegardée avec une version antérieure, les Supercoupes commencent à la première fin de saison après le chargement."
+ },
+ "ddd64ac91758": {
+  "en": "- **Older careers:** a career started with an earlier version has no PHASE 1 page and no Super Cup line on the WINNERS page; a club that changed division in such a career sees last season's WINNERS page with this season's league name.",
+  "t": "- **Anciennes carrières :** une carrière commencée avec une version antérieure n'a ni page PHASE 1 ni ligne de Supercoupe sur la page VAINQUEURS ; un club qui a changé de division dans une telle carrière voit la page VAINQUEURS de la saison précédente avec le nom du championnat de cette saison."
+ },
+ "73e8828cd6f8": {
+  "en": "- **Saves made with the original game** can freeze at a season end; the fix is planned for 4.2 (reported by Libero).",
+  "t": "- **Les sauvegardes faites avec le jeu original** peuvent se figer à une fin de saison ; la correction est prévue pour la 4.2 (signalé par Libero)."
+ },
+ "5766d99e0190": {
+  "en": "- **Where to find a Super Cup.** It shows in your fixture list, from the start of the season, if your club is one of its entrants. VIEW COMPETITIONS has a fifth entry for it (also once it has been played), and the national cup's FORMAT page describes it.",
+  "t": "- **Où trouver une Supercoupe.** Elle apparaît dans votre liste de rencontres, dès le début de la saison, si votre club en est un des participants. VIEW COMPETITIONS a une cinquième entrée pour elle (aussi une fois jouée), et la page FORMAT de la coupe nationale la décrit."
+ },
+ "9f900fa67d01": {
+  "en": "- **New Zealand: the National League championship phase.** It is played as in 2026: 11 clubs (4 Northern, 3 Central, 2 Southern, plus the reserve teams of Auckland FC and Wellington Phoenix), a single round robin, then a one-match Grand Final between the top two clubs that are not reserve teams (the reserves cannot reach it), with extra time and penalties. Your club plays all its matches. Declared:\n  - the order of the matches is generated (balanced), not the real 2026 draw;\n  - a tie in the table is decided by points, goal difference and goals scored only (no head-to-head, discipline or coin toss);\n  - if your club rested in the last round of the championship group, the season used to be able to end without letting you play the Grand Final, or to get stuck: fixed, the final is now always played when your club is in it;\n  - if your club misses the Grand Final while resting in the last Championship group round, the season may still show it playing a final that does not count; the real champion is correct;\n  - the Grand Final is played at the ground of the higher-placed club (in reality the federation chooses the venue);\n  - the dates start the week after the regional league, one match a week; if your club is still playing in the OFC Champions League knockouts, the championship starts right after your last OFC match instead (in reality the two do not overlap). Clubs not in the OFC knockouts play on these dates.",
+  "t": "- **Nouvelle-Zélande : la phase de championnat de la National League.** Elle se joue comme en 2026 : 11 clubs (4 du Nord, 3 du Centre, 2 du Sud, plus les équipes réserves d'Auckland FC et de Wellington Phoenix), un seul tour aller, puis une Grand Final en un match entre les deux premiers clubs qui ne sont pas des réserves (les réserves ne peuvent pas l'atteindre), avec prolongation et tirs au but. Votre club joue tous ses matchs. Déclaré :\n  - l'ordre des matchs est généré (équilibré), pas le vrai tirage 2026 ;\n  - une égalité au classement se décide uniquement par les points, la différence de buts et les buts marqués (ni confrontation directe, ni discipline, ni pile ou face) ;\n  - si votre club se reposait lors de la dernière journée du groupe de championnat, la saison pouvait se terminer sans vous laisser jouer la Grand Final, ou se bloquer : corrigé, la finale est maintenant toujours jouée quand votre club en fait partie ;\n  - si votre club manque la Grand Final en se reposant lors de la dernière journée du groupe Championship, la saison peut encore le montrer jouant une finale qui ne compte pas ; le vrai champion est correct ;\n  - la Grand Final se joue sur le terrain du club le mieux classé (en réalité la fédération choisit le lieu) ;\n  - les dates commencent la semaine après le championnat régional, un match par semaine ; si votre club joue encore les phases à élimination de l'OFC Champions League, le championnat commence juste après votre dernier match OFC (en réalité, les deux ne se chevauchent pas). Les clubs qui ne sont pas dans les phases à élimination de l'OFC jouent à ces dates."
+ },
+ "e37acd645caa": {
+  "en": "- **Bald players:** only the 67 players marked; more can be marked in future versions.",
+  "t": "- **Joueurs chauves :** seulement les 67 joueurs marqués ; d'autres pourront être marqués dans les versions futures."
+ },
+ "5c9f4ba9a5a7": {
+  "en": "- **SWOS++.** The green CAREER 2026-27 button is always in the main menu, with SWOS++ or not. Under SWOS++, SWOS++'s own entry appears at the top of the main menu in place of SAVE while no competition or career is loaded; when one is loaded, CONTINUE and SAVE come back and the SWOS++ entry is hidden. The CONTROLS button is not there with SWOS++ (SWOS++ has its own controls), and the bald players keep their normal look.",
+  "t": "- **SWOS++.** Le bouton vert CARRIÈRE 2026-27 est toujours dans le menu principal, avec SWOS++ ou non. Sous SWOS++, l'entrée propre à SWOS++ apparaît en haut du menu principal à la place de SAVE tant qu'aucune compétition ni carrière n'est chargée ; quand une l'est, CONTINUE et SAVE reviennent et l'entrée SWOS++ est cachée. Le bouton CONTROLS n'est pas là avec SWOS++ (SWOS++ a ses propres commandes), et les joueurs chauves gardent leur look normal."
+ },
+ "cb90a1a7b3ca": {
+  "en": "- **Title play-offs, Italy.** A few promotion play-offs of other divisions (Italy) are still decided when you press CONTINUE.",
+  "t": "- **Barrages pour le titre, Italie.** Quelques barrages de promotion d'autres divisions (Italie) sont encore décidés quand vous appuyez sur CONTINUE."
+ },
+ "a971c439e458": {
+  "en": "- **Two players on one keyboard** with separate key sets are not in this version; planned for 4.0.6.",
+  "t": "- **Deux joueurs sur un seul clavier** avec des jeux de touches séparés ne sont pas dans cette version ; prévu pour la 4.0.6."
+ },
+ "2ecc0a4f1da6": {
+  "en": "Thanks to Enzo for the Serie C report, to Ben (OpenSWOS) for the Coppa Italia Serie D report, to Marco for the menu report and, above all, a huge thank-you for drawing the bald players, to Luigi for the scorers report, to Salvatore for the Catania kit, to Francesco and Paolo for the \"SWOS 16/17\" package, and to Libero for the season-end report.",
+  "t": "Merci à Enzo pour le rapport sur la Serie C, à Ben (OpenSWOS) pour le rapport sur la Coppa Italia Serie D, à Marco pour le rapport sur les menus et, surtout, un immense merci pour avoir dessiné les joueurs chauves, à Luigi pour le rapport sur les buteurs, à Salvatore pour le maillot de Catane, à Francesco et Paolo pour le pack « SWOS 16/17 » et à Libero pour le rapport de fin de saison."
  }
 }
