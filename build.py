@@ -399,6 +399,13 @@ def main_menu(lang):
 
 
 RELEASED_401 = True    # flip when 4.0.1 is on GitHub: Joypad headline + 'what's new' instead of 'the upcoming 4.0.1'
+
+
+def roadmap(t):
+    """'Coming next' panel: the version plan of 05/11 (4.1 coming, then 4.2 / 4.3 / 4.4; 5.0 = next_text)."""
+    return (f'<p><span class="next-tag px">4.1</span> <strong>{esc(t["road_soon"])}</strong> {esc(t["road41"])}</p>'
+            + ''.join(f'<p><span class="next-tag px">{v}</span> {esc(t["road" + v.replace(".", "")])}</p>'
+                      for v in ('4.2', '4.3', '4.4')))
 WARN_FOREIGN = False   # urgent notice: remove when the fixed 4.0 is out (Regia 2026-10-22)
 
 
@@ -492,7 +499,7 @@ def home(d, lang):
 {winners}{cups}<h2 id="already">{esc(already.A[lang][0])}</h2>
 <div class="cards">{''.join(f'<article class="card"><h3>{esc(h)}</h3><p>{esc(p)}</p></article>' for h, p in already.A[lang][1])}</div>
 <h2 id="next">{esc(t['h_next'])}</h2>
-<div class="panel next">{(f'<p><span class="next-tag px">4.0.5</span> <strong>{esc(t["h405"])}</strong></p><p>{esc(t["t405"])} <a href="/{lang}/news/">{esc(t["news_title405"])}</a></p>') if RELEASED_401 else ''}{'' if RELEASED_401 else (f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["next401_h"])}</strong></p><ul>'
+<div class="panel next">{roadmap(t) if RELEASED_401 else ''}{'' if RELEASED_401 else (f'<p><span class="next-tag px">4.0.1</span> <strong>{esc(t["next401_h"])}</strong></p><ul>'
   + ''.join(f'<li>{esc(x)}</li>' for x in (([t['next401_cups']] if RELEASED else []) + t['next401']) + (t['next401_rc12'] + [t['next401_cal']] if RELEASED else []) + ([t['next401_winners_page' if WINNERS == 'none' else 'next401_winners']] if RELEASED and WINNERS != 'full' else [])) + '</ul>') if CONTENT_40 else ''}<p><span class="next-tag px">5.0</span> {esc(t['next_text'])}</p>
 <p class="note" style="margin:0">{esc(t['next_note'])}</p></div>
 <h2>{esc(t['h_shots'])}</h2>
