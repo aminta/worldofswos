@@ -849,6 +849,33 @@ def install_page(d, lang):
     return page(lang, 'install/', g['title'], body, active='install')
 
 
+def styles_page(lang):
+    """Public idea page: CPU playing styles, for player feedback (it / en only)."""
+    src = open(os.path.join(DATA, 'styles', f'{lang}.html'), encoding='utf-8').read()
+    h1 = re.search(r'<h1>(.*?)</h1>', src, re.S).group(1)
+    lead = re.search(r'<p class="lead">(.*?)</p>', src, re.S).group(1)
+    chips = ' '.join(f'<span class="next-tag px">{c}</span>' for c in re.findall(r'<span class="chip">(.*?)</span>', src))
+    main = src.split('</header>', 1)[1]
+    main = re.sub(r'<div class="scroll">|</div>\s*(?=</div>\s*</section>)', lambda m: m.group(0), main)
+    main = main.replace('<div class="card style">', '<div class="panel style">').replace('<div class="card">', '<div class="panel">')
+    main = main.replace('<div class="scroll">', '<div style="overflow-x:auto">').replace('<table>', '<table class="saves">')
+    main = main.replace('<div class="styles">', '<div>').replace('<div class="grid2">', '<div>')
+    main = re.sub(r'<div class="note">(.*?)</div>', r'<p class="note">\1</p>', main, flags=re.S)
+    main = re.sub(r'<span class="it">(.*?)</span>', r'<p class="note" style="margin:0">\1</p>', main)
+    main = re.sub(r'<dl><dt>(.*?)</dt><dd>(.*?)</dd></dl>', r'<p><strong>\1:</strong> \2</p>', main)
+    main = re.sub(r'</div>\s*</section>\s*(?=<section>|</div>\s*$)', lambda m: m.group(0), main)
+    main = main.rstrip()
+    if main.endswith('</div>'):
+        main = main[:-6]
+    HOW = {'it': 'Rispondete nei commenti del post sulla pagina Facebook della mod: leggiamo tutto!',
+           'en': "Answer in the comments of the post on the mod's Facebook page: we read every one!"}
+    THX = {'it': 'Grazie a Gianfranco, che ci ha dato l\'idea grazie alla sua passione per i dribbling!',
+           'en': 'Thanks to Gianfranco, who gave us the idea with his passion for dribbling!'}
+    body = (f'<div class="wrap page-head"><h1>{h1}</h1><p>{lead}</p><p>{chips}</p></div>'
+            f'<div class="wrap doc">{main}<p class="panel"><strong>{HOW[lang]}</strong></p><p class="note">{THX[lang]}</p></div>')
+    return page(lang, 'styles/', re.sub('<[^>]+>', '', h1), body, langs=['it', 'en'])
+
+
 def bug_page(d, lang):
     t = T[lang]
     f = t['bug_form']
@@ -876,6 +903,9 @@ def news_page(d, lang, ver=None):
         bl, _ = tr.translate(bl, lang)
     bl = [b for b in bl if not (b[0] == 'p' and b[1].strip() == '---')]
     body = (f'<div class="wrap page-head"><h1>{esc(title)}</h1>{warn_banner(lang)}</div><div class="wrap doc">'
+            + ((f'<p class="panel next"><span class="next-tag px">IDEA</span> '
+                + ('Idea in corso: gli stili di gioco delle squadre del computer. <a href="/it/styles/">Leggi e dici la tua</a>.' if lang == 'it' else
+                   'Idea in progress: playing styles for CPU teams (in English). <a href="/en/styles/">Read it and give your opinion</a>.') + '</p>') if ver == '4.1.2' else '')
             + (f'<p><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>' if RELEASED else
                f'<p class="panel next"><span class="next-tag px">4.0</span> {esc(t["with40"])}</p>'
                f'<p><span class="btn green soon-btn disabled" aria-disabled="true">{esc(t["dl"])}<small>{esc(t["dl_with40"])}</small></span></p>')
@@ -967,6 +997,8 @@ def build():
     for lang in LANGS:
         pages = {'': home(d, lang), 'countries/': countries_index(d, lang), 'world/': world(d, lang),
                  'credits/': credits(d, lang), 'classic/': classic_page(d, lang), 'bug/': bug_page(d, lang)}
+        if lang in ('it', 'en'):
+            pages['styles/'] = styles_page(lang)
         if INSTALL_PAGE:
             pages['install/'] = install_page(d, lang)
         if CONTENT_40:

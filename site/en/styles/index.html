@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Playing styles for CPU teams · World of SWOS</title>
+<meta name="description" content="SWOS 96/97 Mod 4.0: the World 2026-27 career for Sensible World of Soccer 96/97. 91 countries, real squads and every competition in its real format. Free, unofficial fan mod.">
+<link rel="canonical" href="https://worldofswos.com/en/styles/"><link rel="alternate" hreflang="it" href="https://worldofswos.com/it/styles/"><link rel="alternate" hreflang="en" href="https://worldofswos.com/en/styles/"><link rel="alternate" hreflang="x-default" href="https://worldofswos.com/en/styles/">
+<meta property="og:title" content="Playing styles for CPU teams · World of SWOS">
+<meta property="og:description" content="Football competitions, global and local, that no other game has, has ever had, or probably ever will.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://worldofswos.com/en/styles/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://worldofswos.com/static/og-en.png?v=42"><meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630"><meta property="og:image:alt" content="Football competitions, global and local, that no other game has, has ever had, or probably ever will.">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Playing styles for CPU teams · World of SWOS">
+<meta name="twitter:description" content="Football competitions, global and local, that no other game has, has ever had, or probably ever will."><meta name="twitter:image" content="https://worldofswos.com/static/og-en.png?v=42">
+<meta name="theme-color" content="#0a1a6e">
+<link rel="icon" href="/static/logo.svg" type="image/svg+xml">
+<link rel="preload" href="/static/fonts/silkscreen-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/style.css?v=ba6e9297">
+<script src="/static/site.js?v=ba6e9297" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="/en/"><img src="/static/logo.svg" alt="" width="44" height="44"><span>World of SWOS<small>SWOS 96/97 Mod</small></span></a>
+<button class="btn blue menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav class="lang" aria-label="Language"><a href="/it/styles/" hreflang="it" lang="it" title="Italiano">IT</a><a href="/en/styles/" hreflang="en" lang="en" title="English" aria-current="true">EN</a></nav>
+<nav class="nav" id="nav" aria-label="Menu"><a href="/en/">Home</a><a href="/en/world/">World 2026-27</a><a href="/en/countries/">Countries</a><a href="/en/classic/">Classic careers</a><a href="/en/install/">Install</a><a href="/en/credits/">Credits</a></nav>
+</div></header>
+<main id="main">
+<div class="wrap page-head"><h1>Playing styles for CPU teams</h1><p>An idea we are starting to work on for the SWOS 96/97 Mod: career opponents that don't all play the same way. Some hit long balls, some build from the back, some press you high, some sit deep and counter. This page explains the idea, what the original game already has under the hood, and what we'd like your opinion on.</p><p><span class="next-tag px">work in progress</span> <span class="next-tag px">nothing final, no release date</span> <span class="next-tag px">feedback welcome</span></p></div><div class="wrap doc">
+
+  <section>
+    <h2>Where we are today</h2>
+    <div class="panel">
+      <p>A test version of the mod adds two new rows to the OPTIONS menu. Both only change matches you play against the computer; matches between two humans and simulated results stay exactly as in the original game.</p>
+      <div style="overflow-x:auto">
+        <table class="saves">
+          <thead><tr><th>Option</th><th>Values</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td><strong>DIFFICULTY</strong></td><td>EASY / NORMAL / HARD</td><td>How strong the CPU team is: its players' skills (80% / 100% / 110%), its keeper, how often it misplaces a pass. NORMAL is the original game.</td></tr>
+            <tr><td><strong>DRIBBLING</strong></td><td>CLASSIC / NEW</td><td>NEW gives your ball carrier a bit more pace and control, protects you a little longer after you win the ball, and stops the CPU sliding in on you inside its own box (in the original, every foul there is a penalty). The CPU also plays a bit more on the ground: its keeper rolls it out to a free defender and its midfielders try some short passes instead of always clearing. CLASSIC is the original game.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Davide's first playtest: dribbling past two or three men feels good again, no more penalty after every run into the box, and a few honest fouls on the edge of the area.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The idea: a style for every club</h2>
+    <div class="panel">
+      <p>In the original game every CPU team takes its decisions the same way. The only difference between clubs is their players' skills and their tactic. A <strong>playing style</strong> would change the decisions themselves: when to clear and when to pass, how hard to press, when to slide in, where to shoot from.</p>
+      <ul>
+        <li>A style changes <strong>how</strong> a team plays, never <strong>how strong</strong> it is. Strength stays with DIFFICULTY and the players' skills. We will check that no style wins more on its own.</li>
+        <li>Your own control of the ball does not depend on the opponent's style. DRIBBLING stays a separate option.</li>
+        <li>A club can <strong>mix</strong> up to three styles, for example mostly build-up with some pressing. The mix is fixed for the whole match, so a team has a recognisable character.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>The proposed styles</h2>
+    <div>
+      <div class="panel style">
+        <div><h3>Neutral</h3><p class="note" style="margin:0">today's DRIBBLING NEW opponent</p></div>
+        <p><strong>You face:</strong> a keeper who plays short when a defender is free, fewer hopeful clearances, the odd short pass in midfield</p>
+      </div>
+      <div class="panel style">
+        <div><h3>Long ball</h3><p class="note" style="margin:0">the classic SWOS CPU, a bit more so</p></div>
+        <p><strong>You face:</strong> high balls over your midfield, second balls, lots of headers</p>
+      </div>
+      <div class="panel style">
+        <div><h3>Build-up from the back</h3><p class="note" style="margin:0">needs a new "pass sideways and back" brain</p></div>
+        <p><strong>You face:</strong> keeper to defender, patient passing through midfield; press them high and you can win the ball near their goal</p>
+      </div>
+      <div class="panel style">
+        <div><h3>High press</h3></div>
+        <p><strong>You face:</strong> no time on the ball in your own half, two men closing you down, more slide tackles</p>
+      </div>
+      <div class="panel style">
+        <div><h3>Defend and counter</h3></div>
+        <p><strong>You face:</strong> space in midfield, a wall in front of the box, quick forward passes the moment you lose the ball</p>
+      </div>
+      <div class="panel style">
+        <div><h3>Physical</h3></div>
+        <p><strong>You face:</strong> harder and earlier tackles, more fouls and cards (the referee's rules stay the same)</p>
+      </div>
+      <div class="panel style">
+        <div><h3>Long shots</h3></div>
+        <p><strong>You face:</strong> shots from 25–30 metres and a busy keeper; closing down the man on the ball matters</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Styles and SWOS tactics</h2>
+    <div class="panel">
+      <p>The game's tactics (4-4-2, 5-4-1, 4-2-4 and your own) are a <strong>map of positions</strong>: for each area of the pitch where the ball is, they say where each outfield player stands. They shape the team, but they never decide what the player on the ball does.</p>
+      <p>Styles are those <strong>decisions</strong>. The two work together: a build-up team finds more free men in a shape that offers them, a long-ball team suits two strikers up front. Every club keeps the tactic it has today.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Which club plays which style</h2>
+    <div>
+      <div class="panel">
+        <h3>Set by us</h3>
+        <ul>
+          <li><strong>Well-known clubs:</strong> chosen from how they really play, checked on sources, as we do for the rest of the mod's data.</li>
+          <li><strong>Everyone else:</strong> a rule by country and division (lower leagues lean towards long ball and physical), with some variety so a league isn't twenty copies.</li>
+          <li><strong>Per era:</strong> the same club can play differently in the 1984-85, 1996-97 and 2026-27 worlds.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Changed by you</h3>
+        <ul>
+          <li>Fans often know best how their club plays. The plan is to let players <strong>reassign styles</strong>, for example in the web editor.</li>
+          <li>Your choices would live in a file of your own that mod updates never overwrite.</li>
+          <li>Good suggestions can also go into the mod's own list for everyone.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What the original engine already has</h2>
+    <div class="panel">
+      <p>Everything above is built on numbers that already exist in SWOS 96/97's match engine. Each is a fixed value, the same for every team; a style would only change some of them for the CPU side. A few examples:</p>
+      <div style="overflow-x:auto">
+        <table class="saves">
+          <thead><tr><th>Area</th><th>In the original game</th></tr></thead>
+          <tbody>
+            <tr><td>Ball carrier</td><td>Runs at 87.5% of his speed. How far the ball rolls ahead of him and how many turns he can make before losing it both depend on ball control (C).</td></tr>
+            <tr><td>Winning the ball</td><td>After a successful tackle, nobody can take the ball back for a short moment (the same short lock for everyone).</td></tr>
+            <tr><td>Tackles and fouls</td><td>Almost every foul comes from a slide tackle that is still fast when it hits, made from behind or not clean. Every foul in the box is a penalty.</td></tr>
+            <tr><td>Referee</td><td>One strictness value is drawn at kick-off and depends on match length. About 1 card in 8 is a straight red; a last-man foul is always a card, usually red.</td></tr>
+            <tr><td>Injuries</td><td>A chance on every slide contact, lower in longer matches, doubled for a player who is already injured.</td></tr>
+            <tr><td>CPU with the ball</td><td>Unpressed, it never passes and runs at goal. Pressed in its own half, it clears long straight away. The keeper picks short or long with a coin flip.</td></tr>
+            <tr><td>CPU shooting</td><td>Shoots from inside a fixed distance, only sometimes from the edge of that range.</td></tr>
+            <tr><td>Keepers</td><td>Each skill level has its own row of movement, reach, parry and catch values.</td></tr>
+            <tr><td>Stamina</td><td>There is none: players never tire during a match.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Your opinion</h2>
+    <div class="panel">
+      <ul>
+        <li>Do these six styles cover the football you'd like to face? Is one missing, or one you would drop?</li>
+        <li>Should the opponent's style be shown before the match (e.g. on the line-ups screen), or should you find out by playing?</li>
+        <li>Mixing: is "up to three styles per club" enough, or too much?</li>
+        <li>Would you rather the CPU change style during a match (for example pressing when losing late on)?</li>
+        <li>Which clubs, from any era, do you know well enough to suggest their style?</li>
+      </ul>
+      <p class="note">First step: a test version with two opposite styles (long ball and high press) forced on every opponent, to check that the difference is clearly felt before we assign styles to thousands of clubs.</p>
+    </div>
+  </section>
+<p class="panel"><strong>Answer in the comments of the post on the mod's Facebook page: we read every one!</strong></p><p class="note">Thanks to Gianfranco, who gave us the idea with his passion for dribbling!</p></div>
+</main>
+<footer class="foot"><div class="wrap">
+<p><strong>Unofficial, free fan mod. Not affiliated with or endorsed by Sensible Software, its successors or the owners of the game, nor by any league, federation or UEFA. All names of clubs and competitions are used only to describe real football.</strong></p>
+<p><a class="btn orange" href="/en/bug/">Report a bug</a></p>
+<div class="assoc"><a href="https://www.facebook.com/retrogaming12bit"><img class="assoc-logo" src="/static/img/12bit.png" width="64" height="80" alt="12 Bit Retrogaming, associazione culturale (Trieste)"></a><p>A mod by Davide Lorigliola, member of the cultural association 12 Bit Retrogaming (Trieste), and the SWOS community. <a href="https://github.com/aminta/swos-9697-mod">Source code and releases on GitHub</a>.</p></div><script data-goatcounter="https://worldofswos.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</div></footer>
+</body>
+</html>
