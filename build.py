@@ -405,10 +405,10 @@ RELEASED_401 = True    # flip when 4.0.1 is on GitHub: Joypad headline + 'what's
 
 
 def roadmap(t):
-    """'Coming next' panel: the version plan of 05/11 (4.1 coming, then 4.2 / 4.3 / 4.4; 5.0 = next_text)."""
-    return (f'<p><span class="next-tag px">4.1</span> <strong>{esc(t["road_soon"])}</strong> {esc(t["road41"])}</p>'
-            + ''.join(f'<p><span class="next-tag px">{v}</span> {esc(t["road" + v.replace(".", "")])}</p>'
-                      for v in ('4.2', '4.3', '4.4')))
+    """'Coming next' panel: the plan of 12/11 (4.2, Eccellenza after it, 4.3; 5.0 = next_text)."""
+    return (f'<p><span class="next-tag px">4.2</span> {esc(t["road42"])}</p>'
+            f'<p><span class="next-tag px">»</span> {esc(t["road_ecc"])}</p>'
+            f'<p><span class="next-tag px">4.3</span> {esc(t["road43"])}</p>')
 WARN_FOREIGN = False   # urgent notice: remove when the fixed 4.0 is out (Regia 2026-10-22)
 
 
