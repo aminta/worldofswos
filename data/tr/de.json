@@ -1486,5 +1486,153 @@
  "2ecc0a4f1da6": {
   "en": "Thanks to Enzo for the Serie C report, to Ben (OpenSWOS) for the Coppa Italia Serie D report, to Marco for the menu report and, above all, a huge thank-you for drawing the bald players, to Luigi for the scorers report, to Salvatore for the Catania kit, to Francesco and Paolo for the \"SWOS 16/17\" package, and to Libero for the season-end report.",
   "t": "Dank an Enzo für den Bericht zur Serie C, an Ben (OpenSWOS) für den Bericht zur Coppa Italia Serie D, an Marco für den Bericht zu den Menüs und vor allem ein riesiges Dankeschön für das Zeichnen der Glatzköpfe, an Luigi für den Bericht zu den Torschützen, an Salvatore für das Trikot von Catania, an Francesco und Paolo für das Paket „SWOS 16/17“ und an Libero für den Bericht zum Saisonende."
+ },
+ "37592408fae4": {
+  "en": "SWOS 96/97 Mod 4.1.1",
+  "t": "SWOS 96/97 Mod 4.1.1"
+ },
+ "ddd7be6caae1": {
+  "en": "4.1.1 is a small update that fixes a few things: in the 2026-27 world, New Zealand's championship final, the group draws of the continental cups and the Recopa / Intercontinental matches of a career club still in a cup outside Europe, a line on the Coppa Italia Serie D page and the Serie D Poule Scudetto winner sent to the Champions League; in every world, a cursor that could get stuck on a screen's title; and, in the patcher, the joypad boxes and reading the GOG game folder in Chrome. Everything in 4.1 stays as it was; careers saved with 4.0 up to 4.1 load and play on.",
+  "t": "Die 4.1.1 ist ein kleines Update, das einige Dinge behebt: in der Welt 2026-27 das Meisterschaftsfinale von Neuseeland, die Gruppenauslosungen der Kontinentalpokale und die Recopa-/Intercontinental-Spiele eines Karriereclubs, der noch in einem Pokal außerhalb Europas steht, eine Zeile auf der Seite der Coppa Italia Serie D und den Sieger der Serie-D-Poule-Scudetto, der in die Champions League geschickt wurde; in jeder Welt einen Cursor, der auf dem Titel eines Bildschirms hängen bleiben konnte; und im Patcher die Joypad-Felder und das Lesen des GOG-Spielordners in Chrome. Alles aus der 4.1 bleibt, wie es war; Karrieren, die mit der 4.0 bis 4.1 gespeichert wurden, laden und spielen weiter."
+ },
+ "e9c8eaf3b9b2": {
+  "en": "New Zealand: the championship final is played by the two real finalists",
+  "t": "Neuseeland: Das Meisterschaftsfinale spielen die zwei echten Finalisten"
+ },
+ "1cc52aa80ba5": {
+  "en": "When your club was not in the New Zealand National League final, the game still played a match for the title between your club and another club of the group, as if your club were there: your club could pick up a card or an injury in a final it never played. Now the final is played by the two clubs that really reached it, and the champion is the result of that match.",
+  "t": "Wenn Ihr Club nicht im Finale der neuseeländischen National League stand, spielte das Spiel trotzdem ein Spiel um den Titel zwischen Ihrem Club und einem anderen Club der Gruppe, als wäre Ihr Club dabei: Ihr Club konnte sich in einem Finale, das er nie gespielt hat, eine Karte oder eine Verletzung holen. Jetzt spielen das Finale die beiden Clubs, die es wirklich erreicht haben, und der Meister ist das Ergebnis dieses Spiels."
+ },
+ "d7ec27f77d16": {
+  "en": "Continental cups: fairer group draws",
+  "t": "Kontinentalpokale: fairere Gruppenauslosungen"
+ },
+ "b8c51c9b719a": {
+  "en": "Continental cup group draws no longer put two clubs from the same country in one group, except a club that came through the qualifying rounds, where the competition's own rules allow it. Copa Libertadores and Copa Sudamericana pots now follow the real CONMEBOL club ranking (ranked clubs first; unranked clubs by squad strength, as before).",
+  "t": "Bei den Gruppenauslosungen der Kontinentalpokale kommen nicht mehr zwei Clubs desselben Landes in eine Gruppe, außer einem Club, der über die Qualifikationsrunden kam, wo die Regeln des Wettbewerbs es erlauben. Die Töpfe von Copa Libertadores und Copa Sudamericana folgen jetzt der echten CONMEBOL-Clubwertung (zuerst die gewerteten Clubs; die nicht gewerteten nach Kaderstärke, wie bisher)."
+ },
+ "8e5d9cd0c8ac": {
+  "en": "Coppa Italia Serie D: the FORMAT page tells the whole rule",
+  "t": "Coppa Italia Serie D: Die FORMAT-Seite nennt die ganze Regel"
+ },
+ "3253851eddbb": {
+  "en": "The FORMAT page of the Coppa Italia Serie D now says that the home and away alternation (the club that was away in its previous tie plays at home) only goes up to the quarter-finals. The semi-finals and the final are played over two legs.",
+  "t": "Die FORMAT-Seite der Coppa Italia Serie D sagt jetzt, dass der Wechsel zwischen Heim- und Auswärtsspiel (der Club, der in seiner vorigen Runde auswärts spielte, hat Heimrecht) nur bis zum Viertelfinale gilt. Halbfinale und Finale werden in Hin- und Rückspiel ausgetragen."
+ },
+ "20a2a4ea1933": {
+  "en": "Fixes",
+  "t": "Fehlerbehebungen"
+ },
+ "26f0aba2fa59": {
+  "en": "- Fixed: on some screens (for example the COPPA ITALIA SERIE C results) the cursor could get stuck on the title bar and could not move down.",
+  "t": "- Behoben: auf einigen Bildschirmen (zum Beispiel den Ergebnissen der COPPA ITALIA SERIE C) konnte der Cursor auf der Titelleiste hängen bleiben und sich nicht mehr nach unten bewegen."
+ },
+ "6b9ae439ba4b": {
+  "en": "- Fixed: winning the Serie D Poule Scudetto no longer puts the club in the next season's Champions League; the European places come only from Serie A and the Coppa Italia.",
+  "t": "- Behoben: Der Gewinn der Serie-D-Poule-Scudetto schickt den Club nicht mehr in die Champions League der nächsten Saison; die europäischen Plätze kommen nur aus der Serie A und der Coppa Italia."
+ },
+ "a46cd9241c79": {
+  "en": "- Fixed: in the 2026-27 world, a career club playing a continental cup's group stage outside Europe (Copa Libertadores, Copa Sudamericana, CAF Champions League, AFC Champions League Two) never got to play its later Recopa Sudamericana or Intercontinental matches that season, and at season end the cup's winner could disagree with what happened on the pitch (your club named champion after being knocked out). Now those matches are played right after your club goes out of the cup; if it reaches the final, they are decided at the season end, and the cup's winner is the club that won the final.",
+  "t": "- Behoben: In der Welt 2026-27 spielte ein Karriereclub in der Gruppenphase eines Kontinentalpokals außerhalb Europas (Copa Libertadores, Copa Sudamericana, CAF Champions League, AFC Champions League Two) seine späteren Spiele der Recopa Sudamericana oder des Intercontinental-Pokals in dieser Saison nie, und am Saisonende konnte der Pokalsieger dem widersprechen, was auf dem Platz geschehen war (Ihr Club wurde nach dem Ausscheiden zum Meister erklärt). Jetzt werden diese Spiele gleich nach dem Ausscheiden Ihres Clubs gespielt; erreicht er das Finale, werden sie am Saisonende entschieden, und der Pokalsieger ist der Club, der das Finale gewonnen hat."
+ },
+ "bb1b2de1dbd6": {
+  "en": "- Patcher: ticking \"GOG version, joypad in keyboard mode\" now also ticks \"GOG version: I have a joypad\", and unticking the first box unticks the keyboard mode too. Playing with the keyboard only? Leave the joypad boxes unticked.",
+  "t": "- Patcher: Das Ankreuzen von „GOG-Version, Joypad im Tastaturmodus“ kreuzt jetzt auch „GOG-Version: Ich habe ein Joypad“ an, und das Abwählen des ersten Feldes wählt auch den Tastaturmodus ab. Sie spielen nur mit der Tastatur? Lassen Sie die Joypad-Felder leer."
+ },
+ "6fc129b96044": {
+  "en": "- Patcher in Chrome: Chrome does not let a web page open folders inside Program Files, where the GOG version installs, so the first button could not read the game there. The second button now reads the game folder in Chrome too (Chrome asks you to confirm the upload; your files stay on your PC); or use Edge.",
+  "t": "- Patcher in Chrome: Chrome lässt eine Webseite keine Ordner in Program Files öffnen, wo die GOG-Version installiert wird, sodass der erste Knopf das Spiel dort nicht lesen konnte. Der zweite Knopf liest den Spielordner jetzt auch in Chrome (Chrome bittet Sie, den Upload zu bestätigen; Ihre Dateien bleiben auf Ihrem PC); oder nutzen Sie Edge."
+ },
+ "f2de427e5be8": {
+  "en": "- Careers saved with 4.0, 4.0.1, 4.0.2, 4.0.5 and 4.1 load and play on. In an older save, a continental cup that has already started keeps its draw; the new rules apply from the next edition.",
+  "t": "- Karrieren, die mit 4.0, 4.0.1, 4.0.2, 4.0.5 und 4.1 gespeichert wurden, laden und spielen weiter. In einem älteren Spielstand behält ein bereits begonnener Kontinentalpokal seine Auslosung; die neuen Regeln gelten ab der nächsten Austragung."
+ },
+ "b8ca4494a2fe": {
+  "en": "- You do not need to start a new career to get the New Zealand fix: it applies from the next Grand Final that is still to be decided (a save made after the Championship group ended and before its final keeps the old behaviour for that one final).",
+  "t": "- Für die Neuseeland-Korrektur brauchen Sie keine neue Karriere: Sie gilt ab dem nächsten noch offenen Grand Final (ein Spielstand, der nach dem Ende der Meisterschaftsgruppe und vor ihrem Finale gespeichert wurde, behält für dieses eine Finale das alte Verhalten)."
+ },
+ "6b49f68996f5": {
+  "en": "- The Poule Scudetto fix also needs no new career: it applies from the next end of season. A save made after a season has ended keeps the European places already given out for that season.",
+  "t": "- Auch die Korrektur der Poule Scudetto braucht keine neue Karriere: Sie gilt ab dem nächsten Saisonende. Ein nach einem Saisonende gespeicherter Spielstand behält die für diese Saison schon vergebenen europäischen Plätze."
+ },
+ "626aaf667a02": {
+  "en": "- A career saved with 4.1 in the middle of a season picks the continental-cup fix (Recopa / Intercontinental) up at its next match; a cup winner already named at an earlier season end stays as it was.",
+  "t": "- Eine Karriere, die mit der 4.1 mitten in der Saison gespeichert wurde, übernimmt die Korrektur der Kontinentalpokale (Recopa / Intercontinental) bei ihrem nächsten Spiel; ein schon am früheren Saisonende bestimmter Pokalsieger bleibt, wie er war."
+ },
+ "000d69e6d509": {
+  "en": "SWOS 96/97 Mod 4.1.2",
+  "t": "SWOS 96/97 Mod 4.1.2"
+ },
+ "b74e307837fc": {
+  "en": "4.1.2 is a small update. In the 2026-27 world it fixes a crash at the end of the season after an exit from the Libertadores and, in careers with a Brazilian or Argentine club, some of the country's places in the continental cups that were given to clubs from other countries. In the same world it gives the United States all their places in the CONCACAF Champions Cup. In Argentina, Panama and the MLS it fixes how the chairman judges a club in the second zone (conference). In every world it fixes the spelling of the UEFA Cup, and the patcher page can install from the Italian CD into a new folder in Chrome. Everything in 4.1.1 stays as it was; careers saved with 4.0 up to 4.1.1 load and play on.",
+  "t": "Die 4.1.2 ist ein kleines Update. In der Welt 2026-27 behebt sie einen Absturz am Saisonende nach einem Ausscheiden aus der Libertadores und, in Karrieren mit einem brasilianischen oder argentinischen Club, einige Plätze des Landes in den Kontinentalpokalen, die an Clubs aus anderen Ländern gingen. In derselben Welt gibt sie den Vereinigten Staaten alle ihre Plätze im CONCACAF Champions Cup. In Argentinien, Panama und der MLS behebt sie, wie der Präsident einen Club der zweiten Zone (Conference) beurteilt. In jeder Welt behebt sie die Schreibweise des UEFA-Pokals, und die Patcher-Seite kann auch in Chrome von der italienischen CD in einen neuen Ordner installieren. Alles aus der 4.1.1 bleibt, wie es war; Karrieren, die mit der 4.0 bis 4.1.1 gespeichert wurden, laden und spielen weiter."
+ },
+ "866f2b3eb9f9": {
+  "en": "Game closing at the end of the season after an exit from the Libertadores",
+  "t": "Spiel schließt sich am Saisonende nach einem Ausscheiden aus der Libertadores"
+ },
+ "3de1f4d10c23": {
+  "en": "In a World 2026-27 career with a club that plays the South American Recopa (the match between the winners of the Copa Libertadores and the Copa Sudamericana: in the first season the clubs the game's data puts in it, from the second season the Libertadores or Sudamericana winner), the game could close and take you back to DOS at the end of the season. It happened when your club was still in the Libertadores while the Recopa weeks went by (February and March) and was then knocked out before the final, in the round of 16, the quarter-finals or the semi-finals: the Recopa was put in weeks that had already been played. Now the two Recopa matches are played in the weeks right after your exit. If there are not enough weeks left before the end of the season, the game plays the round for you at the season end. Reaching the final was never a problem.",
+  "t": "In einer Karriere der Welt 2026-27 mit einem Club, der die Recopa Sudamericana spielt (das Spiel zwischen den Siegern der Copa Libertadores und der Copa Sudamericana: in der ersten Saison die Clubs, die die Spieldaten dafür vorsehen, ab der zweiten Saison der Sieger der Libertadores oder der Sudamericana), konnte sich das Spiel am Saisonende schließen und Sie zu DOS zurückbringen. Das geschah, wenn Ihr Club noch in der Libertadores stand, während die Wochen der Recopa vergingen (Februar und März), und dann vor dem Finale ausschied, im Achtelfinale, Viertelfinale oder Halbfinale: Die Recopa wurde in schon gespielte Wochen gelegt. Jetzt werden die beiden Recopa-Spiele in den Wochen direkt nach Ihrem Ausscheiden gespielt. Bleiben vor dem Saisonende nicht genug Wochen, spielt das Spiel die Runde am Saisonende für Sie. Das Erreichen des Finales war nie ein Problem."
+ },
+ "699f69a27357": {
+  "en": "UEFA Cup spelled right",
+  "t": "UEFA-Pokal richtig geschrieben"
+ },
+ "b877dcc1b219": {
+  "en": "The original game writes the UEFA Cup as \"EUFA\" in all four languages (COPPA EUFA, EUFA CUP, COUPE EUFA, EUFA-CUP). Now it says UEFA (COPPA UEFA, UEFA CUP, COUPE UEFA, UEFA-CUP) everywhere the game shows that name, in the CD and GOG versions. Thanks Marco!",
+  "t": "Das Originalspiel schreibt den UEFA-Pokal in allen vier Sprachen „EUFA“ (COPPA EUFA, EUFA CUP, COUPE EUFA, EUFA-CUP). Jetzt steht überall, wo das Spiel diesen Namen zeigt, UEFA (COPPA UEFA, UEFA CUP, COUPE UEFA, UEFA-CUP), in der CD- und der GOG-Version. Danke, Marco!"
+ },
+ "4d9d2a44a81a": {
+  "en": "Continental cups: Brazil and Argentina send all their clubs",
+  "t": "Kontinentalpokale: Brasilien und Argentinien schicken alle ihre Clubs"
+ },
+ "a7d905d192de": {
+  "en": "With a career club from Brazil or Argentina, your country now sends all its clubs to the Copa Libertadores and the Copa Sudamericana. Before, only the country's top 9 clubs (plus your own and the cup winner) were entered, so Brazil, with 13 places, was always 2 or 3 short and Argentina, with 12, 1 or 2 short, and the empty places went to clubs from other countries. A Flamengo career, for example, had 1 to 3 Brazilian clubs in the Copa Sudamericana groups; now it has 6 of 12.",
+  "t": "Mit einem Karriereclub aus Brasilien oder Argentinien schickt Ihr Land jetzt alle seine Clubs in die Copa Libertadores und die Copa Sudamericana. Vorher waren nur die besten 9 Clubs des Landes (plus Ihr eigener und der Pokalsieger) gemeldet, sodass Brasilien mit 13 Plätzen immer 2 oder 3 zu wenig hatte und Argentinien mit 12 1 oder 2 zu wenig, und die leeren Plätze gingen an Clubs aus anderen Ländern. Eine Karriere mit Flamengo hatte zum Beispiel 1 bis 3 brasilianische Clubs in den Gruppen der Copa Sudamericana; jetzt sind es 6 von 12."
+ },
+ "6195e6ea5f96": {
+  "en": "Argentina, Panama and the MLS: the chairman judges the place in your own zone",
+  "t": "Argentinien, Panama und MLS: Der Präsident beurteilt den Platz in Ihrer eigenen Zone"
+ },
+ "f43eb46bdc1d": {
+  "en": "Argentina, Panama and the MLS: the chairman now judges your club on its place in its own zone (conference), not on the two zones stacked as one table, so a club leading the second zone is no longer warned or sacked for it. The management record shows that place too. In Argentina and Panama, every Apertura or Clausura title you win now counts at the season end like a cup won. The chairman's review of your season, when your contract comes up for renewal, uses that same place in your own zone too. (Thanks Enzo.)",
+  "t": "Argentinien, Panama und MLS: Der Präsident beurteilt Ihren Club jetzt nach seinem Platz in der eigenen Zone (Conference) und nicht nach den beiden Zonen, die als eine Tabelle aufeinandergelegt waren, sodass ein Club, der die zweite Zone anführt, dafür nicht mehr verwarnt oder entlassen wird. Die Bilanz des Managements zeigt ebenfalls diesen Platz. In Argentinien und Panama zählt jeder gewonnene Apertura- oder Clausura-Titel am Saisonende jetzt wie ein gewonnener Pokal. Die Beurteilung Ihrer Saison durch den Präsidenten, wenn Ihr Vertrag zur Verlängerung ansteht, nutzt ebenfalls diesen Platz in Ihrer eigenen Zone. (Danke, Enzo.)"
+ },
+ "ee35c21ff1ec": {
+  "en": "Installing straight from the Italian CD into a new folder",
+  "t": "Direkt von der italienischen CD in einen neuen Ordner installieren"
+ },
+ "35b66e7b93f3": {
+  "en": "In Chrome, installing into a new folder straight from the Italian CD stopped with \"Name is not allowed\", because the CD holds a desktop.ini file that the browser refuses to write. The patcher page now skips the files Windows and Mac keep in their folders and, if the browser cannot write some other file, lists its name instead of stopping. (Thanks Nicola.)",
+  "t": "In Chrome brach die Installation in einen neuen Ordner direkt von der italienischen CD mit „Name is not allowed“ ab, weil die CD eine Datei desktop.ini enthält, die der Browser nicht schreiben will. Die Patcher-Seite überspringt jetzt die Dateien, die Windows und Mac in ihren Ordnern ablegen, und nennt, wenn der Browser eine andere Datei nicht schreiben kann, ihren Namen, statt abzubrechen. (Danke, Nicola.)"
+ },
+ "cf511c6468cd": {
+  "en": "CONCACAF Champions Cup: the United States send all their clubs",
+  "t": "CONCACAF Champions Cup: Die Vereinigten Staaten schicken alle ihre Clubs"
+ },
+ "d2f17711fd9b": {
+  "en": "In the World 2026-27, CONCACAF Champions Cup: some seasons one of the United States' places stayed empty when the MLS Cup was won by a club that had not topped the table. The US now always sends its full number of clubs.",
+  "t": "In der Welt 2026-27, CONCACAF Champions Cup: In manchen Saisons blieb einer der Plätze der Vereinigten Staaten leer, wenn der MLS Cup von einem Club gewonnen wurde, der die Tabelle nicht angeführt hatte. Die USA schicken jetzt immer ihre volle Zahl an Clubs."
+ },
+ "6d5e1f8c3447": {
+  "en": "- Careers saved with 4.0, 4.0.1, 4.0.2, 4.0.5, 4.1 and 4.1.1 load and play on.",
+  "t": "- Karrieren, die mit 4.0, 4.0.1, 4.0.2, 4.0.5, 4.1 und 4.1.1 gespeichert wurden, laden und spielen weiter."
+ },
+ "65d90fbb9955": {
+  "en": "- Brazil and Argentina: a save made in the middle of a season picks the fix up at its next season end; the cups already drawn at the previous season end keep the clubs they have, and the full lists show from the next season's cups on.",
+  "t": "- Brasilien und Argentinien: Ein mitten in der Saison gemachter Spielstand übernimmt die Korrektur an seinem nächsten Saisonende; die am vorigen Saisonende schon ausgelosten Pokale behalten ihre Clubs, und die vollständigen Listen erscheinen ab den Pokalen der nächsten Saison."
+ },
+ "3e1a16697673": {
+  "en": "- CONCACAF Champions Cup (World 2026-27): a save picks the fix up at its next season end; the edition already drawn this season stays as it is.",
+  "t": "- CONCACAF Champions Cup (Welt 2026-27): Ein Spielstand übernimmt die Korrektur an seinem nächsten Saisonende; die in dieser Saison schon ausgeloste Austragung bleibt, wie sie ist."
+ },
+ "dfca122730fb": {
+  "en": "- The Brazil and Argentina fix does not touch careers with a club from any other country, European ones included.",
+  "t": "- Die Korrektur für Brasilien und Argentinien berührt keine Karrieren mit einem Club aus einem anderen Land, auch keinen europäischen."
+ },
+ "2925c5ed86e2": {
+  "en": "- Recopa fix: no save is lost. If your game exited to DOS or hung after an exit from the Libertadores, load your last save with 4.1.2 and the Recopa is played normally.",
+  "t": "- Recopa-Korrektur: Kein Spielstand geht verloren. Wenn Ihr Spiel nach einem Ausscheiden aus der Libertadores zu DOS zurückkehrte oder hing, laden Sie Ihren letzten Spielstand mit der 4.1.2, und die Recopa wird normal gespielt."
  }
 }
