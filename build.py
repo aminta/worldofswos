@@ -904,8 +904,8 @@ def news_page(d, lang, ver=None):
     bl = [b for b in bl if not (b[0] == 'p' and b[1].strip() == '---')]
     body = (f'<div class="wrap page-head"><h1>{esc(title)}</h1>{warn_banner(lang)}</div><div class="wrap doc">'
             + ((f'<p class="panel next"><span class="next-tag px">IDEA</span> '
-                + ('Idea in corso: gli stili di gioco delle squadre del computer. <a href="/it/styles/">Leggi e dici la tua</a>.' if lang == 'it' else
-                   'Idea in progress: playing styles for CPU teams (in English). <a href="/en/styles/">Read it and give your opinion</a>.') + '</p>') if ver == '4.1.2' else '')
+                + ('Idea in corso: gli stili di gioco delle squadre del computer. <a href="/it/styles/">Leggi e dici la tua</a>. Grazie a Gianfranco, che ci ha dato l\'idea grazie alla sua passione per i dribbling!' if lang == 'it' else
+                   'Idea in progress: playing styles for CPU teams (in English). <a href="/en/styles/">Read it and give your opinion</a>. Thanks to Gianfranco, who gave us the idea with his passion for dribbling!') + '</p>') if ver == '4.1.2' else '')
             + (f'<p><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>' if RELEASED else
                f'<p class="panel next"><span class="next-tag px">4.0</span> {esc(t["with40"])}</p>'
                f'<p><span class="btn green soon-btn disabled" aria-disabled="true">{esc(t["dl"])}<small>{esc(t["dl_with40"])}</small></span></p>')
