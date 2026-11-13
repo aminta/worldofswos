@@ -28,6 +28,7 @@ import classic                                              # noqa: E402
 import ogimage                                              # noqa: E402
 import already                                              # noqa: E402
 import install                                              # noqa: E402
+import easy                                                 # noqa: E402
 from i18n import CONTINENT, GAME, LANG_NAME, LANGS, LOCALE, T   # noqa: E402
 
 SITE_URL = 'https://worldofswos.com'
@@ -838,12 +839,13 @@ def install_page(d, lang):
               f'<small>{esc(t["dl_with40"])}</small></span></p>'
               f'<p class="note" style="margin:8px 0 0"><a href="{REPO}/releases/tag/v3.3.6">{esc(t["cur336"])}</a></p>')
     steps = ''.join(f'<li>{text(x)}' + (dl if i == 0 else '') + '</li>' for i, x in enumerate(common))
-    cases = ''.join(f'<h2>{esc(h)}</h2><ul>' + ''.join(f'<li>{text(x)}</li>' for x in items) + '</ul>'
-                    for h, items in g['cases'] if 'MISTER_DRAFT' not in items)       # MiSTer: held
+    ids = ['gogwin', 'gogmac', 'cdrom']
+    cases = ''.join(f'<h2 id="{ids[i] if i < len(ids) else "case%d" % i}">{esc(h)}</h2><ul>' + ''.join(f'<li>{text(x)}</li>' for x in items) + '</ul>'
+                    for i, (h, items) in enumerate(g['cases']) if 'MISTER_DRAFT' not in items)       # MiSTer: held
     body = f'''<div class="wrap page-head"><h1>{esc(g['title'])}</h1>{warn_banner(lang)}<p>{esc(g['lead'])}</p></div>
-<div class="wrap doc">{video_block(lang)}<h2>{esc(g['section'])}</h2><ol class="steps">{steps}</ol>
-<p class="panel" style="margin-top:16px">{esc(g['fallback'])}{(' ' + esc(t['progfiles_manual'])) if RELEASED else ''}</p>
-{f'<p class="panel next" id="progfiles">{esc(t["progfiles"])}</p>' if RELEASED else ''}{cases}{launch_block(lang)}{saves_table(lang)}{joypad_block(lang)}</div>'''
+<div class="wrap doc">{easy.banner(lang)}{video_block(lang)}{easy.which(lang)}<h2>{esc(g['section'])}</h2><ol class="steps">{steps}</ol>
+<p class="panel" id="manual" style="margin-top:16px">{esc(g['fallback'])}{(' ' + esc(t['progfiles_manual'])) if RELEASED else ''}</p>
+{easy.progfiles(lang, newfolder=True)}{cases}{launch_block(lang)}{easy.firstmatch(lang)}{saves_table(lang)}{joypad_block(lang)}</div>'''
     return page(lang, 'install/', g['title'], body, active='install')
 
 
