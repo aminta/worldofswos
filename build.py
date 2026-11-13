@@ -845,7 +845,7 @@ def install_page(d, lang):
     body = f'''<div class="wrap page-head"><h1>{esc(g['title'])}</h1>{warn_banner(lang)}<p>{esc(g['lead'])}</p></div>
 <div class="wrap doc">{easy.banner(lang)}{video_block(lang)}{easy.which(lang)}<h2>{esc(g['section'])}</h2><ol class="steps">{steps}</ol>
 <p class="panel" id="manual" style="margin-top:16px">{esc(g['fallback'])}{(' ' + esc(t['progfiles_manual'])) if RELEASED else ''}</p>
-{easy.progfiles(lang, newfolder=True)}{cases}{launch_block(lang)}{easy.firstmatch(lang)}{saves_table(lang)}{joypad_block(lang)}</div>'''
+{easy.progfiles(lang, newfolder=True)}{cases}{launch_block(lang)}{easy.firstmatch(lang)}{easy.players(lang)}{saves_table(lang)}{joypad_block(lang)}</div>'''
     return page(lang, 'install/', g['title'], body, active='install')
 
 

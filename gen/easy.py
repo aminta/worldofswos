@@ -23,7 +23,7 @@ L = {
   ph2='Tip: the patcher can also install into a new folder, so you skip the copy back (see the new option in the patcher).',
   fh='First match: the short checklist',
   fl=['Start the game with the launcher of your language, not the GOG shortcut (that one is always English).',
-      'In the main menu press <strong>CAREER 2026-27</strong> (a new career: old saves keep the old squads).',
+      'In the main menu press <strong>CAREER</strong> (a new career: old saves keep the old squads).',
       'Pick your club and play. Controls: arrow keys and Ctrl; with a joypad see the joypad section below.',
       'Something wrong? Your original files are in <code>MOD_BACKUP</code> in the game folder; run the patcher again to update, or <a href="/en/bug/">report a bug</a>.']),
  'it': dict(
@@ -45,7 +45,7 @@ L = {
   ph2='Consiglio: il patcher può anche installare in una cartella nuova, così eviti la ricopiatura (vedi la nuova opzione nel patcher).',
   fh='Prima partita: la lista breve',
   fl=['Avvia il gioco con il lanciatore della tua lingua, non con il collegamento di GOG (parte sempre in inglese).',
-      'Nel menu principale premi <strong>CARRIERA 2026-27</strong> (carriera nuova: i salvataggi vecchi tengono le vecchie squadre).',
+      'Nel menu principale premi <strong>CARRIERA</strong> (carriera nuova: i salvataggi vecchi tengono le vecchie squadre).',
       'Scegli la tua squadra e gioca. Comandi: frecce e Ctrl; con il joypad vedi la sezione joypad più sotto.',
       'Qualcosa non va? I tuoi file originali sono in <code>MOD_BACKUP</code> nella cartella del gioco; rilancia il patcher per aggiornare, oppure <a href="/it/bug/">segnala un bug</a>.']),
  'fr': dict(
@@ -67,7 +67,7 @@ L = {
   ph2='Astuce : le patcher peut aussi installer dans un nouveau dossier, ce qui évite la recopie (voir la nouvelle option du patcher).',
   fh='Premier match : la liste courte',
   fl=['Lancez le jeu avec le lanceur de votre langue, pas avec le raccourci GOG (il lance toujours l\'anglais).',
-      'Dans le menu principal, appuyez sur <strong>CARRIÈRE 2026-27</strong> (nouvelle carrière : les anciennes sauvegardes gardent les anciens effectifs).',
+      'Dans le menu principal, appuyez sur <strong>CARRIÈRE</strong> (nouvelle carrière : les anciennes sauvegardes gardent les anciens effectifs).',
       'Choisissez votre club et jouez. Commandes : flèches et Ctrl ; avec une manette, voir la section manette plus bas.',
       'Un problème ? Vos fichiers d\'origine sont dans <code>MOD_BACKUP</code> dans le dossier du jeu ; relancez le patcher pour mettre à jour, ou <a href="/fr/bug/">signalez un bug</a>.']),
  'de': dict(
@@ -89,7 +89,7 @@ L = {
   ph2='Tipp: Der Patcher kann auch in einen neuen Ordner installieren, dann entfällt das Zurückkopieren (siehe die neue Option im Patcher).',
   fh='Erstes Spiel: die kurze Liste',
   fl=['Starten Sie das Spiel mit der Startdatei Ihrer Sprache, nicht mit der GOG-Verknüpfung (sie startet immer Englisch).',
-      'Drücken Sie im Hauptmenü <strong>KARRIERE 2026-27</strong> (neue Karriere: alte Spielstände behalten die alten Kader).',
+      'Drücken Sie im Hauptmenü <strong>KARRIERE</strong> (neue Karriere: alte Spielstände behalten die alten Kader).',
       'Wählen Sie Ihren Verein und spielen Sie. Steuerung: Pfeiltasten und Strg; mit Joypad siehe den Joypad-Abschnitt weiter unten.',
       'Etwas stimmt nicht? Ihre Originaldateien liegen in <code>MOD_BACKUP</code> im Spielordner; starten Sie den Patcher erneut zum Aktualisieren oder <a href="/de/bug/">melden Sie einen Fehler</a>.']),
 }
@@ -165,3 +165,40 @@ def mister(lang):
     return (f'<h2 id="mister">{E(x["h"])}</h2><p class="panel next">{E(x["note"])}</p><ol class="steps">'
             + ''.join(f'<li>{i}</li>' for i in x['s']) + f'</ol><p>{x["m"]}</p>'
             f'<pre class="panel" style="white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px">{E(MGL)}</pre><p>{x["l"]}</p>')
+
+
+PL = {
+ 'en': ('World 2026-27 player list',
+        'Every player of the World 2026-27 (mod 4.1.2) with club, position, all 7 skills and price: handy for spotting bargains on the transfer market. CSV file: it opens in Excel, LibreOffice or Google Sheets.',
+        'Download the player list (CSV)',
+        ('CSV column', 'Letter in your game', 'Meaning'),
+        [('P','P','passing'),('V','V','shot power'),('H','H','heading'),('T','T','tackling'),('C','C','ball control'),('S','S','speed'),('F','F','finishing')],
+        'A starred skill in the game (key skill) is listed in the key_skills column. Skills go from 0 to 7.'),
+ 'it': ('Lista giocatori Mondo 2026-27',
+        'Tutti i giocatori del Mondo 2026-27 (mod 4.1.2) con squadra, ruolo, le 7 abilità e il prezzo: comoda per scovare gli affari sul mercato. File CSV: si apre con Excel, LibreOffice o Google Fogli.',
+        'Scarica la lista giocatori (CSV)',
+        ('Colonna del CSV', 'Lettera nel tuo gioco', 'Significato'),
+        [('P','P','passaggio'),('V','C','tiro (potenza)'),('H','T','colpo di testa'),('T','F','contrasto (in gioco "FALCIARE")'),('C','A','controllo palla (in gioco "AGILITA\'")'),('S','V','velocità'),('F','S','finalizzazione (in gioco "SEGNARE")')],
+        'Un\'abilità con la stella nel gioco (abilità chiave) è indicata nella colonna key_skills. Le abilità vanno da 0 a 7.'),
+ 'fr': ('Liste des joueurs du Monde 2026-27',
+        'Tous les joueurs du Monde 2026-27 (mod 4.1.2) avec club, poste, les 7 qualités et le prix : pratique pour repérer les bonnes affaires sur le marché des transferts. Fichier CSV : il s\'ouvre dans Excel, LibreOffice ou Google Sheets.',
+        'Télécharger la liste des joueurs (CSV)',
+        ('Colonne du CSV', 'Lettre dans votre jeu', 'Signification'),
+        [('P','P','passe'),('V','R','tir (puissance)'),('H','T','jeu de tête'),('T','I','tacle'),('C','C','contrôle du ballon'),('S','V','vitesse'),('F','A','finition')],
+        'Une qualité marquée d\'une étoile dans le jeu (qualité clé) figure dans la colonne key_skills. Les qualités vont de 0 à 7.'),
+ 'de': ('Spielerliste Welt 2026-27',
+        'Alle Spieler der Welt 2026-27 (Mod 4.1.2) mit Verein, Position, allen 7 Fähigkeiten und Preis: praktisch, um auf dem Transfermarkt Schnäppchen zu finden. CSV-Datei: öffnet sich in Excel, LibreOffice oder Google Sheets.',
+        'Spielerliste herunterladen (CSV)',
+        ('CSV-Spalte', 'Buchstabe in Ihrem Spiel', 'Bedeutung'),
+        [('P','P','Passen'),('V','G','Schießen (Schusskraft)'),('H','K','Kopfball'),('T','Z','Tackling'),('C','B','Ballkontrolle'),('S','S','Geschwindigkeit'),('F','A','Abschluss')],
+        'Eine Fähigkeit mit Stern im Spiel (Schlüsselfähigkeit) steht in der Spalte key_skills. Die Fähigkeiten gehen von 0 bis 7.'),
+}
+
+
+def players(lang):
+    h, d, b, th, rows, k = PL[lang]
+    tb = ''.join(f'<tr><td><code>{E(a)}</code></td><td><strong>{E(c)}</strong></td><td>{E(m)}</td></tr>' for a, c, m in rows)
+    return (f'<h2 id="players">{E(h)}</h2><p>{E(d)}</p>'
+            f'<p><a class="btn" href="/static/players-2627-4.1.2.csv" download>{E(b)}</a></p>'
+            f'<table class="saves"><thead><tr>' + ''.join(f'<th>{E(x)}</th>' for x in th) + f'</tr></thead><tbody>{tb}</tbody></table>'
+            f'<p class="note">{E(k)}</p>')
