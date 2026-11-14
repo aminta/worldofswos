@@ -111,7 +111,7 @@ T = {
     site='World of SWOS', sub='SWOS 96/97 Mod',
     skip='Skip to content', menu='Menu', lang_label='Language',
     nav_home='Home', nav_world='World 2026-27', nav_countries='Countries', nav_classic='Classic careers',
-    nav_install='Install', nav_credits='Credits',
+    nav_install='Install', nav_players='Player list', nav_credits='Credits',
     meta_home='SWOS 96/97 Mod 4.0: the World 2026-27 career for Sensible World of Soccer 96/97. 91 countries, real '
               'squads and every competition in its real format. Free, unofficial fan mod.',
     kicker='SWOS 96/97 Mod 4.0 · World 2026-27',
@@ -272,7 +272,7 @@ T = {
     site='World of SWOS', sub='SWOS 96/97 Mod',
     skip='Vai al contenuto', menu='Menu', lang_label='Lingua',
     nav_home='Home', nav_world='Mondo 2026-27', nav_countries='Nazioni', nav_classic='Carriere storiche',
-    nav_install='Installazione', nav_credits='Crediti',
+    nav_install='Installazione', nav_players='Lista giocatori', nav_credits='Crediti',
     meta_home='SWOS 96/97 Mod 4.0: la carriera Mondo 2026-27 per Sensible World of Soccer 96/97. 91 nazioni, rose '
               'vere e ogni competizione con la sua vera formula. Mod gratuita e non ufficiale.',
     kicker='SWOS 96/97 Mod 4.0 · Mondo 2026-27',
@@ -433,7 +433,7 @@ T = {
     site='World of SWOS', sub='SWOS 96/97 Mod',
     skip='Aller au contenu', menu='Menu', lang_label='Langue',
     nav_home='Accueil', nav_world='Monde 2026-27', nav_countries='Pays', nav_classic="Carrières d'antan",
-    nav_install='Installation', nav_credits='Crédits',
+    nav_install='Installation', nav_players='Liste des joueurs', nav_credits='Crédits',
     meta_home="SWOS 96/97 Mod 4.0 : la carrière Monde 2026-27 pour Sensible World of Soccer 96/97. 91 pays, les vrais "
               "effectifs et chaque compétition dans sa vraie formule. Mod de fan gratuit et non officiel.",
     kicker='SWOS 96/97 Mod 4.0 · Monde 2026-27',
@@ -596,7 +596,7 @@ T = {
     site='World of SWOS', sub='SWOS 96/97 Mod',
     skip='Zum Inhalt', menu='Menü', lang_label='Sprache',
     nav_home='Start', nav_world='Welt 2026-27', nav_countries='Länder', nav_classic='Klassische Karrieren',
-    nav_install='Installation', nav_credits='Credits',
+    nav_install='Installation', nav_players='Spielerliste', nav_credits='Credits',
     meta_home='SWOS 96/97 Mod 4.0: die Karriere Welt 2026-27 für Sensible World of Soccer 96/97. 91 Länder, echte '
               'Kader und jeder Wettbewerb in seinem echten Modus. Kostenlose, inoffizielle Fan-Mod.',
     kicker='SWOS 96/97 Mod 4.0 · Welt 2026-27',

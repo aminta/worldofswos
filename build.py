@@ -287,7 +287,7 @@ def logo_svg(size=44, title=None):
 
 
 NAV = [('home', ''), ('world', 'world/'), ('countries', 'countries/'), ('classic', 'classic/'), ('install', '#install'),
-       ('credits', 'credits/')]
+       ('players', 'install/#players'), ('credits', 'credits/')]
 
 
 def counter(lang):
