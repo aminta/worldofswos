@@ -87,7 +87,7 @@ if __name__ == '__main__':
     rel1 = os.path.join(build.DATA, 'next', 'notes-4.0.1.md')    # the 4.0.1 release notes
     if os.path.exists(rel1):
         cred = cred + md.blocks(build.split_langs(open(rel1, encoding='utf-8').read())['en'])
-    for v in ('4.1', '4.1.1', '4.1.2'):
+    for v in ('4.1', '4.1.1', '4.1.2', '4.2'):
         rv = os.path.join(build.DATA, 'next', f'notes-{v}.md')
         if os.path.exists(rv):
             cred = cred + md.blocks(build.split_langs(open(rv, encoding='utf-8').read())['en'])

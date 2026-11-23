@@ -2214,5 +2214,493 @@
  "b639eef2d460": {
   "en": "Thanks to Roman for asking for an easier install, to Marco for the financial fair play idea, the training, shirt-number and keyboard ideas, to Enzo for the market-list report, to Nicola for the finance and CPU-replacements reports, to Salvatore and Marco for the arrows report, to Francesco for the bench strip, offers and world ideas, to Francesco and Tally for their 4.0.5 saves and to Ben Baker for the San Marino report. Marco and Davide had the idea of the stoppage time.",
   "t": "Danke an Roman, der um eine leichtere Installation gebeten hat, an Marco für die Idee des Financial Fair Play, die Ideen zu Training, Rückennummern und Tastatur, an Enzo für die Meldung zur Marktliste, an Nicola für die Meldungen zu Finanzen und Ersatz des Computers, an Salvatore und Marco für die Meldung zu den Pfeilen, an Francesco für Bankleiste, Angebote und Weltideen, an Francesco und Tally für ihre 4.0.5-Spielstände und an Ben Baker für die Meldung zu San Marino. Marco und Davide hatten die Idee der Nachspielzeit."
+ },
+ "cb8dbf6c485a": {
+  "en": "SWOS 96/97 Mod 4.2",
+  "t": "SWOS 96/97 Mod 4.2"
+ },
+ "a73777ef1f3c": {
+  "en": "Serie D complete: all 162 clubs",
+  "t": "Serie D komplett: alle 162 Vereine"
+ },
+ "4c08333ea86f": {
+  "en": "- 2026-27 world: Serie D now has all its real clubs: 9 groups of 18, 162 clubs, exactly like the real 2026-27 league. In 4.1 the game could hold only 156 of them (one team file holds 256 clubs at most); 4.2 spreads Serie D over two team files, so no club is missing any more.",
+  "t": "- Welt 2026-27: Die Serie D hat jetzt alle ihre echten Vereine: 9 Staffeln zu 18, 162 Vereine, genau wie die echte Liga 2026-27. In 4.1 konnte das Spiel nur 156 davon aufnehmen (eine Teamdatei fasst höchstens 256 Vereine); 4.2 verteilt die Serie D auf zwei Teamdateien, sodass kein Verein mehr fehlt."
+ },
+ "79e9d61b8d9f": {
+  "en": "- In a 4.1 career, the 6 clubs that were missing join Serie D when you load it (see \"Serie D in a 4.1 career\").",
+  "t": "- In einer Karriere aus 4.1 kommen die 6 fehlenden Vereine beim Laden in die Serie D (siehe „Serie D in einer Karriere aus 4.1“)."
+ },
+ "3ff0c116061d": {
+  "en": "Serie C and Serie D groups drawn again every summer",
+  "t": "Staffeln der Serie C und Serie D jeden Sommer neu eingeteilt"
+ },
+ "eac3dffabf4a": {
+  "en": "- 2026-27 world: from the end of your first season, the Serie C groups (3 of 20 clubs) and the Serie D groups (9 of 18) are drawn again every summer, as the leagues really do. The rule is geography: every club goes to the group whose clubs live nearest to it, every group keeps its size, and a club that is already in a fitting group stays there. Your first season keeps the real 2026-27 groups.",
+  "t": "- Welt 2026-27: Ab dem Ende deiner ersten Saison werden die Staffeln der Serie C (3 zu 20 Vereinen) und der Serie D (9 zu 18) jeden Sommer neu eingeteilt, wie es die Ligen wirklich tun. Die Regel ist die Geografie: Jeder Verein kommt in die Staffel, deren Vereine ihm am nächsten liegen, jede Staffel behält ihre Größe, und ein Verein, der schon in einer passenden Staffel ist, bleibt dort. Deine erste Saison behält die echten Staffeln 2026-27."
+ },
+ "ae309e26e347": {
+  "en": "- Your club can change group too (for example from Serie C group B to group C). It stays the same career: same squad, same money, same record. Only the group changes.",
+  "t": "- Auch dein Verein kann die Staffel wechseln (zum Beispiel von Gruppe B der Serie C in Gruppe C). Es bleibt dieselbe Karriere: derselbe Kader, dasselbe Geld, dieselbe Bilanz. Nur die Staffel ändert sich."
+ },
+ "39ac1c1718df": {
+  "en": "- Serie C second teams (JUVENTUS NG, ATALANTA U23, INTER U23, and MILAN FUTURO if it goes up): Lega Pro rules: never two in the same group; the mod draws a new group for each one every summer, and your career always gets the same draw.",
+  "t": "- Zweite Mannschaften der Serie C (JUVENTUS NG, ATALANTA U23, INTER U23 und MILAN FUTURO, falls es aufsteigt): Regeln der Lega Pro: nie zwei in derselben Staffel; die Mod lost für jede jeden Sommer eine neue Staffel aus, und deine Karriere bekommt immer dieselbe Auslosung."
+ },
+ "4adf4900282b": {
+  "en": "- How close to reality: the leagues draw their groups by geography but publish no formula, and they move some clubs on the border between two groups back and forth from one summer to the next. Given the real 2025-26 groups, the mod's rule puts 92% of the Serie C clubs and 78% of the Serie D clubs in their real 2026-27 group (the same rule on the summer before: 75% in Serie D).",
+  "t": "- Wie nah an der Wirklichkeit: Die Ligen teilen ihre Staffeln nach Geografie ein, veröffentlichen aber keine Formel, und manche Vereine an der Grenze zwischen zwei Staffeln schieben sie von einem Sommer zum nächsten hin und her. Ausgehend von den echten Staffeln 2025-26 setzt die Regel der Mod 92 % der Serie-C-Vereine und 78 % der Serie-D-Vereine in ihre echte Staffel 2026-27 (dieselbe Regel im Sommer davor: 75 % in der Serie D)."
+ },
+ "502158df0cb1": {
+  "en": "- If the groups can't be drawn (it should never happen), the season ends the old way: a club coming down or going up joins the group of its own area.",
+  "t": "- Können die Staffeln nicht eingeteilt werden (das sollte nie passieren), endet die Saison wie früher: Ein Absteiger oder Aufsteiger kommt in die Staffel seiner Region."
+ },
+ "312cff56a34b": {
+  "en": "Serie D in a 4.1 career",
+  "t": "Serie D in einer Karriere aus 4.1"
+ },
+ "381110e25bdb": {
+  "en": "- Serie D now has 9 groups of 18 clubs (162 clubs).",
+  "t": "- Die Serie D hat jetzt 9 Staffeln zu 18 Vereinen (162 Vereine)."
+ },
+ "494031eaffe9": {
+  "en": "- The 6 new places go first to the 6 clubs that join Serie D in 2026-27, if your career has not already brought them in. Otherwise they go to the clubs relegated out of Serie D during your career, in the order the game would have brought them back. These clubs enter their group at the start of the next season.",
+  "t": "- Die 6 neuen Plätze gehen zuerst an die 6 Vereine, die 2026-27 in die Serie D kommen, falls deine Karriere sie nicht schon hereingeholt hat. Sonst gehen sie an die Vereine, die während deiner Karriere aus der Serie D abgestiegen sind, in der Reihenfolge, in der das Spiel sie zurückgeholt hätte. Diese Vereine kommen zu Beginn der nächsten Saison in ihre Staffel."
+ },
+ "d83108283a25": {
+  "en": "- Rare case: the game used provisional clubs (a \"stand-in\") to fill a Serie D place when a club dropped out of the pyramid. If a stand-in reached Serie C in your 4.1 career, a real Serie D club replaces it the first time you load the save in 4.2, and keeps the stand-in's points and table position.",
+  "t": "- Seltener Fall: Das Spiel hat vorläufige Vereine (einen „Platzhalter“) benutzt, um einen Platz in der Serie D zu füllen, wenn ein Verein aus der Ligapyramide ausschied. Hat ein Platzhalter in deiner Karriere aus 4.1 die Serie C erreicht, ersetzt ihn beim ersten Laden des Spielstands in 4.2 ein echter Serie-D-Verein und übernimmt die Punkte und den Tabellenplatz des Platzhalters."
+ },
+ "3bde777793d0": {
+  "en": "- Serie D, a 4.1 save imported into 4.2: if a club's Serie D group is full, it plays the rest of that season in the nearest group with room; from the next season the yearly redraw places everyone.",
+  "t": "- Serie D, ein Spielstand aus 4.1 in 4.2 geladen: Ist die Serie-D-Staffel eines Vereins voll, spielt er den Rest dieser Saison in der nächstgelegenen Staffel mit freiem Platz; ab der nächsten Saison verteilt die jährliche Neueinteilung alle."
+ },
+ "bebbd1dc1eaf": {
+  "en": "- A 4.1 career loaded in the middle of a season finishes that season with the 4.2 rules: in Serie A the last two go down directly and the 17th and 18th play a relegation play-off over two legs, instead of the last three going down.",
+  "t": "- Eine Karriere aus 4.1, die mitten in einer Saison geladen wird, beendet diese Saison mit den Regeln von 4.2: In der Serie A steigen die letzten beiden direkt ab, und der 17. und 18. spielen ein Abstiegs-Playoff mit Hin- und Rückspiel, statt dass die letzten drei absteigen."
+ },
+ "8ea8f7744862": {
+  "en": "Keeper gloves",
+  "t": "Torwarthandschuhe"
+ },
+ "0fd0661d80b6": {
+  "en": "- In the 2026-27 world the goalkeepers now wear white gloves: their hands show white, for every keeper whatever the skin colour. The historic worlds (1996-97, 1984-85 and the historic seasons) keep the bare hands of the original game.",
+  "t": "- In der Welt 2026-27 tragen die Torhüter jetzt weiße Handschuhe: Ihre Hände sind weiß, bei jedem Torwart, unabhängig von der Hautfarbe. Die historischen Welten (1996-97, 1984-85 und die historischen Saisons) behalten die bloßen Hände des Originalspiels."
+ },
+ "47e00a415734": {
+  "en": "Club tactics",
+  "t": "Vereinstaktiken"
+ },
+ "ab87f7e2d031": {
+  "en": "- In the 2026-27 world every club now plays its real formation: the one its coach uses this season (Transfermarkt), turned into the nearest SWOS tactic (a 4-2-3-1 plays 4-5-1, a 3-4-2-1 plays 3-4-3). Clubs without that information take the shape that best fits their squad. Before, almost every club played 4-4-2. The starting eleven now lines up for its own tactic too.",
+  "t": "- In der Welt 2026-27 spielt jetzt jeder Verein seine echte Formation: die, die sein Trainer in dieser Saison benutzt (Transfermarkt), umgesetzt in die nächstliegende SWOS-Taktik (ein 4-2-3-1 spielt 4-5-1, ein 3-4-2-1 spielt 3-4-3). Vereine ohne diese Angabe bekommen die Formation, die am besten zu ihrem Kader passt. Vorher spielte fast jeder Verein 4-4-2. Auch die Startelf stellt sich jetzt für ihre eigene Taktik auf."
+ },
+ "a6378d54c91e": {
+  "en": "- 1984-85 world: clubs now line up in their own formation (a 3-5-2 side fields three defenders and five midfielders) instead of always the 4-4-2 positions.",
+  "t": "- Welt 1984-85: Die Vereine stellen sich jetzt in ihrer eigenen Formation auf (eine Mannschaft im 3-5-2 bringt drei Verteidiger und fünf Mittelfeldspieler) statt immer auf den Positionen des 4-4-2."
+ },
+ "8a6c640a0acc": {
+  "en": "Real Serie A and Serie B line-ups",
+  "t": "Echte Aufstellungen in Serie A und Serie B"
+ },
+ "0e32aae20fe7": {
+  "en": "- Serie A and Serie B 2026-27: the starting eleven of every club is now the one that really plays this season (the players with the most starts), the bench holds the players called up most often (with the usual reserve goalkeeper), and the others are not called up. For example JUVENTUS start VICARIO in goal with NETO on the bench. The team keeps its coach's formation whenever those eleven can play it, with full-backs as wing-backs and wingers up front (JUVENTUS 3-4-3, INTER 3-5-2).",
+  "t": "- Serie A und Serie B 2026-27: Die Startelf jedes Vereins ist jetzt die, die in dieser Saison wirklich spielt (die Spieler mit den meisten Einsätzen von Beginn an), auf der Bank sitzen die am häufigsten nominierten Spieler (mit dem üblichen Ersatztorwart), und die übrigen werden nicht nominiert. Zum Beispiel beginnt JUVENTUS mit VICARIO im Tor und NETO auf der Bank. Die Mannschaft behält die Formation ihres Trainers, wann immer diese elf sie spielen können, mit Außenverteidigern als Flügelverteidiger und Flügelspielern im Sturm (JUVENTUS 3-4-3, INTER 3-5-2)."
+ },
+ "4534247d9ad4": {
+  "en": "Player prices from the market value",
+  "t": "Spielerpreise nach dem Marktwert"
+ },
+ "614a4c7cef80": {
+  "en": "- 2026-27 world: a player's price now follows his real market value (Transfermarkt) and nothing else. A young player worth a lot costs more than a veteran near the end of his career, whatever his club. Skills are exactly as before, and prices across the world keep the same range as before.",
+  "t": "- Welt 2026-27: Der Preis eines Spielers folgt jetzt seinem echten Marktwert (Transfermarkt) und sonst nichts. Ein junger Spieler mit hohem Wert kostet mehr als ein Veteran am Ende seiner Karriere, egal bei welchem Verein. Die Fähigkeiten sind genau wie vorher, und die Preise in der ganzen Welt bleiben im selben Bereich wie vorher."
+ },
+ "bff3c1dc5340": {
+  "en": "Serie C Supercup",
+  "t": "Supercup der Serie C"
+ },
+ "5e0aef03ac06": {
+  "en": "- New competition in the 2026-27 world: the SUPERCOPPA SERIE C. The winners of Serie C groups A, B and C play a three-club mini-league in May, right after the last league day: a draw decides who rests first, the winner of the first match rests on the second day, and the last day pairs the two clubs that have not met. 3 points for a win, 1 for a draw, no extra time or penalties; level clubs are separated by goal difference, goals scored, away goals, then by lot. Win your Serie C group and you play your two matches; otherwise the three matches are played for you at the end of the season. The winner is on the WINNERS page.",
+  "t": "- Neuer Wettbewerb in der Welt 2026-27: die SUPERCOPPA SERIE C. Die Sieger der Gruppen A, B und C der Serie C spielen im Mai, direkt nach dem letzten Ligaspieltag, eine Minirunde zu dritt: Das Los entscheidet, wer zuerst spielfrei ist, der Sieger des ersten Spiels ist am zweiten Spieltag spielfrei, und am letzten Spieltag treffen die beiden Vereine aufeinander, die sich noch nicht begegnet sind. 3 Punkte für einen Sieg, 1 für ein Unentschieden, keine Verlängerung und kein Elfmeterschießen; bei Gleichstand entscheiden Tordifferenz, erzielte Tore, Auswärtstore, dann das Los. Gewinnst du deine Serie-C-Gruppe, spielst du deine zwei Spiele; sonst werden die drei Spiele am Saisonende für dich ausgetragen. Der Sieger steht auf der Seite SIEGER."
+ },
+ "5a26fcec3552": {
+  "en": "- Each match is titled SUPERCOPPA SERIE C MATCHDAY 1, 2 or 3. While the Supercup is on, the table of your Serie C group has a new entry under STATS, SUPERCOPPA SERIE C: the three clubs' table, the leader in light blue (legend: WINS). The FORMAT page explains the rules.",
+  "t": "- Jedes Spiel heißt SUPERCOPPA SERIE C 1., 2. oder 3. SPIELTAG. Solange der Supercup läuft, hat die Tabelle deiner Serie-C-Gruppe unter STATISTIK einen neuen Eintrag, SUPERCOPPA SERIE C: die Tabelle der drei Vereine, der Führende hellblau (Legende: SIEG). Die Seite MODUS erklärt die Regeln."
+ },
+ "90626a390229": {
+  "en": "- The points and the tie-break order are the official ones (Lega Pro, Comunicato Ufficiale 94/DIV of 27 April 2026). \"A draw stays a draw, no extra time or penalties\" is our choice: the official text we could read does not mention extra time.",
+  "t": "- Die Punkte und die Reihenfolge bei Gleichstand sind die offiziellen (Lega Pro, Comunicato Ufficiale 94/DIV vom 27. April 2026). „Ein Unentschieden bleibt ein Unentschieden, keine Verlängerung und kein Elfmeterschießen“ ist unsere Entscheidung: Der offizielle Text, den wir lesen konnten, erwähnt keine Verlängerung."
+ },
+ "409ac61d56dd": {
+  "en": "- In a 4.1 career, the game decides the Supercup of the season in progress at the season's end.",
+  "t": "- In einer Karriere aus 4.1 entscheidet das Spiel den Supercup der laufenden Saison am Saisonende."
+ },
+ "7945d3c8f7a0": {
+  "en": "Difficulty",
+  "t": "Schwierigkeit"
+ },
+ "9a9d0b6e97ea": {
+  "en": "- New OPTIONS row DIFFICULTY: EASY, NORMAL or HARD. NORMAL is the original game. The level only changes a computer team playing against you: on EASY its players are 80% as good, its goalkeeper is 2 points weaker and its passes go astray more often; on HARD its players are 10% better, its goalkeeper 2 points stronger and its passes more accurate. Two humans, computer against computer, training games, SWOS++ and simulated results always play the original game.",
+  "t": "- Neue Zeile unter OPTIONEN: SCHWIERIGKEIT: LEICHT, NORMAL oder SCHWER. NORMAL ist das Originalspiel. Die Stufe ändert nur eine Computermannschaft, die gegen dich spielt: Auf LEICHT sind ihre Spieler 80 % so gut, ihr Torwart ist 2 Punkte schwächer und ihre Pässe gehen öfter daneben; auf SCHWER sind ihre Spieler 10 % besser, ihr Torwart ist 2 Punkte stärker und ihre Pässe sind genauer. Zwei menschliche Spieler, Computer gegen Computer, Trainingsspiele, SWOS++ und simulierte Ergebnisse spielen immer das Originalspiel."
+ },
+ "6fc6a4e9f83e": {
+  "en": "Dribbling",
+  "t": "Dribbling"
+ },
+ "b85895b5ee8c": {
+  "en": "- New OPTIONS row DRIBBLING: CLASSIC (the original game), NEW or CUSTOM. With NEW your ball carrier slows down less, the ball stays closer to his feet on sharp turns and you keep the ball a moment longer after winning it; the computer slides in less often, never slides while you dribble inside its own penalty area, its second man holds back further and it needs a moment longer to win the ball back after losing it to a strong tackle.",
+  "t": "- Neue Zeile unter OPTIONEN: DRIBBLING: KLASSISCH (das Originalspiel), NEU oder INDIVIDUELL. Mit NEU wird dein Ballführender weniger langsamer, der Ball bleibt bei scharfen Drehungen näher an seinen Füßen, und du behältst den Ball nach der Balleroberung einen Moment länger; der Computer grätscht seltener, grätscht nie, während du in seinem eigenen Strafraum dribbelst, sein zweiter Mann hält sich weiter zurück, und er braucht einen Moment länger, um den Ball zurückzuerobern, nachdem er ihn durch ein starkes Tackling verloren hat."
+ },
+ "00352d36a6ab": {
+  "en": "- CUSTOM opens a page where you set each of these yourself, from the classic game (left) to more help (right), plus CPU DEFENDERS (CHASE as today; WAIT: they stay between you and the goal instead of chasing from behind; COVER and ONE AT A TIME: one man presses and a team-mate covers behind him) and CPU BUILD UP. DEFAULTS puts back the NEW values.",
+  "t": "- INDIVIDUELL öffnet eine Seite, auf der du jeden dieser Werte selbst einstellst, vom klassischen Spiel (links) bis zu mehr Hilfe (rechts), dazu CPU VERTEIDIGER (JAGEN wie bisher; WARTEN: Sie bleiben zwischen dir und dem Tor, statt dir von hinten nachzujagen; DECKEN und EINZELN: Einer greift an, und ein Mitspieler sichert hinter ihm ab) und CPU AUFBAU. STANDARD stellt die Werte von NEU wieder her."
+ },
+ "c3ded439da27": {
+  "en": "- These settings only apply while the ball is in play: free kicks, corners, throw-ins, goal kicks and kick-offs keep the original game's behaviour.",
+  "t": "- Diese Einstellungen gelten nur, solange der Ball im Spiel ist: Freistöße, Ecken, Einwürfe, Abstöße und Anstöße behalten das Verhalten des Originalspiels."
+ },
+ "dd63c0c88092": {
+  "en": "Set pieces",
+  "t": "Standardsituationen"
+ },
+ "5e030de474f7": {
+  "en": "- New OPTIONS row SET PIECES: CLASSIC (the original game), REALISTIC or ARCADE, for every match.",
+  "t": "- Neue Zeile unter OPTIONEN: STANDARDSITUATIONEN: KLASSISCH (das Originalspiel), REALISTISCH oder ARCADE, für jedes Spiel."
+ },
+ "78ac25ab1c36": {
+  "en": "- REALISTIC: headers from corners and crosses go down instead of over the bar (a good header keeps the ball under the bar from further out); keepers no longer catch everything that drops into the six-yard box; the computer goes for high balls more often; free kicks near the box dip over the wall the way real ones do, and how often they go in depends on the taker's SHOOTING, as in real football: a top specialist scores about one in ten, an average taker one in fifteen, a weak one about one in thirty. When the computer's free kick misses, it goes over the bar or into the wall.",
+  "t": "- REALISTISCH: Kopfbälle nach Ecken und Flanken gehen nach unten statt über die Latte (ein guter Kopfball hält den Ball auch aus größerer Entfernung unter der Latte); die Torhüter fangen nicht mehr alles, was in den Fünfmeterraum fällt; der Computer geht öfter zu hohen Bällen; Freistöße nahe dem Strafraum senken sich über die Mauer wie echte, und wie oft sie hineingehen, hängt vom Schuss des Schützen ab, wie im echten Fußball: Ein Top-Spezialist trifft etwa einmal in zehn, ein durchschnittlicher Schütze einmal in fünfzehn, ein schwacher etwa einmal in dreißig. Verfehlt ein Freistoß des Computers das Tor, geht er über die Latte oder in die Mauer."
+ },
+ "5a76ce678e45": {
+  "en": "- ARCADE: the same headers and keepers, more free kicks around the box (a clean tackle there is whistled as a foul one time in three), and the computer curls its free kicks at the far post: a top shooter scores about one in six from 20-25 metres, a weak one hardly ever.",
+  "t": "- ARCADE: dieselben Kopfbälle und Torhüter, mehr Freistöße rund um den Strafraum (ein sauberes Tackling dort wird jedes dritte Mal als Foul gepfiffen), und der Computer zirkelt seine Freistöße an den langen Pfosten: Ein Top-Schütze trifft aus 20-25 Metern etwa einmal in sechs, ein schwacher fast nie."
+ },
+ "c6eef0d92dc0": {
+  "en": "- Your own free kicks stay in your hands (direction and curl) in every mode.",
+  "t": "- Deine eigenen Freistöße bleiben in jedem Modus in deiner Hand (Richtung und Effet)."
+ },
+ "2118b35b2e80": {
+  "en": "GAMEPLAY: original or custom",
+  "t": "SPIELWEISE: original oder individuell"
+ },
+ "5b724f88ea9d": {
+  "en": "- OPTIONS has one new row, GAMEPLAY, in place of the separate rows of the mod's match-play options (CPU red cards, CPU injuries, goalkeeper injuries, difficulty, dribbling and set pieces). ORIGINAL plays the 1996-97 game: every one of those options acts as its original setting, and what you chose is not forgotten. CUSTOM is the default, with the settings you had before (CPU cards and injuries ON, NORMAL, CLASSIC, CLASSIC set pieces); a new install starts with DIFFICULTY NORMAL, DRIBBLING CLASSIC and SET PIECES CLASSIC, so it plays the original game until you change them. On the row, LEFT / RIGHT switch between ORIGINAL and CUSTOM; FIRE on CUSTOM opens the GAMEPLAY page, FIRE on ORIGINAL switches to CUSTOM.",
+  "t": "- OPTIONEN hat eine neue Zeile, SPIELWEISE, anstelle der einzelnen Zeilen der Spieloptionen der Mod (Rote Karten CPU, Verletzungen CPU, Torwartverletzungen, Schwierigkeit, Dribbling und Standardsituationen). ORIGINAL spielt das Spiel von 1996-97: Jede dieser Optionen wirkt wie ihre Originaleinstellung, und was du gewählt hast, wird nicht vergessen. INDIVIDUELL ist die Voreinstellung, mit den Einstellungen, die du vorher hattest (Karten und Verletzungen der CPU an, NORMAL, KLASSISCH, Standardsituationen KLASSISCH); eine neue Installation beginnt mit SCHWIERIGKEIT NORMAL, DRIBBLING KLASSISCH und STANDARDSITUATIONEN KLASSISCH, spielt also das Originalspiel, bis du sie änderst. Auf der Zeile wechseln LINKS / RECHTS zwischen ORIGINAL und INDIVIDUELL; FEUER auf INDIVIDUELL öffnet die Seite SPIELWEISE, FEUER auf ORIGINAL schaltet auf INDIVIDUELL."
+ },
+ "9a78fe070436": {
+  "en": "- On the page every option is a row: LEFT / RIGHT change its value (stopping at the first and the last), FIRE moves it on (and wraps); DRIBBLING on CUSTOM opens its own page, and BACK returns here. DEFAULTS puts every row back to its start value; BACK leaves the page.",
+  "t": "- Auf der Seite ist jede Option eine Zeile: LINKS / RECHTS ändern ihren Wert (beim ersten und beim letzten ist Schluss), FEUER schaltet weiter (und beginnt wieder von vorn); DRIBBLING auf INDIVIDUELL öffnet eine eigene Seite, und ENDE führt hierher zurück. STANDARD setzt jede Zeile auf ihren Anfangswert zurück; ENDE verlässt die Seite."
+ },
+ "9a03d2c84f8d": {
+  "en": "- The page has a new row, ROLES: the switch for the position traits (what a player does best according to where he plays). The traits are off by default (NO: the original game); to switch them on go to OPTIONS -> GAMEPLAY CUSTOM -> ROLES YES. With ROLES on NO, or with GAMEPLAY on ORIGINAL, they never apply. A career remembers your choice, and in a career saved before this row existed, ROLES is NO.",
+  "t": "- Die Seite hat eine neue Zeile, SPIELERTYPEN: der Schalter für die Spielertypen (was ein Spieler je nach seiner Position am besten kann). Die Stärken sind anfangs aus (AUS: das Originalspiel); zum Einschalten gehst du auf OPTIONEN -> SPIELWEISE INDIVIDUELL -> SPIELERTYPEN EIN. Mit SPIELERTYPEN auf AUS oder mit SPIELWEISE auf ORIGINAL gelten sie nie. Eine Karriere merkt sich deine Wahl, und in einer Karriere, die gespeichert wurde, bevor es diese Zeile gab, steht SPIELERTYPEN auf AUS."
+ },
+ "56f41a9f4d46": {
+  "en": "- Going to ORIGINAL and back restores your choices exactly. A career saved with ORIGINAL stays on ORIGINAL; in a career saved with an earlier version, GAMEPLAY is CUSTOM with the options it had.",
+  "t": "- Wechselst du zu ORIGINAL und zurück, sind deine Einstellungen genau wiederhergestellt. Eine mit ORIGINAL gespeicherte Karriere bleibt auf ORIGINAL; in einer Karriere, die mit einer früheren Version gespeichert wurde, steht SPIELWEISE auf INDIVIDUELL mit den Optionen, die sie hatte."
+ },
+ "eaff024ea83b": {
+  "en": "- Set-piece practice follows the same switch: with ORIGINAL its page title reads \"TRAINING - GAMEPLAY: ORIGINAL\" (the name of the button, in your language) and the practice plays the classic set pieces.",
+  "t": "- Das Standardsituationen-Training folgt demselben Schalter: Mit ORIGINAL lautet der Seitentitel „TRAINING - SPIELWEISE: ORIGINAL“ (der Name des Knopfs, in deiner Sprache), und im Training gibt es die klassischen Standardsituationen."
+ },
+ "022e180fa9b2": {
+  "en": "Set-piece practice",
+  "t": "Standardsituationen trainieren"
+ },
+ "ca5d07a16bbd": {
+  "en": "- Career: the TRAINING button on your squad screen now opens a page of its own: TRAINING MATCH (the training game as before), FREE KICK PRACTICE, PENALTY PRACTICE, CORNER PRACTICE and a switch in its own colour, PLAY IN ATTACK / PLAY IN DEFENCE. In attack your team takes the set piece; in defence the computer's team takes it and you defend.",
+  "t": "- Karriere: Der Knopf TRAINING auf deinem Kaderbildschirm öffnet jetzt eine eigene Seite: TRAININGSSPIEL (das Trainingsspiel wie bisher), FREISTOESSE, ELFMETER, ECKBAELLE und ein Schalter in eigener Farbe, IM ANGRIFF SPIELEN / IN DER ABWEHR SPIELEN. Im Angriff führt deine Mannschaft die Standardsituation aus; in der Abwehr führt sie die Mannschaft des Computers aus, und du verteidigst."
+ },
+ "fcd5e0747d27": {
+  "en": "- The set piece comes again and again, the ball placed for you each time: free kicks from the centre and from both sides at four distances from goal, penalties, corners from both sides. There is no match clock, no stadium presentation or pre-match screen and no score bar flashing up at each restart: just the set pieces.",
+  "t": "- Die Standardsituation kommt immer wieder, der Ball wird dir jedes Mal hingelegt: Freistöße aus der Mitte und von beiden Seiten aus vier Entfernungen zum Tor, Elfmeter, Ecken von beiden Seiten. Es gibt keine Spieluhr, keine Stadionvorstellung oder Vorspielbildschirm und keine Anzeigeleiste, die bei jeder Spielfortsetzung aufblinkt: nur die Standardsituationen."
+ },
+ "997d47d92719": {
+  "en": "- A practice ends by itself after 10 attempts, or press ESC whenever you like (handy on a joypad). A results page then shows your shots and goals (SHOTS / GOALS): OK takes you back to the practice page, TRY AGAIN starts another series of the same practice (same side). A practice never changes your career beyond what a training game already does.",
+  "t": "- Ein Training endet von selbst nach 10 Versuchen, oder du drückst ESC, wann immer du willst (praktisch mit einem Joypad). Eine Ergebnisseite zeigt dann deine Schüsse und Tore (SCHUESSE / TORE): OK bringt dich zurück zur Trainingsseite, NOCHMAL startet eine weitere Serie desselben Trainings (dieselbe Seite). Ein Training verändert deine Karriere nie mehr, als es ein Trainingsspiel schon tut."
+ },
+ "50dc3d9512c7": {
+  "en": "- How many attempts and which end: SHOTS: 5, 10, 20, 50 or UNLIMITED (10 at first; UNLIMITED goes on until you press ESC) and HALF: RANDOM, TOP, BOTTOM or ALTERNATING (RANDOM at first: the end the match gives you, as before; then the set pieces at the top goal, at the bottom one, or one each in turn). Change them on the practice page or on the results page before TRY AGAIN: they stay as you left them until you quit the game. When the end has to change, the teams swap ends as at half time.",
+  "t": "- Wie viele Versuche und auf welches Tor: SCHUESSE: 5, 10, 20, 50 oder ENDLOS (anfangs 10; ENDLOS geht weiter, bis du ESC drückst) und HAELFTE: ZUFALL, OBEN, UNTEN oder WECHSELND (anfangs ZUFALL: die Seite, die dir das Spiel gibt, wie bisher; sonst die Standardsituationen am oberen Tor, am unteren oder abwechselnd). Du stellst sie auf der Trainingsseite oder auf der Ergebnisseite vor NOCHMAL ein: Sie bleiben so, wie du sie eingestellt hast, bis du das Spiel beendest. Muss die Seite wechseln, tauschen die Mannschaften die Seiten wie zur Halbzeit."
+ },
+ "cb97c74c002a": {
+  "en": "- After a goal in a practice the ball now stays in the net and the replay shows the real goal; the next set piece is set up only after the replay, and the goalkeeper no longer disappears while it is set up.",
+  "t": "- Nach einem Tor im Training bleibt der Ball jetzt im Netz, und die Wiederholung zeigt das echte Tor; die nächste Standardsituation wird erst nach der Wiederholung aufgebaut, und der Torwart verschwindet beim Aufbau nicht mehr."
+ },
+ "3b873c918ab4": {
+  "en": "Position traits (ROLES)",
+  "t": "SPIELERTYPEN: Stärken je nach Position"
+ },
+ "2a13c5b2f016": {
+  "en": "- With ROLES on YES (OPTIONS -> GAMEPLAY CUSTOM -> ROLES YES; off at the start, NO = the original game) a player is better at what his position does best. The position is the player's natural one (the one in the team's file), not the place he plays in the line-up; the traits are for every team, the computer's too. (asked by Marco)",
+  "t": "- Mit SPIELERTYPEN auf EIN (OPTIONEN -> SPIELWEISE INDIVIDUELL -> SPIELERTYPEN EIN; anfangs aus, AUS = das Originalspiel) ist ein Spieler besser in dem, was seine Position am besten kann. Die Position ist die natürliche des Spielers (die in der Teamdatei), nicht der Platz, auf dem er in der Aufstellung spielt; die Stärken gelten für alle Mannschaften, auch für die des Computers. (gewünscht von Marco)"
+ },
+ "17b204a5e1eb": {
+  "en": "- Headers down in the opponents' box: any outfield player heading the ball inside the opponents' penalty area aims it down, the more so the better his HEADING. Header lobs (stick held back) and standing headers are unchanged. Anywhere else (your own half, your own box) headers go up and away as in the original game.",
+  "t": "- Kopfbälle nach unten im gegnerischen Strafraum: Jeder Feldspieler, der den Ball im gegnerischen Strafraum köpft, zielt nach unten, umso mehr, je besser sein Kopfballspiel ist. Kopfball-Heber (Stick nach hinten) und Kopfbälle im Stand bleiben unverändert. Überall sonst (eigene Hälfte, eigener Strafraum) gehen Kopfbälle wie im Originalspiel hoch und weg."
+ },
+ "55afce8c1f1c": {
+  "en": "- Wingers' whipped cross: a right or left winger (RW / LW) kicking from the strip outside the penalty area's width in the last quarter of the pitch, on either side, gets a low, fast cross across the box from the 'back' after-touch instead of the high ball. The same from a corner or a free kick out wide taken by a winger, when the ball goes towards the middle. Anyone else, or a winger elsewhere, keeps the high ball. The computer's wingers rarely play this ball, so the whipped cross is mostly yours.",
+  "t": "- Scharfe Flanke der Flügelspieler: Ein rechter oder linker Flügelspieler (RW / LW), der im letzten Viertel des Spielfelds auf einer der beiden Seiten aus dem Streifen außerhalb der Strafraumbreite schießt, schlägt mit dem Nachsteuern „nach hinten“ eine flache, schnelle Flanke durch den Strafraum statt des hohen Balls. Dasselbe gilt für eine Ecke oder einen Freistoß von außen, die ein Flügelspieler ausführt, wenn der Ball zur Mitte geht. Jeder andere, oder ein Flügelspieler anderswo, behält den hohen Ball. Die Flügelspieler des Computers spielen diesen Ball selten, die scharfe Flanke gehört also vor allem dir."
+ },
+ "9120d323f7f5": {
+  "en": "- Centre-backs (D) reach high balls a little further in their own penalty area, the more so the better their HEADING.",
+  "t": "- Innenverteidiger (D) erreichen hohe Bälle im eigenen Strafraum ein wenig weiter, umso mehr, je besser ihr Kopfballspiel ist."
+ },
+ "de90bfc68486": {
+  "en": "- With SET PIECES on REALISTIC or ARCADE every header already goes down; with ROLES on YES only the headers in the opponents' box do, the others go up and away again as in the original game.",
+  "t": "- Mit STANDARDSITUATIONEN auf REALISTISCH oder ARCADE geht schon jeder Kopfball nach unten; mit SPIELERTYPEN auf EIN nur die Kopfbälle im gegnerischen Strafraum, die übrigen gehen wieder hoch und weg wie im Originalspiel."
+ },
+ "b1fc2f989138": {
+  "en": "- ROLES on NO, GAMEPLAY on ORIGINAL, SWOS++ and training games always play the original game. Set-piece practice uses the traits as a match would.",
+  "t": "- SPIELERTYPEN auf AUS, SPIELWEISE auf ORIGINAL, SWOS++ und Trainingsspiele spielen immer das Originalspiel. Das Standardsituationen-Training nutzt die Stärken wie ein Spiel."
+ },
+ "07beff299807": {
+  "en": "World 2026-27 in SEASON mode",
+  "t": "Welt 2026-27 im Modus SAISON"
+ },
+ "5e6f7a2bedec": {
+  "en": "- SEASON can now be played with the World 2026-27 (choose it with the main menu's world selector): pick your club in the career-style picker, each league plays in its own format. The mid-season splits into groups and Italy's Coppa D are played as in a career.",
+  "t": "- SAISON kann jetzt mit der Welt 2026-27 gespielt werden (wähle sie mit der Weltauswahl im Hauptmenü): Du wählst deinen Verein in der Auswahl wie in der Karriere, jede Liga spielt in ihrem eigenen Modus. Die Teilungen zur Saisonmitte in Gruppen und die Coppa D Italiens werden wie in einer Karriere gespielt."
+ },
+ "504aeea4db3e": {
+  "en": "- In a single season with your club, the play-offs, play-outs and title deciders inside your league are played too, for example Malta's Final Four. If your club is not in one of them, its matches are simulated and the season goes on to FINISH SEASON.",
+  "t": "- In einer einzelnen Saison mit deinem Verein werden auch die Playoffs, Play-outs und Meister-Entscheidungsspiele innerhalb deiner Liga gespielt, zum Beispiel das Final Four Maltas. Ist dein Verein bei keinem davon dabei, werden seine Spiele simuliert und die Saison geht weiter bis SAISON BEENDEN."
+ },
+ "b5fbebefdced": {
+  "en": "- Those that bring in clubs from other leagues (for example New Zealand's Grand Final, Scotland's promotion play-off) are played in careers only.",
+  "t": "- Die, an denen Vereine aus anderen Ligen teilnehmen (zum Beispiel das Grand Final Neuseelands, das Aufstiegs-Playoff Schottlands), werden nur in Karrieren gespielt."
+ },
+ "ed63656074c2": {
+  "en": "- A SEASON saved in the World 2026-27 comes back in it, also in the middle of a play-off.",
+  "t": "- Eine in der Welt 2026-27 gespeicherte SAISON wird auch in ihr wieder geladen, auch mitten in einem Playoff."
+ },
+ "5447f96de59f": {
+  "en": "Shirt numbers: keypad digits and taken numbers",
+  "t": "Rückennummern: Ziffernblock und vergebene Nummern"
+ },
+ "f80f398d2879": {
+  "en": "- While a shirt-number box is lit (the team screen before a match, the squad screen), the digits of the numeric keypad now type the number like the digits above the letters. Everywhere else the keypad moves the cursor as before.",
+  "t": "- Solange ein Rückennummernfeld markiert ist (der Mannschaftsbildschirm vor einem Spiel, der Kaderbildschirm), tippen die Ziffern des Ziffernblocks jetzt die Nummer wie die Ziffern über den Buchstaben. Überall sonst bewegt der Ziffernblock wie bisher den Cursor."
+ },
+ "6d14804b612a": {
+  "en": "- UP / DOWN in the box now go through every number from 1 to 99, one at a time, taken ones included. When you stop on a number another player already wears, the coach's line at the bottom of the screen shows who wears it, for example '7 A. DI LIVIO SWAP'. Leave the box any way except ESC and the two players swap numbers; ESC puts your number back as it was. Typing a number works as before. In EDIT CUSTOM TEAMS UP / DOWN still skip the taken numbers.",
+  "t": "- HOCH / RUNTER im Feld gehen jetzt jede Nummer von 1 bis 99 einzeln durch, vergebene eingeschlossen. Hältst du bei einer Nummer an, die schon ein anderer Spieler trägt, zeigt die Trainerzeile unten am Bildschirm, wer sie trägt, zum Beispiel „7 A. DI LIVIO TAUSCH“. Verlässt du das Feld auf irgendeine Weise außer mit ESC, tauschen die beiden Spieler ihre Nummern; ESC stellt deine Nummer wieder her, wie sie war. Das Tippen einer Nummer funktioniert wie bisher. In EDIT CUSTOM TEAMS überspringen HOCH / RUNTER weiterhin die vergebenen Nummern."
+ },
+ "d02ef8c94e0b": {
+  "en": "Names with the joystick",
+  "t": "Namen mit dem Joystick"
+ },
+ "73d0e0d6cc7d": {
+  "en": "- Every name the game asks for (players, teams and coaches in EDIT CUSTOM TEAMS, your career name, competition names, save and tactic files) can now be written with the joystick or a pad alone, handy on Android and touch screens. UP / DOWN change the letter under the cursor; at the end of the name UP adds a letter and DOWN deletes the last one (hold to repeat); LEFT / RIGHT move the cursor; FIRE confirms. FIRE held with LEFT deletes the letter left of the cursor, and you can delete as many as you like while holding FIRE. A long press of FIRE alone cancels the edit. The keyboard works as before; its UP / DOWN arrows do the same as the stick.",
+  "t": "- Jeder Name, nach dem das Spiel fragt (Spieler, Teams und Trainer in EDIT CUSTOM TEAMS, dein Karrierename, Wettbewerbsnamen, Spielstand- und Taktikdateien), kann jetzt allein mit dem Joystick oder einem Pad geschrieben werden, praktisch unter Android und auf Touchscreens. HOCH / RUNTER ändern den Buchstaben unter dem Cursor; am Ende des Namens fügt HOCH einen Buchstaben hinzu und RUNTER löscht den letzten (gedrückt halten zum Wiederholen); LINKS / RECHTS bewegen den Cursor; FEUER bestätigt. FEUER gedrückt mit LINKS löscht den Buchstaben links vom Cursor, und solange du FEUER hältst, kannst du so viele löschen, wie du willst. Ein langer Druck auf FEUER allein bricht die Eingabe ab. Die Tastatur funktioniert wie bisher; ihre Pfeiltasten HOCH / RUNTER tun dasselbe wie der Stick."
+ },
+ "f71f69bae995": {
+  "en": "Preseason friendlies: who you play, what they pay, and choosing them yourself",
+  "t": "Testspiele vor der Saison: gegen wen du spielst, was sie einbringen, und selbst wählen"
+ },
+ "311f71195239": {
+  "en": "- Career: the four preseason friendlies are played against clubs picked by strength: one stronger than your club, two of similar strength and one weaker. The clubs the game picks are always foreign. A page at the start of the season lets you choose the opponents yourself; leave it alone and the game picks them.",
+  "t": "- Karriere: Die vier Testspiele vor der Saison werden gegen Vereine gespielt, die nach Stärke ausgewählt werden: einer stärker als dein Verein, zwei ähnlich stark und einer schwächer. Die Vereine, die das Spiel auswählt, sind immer ausländische. Eine Seite zu Beginn der Saison lässt dich die Gegner selbst wählen; lässt du sie unberührt, wählt das Spiel sie aus."
+ },
+ "7b6e0ed4dd58": {
+  "en": "- How strength is measured: a club's strength is the value of its best eleven players. \"Similar\" means within about 10% of your own club's strength; \"stronger\" and \"weaker\" mean between 10% and 40% away (for the very smallest clubs these steps have a fixed minimum, so they are a little wider). Clubs further away than that are not picked: a giant against a village side is not a preseason test.",
+  "t": "- Wie die Stärke gemessen wird: Die Stärke eines Vereins ist der Wert seiner besten elf Spieler. „Ähnlich“ heißt innerhalb von etwa 10 % der Stärke deines eigenen Vereins; „stärker“ und „schwächer“ heißen zwischen 10 % und 40 % entfernt (für die allerkleinsten Vereine haben diese Stufen ein festes Minimum, sie sind also etwas breiter). Vereine, die weiter entfernt sind, werden nicht ausgewählt: Ein Riese gegen eine Dorfmannschaft ist kein Test vor der Saison."
+ },
+ "66638eed648d": {
+  "en": "- The game looks for four clubs from four different countries, never your own B team, never the same club twice, and not the four you met the summer before (as long as there are others to pick).",
+  "t": "- Das Spiel sucht vier Vereine aus vier verschiedenen Ländern, nie deine eigene B-Mannschaft, nie zweimal denselben Verein und nicht die vier, gegen die du im Sommer davor gespielt hast (solange es andere zur Auswahl gibt)."
+ },
+ "c41abe9a6929": {
+  "en": "- When no club is that much stronger or weaker than yours, the game takes the nearest one in strength. The strongest clubs in the world, with nobody above them, meet the strongest club available. The weakest clubs, with nobody below them, get the weakest club available as their easier opponent: a club of their own level.",
+  "t": "- Gibt es keinen Verein, der so viel stärker oder schwächer ist als deiner, nimmt das Spiel den, der in der Stärke am nächsten liegt. Die stärksten Vereine der Welt, über denen niemand steht, treffen auf den stärksten verfügbaren Verein. Die schwächsten Vereine, unter denen niemand steht, bekommen den schwächsten verfügbaren Verein als leichteren Gegner: einen Verein ihres eigenen Niveaus."
+ },
+ "09415fe31014": {
+  "en": "- Two friendlies are at home and two away: you host the two weakest of your four opponents and travel to the two strongest.",
+  "t": "- Zwei Testspiele sind zu Hause und zwei auswärts: Du empfängst die beiden schwächsten deiner vier Gegner und reist zu den beiden stärksten."
+ },
+ "7d5a4c837b7d": {
+  "en": "- Every friendly pays. The fee is a percentage of the gate of one of your home league matches that season:",
+  "t": "- Jedes Testspiel bringt Geld ein. Die Prämie ist ein Prozentsatz der Zuschauereinnahmen eines deiner Heimspiele in der Liga in dieser Saison:"
+ },
+ "4e7a664f6919": {
+  "en": "| The opponent, compared with your club | At home (you keep the gate) | Away (appearance fee) | |---|---|---| | Much stronger (more than 40% above) | 120% | 50% | | Stronger | 100% | 40% | | Similar | 50% | 20% | | Weaker | 30% | 10% | | Much weaker (more than 40% below) | 20% | 5% |",
+  "t": "| Der Gegner, verglichen mit deinem Verein | Zu Hause (du behältst die Einnahmen) | Auswärts (Antrittsprämie) | |---|---|---| | Viel stärker (mehr als 40 % darüber) | 120% | 50% | | Stärker | 100% | 40% | | Ähnlich | 50% | 20% | | Schwächer | 30% | 10% | | Viel schwächer (mehr als 40 % darunter) | 20% | 5% |"
+ },
+ "444a4d12b0c8": {
+  "en": "- With the game's own four opponents a summer normally brings 140% of a home league gate: at home against the weaker club (30%) and one of the similar ones (50%), away at the other similar one (20%) and at the stronger one (40%). Much stronger and much weaker clubs only come up when you choose them yourself or when no nearer club exists. The fee always follows what the opponent really is.",
+  "t": "- Mit den vier Gegnern, die das Spiel selbst auswählt, bringt ein Sommer normalerweise 140 % der Einnahmen eines Liga-Heimspiels: zu Hause gegen den schwächeren Verein (30 %) und einen der ähnlich starken (50 %), auswärts beim anderen ähnlich starken (20 %) und beim stärkeren (40 %). Viel stärkere und viel schwächere Vereine kommen nur vor, wenn du sie selbst wählst oder wenn es keinen näheren Verein gibt. Die Prämie folgt immer dem, was der Gegner wirklich ist."
+ },
+ "24c88d019fef": {
+  "en": "- Financial fair play: the fees count as gate income, like every other gate. Real football does the same: UEFA counts the gate receipts of all of a club's matches as relevant income (UEFA Club Licensing and Financial Sustainability Regulations, Edition 2025, Annex J.2.1 a).",
+  "t": "- Financial Fair Play: Die Prämien zählen als Zuschauereinnahmen, wie alle anderen Zuschauereinnahmen. Der echte Fußball macht es genauso: Die UEFA zählt die Zuschauereinnahmen aller Spiele eines Vereins als relevante Einnahmen (UEFA Club Licensing and Financial Sustainability Regulations, Edition 2025, Annex J.2.1 a)."
+ },
+ "47e95017e9d8": {
+  "en": "- Friendlies give no league points and count for no table or cup; as in the original game, they do count in your management record's match totals.",
+  "t": "- Testspiele bringen keine Ligapunkte und zählen für keine Tabelle und keinen Pokal; wie im Originalspiel zählen sie aber in der Spielbilanz deiner Managerbilanz."
+ },
+ "ad51c507b9e7": {
+  "en": "- **Choosing the opponents yourself:**",
+  "t": "- **Die Gegner selbst wählen:**"
+ },
+ "bc25addb8054": {
+  "en": "- Career: at the start of every season, before the chairman's note, the page PRESEASON FRIENDLIES shows the four summer friendlies the game has picked for you. Each row has the venue (H home, A away), the opponent, whether that club is STRONGER, EVEN or WEAKER than yours (the word and the colour of its box) and a figure from 1 to 5. CONTINUE accepts the four as they are: if you touch nothing, the game's choice stands.",
+  "t": "- Karriere: Zu Beginn jeder Saison, vor der Notiz des Präsidenten, zeigt die Seite TESTSPIELE die vier Sommer-Testspiele, die das Spiel für dich ausgewählt hat. Jede Zeile hat den Spielort (H Heimspiel, A auswärts), den Gegner, ob dieser Verein STAERKER, GLEICH oder SCHWAECHER ist als deiner (das Wort und die Farbe seines Feldes) und eine Zahl von 1 bis 5. WEITER übernimmt die vier, wie sie sind: Wenn du nichts anfasst, bleibt die Wahl des Spiels bestehen."
+ },
+ "5a7d00b981d7": {
+  "en": "- A friendly is just a friendly: its match screens and your calendar show \"FRIENDLY\" alone (AMICHEVOLE, AMICAL, TESTSPIEL in the other languages), no longer \"FRIENDLY FINAL\".",
+  "t": "- Ein Testspiel ist einfach ein Testspiel: Seine Spielbildschirme und dein Kalender zeigen nur „TESTSPIEL“ (FRIENDLY, AMICHEVOLE, AMICAL in den anderen Sprachen), nicht mehr „FRIENDLY FINAL“."
+ },
+ "bc11b8b9e123": {
+  "en": "- On the page where you choose the opponents, the figure from 1 to 5 next to a club is the same for everybody (which fifth of the world's clubs it is in, 5 = the strongest fifth), while the colour compares that club with yours (stronger, similar or weaker), as the page's legend shows; a club you have picked gets a colour of its own.",
+  "t": "- Auf der Seite, auf der du die Gegner wählst, ist die Zahl von 1 bis 5 neben einem Verein für alle gleich (in welchem Fünftel der Vereine der Welt er liegt, 5 = das stärkste Fünftel), während die Farbe diesen Verein mit deinem vergleicht (stärker, ähnlich oder schwächer), wie die Legende der Seite zeigt; ein Verein, den du gewählt hast, bekommt eine eigene Farbe."
+ },
+ "b615d6151abf": {
+  "en": "- AUTOMATIC says what the game picks for the rows you leave to it: MIXED (one stronger, two similar, one weaker: the setting you start with), EASY (four weaker clubs), MEDIUM (four similar clubs) or HARD (four stronger clubs). LEFT, RIGHT or FIRE change it. The game remembers your setting for the following seasons.",
+  "t": "- AUTOMATISCH sagt, was das Spiel für die Zeilen wählt, die du ihm überlässt: GEMISCHT (einer stärker, zwei ähnlich, einer schwächer: die Einstellung, mit der du beginnst), LEICHT (vier schwächere Vereine), MITTEL (vier ähnliche Vereine) oder SCHWER (vier stärkere Vereine). LINKS, RECHTS oder FEUER ändern es. Das Spiel merkt sich deine Einstellung für die folgenden Saisons."
+ },
+ "3c6bb93bffa8": {
+  "en": "- FIRE on an opponent opens the game's club list under the title CHOOSE OPPONENT: any club can be picked for that row, also one of your own country. In the list every club has the colour it would have against your club, with the legend above the list; a grey club cannot be picked (a club already in another row); your own club is not in the list, your B team can be picked. When a choice cannot be accepted the page says why and nothing changes. FIRE on a club you chose gives the row back to the game. If you choose a much weaker club, it doesn't count as the weaker friendly: the other rows are filled as usual.",
+  "t": "- FEUER auf einem Gegner öffnet die Vereinsliste des Spiels unter dem Titel GEGNER WAEHLEN: Für diese Zeile kann jeder Verein gewählt werden, auch einer aus deinem eigenen Land. In der Liste hat jeder Verein die Farbe, die er gegen deinen Verein hätte, mit der Legende über der Liste; ein grauer Verein kann nicht gewählt werden (ein Verein, der schon in einer anderen Zeile steht); dein eigener Verein ist nicht in der Liste, deine B-Mannschaft kann gewählt werden. Kann eine Wahl nicht angenommen werden, sagt die Seite, warum, und nichts ändert sich. FEUER auf einem Verein, den du gewählt hast, gibt die Zeile an das Spiel zurück. Wählst du einen viel schwächeren Verein, zählt er nicht als das schwächere Testspiel: Die anderen Zeilen werden wie üblich gefüllt."
+ },
+ "93eaf799021a": {
+  "en": "- A club you chose is marked by its own colour (CHOSEN in the legend). The clubs you choose last one summer: the next season starts again from the game's four.",
+  "t": "- Ein Verein, den du gewählt hast, ist mit einer eigenen Farbe markiert (GEWAEHLT in der Legende). Die Vereine, die du wählst, gelten einen Sommer lang: Die nächste Saison beginnt wieder mit den vier des Spiels."
+ },
+ "7cebea7cf1b6": {
+  "en": "- FIRE on H or A swaps that friendly's venue with the nearest friendly of the other venue, so there are always two at home and two away.",
+  "t": "- FEUER auf H oder A tauscht den Spielort dieses Testspiels mit dem nächstgelegenen Testspiel des anderen Spielorts, sodass es immer zwei zu Hause und zwei auswärts gibt."
+ },
+ "de312305bdad": {
+  "en": "- The fee of every friendly follows how strong the opponent really is, whoever picked it.",
+  "t": "- Die Prämie jedes Testspiels richtet sich danach, wie stark der Gegner wirklich ist, egal wer ihn ausgewählt hat."
+ },
+ "890c9965ed3b": {
+  "en": "- The page does not show the dates: the friendlies are in the calendar.",
+  "t": "- Die Seite zeigt keine Termine: Die Testspiele stehen im Kalender."
+ },
+ "bbff169db0af": {
+  "en": "- In a career saved with an earlier version, the choice is MIXED. With SWOS++ the page is not shown and the game picks the four (MIXED).",
+  "t": "- In einer Karriere, die mit einer früheren Version gespeichert wurde, ist die Wahl GEMISCHT. Mit SWOS++ wird die Seite nicht gezeigt, und das Spiel wählt die vier aus (GEMISCHT)."
+ },
+ "59d0a72599f6": {
+  "en": "Taiwan's promotion play-off",
+  "t": "Aufstiegs-Playoff in Taiwan"
+ },
+ "de84e766fed2": {
+  "en": "- Taiwan (World 2026-27) now has its promotion play-off: the runner-up of Division 2 plays the 7th of the Premier League in a single match at the 7th's ground; if it is level after 90 minutes there is extra time, then penalties. The winner plays in the Premier League the next season. The Division 2 champion still goes up directly and the Premier League's 8th still goes down directly. These are the CTFA rules for 2025/26 (not the 2022 text, which had sudden death). A reserve team never takes part: if one finishes first or second in Division 2, the next club in the table takes its place. If your club is one of the two, you play the match yourself.",
+  "t": "- Taiwan (Welt 2026-27) hat jetzt sein Aufstiegs-Playoff: Der Zweite der Division 2 spielt gegen den 7. der Premier League in einem einzigen Spiel beim 7.; steht es nach 90 Minuten unentschieden, gibt es Verlängerung, dann Elfmeterschießen. Der Sieger spielt in der nächsten Saison in der Premier League. Der Meister der Division 2 steigt weiterhin direkt auf und der 8. der Premier League weiterhin direkt ab. Das sind die Regeln der CTFA für 2025/26 (nicht der Text von 2022, der ein Golden Goal vorsah). Eine Reservemannschaft nimmt nie teil: Wird eine in der Division 2 Erster oder Zweiter, nimmt der nächste Verein der Tabelle ihren Platz ein. Ist dein Verein einer der beiden, spielst du das Spiel selbst."
+ },
+ "0df97300736a": {
+  "en": "Saved careers",
+  "t": "Gespeicherte Karrieren"
+ },
+ "8493fa11a1b0": {
+  "en": "- A career saved with 4.2 loads in 4.2 or later. Older versions (4.1 and before) cannot be trusted to load it: keep playing it with 4.2.",
+  "t": "- Eine mit 4.2 gespeicherte Karriere lädt in 4.2 oder später. Ältere Versionen (4.1 und früher) laden sie nicht zuverlässig: Spiel sie mit 4.2 weiter."
+ },
+ "b9f66f3802bc": {
+  "en": "Winners page: last season's winner of Serie B, C and D",
+  "t": "Siegerseite: Sieger der Vorsaison in Serie B, C und D"
+ },
+ "98abc55affa9": {
+  "en": "- Winners page (VINCITORI): in the 2026-27 world the last-season page now names the right winner of Serie B and Serie C (and of Serie D when the winner has since moved up). Before, a winner who had left the division could show the name of an unrelated club, or the page was missing altogether in Serie C. It now reads the names from the 2026-27 world's own clubs.",
+  "t": "- Siegerseite (VINCITORI): In der Welt 2026-27 nennt die Seite der Vorsaison jetzt den richtigen Sieger der Serie B und der Serie C (und der Serie D, wenn der Sieger inzwischen aufgestiegen ist). Vorher konnte ein Sieger, der die Division verlassen hatte, mit dem Namen eines ganz anderen Vereins erscheinen, oder die Seite fehlte in der Serie C ganz. Jetzt liest sie die Namen aus den eigenen Vereinen der Welt 2026-27."
+ },
+ "7493ec46d1ab": {
+  "en": "- Leagues split into groups (Serie C, Serie D): the winners page showed the same winner for every group, the first group's. A club in group B saw group A's winner. Now every club sees the winner of its own group. In a career saved with an earlier version, that line appears from the end of the next season.",
+  "t": "- In Staffeln geteilte Ligen (Serie C, Serie D): Die Siegerseite zeigte für jede Staffel denselben Sieger, den der ersten Staffel. Ein Verein in Gruppe B sah den Sieger von Gruppe A. Jetzt sieht jeder Verein den Sieger seiner eigenen Staffel. In einer Karriere, die mit einer früheren Version gespeichert wurde, erscheint diese Zeile ab dem Ende der nächsten Saison."
+ },
+ "f883ede24e01": {
+  "en": "Coppa Italia Serie C after promotion from Serie D",
+  "t": "Coppa Italia Serie C nach dem Aufstieg aus der Serie D"
+ },
+ "3cba6f63b1c0": {
+  "en": "- In the first season after your club went up from Serie D, the Coppa Italia Serie C took the Serie C clubs in the order of the game's team file. Now it seeds them by last season's places, also for the clubs that came up from Serie D, as it already did in every other season. A career saved with an earlier version gets this from its next season end.",
+  "t": "- In der ersten Saison nach dem Aufstieg deines Vereins aus der Serie D nahm die Coppa Italia Serie C die Serie-C-Vereine in der Reihenfolge der Teamdatei des Spiels. Jetzt setzt sie sie nach den Platzierungen der Vorsaison, auch die aus der Serie D aufgestiegenen Vereine, wie sie es in jeder anderen Saison schon tat. Eine Karriere, die mit einer früheren Version gespeichert wurde, bekommt das ab ihrem nächsten Saisonende."
+ },
+ "4f47ba13b11b": {
+  "en": "Malta's title decider",
+  "t": "Titelentscheidung in Malta"
+ },
+ "85cfb46c4f97": {
+  "en": "- Malta: when the title is decided by a play-off (the Finalissima or the Final Four), the champion is now always the club that won that play-off's final. Before, the game could crown a different club at the end of the season.",
+  "t": "- Malta: Wenn der Titel in einem Playoff entschieden wird (der Finalissima oder dem Final Four), ist der Meister jetzt immer der Verein, der das Finale dieses Playoffs gewonnen hat. Vorher konnte das Spiel am Saisonende einen anderen Verein zum Meister küren."
+ },
+ "be23385ebbd9": {
+  "en": "SEASON after a career in another world",
+  "t": "SAISON nach einer Karriere in einer anderen Welt"
+ },
+ "6e829e682b8a": {
+  "en": "- A 1996-97 SEASON started after a career in World 2026-27 or Europe 1984-85 (in the same game, without quitting) kept that career's world in the background. Its national cups could get that world's fixed pairs (for example the Coppa Italia), and a SEASON saved this way loaded back in the other world. A SEASON now plays the world chosen with the main menu's world selector, never a career's world left in the background. A SEASON saved this way with 4.1.2 or earlier now loads as a 1996-97 SEASON; the cup pairs it had already drawn stay as they are.",
+  "t": "- Eine SAISON 1996-97, die nach einer Karriere in der Welt 2026-27 oder Europa 1984-85 gestartet wurde (im selben Spiel, ohne es zu beenden), behielt die Welt dieser Karriere im Hintergrund. Ihre nationalen Pokale konnten die festen Paarungen dieser Welt bekommen (zum Beispiel die Coppa Italia), und eine so gespeicherte SAISON wurde in der anderen Welt wieder geladen. Eine SAISON spielt jetzt die mit der Weltauswahl im Hauptmenü gewählte Welt, nie die Welt einer Karriere, die im Hintergrund geblieben ist. Eine so mit 4.1.2 oder früher gespeicherte SAISON lädt jetzt als SAISON 1996-97; die schon ausgelosten Pokalpaarungen bleiben, wie sie sind."
+ },
+ "6331dea55a0f": {
+  "en": "African club cups: the holder's place",
+  "t": "Afrikanische Vereinspokale: der Platz des Titelverteidigers"
+ },
+ "26c9f29e5d72": {
+  "en": "- CAF Champions League and Confederation Cup (article IV.5 of the CAF regulations): an association never has more than two clubs in the same cup, and the holder defending its title is one of them. If the holder is not already on one of its association's places, it takes the association's last place and the lowest qualifier drops (an association with a single place sends only the holder). Before, a holder could bring its association an extra club. A holder that is also the national champion (or cup winner) of the other cup defends in that one and its place there goes to the next club, as before. The same now holds for the African clubs that are not in the world's leagues (Simba, TP Mazembe, Al Hilal and the others): when one of them wins a cup, the next season it defends the title once, not also through its usual place, and its country still sends at most two clubs. If it wins the Confederation Cup while also qualified for the Champions League, it defends the Confederation Cup and its Champions League place stays empty.",
+  "t": "- CAF Champions League und Confederation Cup (Artikel IV.5 der CAF-Statuten): Ein Verband hat nie mehr als zwei Vereine im selben Pokal, und der Titelverteidiger ist einer davon. Steht der Titelverteidiger nicht schon auf einem der Plätze seines Verbands, nimmt er den letzten Platz des Verbands ein, und der am schlechtesten qualifizierte Verein fällt heraus (ein Verband mit nur einem Platz schickt nur den Titelverteidiger). Vorher konnte ein Titelverteidiger seinem Verband einen zusätzlichen Verein verschaffen. Ein Titelverteidiger, der auch Landesmeister (oder Pokalsieger) für den anderen Pokal ist, verteidigt in diesem, und sein Platz dort geht an den nächsten Verein, wie bisher. Dasselbe gilt jetzt für die afrikanischen Vereine, die nicht in den Ligen der Welt sind (Simba, TP Mazembe, Al Hilal und die anderen): Gewinnt einer von ihnen einen Pokal, verteidigt er in der nächsten Saison den Titel einmal, nicht zusätzlich über seinen üblichen Platz, und sein Land schickt weiterhin höchstens zwei Vereine. Gewinnt er den Confederation Cup und ist er zugleich für die Champions League qualifiziert, verteidigt er den Confederation Cup, und sein Platz in der Champions League bleibt leer."
+ },
+ "ae8cffd1d4b9": {
+  "en": "Continental cups: your knockout results now count",
+  "t": "Kontinentalpokale: Deine K.-o.-Ergebnisse zählen jetzt"
+ },
+ "1c4a75effa45": {
+  "en": "- AFC Champions League Elite, AFC Challenge League, CONCACAF Champions Cup, Recopa Sudamericana and CAF Super Cup: the knockout matches your club plays in these cups now decide the cup. Before (since 4.1) the game played them but ignored the results at the end of the season and drew the outcome again, so the winner, next season's title holder and places could differ from what you actually played.",
+  "t": "- AFC Champions League Elite, AFC Challenge League, CONCACAF Champions Cup, Recopa Sudamericana und CAF Super Cup: Die K.-o.-Spiele, die dein Verein in diesen Pokalen spielt, entscheiden jetzt den Pokal. Vorher (seit 4.1) spielte das Spiel sie zwar, ignorierte die Ergebnisse aber am Saisonende und loste den Ausgang neu aus, sodass der Sieger, der Titelverteidiger der nächsten Saison und die Plätze von dem abweichen konnten, was du wirklich gespielt hattest."
+ },
+ "d99cedbc0290": {
+  "en": "- A career saved halfway through a knockout round with an earlier version: the round counts when you finish it.",
+  "t": "- Eine Karriere, die mit einer früheren Version mitten in einer K.-o.-Runde gespeichert wurde: Die Runde zählt, wenn du sie beendest."
+ },
+ "64a0c8e5f4c6": {
+  "en": "Italian version: PAREGGI",
+  "t": "Italienische Version: PAREGGI"
+ },
+ "23c39efec4c8": {
+  "en": "The original Italian game spells \"draws\" as PARREGGI in the season record (VINCITE ... PARREGGI ... SCON ...), the line a national-team coach sees. It now reads PAREGGI, in the CD and GOG versions.",
+  "t": "Das italienische Originalspiel schreibt „Unentschieden“ in der Saisonbilanz als PARREGGI (VINCITE ... PARREGGI ... SCON ...), die Zeile, die ein Nationaltrainer sieht. Jetzt steht dort PAREGGI, in der CD- und der GOG-Version."
+ },
+ "c858b12ad320": {
+  "en": "Saved career files",
+  "t": "Karrieredateien"
+ },
+ "13f6b55291f2": {
+  "en": "- A damaged or cut-off career file is now refused: you go back to the main menu and the file is left untouched. Before, a file that was too long was cut without a word.",
+  "t": "- Eine beschädigte oder abgeschnittene Karrieredatei wird jetzt abgelehnt: Du kommst zurück ins Hauptmenü, und die Datei bleibt unberührt. Vorher wurde eine zu lange Datei ohne Hinweis abgeschnitten."
+ },
+ "dc676e8b9c79": {
+  "en": "- A 1996-97 career now has room for 159 teams, as the 2026-27 and 1984-85 worlds do (before: 100). If a career ever needs more, the game stops with TEAM CACHE FULL - PLEASE REPORT instead of damaging the save.",
+  "t": "- Eine Karriere 1996-97 hat jetzt Platz für 159 Mannschaften, wie die Welten 2026-27 und 1984-85 (vorher: 100). Bräuchte eine Karriere je mehr, hält das Spiel mit TEAM CACHE FULL - PLEASE REPORT an, statt den Spielstand zu beschädigen."
+ },
+ "8547f42f5dc7": {
+  "en": "- 1996-97 season end: after the end-of-season matches the game simulates, every club in your career gets its own squad back (before, only the first 32 did).",
+  "t": "- Saisonende 1996-97: Nach den Spielen zum Saisonende, die das Spiel simuliert, bekommt jeder Verein deiner Karriere seinen eigenen Kader zurück (vorher nur die ersten 32)."
+ },
+ "8a27f1f4dd77": {
+  "en": "Intercontinental Cup",
+  "t": "Weltpokal"
+ },
+ "fd81cac9c99c": {
+  "en": "- English clubs: when your club won the Champions Cup and plays in a country with a league cup, the Intercontinental in December is now really played. Before, it showed in the fixture list but the match never came. In a division with end-of-season play-offs (Scotland's Premier Division) the play-offs keep that place, so there is no Intercontinental that season.",
+  "t": "- Englische Vereine: Wenn dein Verein den Landesmeisterpokal gewonnen hat und in einem Land mit Ligapokal spielt, wird der Weltpokal im Dezember jetzt wirklich gespielt. Vorher stand er im Spielplan, aber das Spiel kam nie. In einer Division mit Playoffs zum Saisonende (die Premier Division Schottlands) behalten die Playoffs diesen Termin, also gibt es in dieser Saison keinen Weltpokal."
+ },
+ "f90b88c3b2a0": {
+  "en": "- 2026-27 world and the historic worlds: no more Intercontinental out of nowhere in the first season. Before, the club in your file at Juventus' place got a December match against the 1996-97 Libertadores winner. In the 2026-27 world the Intercontinental is the one of the world's continental cups (holders of every confederation); in the historic worlds it starts from the second season, between that world's Champions Cup winner and the Libertadores winner.",
+  "t": "- Welt 2026-27 und die historischen Welten: kein Weltpokal mehr aus dem Nichts in der ersten Saison. Vorher bekam der Verein, der in deiner Datei auf dem Platz von Juventus stand, im Dezember ein Spiel gegen den Libertadores-Sieger 1996-97. In der Welt 2026-27 ist der Weltpokal der der Kontinentalpokale der Welt (Titelverteidiger aller Konföderationen); in den historischen Welten beginnt er ab der zweiten Saison, zwischen dem Landesmeisterpokalsieger dieser Welt und dem Libertadores-Sieger."
+ },
+ "e9c4447a8bde": {
+  "en": "Taiwan's reserve teams",
+  "t": "Taiwans Reservemannschaften"
+ },
+ "dd86c5da401a": {
+  "en": "- In the Taiwan Football Premier League world, the two reserve teams of Division 2 (Athletic Club Taipei Reserves and Taichung Rock Reserves) now follow the league's own rule (CTFA regulations 2025/26, article 27): a reserve team can never be promoted to the Premier League, and it does not play the promotion play-off either. If one of them finishes in a promotion place, the place goes to the next club in the table. Both still play the President FA Cup, as they do in real life. What the regulations say when a first team is relegated (its reserve team leaves Division 2 the next season) is not in the game: the reserve team stays. Their age and transfer-window rules are not in the sources I could read: no age limit, European windows.",
+  "t": "- In der Welt der Taiwan Football Premier League folgen die beiden Reservemannschaften der Division 2 (Athletic Club Taipei Reserves und Taichung Rock Reserves) jetzt der eigenen Regel der Liga (CTFA-Statuten 2025/26, Artikel 27): Eine Reservemannschaft kann nie in die Premier League aufsteigen und spielt auch nicht das Aufstiegs-Playoff. Landet eine von ihnen auf einem Aufstiegsplatz, geht der Platz an den nächsten Verein der Tabelle. Beide spielen weiterhin den President FA Cup, wie im echten Leben. Was die Statuten sagen, wenn eine erste Mannschaft absteigt (ihre Reservemannschaft verlässt in der nächsten Saison die Division 2), ist nicht im Spiel: Die Reservemannschaft bleibt. Ihre Alters- und Transferfensterregeln stehen nicht in den Quellen, die ich lesen konnte: keine Altersgrenze, europäische Transferfenster."
+ },
+ "e0b5cbf3909a": {
+  "en": "- In short: CPU defenders press and cover more (fewer 'skittles' standing still near you), but they still don't tackle more often.",
+  "t": "- Kurz gesagt: Die Verteidiger des Computers pressen und sichern mehr ab (weniger „Kegel“, die neben dir stillstehen), aber sie gehen trotzdem nicht öfter in den Zweikampf."
  }
 }

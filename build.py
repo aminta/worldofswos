@@ -29,6 +29,7 @@ import ogimage                                              # noqa: E402
 import already                                              # noqa: E402
 import install                                              # noqa: E402
 import easy                                                 # noqa: E402
+import gameplay                                             # noqa: E402
 from i18n import CONTINENT, GAME, LANG_NAME, LANGS, LOCALE, T   # noqa: E402
 
 SITE_URL = 'https://worldofswos.com'
@@ -37,6 +38,19 @@ REPO = 'https://github.com/aminta/swos-9697-mod'
 PATCHER = REPO + '/releases/download/v4.1.2/swos-9697-mod-patcher.html'
 RELEASE_PAGE = REPO + '/releases/tag/v4.1.2'
 PATCHER_MD5 = '15c11e0d7ae4c853f16f3799526bcb20'        # the released patcher's md5, shown under the download when set (Regia gives it at the flip)
+# 4.2 (released on GitHub 2026-11-23): the Gameplay page, the home's 'out now: 4.2' panel, the v4.2 download and news.
+# PREVIEW ONLY until Davide's ok: WOS_42=1 WOS_GP_PREVIEW=1 WOS_OUT=site-preview python3 build.py   (the flip: REL42 = True)
+REL42 = True   # 4.2 live: Davide 'PUBBLICA' 23/11
+GP_PREVIEW = os.environ.get('WOS_GP_PREVIEW') == '1'   # preview only: unchecked gp-* frames shown, the Italian one standing in
+if REL42:
+    PATCHER = REPO + '/releases/download/v4.2/swos-9697-mod-patcher.html'
+    RELEASE_PAGE = REPO + '/releases/tag/v4.2'
+    PATCHER_MD5 = 'f4a79ea29ce3997cdf2f1098024d14d9'    # = git show 951d82e:release/swos-9697-mod-patcher.html (sha256 = the GitHub asset's)
+for _l in LANGS:
+    T[_l]['nav_gameplay'] = gameplay.P[_l]['nav']
+    if REL42:
+        T[_l].update(gameplay.P[_l]['over'])
+NEWS_CUR = '4.2' if REL42 else '4.1.2'                 # the version on /news/ (the others under /news/<ver>/)
 WINNERS = 'full'        # 'none': no page tonight (4.0.1 lists the page) · 'page': page without season-end titles (block on,
                         # 4.0.1 lists the titles) · 'full': page + titles (block on, nothing in 4.0.1)
 WINNERS_40 = WINNERS in ('page', 'full')
@@ -51,6 +65,8 @@ TWELVE_BIT = f'<a href="{TWELVE_BIT_URL}">{_tb}</a>' if TWELVE_BIT_URL else _tb
 GOATCOUNTER = 'worldofswos'  # GoatCounter code (https://<code>.goatcounter.com): cookieless visit counter; '' = none
 DATA = os.path.join(ROOT, 'data')
 OUT = os.environ.get('WOS_OUT') or os.path.join(ROOT, 'site')
+if GP_PREVIEW and os.path.realpath(OUT) == os.path.realpath(os.path.join(ROOT, 'site')):
+    raise SystemExit('WOS_GP_PREVIEW shows unchecked frames: never into site/ (use WOS_OUT=site-preview)')
 # the 'How to install' page goes live with 4.0 (after Davide's Chrome test): preview only until then,
 # WOS_INSTALL=1 WOS_OUT=site-preview python3 build.py  (site-preview/ is git-ignored)
 INSTALL_PAGE = os.environ.get('WOS_INSTALL', '1') == '1'   # live since 2026-10-20 (Davide's ok via the Regia)
@@ -154,7 +170,8 @@ def refresh():
                      ('release/notes-4.0.5.md', 'notes-4.0.5.md'),
                      ('release/notes-4.1.md', 'notes-4.1.md'),
                      ('release/notes-4.1.1.md', 'notes-4.1.1.md'),
-                     ('release/notes-4.1.2.md', 'notes-4.1.2.md')]:
+                     ('release/notes-4.1.2.md', 'notes-4.1.2.md'),
+                     ('release/notes-4.2.md', 'notes-4.2.md')]:
         open(os.path.join(DATA, 'next', dst), 'w', encoding='utf-8').write(md.strip_comments(show(src)))
     # the in-game FORMAT texts and the countries' names, with the mod's own tools (exported, never run in the repo)
     with tempfile.TemporaryDirectory() as tmp:
@@ -286,7 +303,7 @@ def logo_svg(size=44, title=None):
             '<rect x="20" y="5" width="2" height="2" fill="#ff9a3c"/></svg>')
 
 
-NAV = [('home', ''), ('world', 'world/'), ('countries', 'countries/'), ('classic', 'classic/'), ('install', '#install'),
+NAV = [('home', ''), ('world', 'world/'), ('countries', 'countries/'), ('classic', 'classic/'), ('gameplay', 'gameplay/'), ('install', '#install'),
        ('players', 'install/#players'), ('credits', 'credits/')]
 
 
@@ -305,6 +322,8 @@ def page(lang, path, title, body, desc='', active=None, langs=None):
     url = f'/{lang}/{path}'
     nav = []
     for key, p in NAV:
+        if key == 'gameplay' and not REL42:
+            continue
         if key == 'install' and INSTALL_PAGE:
             p = 'install/'
         href = f'/{lang}/' + ('' if p.startswith('#') else p) + (p if p.startswith('#') else '')
@@ -376,7 +395,8 @@ FRAMES_OK = set(json.load(open(os.path.join(DATA, 'frames_ok.json')))) if os.pat
 def have(f):
     """A frame goes on the site only when it exists AND was checked (data/frames_ok.json: added by hand after the
     check: mid-season data, the right structure, real legend, title and caption matching)."""
-    return os.path.exists(os.path.join(ROOT, 'static', 'img', f + '.png')) and (FRAMES_OK is None or f in FRAMES_OK)
+    return os.path.exists(os.path.join(ROOT, 'static', 'img', f + '.png')) and (FRAMES_OK is None or f in FRAMES_OK
+                                                                            or (GP_PREVIEW and f.startswith('gp-')))
 
 
 def winners_block(lang, head='h2'):
@@ -406,7 +426,9 @@ RELEASED_401 = True    # flip when 4.0.1 is on GitHub: Joypad headline + 'what's
 
 
 def roadmap(t):
-    """'Coming next' panel: the plan of 12/11 (4.2, Eccellenza after it, 4.3; 5.0 = next_text)."""
+    """'Coming next' panel: the plan of 12/11 (4.2, Eccellenza after it, 4.3; 5.0 = next_text). After 4.2: 4.3 first."""
+    if REL42:
+        return f'<p><span class="next-tag px">4.3</span> <strong>{esc(t["road43_tag"])}</strong> {esc(t["road43"])}</p>'
     return (f'<p><span class="next-tag px">4.2</span> {esc(t["road42"])}</p>'
             f'<p><span class="next-tag px">»</span> {esc(t["road_ecc"])}</p>'
             f'<p><span class="next-tag px">4.3</span> {esc(t["road43"])}</p>')
@@ -417,6 +439,66 @@ def warn_banner(lang):
     if not WARN_FOREIGN:
         return ''
     return (f'<div class="warn" role="alert"><b class="px">!</b><p>{esc(T[lang]["warn_foreign"])}</p></div>')
+
+
+def out42(lang):
+    """The home after the 4.2 release: what is new, with links to the Gameplay page and the 4.2 news."""
+    if not REL42:
+        return ''
+    g, t = gameplay.P[lang], T[lang]
+    return (f'<section class="wrap"><div class="panel next"><h2 id="out42" style="margin-top:0">{esc(g["h42"])}</h2>'
+            f'<p>{esc(g["p42"])}</p><ul>' + ''.join(f'<li>{esc(x)}</li>' for x in g['list42']) + '</ul>'
+            f'<p class="cta" style="justify-content:flex-start"><a class="btn green" href="/{lang}/gameplay/">{esc(g["title"])}</a>'
+            f'<a class="btn blue" href="/{lang}/news/">{esc(t["news_title42"])}</a>'
+            f'<a class="btn blue" href="{RELEASE_PAGE}">{esc(t["cur40"])}</a></p></div></section>\n')
+
+
+def gp_frame(slot, lang):
+    """A Gameplay frame: gp-<slot>-<lang> (a menu) or gp-<slot> (an in-match shot). Live: only a checked frame in this
+    page's own language (no Italian stand-in, Davide); preview: the Italian one stands in, marked."""
+    per_lang, caps = gameplay.FRAMES[slot]
+    cap = caps[lang]
+    f = f'gp-{slot}-{lang}' if per_lang else f'gp-{slot}'
+    note = ''
+    if not have(f) and per_lang and GP_PREVIEW and have(f'gp-{slot}-it'):
+        f = f'gp-{slot}-it'
+        note = f' <span class="next-tag px" style="font-size:11px">{esc(gameplay.P[lang]["preview"].format(L=gameplay.LANG_IN.get(lang, "")))}</span>'
+    if not have(f):
+        return ''
+    return (f'<figure class="shot"><img src="/static/img/{f}.png" width="1600" height="1200" loading="lazy" alt="{esc(cap)}">'
+            f'<figcaption>{esc(cap)}{note}</figcaption></figure>')
+
+
+def gameplay_page(lang):
+    """4.2's /gameplay/ page: OPTIONS -> GAMEPLAY, one section per option (gen/gameplay.py; facts from notes-4.2)."""
+    g, t = gameplay.P[lang], T[lang]
+    toc = ' · '.join(f'<a href="#{sid}">{esc(h)}</a>' for sid, h, _ in g['sec'])
+    out = []
+    for sid, h, items in g['sec']:
+        out.append(f'<h2 id="{sid}">{esc(h)}</h2>')
+        for kind, x in items:
+            if kind == 'p':
+                out.append(f'<p>{x}</p>')
+            elif kind == 'h3':
+                out.append(f'<h3>{esc(x)}</h3>')
+            elif kind == 'ul':
+                out.append('<ul>' + ''.join(f'<li>{i}</li>' for i in x) + '</ul>')
+            elif kind == 'table':
+                head = ''.join(f'<th>{esc(c)}</th>' for c in g['table'])
+                rows = ''.join(f'<tr><td><strong>{esc(a)}</strong></td><td>{esc(b)}</td><td>{esc(c)}</td></tr>'
+                               for a, b, c in gameplay.ROWS[lang])
+                out.append(f'<div style="overflow-x:auto"><table class="saves"><thead><tr>{head}</tr></thead><tbody>{rows}</tbody></table></div>')
+            elif kind == 'frames':
+                figs = ''.join(gp_frame(f, lang) for f in x)
+                if figs:
+                    out.append(f'<div class="cards" style="margin:18px 0 26px;grid-template-columns:repeat(auto-fill,'
+                               f'minmax(min(100%,440px),1fr))">{figs}</div>')
+    dl, news, notes = g['end']
+    end = (f'<p class="cta" style="justify-content:flex-start"><a class="btn green" href="{PATCHER}">{esc(dl)}</a>'
+           f'<a class="btn blue" href="/{lang}/news/">{esc(news)}</a><a class="btn blue" href="{RELEASE_PAGE}">{esc(notes)}</a></p>')
+    body = (f'<div class="wrap page-head"><h1>{esc(g["title"])}</h1><p>{esc(g["lead"])}</p><p class="note">{toc}</p></div>'
+            f'<div class="wrap doc">{"".join(out)}{end}</div>')
+    return page(lang, 'gameplay/', g['title'], body, desc=g['lead'], active='gameplay')
 
 
 def home(d, lang):
@@ -485,14 +567,14 @@ def home(d, lang):
 <p class="lead">{esc(t['lead'])}</p>
 <div class="cta">
 {dl_btn}
-{f'<a class="btn blue" href="/{lang}/news/">{esc(t["news_title412"])}</a>' if CONTENT_40 else ''}
+{f'<a class="btn blue" href="/{lang}/news/">{esc(t["news_title42" if REL42 else "news_title412"])}</a>' if CONTENT_40 else ''}
 <a class="btn orange" href="#install">{esc(t['how'])}</a>
 <a class="btn blue" href="/{lang}/countries/">{esc(t['see_world'])}</a>
 </div>
 <div class="stats">{stats}</div>
 <p class="note" style="max-width:820px;margin:8px auto 0">{esc(t['stats_note'].format(**{k: fmt_num(v, lang) for k, v in s.items()}))}</p>
 </div></section>
-{main_menu(lang)}
+{out42(lang)}{main_menu(lang)}
 <section class="wrap"><div class="bug-cta"><p class="px">{esc(t['bug_cta'])}</p>
 <a class="btn orange" href="/{lang}/bug/">{esc(t['bug_title'])}</a></div></section>
 <section class="wrap">
@@ -892,10 +974,10 @@ def bug_page(d, lang):
 def news_page(d, lang, ver=None):
     """'What's new in 4.0' from release/notes-4.0.md (EN / IT; FR / DE translated block by block)."""
     t = T[lang]
-    ver = ver or '4.1.2'
+    ver = ver or NEWS_CUR
     src = split_langs(open(os.path.join(DATA, 'next', f'notes-{ver}.md'), encoding='utf-8').read())
-    title = {'4.1.2': t['news_title412'], '4.1.1': t['news_title411'], '4.1': t['news_title41'], '4.0.5': t['news_title405'], '4.0.2': t['news_title402'], '4.0.1': t['news_title401']}.get(ver, t['news_title'])
-    path = 'news/' if ver == '4.1.2' else f'news/{ver}/'
+    title = {'4.2': t.get('news_title42', ''), '4.1.2': t['news_title412'], '4.1.1': t['news_title411'], '4.1': t['news_title41'], '4.0.5': t['news_title405'], '4.0.2': t['news_title402'], '4.0.1': t['news_title401']}.get(ver, t['news_title'])
+    path = 'news/' if ver == NEWS_CUR else f'news/{ver}/'
     bl = md.blocks(src['it' if lang == 'it' else 'en'])
     if bl and bl[0][0] == 'h':
         bl = bl[1:]                                  # the release title
@@ -905,13 +987,13 @@ def news_page(d, lang, ver=None):
     body = (f'<div class="wrap page-head"><h1>{esc(title)}</h1>{warn_banner(lang)}</div><div class="wrap doc">'
             + ((f'<p class="panel next"><span class="next-tag px">IDEA</span> '
                 + ('Idea in corso: gli stili di gioco delle squadre del computer. <a href="/it/styles/">Leggi e dici la tua</a>. Grazie a Gianfranco, che ci ha dato l\'idea grazie alla sua passione per i dribbling!' if lang == 'it' else
-                   'Idea in progress: playing styles for CPU teams (in English). <a href="/en/styles/">Read it and give your opinion</a>. Thanks to Gianfranco, who gave us the idea with his passion for dribbling!') + '</p>') if ver == '4.1.2' else '')
+                   'Idea in progress: playing styles for CPU teams (in English). <a href="/en/styles/">Read it and give your opinion</a>. Thanks to Gianfranco, who gave us the idea with his passion for dribbling!') + '</p>') if ver == NEWS_CUR else '')
             + (f'<p><a class="btn green" href="{PATCHER}">{esc(t["dl"])}</a></p>' if RELEASED else
                f'<p class="panel next"><span class="next-tag px">4.0</span> {esc(t["with40"])}</p>'
                f'<p><span class="btn green soon-btn disabled" aria-disabled="true">{esc(t["dl"])}<small>{esc(t["dl_with40"])}</small></span></p>')
             + (f'{main_menu(lang).replace("<section class=\"wrap\">", "").replace("</section>", "")}{winners_block(lang)}' if ver == '4.0' else '')
             + f'{md.render(bl, _notes_link(lang), shift=-1)}'
-            + (f'<p class="cta">' + ''.join(f'<a class="btn blue" href="/{lang}/news/{v}/">{esc(n)}</a>' for v, n in (('4.1.1', t['news_title411']), ('4.1', t['news_title41']), ('4.0.5', t['news_title405']), ('4.0.2', t['news_title402']), ('4.0.1', t['news_title401']), ('4.0', t['news_title'])) if v != ver) + '</p>' if ver == '4.1.2' else '') + '</div>')
+            + (f'<p class="cta">' + ''.join(f'<a class="btn blue" href="/{lang}/news/{v}/">{esc(n)}</a>' for v, n in ((('4.1.2', t['news_title412']),) if REL42 else ()) + (('4.1.1', t['news_title411']), ('4.1', t['news_title41']), ('4.0.5', t['news_title405']), ('4.0.2', t['news_title402']), ('4.0.1', t['news_title401']), ('4.0', t['news_title'])) if v != ver) + '</p>' if ver == NEWS_CUR else '') + '</div>')
     return page(lang, path, title, body)
 
 
@@ -986,7 +1068,7 @@ def build():
     if FRAMES_OK is not None:                       # unchecked frames are not published at all
         img = os.path.join(OUT, 'static', 'img')
         for f in os.listdir(img):
-            if f.endswith('.png') and f != '12bit.png' and f[:-4] not in FRAMES_OK:
+            if f.endswith('.png') and f != '12bit.png' and f[:-4] not in FRAMES_OK and not (GP_PREVIEW and f.startswith('gp-')):
                 os.remove(os.path.join(img, f))
     for lang in LANGS:                              # the social preview cards
         t = T[lang]
@@ -1003,6 +1085,9 @@ def build():
             pages['install/'] = install_page(d, lang)
         if CONTENT_40:
             pages['news/'] = news_page(d, lang)
+            if REL42:
+                pages['news/4.1.2/'] = news_page(d, lang, '4.1.2')
+                pages['gameplay/'] = gameplay_page(lang)
             pages['news/4.1.1/'] = news_page(d, lang, '4.1.1')
             pages['news/4.1/'] = news_page(d, lang, '4.1')
             pages['news/4.0.5/'] = news_page(d, lang, '4.0.5')
